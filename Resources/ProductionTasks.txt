@@ -1,0 +1,734 @@
+
+Tasks - Just piority
+---------------------------------------------------
+Halo 1 Tasks:
+
+  Priority 1:
+
+    Map Rendering
+      Shader tag loading for all shader types
+      Texture tag loading
+      BSP tag loading
+      Lightmap multi-texturing
+
+    Scenario rendering (not editing)
+      Model tag loading - DONE
+      Model tag rendering - DONE
+      Scenario xml-based loading (in preparation for editing later)
+      Model manager for model lookup
+      Scenario render management code (loop through objects)
+
+    Tags edited / saved successfully
+      XML parsing
+      zLib/dll storage of xml plugin files
+      Tag editor gui loader
+      Tag editor save
+
+    De/Compiling
+
+    Tag error checking
+      Detect missing dependencies
+      Detect incompatible tags with map target version
+      Corrupt tag detection
+
+    Script editing
+      Control for script editing integrated into document containers
+      Design / implement SDF (scripting definition file) plugin
+      Text file edit/save capability
+      Syntax highlighting
+      Auto complete for functions
+      Tooltips for keywords, functions
+
+    Halo 1 scripting support
+      De/Compilation of Halo 1 scripts
+
+    Basic plug-in set
+
+    [Model / animation viewer]
+      Animation tag loading
+
+  Priority 2:
+
+    [Tag error checking]
+      Corrupt tag detection
+
+    [Data import / conversion]
+      Sound tag creation
+      .NET image formats -> bitmap tags
+
+  Priority 3:
+
+    Improved error detection for compiling
+
+    [Data import / conversion]
+      Model import (DX supports generating tri strips)
+
+    Radiosity
+      Determine how tool generates UV coordinates
+      Determine how tool maps multiple lightmaps onto square textures
+      Create code to generate fullbright textures and UV coords
+      Generate DXT format lightmap tag or export to tiff and use tool
+
+Halo 2 Tasks:
+
+  Priority 1:
+
+    [Scenario rendering (not editing)]
+      Model tag rendering
+      Model manager for model lookup
+      Scenario render management code (loop through objects)
+
+    Tags edited / saved successfully
+      XML parsing
+      zLib/DLL storage of xml plugin files
+      Tag editor gui loader
+      Tag editor save
+
+  Priority 2:
+
+    Map Rendering
+      Decompile Halo2 tags:  sbsp, shaders, models, bitmaps, scnr
+      Shader tag loading for all shader types
+      Texture tag loading
+      BSP tag loading
+      Lightmap multi-texturing
+
+    Scenario rendering (not editing)
+      Model tag loading
+      Scenario xml-based loading (in preparation for editing later)
+
+    Tag error checking
+      Detect missing dependencies
+      Detect incompatible tags with map target version
+      Corrupt tag detection
+
+    Script editing
+      Control for script editing integrated into document containers
+      Design / implement SDF (scripting definition file) plugin
+      Text file edit/save capability
+      Syntax highlighting
+      Auto complete for functions
+      Tooltips for keywords, functions
+
+    Basic plug-in set
+
+    Halo 2 scripting support
+      De/Compilation of Halo 2 scripts
+
+    [Model / animation viewer]
+      Animation tag loading
+
+    [Data import / conversion]
+      Sound tag creation
+      .NET image formats -> bitmap tags
+      Model import (DX supports generating tri strips)
+
+  Priority 3:
+
+    De/Compiling
+
+    Improved error detection for compiling
+
+    De/Compiler Halo 2 support started
+      Mag files for Halo 2
+      Decompilation (mostly) complete
+      Compilation started
+
+    [Data import / conversion]
+      Model import (DX supports generating tri strips)
+
+    Radiosity
+      Determine how tool generates UV coordinates
+      Determine how tool maps multiple lightmaps onto square textures
+      Create code to generate fullbright textures and UV coords
+      Generate DXT format lightmap tag or export to tiff and use tool
+
+
+General Tasks:
+
+  Priority 1:
+
+    [Map Rendering]
+      Keyboard/Mouse input handling
+      Camera
+      Primitive shader manager/texture lookup
+      Frustum culling optimization
+      Determine differences between Halo1 / Halo2 tag formats
+
+    [De/Compiling]
+      Add zLib support for optimizing speed
+
+    Basic options dialog
+    Logging code completed, saved to file
+    MDX init, capabilities testing, and basic management
+    GUI layout finalized
+
+    [Solid UI complete]
+      Menu handlers complete
+      Toolbars and menus sync
+
+    [Shaders loading]
+      Low quality pipelines designed
+      90% of textures load correctly
+
+    Project files working
+      Contents of project file finalized
+      Design and code project file navigation tree
+      Able to add/remove files
+      Design and code project file manager
+
+    Visual scenario editor
+      Picking code finished (DX "selection")
+      Selection manager class designed and coded
+      XML based editing of scenario complete
+      Insertion of new block elements into scenario
+      Deletion of block elements from scenario
+      Updating scenario offsets after insert/delete
+
+    User profiles
+      Determine what is in the user profile
+      Options settings
+
+    [Script debugging]
+      Syntax checking
+
+    Model / animation viewer
+      Tool pane for adjusting LOD, current animation, etc
+
+    Crash dump / usage snapshot tools
+      Crash dump
+      Usage snapshot
+      DX diagnostics dump (device caps, version info, driver info)
+
+    Custom tag features
+      Map version compatibility bitmask
+      User notes
+      Modify map compiler/decompiler to generate our new headers
+      Generic header format that leaves room for future expansion (variable size header)
+
+    [Auto/Update checking]
+      Standardize release names
+      Use SharpUpdate library to check for updates
+      Require users are logged in before checking for updates
+
+    [Multiple compile targets (games)]
+      Tags must be marked to show which games they support
+
+    [Completed help system]
+      Integrated control with CHM
+
+    Completed options dialogs for all current options
+       
+  Priority 2:
+
+    [Map Rendering]
+      Visibility/Cluster optimization
+
+    Solid UI complete
+      Placeholders for context-sensitive side menus (model LOD, animation select, etc)
+      HTML support for the help pane
+      Right-click context menu in the render window
+
+    Shaders loading
+      Support for detail texturing and lightmap blending
+      Support for cubemaps, advanced shaders
+
+    [User profiles]
+      Options settings
+
+    Multiple compile targets (games)
+
+    Completed help system
+      Separate index pane
+
+  Priority 3:
+
+    [Shaders loading]
+      High quality pipelines designed
+      Figure out how to support lower-res mipmaps by default
+      Shader manager selects the appropriate pipeline based on caps
+
+    [Script debugging]
+      Debugging
+
+    Data import / conversion
+      Model import (DX supports generating tri strips)
+
+    Guerilla importer for select high level tags
+      Internal bug reporting
+
+    Keyboard configuration
+      Add custom handlers for shortcuts
+      Add custom handlers for camera navigation
+      Move events to custom handler class that can remap keyboard
+
+    Guerilla importer
+      Enable endian swapping for Halo1 tags for "import mode"
+      Update mag files as necessary
+
+    Project wizards
+    Map templates
+    HLT templates
+
+    Error lookup tool integrated
+
+    Auto/Update checking
+      Code dialog to give user option to opt out, "not show again"
+
+    [Multiple compile targets (games)]
+      Tag conversion (i.e.: BSP)
+
+
+Unprioritized:
+
+    Beta guardian
+      Stand-alone key generator app distributed
+      Private key generator encryptor app finished
+      Modify beta guardian code to use encrypted keys (prevent hacking)
+
+    Basic networking / login support
+
+    Solid login auth / security
+    Script debugging
+------------------------------------------------------
+
+
+
+
+
+Task - With persons assigned
+------------------------------------------------------
+GROUP:
+Halo 1 Tasks:
+
+  Priority 1:
+
+    Map Rendering  --- Gren & CLuis
+      BSP tag loading  --- Gren & CLuis
+
+    Scenario rendering (not editing)  --- Gren & Mono
+
+    Basic plug-in set  --- Aztec, CLuis, and JamesD
+
+Halo 2 Tasks:
+
+  Priority 2:
+
+    Map Rendering  --- Gren & CLuis
+      BSP tag loading  --- Gren & CLuis
+
+    Basic plug-in set  --- Aztec, CLuis, and JamesD
+
+General Tasks:
+
+  Priority 1:
+
+    [Map Rendering]
+      Determine differences between Halo1 / Halo2 tag formats  --- Aztec, CLuis, ViperNeo
+
+    [De/Compiling]
+      Add zLib support for optimizing speed  --- Mono & Viper
+
+    Visual scenario editor  --- Gren & Mono
+      Selection manager class designed and coded  --- Gren & Mono
+
+    Model / animation viewer  --- Gren & Mono
+      Tool pane for adjusting LOD, current animation, etc  --- Gren & Mono
+
+    Custom tag features  --- Group
+      Map version compatibility bitmask  --- Group
+      User notes  --- Group
+      Modify map compiler/decompiler to generate our new headers  --- Group
+      Generic header format that leaves room for future expansion (variable size header)  --- Group
+
+    [Auto/Update checking]
+      Standardize release names  --- Group
+       
+  Priority 2:
+
+    Shaders loading  --- Gren & CLuis
+      Support for detail texturing and lightmap blending  --- Gren & CLuis
+      Support for cubemaps, advanced shaders  --- Gren & CLuis
+
+
+CLuis:
+Halo 1 Tasks:
+
+  Priority 1:
+
+    [Map Rendering]
+      Shader tag loading for all shader types
+
+Halo 2 Tasks:
+
+  Priority 2:
+
+    [Map Rendering]
+      Shader tag loading for all shader types
+
+General Tasks:
+
+  Priority 1:
+
+    [Auto/Update checking]
+      Use SharpUpdate library to check for updates
+
+    Completed options dialogs for all current options
+
+
+Grenadiac:
+Halo 1 Tasks:
+
+  Priority 1:
+
+    [Map Rendering]
+      Lightmap multi-texturing
+
+    [Scenario rendering (not editing)]
+      Model manager for model lookup
+
+    [Model / animation viewer]
+      Animation tag loading
+
+Halo 2 Tasks:
+
+  Priority 1:
+
+    [Scenario rendering (not editing)]
+      Model tag rendering
+      Model manager for model lookup
+      Scenario render management code (loop through objects)
+
+  Priority 2:
+
+    [Map Rendering]
+      Lightmap multi-texturing
+
+    Scenario rendering (not editing)
+      Model tag loading
+
+    [Model / animation viewer]
+      Animation tag loading
+
+General Tasks:
+
+  Priority 1:
+
+    [Map Rendering]
+      Keyboard/Mouse input handling
+      Camera
+      Primitive shader manager/texture lookup
+      Frustum culling optimization
+
+    MDX init, capabilities testing, and basic management
+
+    [Shaders loading]
+      Low quality pipelines designed
+      90% of textures load correctly
+
+    [Visual scenario editor]
+      Picking code finished (DX "selection")
+       
+  Priority 2:
+
+    [Map Rendering]
+      Visibility/Cluster optimization
+
+JamesD:
+Halo 2 Tasks:
+
+  Priority 2:
+
+    [Data import / conversion]
+      Model import (DX supports generating tri strips)
+
+
+
+Kornman00:
+Halo 1 Tasks:
+
+  Priority 1:
+
+    Script editing
+      Control for script editing integrated into document containers
+      Design / implement SDF (scripting definition file) plugin
+      Text file edit/save capability
+      Syntax highlighting
+      Auto complete for functions
+      Tooltips for keywords, functions
+
+    Halo 1 scripting support
+      De/Compilation of Halo 1 scripts
+
+Halo 2 Tasks:
+
+  Priority 2:
+
+    Script editing
+      Control for script editing integrated into document containers
+      Design / implement SDF (scripting definition file) plugin
+      Text file edit/save capability
+      Syntax highlighting
+      Auto complete for functions
+      Tooltips for keywords, functions
+
+    Halo 2 scripting support
+      De/Compilation of Halo 2 scripts
+
+General Tasks:
+
+  Priority 1:
+
+    [Script debugging]
+      Syntax checking
+
+    Crash dump / usage snapshot tools
+      Usage snapshot
+      DX diagnostics dump (device caps, version info, driver info)
+
+
+MonoxideC:
+Halo 1 Tasks:
+
+  Priority 1:
+
+    [Scenario rendering (not editing)]
+      Scenario xml-based loading (in preparation for editing later)
+      Scenario render management code (loop through objects)
+
+    Tags edited / saved successfully
+      XML parsing
+      zLib/DLL storage of XML plugin files
+      Tag editor gui loader
+      Tag editor save
+
+  Priority 2:
+
+    [Data import / conversion]
+      Sound tag creation
+      .NET image formats -> bitmap tags
+
+Halo 2 Tasks:
+
+  Priority 1:
+
+    Tags edited / saved successfully
+      XML parsing
+      zLib/DLL storage of xml plugin files
+      Tag editor gui loader
+      Tag editor save
+
+  Priority 2:
+
+    [Scenario rendering (not editing)]
+      Scenario xml-based loading (in preparation for editing later)
+
+    [Data import / conversion]
+      Sound tag creation
+      .NET image formats -> bitmap tags
+
+General Tasks:
+
+  Priority 1:
+
+    Basic options dialog
+    Logging code completed, saved to file
+    GUI layout finalized
+
+    [Solid UI complete]
+      Menu handlers complete
+
+    Project files working
+      Contents of project file finalized
+      Design and code project file navigation tree
+      Able to add/remove files
+      Design and code project file manager
+
+    [Visual scenario editor]
+      XML based editing of scenario complete
+
+    [Tags edited / saved successfully]
+      Insertion of new block elements into scenario
+      Deletion of block elements from scenario
+      Updating scenario offsets after insert/delete
+
+    User profiles
+      Determine what is in the user profile
+      Options settings
+
+    [Auto/Update checking]
+      Require users are logged in before checking for updates
+       
+  Priority 2:
+
+    Solid UI complete
+      Placeholders for context-sensitive side menus (model LOD, animation select, etc)
+      HTML support for the help pane
+      Right-click context menu in the render window
+
+    [User profiles]
+      Options settings
+
+
+ViperNEO:
+Halo 1 Tasks:
+
+  Priority 1:
+
+    De/Compiling
+
+    Tag error checking
+      Detect missing dependencies
+      Detect incompatible tags with map target version
+
+  Priority 2:
+
+    [Tag error checking]
+      Corrupt tag detection
+
+Halo 2 Tasks:
+
+  Priority 2:
+
+    [Map Rendering]
+      Decompile Halo2 tags:  sbsp, shaders, models, bitmaps, scnr
+
+    Tag error checking
+      Detect missing dependencies
+      Detect incompatible tags with map target version
+      Corrupt tag detection
+
+General Tasks:
+
+  Priority 1:
+
+    [Multiple compile targets (games)]
+      Tags must be marked to show which games they support
+       
+  Priority 2:
+
+    Multiple compile targets (games)
+      Tags must be marked to show which games they support
+      Tag conversion (i.e.: BSP)
+
+
+Completed:
+Halo 1 Tasks:
+
+  Priority 1:
+
+    [Map Rendering]
+      Texture tag loading  --- MonoxideC
+
+    [Scenario rendering (not editing)]
+      Model tag loading  --- MonoxideC
+      Model tag rendering  --- Grenadiac
+
+Halo 2 Tasks:
+
+  Priority 2:
+
+    [Map Rendering]
+      Texture tag loading  --- MonoxideC
+
+General Tasks:
+
+  Priority 1:
+
+    [Solid UI complete]
+      Toolbars and menus sync  --- MonoxideC
+
+    [Crash dump / usage snapshot tools]
+      Crash dump  --- MonoxideC
+
+
+Unassigned and Unprioritezd:
+Halo 1 Tasks:
+
+  Priority 3:
+
+    Improved error detection for compiling
+
+    [Data import / conversion]
+      Model import (DX supports generating tri strips)
+
+    Radiosity
+      Determine how tool generates UV coordinates
+      Determine how tool maps multiple lightmaps onto square textures
+      Create code to generate fullbright textures and UV coords
+      Generate DXT format lightmap tag or export to tiff and use tool
+
+Halo 2 Tasks:
+
+  Priority 3:
+
+    De/Compiling
+
+    Improved error detection for compiling
+
+    De/Compiler Halo 2 support started
+      Mag files for Halo 2
+      Decompilation (mostly) complete
+      Compilation started
+
+    [Data import / conversion]
+      Model import (DX supports generating tri strips)
+
+    Radiosity
+      Determine how tool generates UV coordinates
+      Determine how tool maps multiple lightmaps onto square textures
+      Create code to generate fullbright textures and UV coords
+      Generate DXT format lightmap tag or export to tiff and use tool
+
+
+General Tasks:
+
+  Priority 3:
+
+    [Shaders loading]
+      High quality pipelines designed
+      Figure out how to support lower-res mipmaps by default
+      Shader manager selects the appropriate pipeline based on caps
+
+    [Script debugging]
+      Debugging
+
+    Data import / conversion
+      Model import (DX supports generating tri strips)
+
+    Guerilla importer for select high level tags
+      Internal bug reporting
+
+    Keyboard configuration
+      Add custom handlers for shortcuts
+      Add custom handlers for camera navigation
+      Move events to custom handler class that can remap keyboard
+
+    Guerilla importer
+      Enable endian swapping for Halo1 tags for "import mode"
+      Update mag files as necessary
+
+    Project wizards
+    Map templates
+    HLT templates
+
+    Error lookup tool integrated
+
+    Auto/Update checking
+      Code dialog to give user option to opt out, "not show again"
+
+    [Multiple compile targets (games)]
+      Tag conversion (i.e.: BSP)
+
+Unprioritized:
+
+    Beta guardian
+      Stand-alone key generator app distributed
+      Private key generator encryptor app finished
+      Modify beta guardian code to use encrypted keys (prevent hacking)
+
+    Basic networking / login support
+
+    Solid login auth / security
+    Script debugging
+------------------------------------------------------

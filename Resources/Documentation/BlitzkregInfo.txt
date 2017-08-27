@@ -1,0 +1,24 @@
+I was talking to JamesD on IRC today and we figured something out. You know all the different types of animation types exported from blitzkrieg? Well, I think we know the use of each type now:
+
+jmt = jm turn (type = base; frame info type=dx,dy,dyaw)
+The animation's root node moves through space in translation and/or rotation, and is probably affected by user input.
+
+jmm = jm move (type = base; frame info type=dx,dy)
+The animation's root node moves through space in translation only, and is probably affected by user input.
+
+jma = jm animation (type = base; frame info type=none)
+The standard "static" animation. The animation's root node does not move through world space, it is static.
+
+jmo = jm overlay (type = overlay; frame info type=none)
+Use this type of animation to add incremental movement to existing animations. For example, you would use this to add a "bumpy" ride to the cyborg animations when he is riding in the warthog. I would think you would need some kind of reference pose when generating this.
+
+jmr = jm replacement (type = replacement; frame info type=none)
+This animation type seems to replace whatever is going on at the time it is triggered. It overrides everything else. Melee and Reload are always (?) jmr.
+
+The frame info type seems to refer to the frame of reference (not the animation frame). That means the animation is moving through world space. Type "dx,dy" means the object can move forward, backward, right, left. Type "dx,dy,dyaw" means it can do all of that plus rotate in space (such as MC turning). It seems that these animations would be tied somehow to the user keyboard/mouse/joystick for interpolation. The other Type is "none", which is a static animation.
+
+Not sure about it's significance, but all animations can be interupted during play by any other type other than JMR.
+
+Not sure if this has been documented yet but "jm" stands for "jointed model".
+
+I can confirm JMO, as I've used it in HaloCE to do some weapon animations. It is overlaid on top of a primary animation.

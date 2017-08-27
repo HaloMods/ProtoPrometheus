@@ -1,0 +1,19 @@
+This is the main folder from which Prometheus will be executed and is also the uninstall folder. What I mean by uninstall folder is that by deleting this folder you've uninstalled the program - in short we aren't going to spread out files to every folder possible or make registry entries.
+
+Controls - Contains all of our DLLs.
+
+Games - Contains the different platforms and games .map files are used for.
+
+Help - Contains all help resources for Prometheus users.
+
+User - Contains configuration files and other user oriented information.
+
+BugRpt.exe - Bug Reporter that can be used outside of Prometheus incase errors stop Prometheus from loading. This will be linked to from within Prometheus and pop up as a new window inside the app to report bugs.
+
+HaloDev Online - A link to our website.
+
+Prometheus.exe - The main application, Core.dll will be merged inside this EXE which will hopefully be protected by Thinstall.
+
+ProRepair.exe - Compares checksum of user's Prometheus files (exe's and dll's) with version checksum list stored server side. If any problems are found with the user's version, they are allowed to redownload the corrupted files or if they version is out of date they are prompted to upgrade to the latest version. If a new version is obtained this way, the user is forced to download the full install versus an upgrade or patch install. This will probably be a version 2.0 feature.
+
+UpdateChk.exe - Checks for a newer version of Prometheus available. If a new update is available the user may download the patch/upgrade install unless they believe their current install is corrupted, in which case they must run ProRepair.exe.
