@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>preferences_network_game</Group>
+	<GroupTag>ngpr</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>896</HeaderSize>
+	<FieldCount>11</FieldCount>
+	<Fields>
+		<Field>
+			<Name>name</Name>
+			<Type>String</Type>
+		</Field>
+		<Field>
+			<Name>primary color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>secondary color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>pattern</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>bitmap index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>decal</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>bitmap index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>800</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

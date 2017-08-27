@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>camera_track</Group>
+	<GroupTag>trak</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>48</HeaderSize>
+	<FieldCount>4</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>0</FieldCount>
+			<Fields />
+		</Field>
+		<Field>
+			<Name>control points</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>camera_track_control_point_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>60</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name>orientation</Name>
+						<Type>Real_Quaternion</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

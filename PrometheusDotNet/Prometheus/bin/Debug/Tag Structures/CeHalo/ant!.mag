@@ -1,0 +1,9 @@
+Antenna
+Struct 0 Antenna 208
+	TagRef 32 
+	TagRef 48 
+	Struct 196 vertices 128
+		intswapRange 0 to 128
+	End vertices
+	IntSwapRange 32 to 208
+End Antenna

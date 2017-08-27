@@ -1,0 +1,233 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3953CA2-22F7-48FE-8F76-23017C1B6082}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>UIControls</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UIControls</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data3">
+      <Name>DevExpress.Data3</Name>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.Data3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.Utils3">
+      <Name>DevExpress.Utils3</Name>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.Utils3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars3">
+      <Name>devexpress.xtrabars3</Name>
+      <HintPath>..\..\..\..\..\..\..\..\program files\common files\devexpress\.net.v3\devexpress.xtrabars3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors3">
+      <Name>DevExpress.XtraEditors3</Name>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.XtraEditors3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Eyefinder">
+      <Name>Eyefinder</Name>
+      <HintPath>..\..\..\HST\BlamIDE\Eyefinder.dll</HintPath>
+    </Reference>
+    <Reference Include="Navisight">
+      <Name>Navisight</Name>
+      <HintPath>..\..\..\HST\BlamIDE\Navisight.dll</HintPath>
+    </Reference>
+    <Reference Include="SandBar">
+      <Name>SandBar</Name>
+      <HintPath>..\Shared\SandBar.dll</HintPath>
+    </Reference>
+    <Reference Include="SandDock">
+      <Name>SandDock</Name>
+      <HintPath>..\Shared\SandDock.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HackScriptEditor\AutoCompleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HackScriptEditor\Editor.cs">
+    </Compile>
+    <Compile Include="HackScriptEditor\HighlightDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HackScriptEditor\SyntaxHighlightingTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HackScriptEditor\Win32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxExButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxExButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxExForm.cs">
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxExIcon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxExManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxExResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageBox\TimeoutResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StandardControls\AutoSizeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StandardControls\AutoSizePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StandardControls\ControlListPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StandardControls\DropdownButton.cs">
+    </Compile>
+    <Compile Include="StandardControls\ImageButton.cs">
+    </Compile>
+    <Compile Include="StandardControls\ImageLabel.cs">
+    </Compile>
+    <Compile Include="StandardControls\WarningLabel.cs">
+    </Compile>
+    <Compile Include="Wizard\Wizard.cs">
+    </Compile>
+    <Compile Include="Wizard\WizardPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardPagesCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="HackScriptEditor\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox\MessageBoxExForm.resx">
+      <DependentUpon>MessageBoxExForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox\Resources\StandardButtonsText.de.resx" />
+    <EmbeddedResource Include="MessageBox\Resources\StandardButtonsText.fr.resx" />
+    <EmbeddedResource Include="MessageBox\Resources\StandardButtonsText.resx" />
+    <EmbeddedResource Include="StandardControls\DropdownButton.resx">
+      <DependentUpon>DropdownButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardControls\ImageButton.resx">
+      <DependentUpon>ImageButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardControls\ImageLabel.resx">
+      <DependentUpon>ImageLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardControls\WarningLabel.resx">
+      <DependentUpon>WarningLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

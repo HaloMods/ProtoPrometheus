@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>wind</Group>
+	<GroupTag>wind</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>64</HeaderSize>
+	<FieldCount>7</FieldCount>
+	<Fields>
+		<Field>
+			<Name>velocity:world units#the wind magnitude in the weather region scales the wind between these bounds</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>variation area#the wind direction varies inside a box defined by these angles on either side of the direction from the weather region.</Name>
+			<Type>Real_Euler_Angles_2D</Type>
+		</Field>
+		<Field>
+			<Name>local variation weight</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>local variation rate</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>damping</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>36</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

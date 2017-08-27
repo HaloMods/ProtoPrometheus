@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>font</Group>
+	<GroupTag>font</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>156</HeaderSize>
+	<FieldCount>14</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Integer</Type>
+		</Field>
+		<Field>
+			<Name>ascending height</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>decending height</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>leading height</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>leadin width</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>36</Value>
+		</Field>
+		<Field>
+			<Name>character tables</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>font_character_tables</Name>
+				<MaxElements>256</MaxElements>
+				<Size>12</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>character table</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>font_character_table</Name>
+							<MaxElements>256</MaxElements>
+							<Size>2</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>character index</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>character</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>bold</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>font</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>italic</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>font</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>condense</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>font</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>underline</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>font</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>characters</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>character</Name>
+				<MaxElements>32000</MaxElements>
+				<Size>20</Size>
+				<FieldCount>10</FieldCount>
+				<Fields>
+					<Field>
+						<Name>character*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>character width</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>bitmap width*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>bitmap height*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>bitmap origin x</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>bitmap origin y</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>hardware character index*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>pixels offset*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>pixels</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>0</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

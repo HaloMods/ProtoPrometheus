@@ -1,0 +1,32 @@
+device_light_fixture
+Struct 0 DeviceLightFixture 720
+	TagRef 40
+	TagRef 56
+	TagRef 112
+	TagRef 128
+	TagRef 144
+	TagRef 160
+	Struct 320 Attachments 72
+		TagRef 0
+	End Attachments
+	Struct 332 Widgets 32
+		TagRef 0
+	End Widgets
+	Struct 344 Functions 360
+	End Functions
+	Struct 356 ChangeColors 44
+		Struct 32 Reflexive_3_4 28
+		End Reflexive_3_4
+	End ChangeColors
+	TagRef 416
+	TagRef 432
+	TagRef 448
+	TagRef 464
+	TagRef 480
+	TagRef 496
+	TagRef 524
+	//Cleared Predicted Resources
+	IntClear 368
+	IntClear 372
+	IntClear 376
+End DeviceLightFixture

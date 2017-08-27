@@ -1,0 +1,23 @@
+spas
+Struct 0 spas_main 0x24
+	Struct 0x1C spas_sub_1 0x58
+		Struct 0x00 spas_sub_1_1 0x132
+			TagRef 0xFC
+			ScriptRef 0x128
+		End spas_sub_1_1
+		Struct 0x08 spas_sub_1_2 0x04
+		End spas_sub_1_2
+		Struct 0x10 spas_sub_1_3 0x05
+		End spas_sub_1_3
+		Struct 0x18 spas_sub_1_4 0x18
+		End spas_sub_1_4
+		Struct 0x20 spas_sub_1_5 0x04
+		End spas_sub_1_5
+		Struct 0x28 spas_sub_1_6 0x06
+		End spas_sub_1_6
+		Struct 0x30 spas_sub_1_7 0x20
+		End spas_sub_1_7
+		Struct 0x38 spas_sub_1_8 0x04
+		End spas_sub_1_8
+	End spas_sub_1
+End spas_main

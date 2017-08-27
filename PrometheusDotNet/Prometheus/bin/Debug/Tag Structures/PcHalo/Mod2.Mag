@@ -1,0 +1,52 @@
+Gbxmodel
+Struct 0 GbxmodelMain 232
+	Struct 172 Markers 64
+		Struct 52 MarkersInstances 32
+			IntSwapRange 4 to 32
+		End MarkersInstances
+		LongSwap 32
+		LongSwap 34
+		IntSwapRange 36 to 64
+	End Markers
+	Struct 184 Nodes 156
+		LongSwap 32
+		LongSwap 34
+		LongSwap 36
+		LongSwap 38
+		IntSwapRange 40 to 156
+		//set-1 32
+		ClearRange 72 to 156
+	End Nodes
+	Struct 196 Regions 76
+		struct 64 RegionsPermutations 88
+			IntSwapRange 32 to 64
+			LongSwapRange 64 to 76
+			IntSwapRange 76 to 88
+		End RegionsPermutations
+		IntSwapRange 32 to 76
+	End Regions
+	Struct 208 Geometries 48
+		Struct 36 Geometries_Parts 132
+			RawModelData
+			IntSwapRange 8 to 104
+			IntSwap 0
+			LongSwap 4
+			LongSwap 6
+			ClearRange 6 to 20
+			ClearRange 68 to 104			
+		End Geometries_Parts
+		IntSwapRange 0 to 48
+	End Geometries
+	Struct 220 Shaders 32
+		TagRef 0
+		IntSwapRange 0 to 32
+	End Shaders
+	SwitchInt 12 and 20
+	SwitchInt 8 and 24
+	IntSwapRange 0 to 28
+	LongSwapRange 28 to 40
+	//ClearRange 0x30 to 0x38
+	IntSwapRange 40 to 232
+	//ClearRange 48 to 56
+End GbxmodelMain
+

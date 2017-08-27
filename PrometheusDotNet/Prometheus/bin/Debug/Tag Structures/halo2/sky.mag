@@ -1,0 +1,14 @@
+sky
+Struct 0x00 sky_main 0xAC
+	TagRef 0x00
+	Struct 0x1C sky_sub_1 0x0C
+		TagRef 0x00
+	End sky_sub_1
+	Struct 0x48 sky_sub_2 0x18
+	End sky_sub_2
+	Struct 0x78 sky_sub_3 0x34
+		TagRef 0x14
+		Struct 0x2C sky_sub_3_1 0x28
+		End sky_sub_3_1
+	End sky_sub_3
+End sky_main

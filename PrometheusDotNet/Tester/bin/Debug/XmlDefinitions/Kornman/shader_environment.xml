@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>shader_environment</Group>
+	<GroupTag>senv</GroupTag>
+	<ParentGroupTag>shdr</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>796</HeaderSize>
+	<FieldCount>92</FieldCount>
+	<Fields>
+		<Field>
+			<Name>environment shader</Name>
+			<Type>Explanation</Type>
+			<Value>Setting &lt;true atmospheric fog&gt; enables per-pixel atmospheric fog (for models) but disables point/spot lights, planar fog, and the ability to control the atmospheric fog density for this shader.</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>alpha-tested</Field0>
+				<Field1>bump map is specular mask</Field1>
+				<Field2>true atmospheric fog</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>environment shader type</Name>
+			<Type>Explanation</Type>
+			<Value>Controls how diffuse maps are combined:
+
+NORMAL:
+Secondary detail map alpha controls blend between primary and secondary detail map. Specular mask is alpha of blended primary and secondary detail map alpha multiplied by alpha of micro detail map.
+
+BLENDED:
+Base map alpha controls blend between primary and secondary detail map. Specular mask is alpha of blended primary and secondary detail map alpha multiplied by alpha of micro detail map.
+
+BLENDED BASE SPECULAR:
+Same as BLENDED, except specular mask is alpha is base map times alpha of micro detail map.</Value>
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>normal</Field0>
+				<Field1>blended</Field1>
+				<Field2>blended base specular</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>lens flares</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>lens flare spacing:world units#0 places a single lens flare</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>lens flare</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>lens</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>44</Value>
+		</Field>
+		<Field>
+			<Name>diffuse properties</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>rescale detail maps</Field0>
+				<Field1>rescale bump map</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>base map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>detail map function#affects primary and secondary detail maps</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>double/biased multiply</Field0>
+				<Field1>multiply</Field1>
+				<Field2>double/biased add</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>primary detail map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>primary detail map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>secondary detail map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>secondary detail map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>micro detail map function</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>double/biased multiply</Field0>
+				<Field1>multiply</Field1>
+				<Field2>double/biased add</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>micro detail map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>micro detail map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>material color#modulates incoming diffuse light, including lightmaps, but excluding self-illumination and specular effects</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>bump properties</Name>
+			<Type>Explanation</Type>
+			<Value>Perforated (alpha-tested) shaders use alpha in bump map.</Value>
+		</Field>
+		<Field>
+			<Name>bump map scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>bump map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>texture scrolling animation</Name>
+			<Type>Explanation</Type>
+			<Value>Scrolls all 2D maps simultaneously.</Value>
+		</Field>
+		<Field>
+			<Name>u-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>u-animation period:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>u-animation scale:base map repeats</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>v-animation period:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation scale:base map repeats</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>self-illumination properties</Name>
+			<Type>Explanation</Type>
+			<Value>There are three self-illumination effects which are added together. Each effect has an &lt;on color&gt;, used when the shader is active, and an &lt;off color&gt;, used when the shader is not active. The self-illumination map is used as follows:
+* RED: primary mask
+* GREEN: secondary mask
+* BLUE: plasma mask
+* ALPHA: plasma animation reference
+
+Each effect also has an animation &lt;function&gt;, &lt;period&gt; and &lt;phase&gt;, used when the shader is active. The primary and secondary effects simply modulate the &lt;on color&gt; by the animation value to produce an animation color, and then blend between the animation color and the &lt;off color&gt; based on the shader's activation level, and finally modulate by the mask.
+
+The plasma shader compares the animation value with the alpha channel of the map (the plasma animation reference) and produces a high value when they are similar and a dark value when they are different. This value modulates the &lt;plasma on color&gt; to produce a plasma animation color, and the rest proceeds just like the primary and secondary effects.</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>unfiltered</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>primary on color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>primary off color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>primary animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>primary animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>primary animation phase:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>secondary on color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>secondary off color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>secondary animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>secondary animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>secondary animation phase:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>plasma on color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>plasma off color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>plasma animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>plasma animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>plasma animation phase:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>specular properties</Name>
+			<Type>Explanation</Type>
+			<Value>Controls dynamic specular highlights. The highlight is modulated by &lt;brightness&gt; as well as a blend between &lt;perpendicular color&gt; and &lt;parallel color&gt;.
+
+Set &lt;brightness&gt; to zero to disable.</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>overbright</Field0>
+				<Field1>extra-shiny</Field1>
+				<Field2>lightmap is specular</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>brightness:[0,1]#0 is no specular hilights</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>perpendicular color#hilight color when viewed perpendicularly</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>parallel color#hilight color when viewed at a glancing angle</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>reflection properties</Name>
+			<Type>Explanation</Type>
+			<Value>Controls environment cube map reflections. The color of the cube map is "tinted" by a blend between &lt;perpendicular color&gt; and &lt;parallel color&gt; from the SPECULAR PROPERTIES above, and then modulated by a blend between &lt;perpendicular brightness&gt; and &lt;parallel brightness&gt;.
+
+BUMPED CUBE MAP:
+This type of reflection uses the shader's bump map (if it exists) to affect the reflection, as well as the perpendicular and parallel brightness (i.e. the "fresnel" effect).
+
+FLAT CUBE MAP:
+This is the fastest type of reflection. The bump map is used to attenuate the fresnel effect, but the reflection image itself is not bumped.
+
+Clear &lt;reflection cube map&gt; or set both &lt;perpendicular brightness&gt; and &lt;parallel brightness&gt; to zero to disable.</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>dynamic mirror</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>bumped cube-map</Field0>
+				<Field1>flat cube-map</Field1>
+				<Field2>bumped radiosity</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>lightmap brightness scale:[0,1]#reflection brightness when lightmap brightness is 1</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>perpendicular brightness:[0,1]#brightness when viewed perpendicularly</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>parallel brightness:[0,1]#brightness when viewed at a glancing angle</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>reflection cube map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

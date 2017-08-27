@@ -1,0 +1,399 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CA26A98-9D0C-4F91-A4C0-C8EE8DE7BDBF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Core</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Core</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX">
+      <Name>Microsoft.DirectX</Name>
+      <HintPath>Microsoft.DirectX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D">
+      <Name>Microsoft.DirectX.Direct3D</Name>
+      <HintPath>Microsoft.DirectX.Direct3D.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX">
+      <Name>Microsoft.DirectX.Direct3DX</Name>
+      <HintPath>Microsoft.DirectX.Direct3DX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectInput">
+      <Name>Microsoft.DirectX.DirectInput</Name>
+      <HintPath>Microsoft.DirectX.DirectInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nini">
+      <Name>Nini</Name>
+      <HintPath>..\Shared\Nini.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Xceed.Compression">
+      <Name>Xceed.Compression</Name>
+      <HintPath>..\Shared\Xceed.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.FileSystem">
+      <Name>Xceed.FileSystem</Name>
+      <HintPath>..\Shared\Xceed.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Zip">
+      <Name>Xceed.Zip</Name>
+      <HintPath>..\Shared\Xceed.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <ProjectReference Include="..\TagLibrary\TagLibrary.csproj">
+      <Name>TagLibrary</Name>
+      <Project>{7D1F41DC-AB16-441C-8F0D-A24D4BFD7E38}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArchiveFileSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArchiveFileSystem\ArchiveFileSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArchiveFileSystem\FileEntryTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArchiveFileSystem\FileSystemEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\CompUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\Decompiler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\DeSwizzle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\Halo2Structure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\HaloPCMAP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\IndexBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\MTSFReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\Struct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\TagConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compiler\XBoxHaloMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exception.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Factor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LibraryArchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lightmap\BspTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lightmap\GlobalIllumination.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Lightmap\LightmapUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lightmap\TextureMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MasterLibraryArchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OptionsManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PreviewManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\EditingInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\Halo1SceneGraphInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectPopups.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\SceneGraphInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\TaskListWorkerClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\Billboard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\Camera.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\Console.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\EnhancedMesh.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\InputManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\Instance3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\Instance3DCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\MdxRender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\Model3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\ModelManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\Object3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\PromDecal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\SelectTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\ShaderManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\TextureManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimpleArchiveFileSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TagSystem\TagDefinitions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\ShaderBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagAnimation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagBitmap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagH1Bitm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagH1Bsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagH2Bitm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagH2Sbsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagModel2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagScex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagSchi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagSenv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagSgla.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagShad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagSmet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagSoso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagSpla.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags\TagSwat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UndoRedo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\ActionStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\fileformats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\matrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\quaternion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Timer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\vector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Compiler\HALO_PC_SET.MTSF" />
+    <EmbeddedResource Include="Compiler\TAG_CONVERSION_SET.MTSF" />
+    <EmbeddedResource Include="Halo1MasterTagList.xml" />
+    <EmbeddedResource Include="Render\Resources\arrow.x" />
+    <EmbeddedResource Include="Render\Resources\ctf.dds" />
+    <EmbeddedResource Include="Render\Resources\ctf_vehicle.dds" />
+    <EmbeddedResource Include="Render\Resources\default.dds" />
+    <EmbeddedResource Include="Render\Resources\flag.x" />
+    <EmbeddedResource Include="Render\Resources\koh.dds" />
+    <EmbeddedResource Include="Render\Resources\lightbulb.x" />
+    <EmbeddedResource Include="Render\Resources\nav_arrow.dds" />
+    <EmbeddedResource Include="Render\Resources\nx.dds" />
+    <EmbeddedResource Include="Render\Resources\ny.dds" />
+    <EmbeddedResource Include="Render\Resources\nz.dds" />
+    <EmbeddedResource Include="Render\Resources\oddball.dds" />
+    <EmbeddedResource Include="Render\Resources\player.x" />
+    <EmbeddedResource Include="Render\Resources\px.dds" />
+    <EmbeddedResource Include="Render\Resources\py.dds" />
+    <EmbeddedResource Include="Render\Resources\pz.dds" />
+    <EmbeddedResource Include="Render\Resources\race.dds" />
+    <EmbeddedResource Include="Render\Resources\race_vehicle.dds" />
+    <EmbeddedResource Include="Render\Resources\sound_scenery.dds" />
+    <EmbeddedResource Include="Render\Resources\teleporter_enter.dds" />
+    <EmbeddedResource Include="Render\Resources\teleporter_exit.dds" />
+    <EmbeddedResource Include="Render\Resources\vegas_bank.dds" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,31 @@
+shader_transparent_plasma
+Struct 0 Main 332
+	TagRef 212
+	TagRef 284
+	IntSwap 4
+	IntSwap 8
+	IntSwap 12
+	IntSwap 16
+	IntSwap 20
+	IntSwap 24
+	IntSwap 28
+	IntSwap 48
+	IntSwap 56
+	IntSwap 60
+	IntSwap 96
+	IntSwap 100
+	IntSwap 104
+	IntSwap 108
+	IntSwap 112
+	IntSwap 116
+	IntSwap 120
+	IntSwap 124
+	IntSwap 192
+	LongSwap 0
+	LongSwap 2
+	LongSwap 34
+	LongSwap 44
+	LongSwap 52
+	LongSwap 128
+	IntSwapRange 196 to 332
+End Main

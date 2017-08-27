@@ -1,0 +1,114 @@
+projectile
+Struct 0 Main 588
+	TagRef 40
+	TagRef 56
+	TagRef 112
+	TagRef 128
+	TagRef 144
+	TagRef 160
+	Struct 320 Reflexive_0 72
+		TagRef 0
+		LongSwapRange 48 to 72
+		IntSwapRange 0 to 16
+	End Reflexive_0
+	Struct 332 Reflexive_1 32
+		TagRef 0
+		IntSwapRange 0 to 16
+	End Reflexive_1
+	Struct 344 Reflexive_2 360
+		IntSwap 0
+		IntSwap 4
+		IntSwap 8
+		LongSwap 12
+		LongSwap 14
+		IntSwapRange 16 to 52
+		LongSwap 52
+		LongSwap 54
+		IntSwapRange 56 to 328
+	End Reflexive_2
+	Struct 356 Reflexive_3 44
+		Struct 32 Reflexive_3_4 28
+			IntSwapRange 0 to 28
+		End Reflexive_3_4
+		IntSwapRange 0 to 44
+	End Reflexive_3
+	TagRef 396
+	TagRef 428
+	TagRef 500
+	TagRef 516
+	TagRef 532
+	TagRef 548
+	Struct 576 Reflexive_5 160
+		TagRef 4
+		TagRef 60
+		TagRef 104
+		LongSwap 0
+		LongSwap 2
+		LongSwap 56
+		LongSwap 58
+		LongSwap 100
+		LongSwap 102
+		IntSwapRange 4 to 20
+		IntSwapRange 60 to 76
+		IntSwapRange 104 to 120
+	End Reflexive_5
+	IntClear 368
+	IntClear 372
+	IntClear 376
+	IntSwap 4
+	IntSwap 8
+	IntSwap 12
+	IntSwap 16
+	IntSwap 20
+	IntSwap 24
+	IntSwap 28
+	IntSwap 32
+	IntSwap 260
+	IntSwap 412
+	IntSwap 416
+	IntSwap 420
+	IntSwap 424
+	IntSwap 444
+	IntSwap 448
+	IntSwap 456
+	IntSwap 460
+	IntSwap 464
+	IntSwap 468
+	IntSwap 472
+	IntSwap 476
+	IntSwap 480
+	IntSwap 484
+	IntSwap 488
+	LongSwap 36
+	LongSwap 264
+	LongSwap 266
+	LongSwap 268
+	LongSwap 270
+	LongSwap 316
+	LongSwap 318
+	LongSwap 380
+	LongSwap 384
+	LongSwap 386
+	LongSwap 388
+	LongSwap 390
+	LongSwap 392
+	LongSwap 394
+	LongSwap 496
+	IntSwapRange 56 to 72
+	IntSwapRange 112 to 128
+	IntSwapRange 160 to 176
+	IntSwapRange 396 to 412
+	IntSwapRange 428 to 444
+	IntSwapRange 500 to 516
+	IntSwapRange 532 to 548
+	IntSwapRange 548 to 564
+	IntSwapRange 40 to 56
+	IntSwapRange 128 to 144
+	IntSwapRange 144 to 160
+	IntSwapRange 516 to 532
+	IntSwapRange 320 to 332
+	IntSwapRange 332 to 344
+	IntSwapRange 344 to 356
+	IntSwapRange 356 to 368
+	IntSwapRange 576 to 588
+End Main

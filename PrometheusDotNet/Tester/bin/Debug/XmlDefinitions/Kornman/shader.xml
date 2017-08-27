@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>shader</Group>
+	<GroupTag>shdr</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>40</HeaderSize>
+	<FieldCount>12</FieldCount>
+	<Fields>
+		<Field>
+			<Name>radiosity properties</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>simple parameterization#lightmap texture parametrization should correspond to diffuse texture parametrization</Field0>
+				<Field1>ignore normals#light independent of normals (trees)</Field1>
+				<Field2>transparent lit</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>detail level#affects the density of tesselation (high means slow).</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>high</Field0>
+				<Field1>medium</Field1>
+				<Field2>low</Field2>
+				<Field3>turd</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>power#power of emitted light from 0 to infinity</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>color of emitted light</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>tint color#light passing through this surface (if it's transparent) will be tinted this color.</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>physics properties</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>0</FieldCount>
+			<Fields />
+		</Field>
+		<Field>
+			<Name>material type</Name>
+			<Type>Enum</Type>
+			<FieldCount>33</FieldCount>
+			<Fields>
+				<Field0>dirt</Field0>
+				<Field1>sand</Field1>
+				<Field2>stone</Field2>
+				<Field3>snow</Field3>
+				<Field4>wood</Field4>
+				<Field5>metal (hollow)</Field5>
+				<Field6>metal (thin)</Field6>
+				<Field7>metal (thick)</Field7>
+				<Field8>rubber</Field8>
+				<Field9>glass</Field9>
+				<Field10>force field</Field10>
+				<Field11>grunt</Field11>
+				<Field12>hunter armor</Field12>
+				<Field13>hunter skin</Field13>
+				<Field14>elite</Field14>
+				<Field15>jackal</Field15>
+				<Field16>jackal energy shield</Field16>
+				<Field17>engineer skin</Field17>
+				<Field18>engineer force field</Field18>
+				<Field19>flood combat form</Field19>
+				<Field20>flood carrier form</Field20>
+				<Field21>cyborg armor</Field21>
+				<Field22>cyborg energy shield</Field22>
+				<Field23>human armor</Field23>
+				<Field24>human skin</Field24>
+				<Field25>sentinel</Field25>
+				<Field26>monitor</Field26>
+				<Field27>plastic</Field27>
+				<Field28>water</Field28>
+				<Field29>leaves</Field29>
+				<Field30>elite energy shield</Field30>
+				<Field31>ice</Field31>
+				<Field32>hunter shield</Field32>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

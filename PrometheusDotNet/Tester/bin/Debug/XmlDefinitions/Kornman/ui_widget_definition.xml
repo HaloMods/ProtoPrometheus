@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>ui_widget_definition</Group>
+	<GroupTag>DeLa</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>1004</HeaderSize>
+	<FieldCount>47</FieldCount>
+	<Fields>
+		<Field>
+			<Name>widget type</Name>
+			<Type>Enum</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>container</Field0>
+				<Field1>text box</Field1>
+				<Field2>spinner list</Field2>
+				<Field3>column list</Field3>
+				<Field4>game model (not implemented)</Field4>
+				<Field5>movie (not implemented)</Field5>
+				<Field6>custom (not implemented)</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>controller index</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>player 1</Field0>
+				<Field1>player 2</Field1>
+				<Field2>player 3</Field2>
+				<Field3>player 4</Field3>
+				<Field4>any player</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>name</Name>
+			<Type>String</Type>
+		</Field>
+		<Field>
+			<Name>bounds</Name>
+			<Type>Rectangle_2D</Type>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>16</FieldCount>
+			<Fields>
+				<Field0>pass unhandled events to focused child</Field0>
+				<Field1>pause game time</Field1>
+				<Field2>flash background bitmap</Field2>
+				<Field3>dpad up/down tabs thru children</Field3>
+				<Field4>dpad left/right tabs thru children</Field4>
+				<Field5>dpad up/down tabs thru list items</Field5>
+				<Field6>dpad left/right tabs thru list items</Field6>
+				<Field7>dont focus a specific child widget</Field7>
+				<Field8>pass unhandled events to all children</Field8>
+				<Field9>render regardless of controller index</Field9>
+				<Field10>pass handled events to all children</Field10>
+				<Field11>return to main menu if no history</Field11>
+				<Field12>always use tag controller index</Field12>
+				<Field13>always use nifty render fx</Field13>
+				<Field14>don't push history</Field14>
+				<Field15>force handle mouse</Field15>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>milliseconds to auto close#&lt;=0 to never auto-close</Name>
+			<Type>Long_Integer</Type>
+		</Field>
+		<Field>
+			<Name>milliseconds auto close fade time#&lt;= 0 for immediate close</Name>
+			<Type>Long_Integer</Type>
+		</Field>
+		<Field>
+			<Name>background bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>game data input fxns</Name>
+			<Type>Explanation</Type>
+			<Value>These functions use current game data to modify the appearance of
+the widget. These functions are called every time the widget is
+rendered.</Value>
+		</Field>
+		<Field>
+			<Name>game data inputs</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>game_data_input_references_block</Name>
+				<MaxElements>64</MaxElements>
+				<Size>36</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>function</Name>
+						<Type>Enum</Type>
+						<FieldCount>59</FieldCount>
+						<Fields>
+							<Field0>NULL</Field0>
+							<Field1>player settings menu update desc</Field1>
+							<Field2>unused</Field2>
+							<Field3>playlist settings menu update desc</Field3>
+							<Field4>gametype select menu update desc</Field4>
+							<Field5>multiplayer type menu update desc</Field5>
+							<Field6>solo level select update</Field6>
+							<Field7>difficulty menu update desc</Field7>
+							<Field8>build number (textbox only)</Field8>
+							<Field9>server list update</Field9>
+							<Field10>network pregame status update</Field10>
+							<Field11>splitscreen pregame status update</Field11>
+							<Field12>net/splitscreen prejoin players</Field12>
+							<Field13>mp profile list update</Field13>
+							<Field14>3wide player profile list update</Field14>
+							<Field15>plyr prof edit-select menu upd8</Field15>
+							<Field16>player profile small menu update</Field16>
+							<Field17>game settings lists text update</Field17>
+							<Field18>solo game objective text</Field18>
+							<Field19>color picker update</Field19>
+							<Field20>game settings lists pic update</Field20>
+							<Field21>main menu fake animate</Field21>
+							<Field22>mp level select update</Field22>
+							<Field23>get active plyr profile name</Field23>
+							<Field24>get edit plyr profile name</Field24>
+							<Field25>get edit game settings name</Field25>
+							<Field26>get active plyr profile color</Field26>
+							<Field27>mp set textbox map name</Field27>
+							<Field28>mp set textbox game ruleset</Field28>
+							<Field29>mp set textbox teams noteams</Field29>
+							<Field30>mp set textbox score limit</Field30>
+							<Field31>mp set textbox score limit type</Field31>
+							<Field32>mp set bitmap for map</Field32>
+							<Field33>mp set bitmap for ruleset</Field33>
+							<Field34>mp set textbox # of players</Field34>
+							<Field35>mp edit profile set rule text</Field35>
+							<Field36>system link status check</Field36>
+							<Field37>mp game directions</Field37>
+							<Field38>teams/no teams bitmap update</Field38>
+							<Field39>warn if diff. will nuke saved game</Field39>
+							<Field40>dim if no net cable</Field40>
+							<Field41>pause game set textbox inverted</Field41>
+							<Field42>dim unless two controllers</Field42>
+							<Field43>controls update menu</Field43>
+							<Field44>video menu update</Field44>
+							<Field45>gamespy screen update</Field45>
+							<Field46>common button bar update</Field46>
+							<Field47>gamepad update menu</Field47>
+							<Field48>server settings update</Field48>
+							<Field49>audio_menu_update</Field49>
+							<Field50>mp prof vehicles update</Field50>
+							<Field51>solo map list update</Field51>
+							<Field52>mp map list update</Field52>
+							<Field53>gt select list update</Field53>
+							<Field54>gt edit list update</Field54>
+							<Field55>load game list update</Field55>
+							<Field56>checking for updates</Field56>
+							<Field57>direct ip connect update</Field57>
+							<Field58>network settings update</Field58>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>event handlers</Name>
+			<Type>Explanation</Type>
+			<Value>These allow actions to be tied to certain ui events.
+The event handler is run every time the widget receives the specified event.
+By default, the 'back' and 'B' buttons will take you to the previous screen.</Value>
+		</Field>
+		<Field>
+			<Name>event handlers</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>event_handler_references_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>72</Size>
+				<FieldCount>7</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>close current widget</Field0>
+							<Field1>close other widget</Field1>
+							<Field2>close all widgets</Field2>
+							<Field3>open widget</Field3>
+							<Field4>reload self</Field4>
+							<Field5>reload other widget</Field5>
+							<Field6>give focus to widget</Field6>
+							<Field7>run function</Field7>
+							<Field8>replace self w/ widget</Field8>
+							<Field9>go back to previous widget</Field9>
+							<Field10>run scenario script</Field10>
+							<Field11>try to branch on failure</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>event type</Name>
+						<Type>Enum</Type>
+						<FieldCount>34</FieldCount>
+						<Fields>
+							<Field0>A button</Field0>
+							<Field1>B button</Field1>
+							<Field2>X button</Field2>
+							<Field3>Y button</Field3>
+							<Field4>black button</Field4>
+							<Field5>white button</Field5>
+							<Field6>left trigger</Field6>
+							<Field7>right trigger</Field7>
+							<Field8>dpad up</Field8>
+							<Field9>dpad down</Field9>
+							<Field10>dpad left</Field10>
+							<Field11>dpad right</Field11>
+							<Field12>start button</Field12>
+							<Field13>back button</Field13>
+							<Field14>left thumb</Field14>
+							<Field15>right thumb</Field15>
+							<Field16>left analog stick up</Field16>
+							<Field17>left analog stick down</Field17>
+							<Field18>left analog stick left</Field18>
+							<Field19>left analog stick right</Field19>
+							<Field20>left analog stick up</Field20>
+							<Field21>right analog stick down</Field21>
+							<Field22>right analog stick left</Field22>
+							<Field23>right analog stick right</Field23>
+							<Field24>created</Field24>
+							<Field25>deleted</Field25>
+							<Field26>get focus</Field26>
+							<Field27>lose focus</Field27>
+							<Field28>left mouse</Field28>
+							<Field29>middle mouse</Field29>
+							<Field30>right mouse</Field30>
+							<Field31>double click</Field31>
+							<Field32>custom activation</Field32>
+							<Field33>post-render</Field33>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>function</Name>
+						<Type>Enum</Type>
+						<FieldCount>190</FieldCount>
+						<Fields>
+							<Field0>NULL</Field0>
+							<Field1>list goto next item</Field1>
+							<Field2>list goto previous item</Field2>
+							<Field3>unused</Field3>
+							<Field4>unused</Field4>
+							<Field5>initialize sp level list solo</Field5>
+							<Field6>initialize sp level list coop</Field6>
+							<Field7>dispose sp level list</Field7>
+							<Field8>solo level set map</Field8>
+							<Field9>set difficulty</Field9>
+							<Field10>start new game</Field10>
+							<Field11>pause game restart at checkpoint</Field11>
+							<Field12>pause game restart level</Field12>
+							<Field13>pause game return to main menu</Field13>
+							<Field14>clear multiplayer player joins</Field14>
+							<Field15>join controller to mp game</Field15>
+							<Field16>initialize net game server list</Field16>
+							<Field17>start network game server</Field17>
+							<Field18>dispose net game server list</Field18>
+							<Field19>shutdown network game</Field19>
+							<Field20>net game join from server list</Field20>
+							<Field21>split screen game initialize</Field21>
+							<Field22>coop game initialize</Field22>
+							<Field23>main menu intialize</Field23>
+							<Field24>mp type menu initialize</Field24>
+							<Field25>pick play stage for quick start</Field25>
+							<Field26>mp level list initialize</Field26>
+							<Field27>mp level list dispose</Field27>
+							<Field28>mp level select</Field28>
+							<Field29>mp profiles list initialize</Field29>
+							<Field30>mp profiles list dispose</Field30>
+							<Field31>mp profile set for game</Field31>
+							<Field32>swap player team</Field32>
+							<Field33>net game join player</Field33>
+							<Field34>player profile list initialize</Field34>
+							<Field35>player profile list dispose</Field35>
+							<Field36>3wide plyr prof set for game</Field36>
+							<Field37>1wide plyr prof set for game</Field37>
+							<Field38>mp profile begin editing</Field38>
+							<Field39>mp profile end editing</Field39>
+							<Field40>mp profile set game engine</Field40>
+							<Field41>mp profile change name</Field41>
+							<Field42>mp profile set ctf rules</Field42>
+							<Field43>mp profile set koth rules</Field43>
+							<Field44>mp profile set slayer rules</Field44>
+							<Field45>mp profile set oddball rules</Field45>
+							<Field46>mp profile set racing rules</Field46>
+							<Field47>mp profile set player options</Field47>
+							<Field48>mp profile set item options</Field48>
+							<Field49>mp profile set indicator opts</Field49>
+							<Field50>mp profile init game engine</Field50>
+							<Field51>mp profile init name</Field51>
+							<Field52>mp profile init ctf rules</Field52>
+							<Field53>mp profile init koth rules</Field53>
+							<Field54>mp profile init slayer rules</Field54>
+							<Field55>mp profile init oddball rules</Field55>
+							<Field56>mp profile init racing rules</Field56>
+							<Field57>mp profile init player opts</Field57>
+							<Field58>mp profile init item options</Field58>
+							<Field59>mp profile init indicator opts</Field59>
+							<Field60>mp profile save changes</Field60>
+							<Field61>color picker menu initialize</Field61>
+							<Field62>color picker menu dispose</Field62>
+							<Field63>color picker select color</Field63>
+							<Field64>player profile begin editing</Field64>
+							<Field65>player profile end editing</Field65>
+							<Field66>player profile change name</Field66>
+							<Field67>player profile save changes</Field67>
+							<Field68>plyr prf init cntl settings</Field68>
+							<Field69>plyr prf init adv cntl set</Field69>
+							<Field70>plyr prf save cntl settings</Field70>
+							<Field71>plyr prf save adv cntl set</Field71>
+							<Field72>mp game player quit</Field72>
+							<Field73>main menu switch to solo game</Field73>
+							<Field74>request del player profile</Field74>
+							<Field75>request del playlist profile</Field75>
+							<Field76>final del player profile</Field76>
+							<Field77>final del playlist profile</Field77>
+							<Field78>cancel profile delete</Field78>
+							<Field79>create&amp;edit playlist profile</Field79>
+							<Field80>create&amp;edit player profile</Field80>
+							<Field81>net game speed start</Field81>
+							<Field82>net game delay start</Field82>
+							<Field83>net server accept conx</Field83>
+							<Field84>net server defer start</Field84>
+							<Field85>net server allow start</Field85>
+							<Field86>disable if no xdemos</Field86>
+							<Field87>run xdemos</Field87>
+							<Field88>sp reset controller choices</Field88>
+							<Field89>sp set p1 controller choice</Field89>
+							<Field90>sp set p2 controller choice</Field90>
+							<Field91>error if no network connection</Field91>
+							<Field92>start server if none advertised</Field92>
+							<Field93>net game unjoin player</Field93>
+							<Field94>close if not editing profile</Field94>
+							<Field95>exit to xbox dashboard</Field95>
+							<Field96>new campaign chosen</Field96>
+							<Field97>new campaign decision</Field97>
+							<Field98>pop history stack once</Field98>
+							<Field99>difficulty menu init</Field99>
+							<Field100>begin music fade out</Field100>
+							<Field101>new game if no plyr profiles</Field101>
+							<Field102>exit gracefully to xbox dashboard</Field102>
+							<Field103>pause game invert pitch</Field103>
+							<Field104>start new coop game</Field104>
+							<Field105>pause game invert spinner get</Field105>
+							<Field106>pause game invert spinner set</Field106>
+							<Field107>main menu quit game</Field107>
+							<Field108>mouse - emit ACCEPT event</Field108>
+							<Field109>mouse - emit BACK event</Field109>
+							<Field110>mouse - emit DPAD LEFT event</Field110>
+							<Field111>mouse - emit DPAD RIGHT event</Field111>
+							<Field112>mouse spinner 3wide click</Field112>
+							<Field113>controls screen init</Field113>
+							<Field114>video screen init</Field114>
+							<Field115>controls begin binding</Field115>
+							<Field116>gamespy screen init</Field116>
+							<Field117>gamespy screen dispose</Field117>
+							<Field118>gamespy select header</Field118>
+							<Field119>gamespy select item</Field119>
+							<Field120>gamespy select button</Field120>
+							<Field121>plr prof init mouse set</Field121>
+							<Field122>plr prof change mouse set</Field122>
+							<Field123>plr prof init audio set</Field123>
+							<Field124>plr prof change audio set</Field124>
+							<Field125>plr prof change video set</Field125>
+							<Field126>controls screen dispose</Field126>
+							<Field127>controls screen change set</Field127>
+							<Field128>mouse - emit X event</Field128>
+							<Field129>gamepad screen init</Field129>
+							<Field130>gamepad screen dispose</Field130>
+							<Field131>gamepad screen change gamepads</Field131>
+							<Field132>gamepad screen select item</Field132>
+							<Field133>mouse screen defaults</Field133>
+							<Field134>audio screen defaults</Field134>
+							<Field135>video screen defaults</Field135>
+							<Field136>controls screen defaults</Field136>
+							<Field137>profile set edit begin</Field137>
+							<Field138>profile manager delete</Field138>
+							<Field139>profile manager select</Field139>
+							<Field140>gamespy dismiss error</Field140>
+							<Field141>server settings init</Field141>
+							<Field142>ss edit server name</Field142>
+							<Field143>ss edit server password</Field143>
+							<Field144>ss start game</Field144>
+							<Field145>video test dialog init</Field145>
+							<Field146>video test dialog dispose</Field146>
+							<Field147>video test dialog accept</Field147>
+							<Field148>gamespy dismiss filters</Field148>
+							<Field149>gamespy update filter settings</Field149>
+							<Field150>gamespy back handler</Field150>
+							<Field151>mouse spinner 1wide click</Field151>
+							<Field152>controls back handler</Field152>
+							<Field153>controls advanced launch</Field153>
+							<Field154>controls advanced ok</Field154>
+							<Field155>mp pause menu open</Field155>
+							<Field156>mp game options open</Field156>
+							<Field157>mp choose team</Field157>
+							<Field158>mp prof init vehicle options</Field158>
+							<Field159>mp prof save vehicle options</Field159>
+							<Field160>single prev cl item activated</Field160>
+							<Field161>mp prof init teamplay options</Field161>
+							<Field162>mp prof save teamplay options</Field162>
+							<Field163>mp game options choose</Field163>
+							<Field164>emit custom activation event</Field164>
+							<Field165>plr prof cancel audio set</Field165>
+							<Field166>plr prof init network options</Field166>
+							<Field167>plr prof save network options</Field167>
+							<Field168>credits post render</Field168>
+							<Field169>difficulty item select</Field169>
+							<Field170>credits initialize</Field170>
+							<Field171>credits dispose</Field171>
+							<Field172>gamespy get patch</Field172>
+							<Field173>video screen dispose</Field173>
+							<Field174>campaign menu init</Field174>
+							<Field175>campaign menu continue</Field175>
+							<Field176>load game menu init</Field176>
+							<Field177>load game menu dispose</Field177>
+							<Field178>load game menu activated</Field178>
+							<Field179>solo menu save checkpoint</Field179>
+							<Field180>mp type set mode</Field180>
+							<Field181>checking for updates ok</Field181>
+							<Field182>checking for updates dismiss</Field182>
+							<Field183>direct ip connect init</Field183>
+							<Field184>direct ip connect go</Field184>
+							<Field185>direct ip edit field</Field185>
+							<Field186>network settings edit a port</Field186>
+							<Field187>network settings defaults</Field187>
+							<Field188>load game menu delete request</Field188>
+							<Field189>load game menu delete finish</Field189>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>widget tag</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>DeLa</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>sound effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>script</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>search-and-replace</Name>
+			<Type>Explanation</Type>
+			<Value>These are used to run a search-and-replace on the specified
+word in the text-box text, replacing all occurrences of the word
+with the output of the replace-function. These are invoked each
+time the text box is rendered (after any game data input functions
+have been run). The searching is case-sensitive.</Value>
+		</Field>
+		<Field>
+			<Name>search and replace functions</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>search_and_replace_reference_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>34</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>search string</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>replace function</Name>
+						<Type>Enum</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>NULL</Field0>
+							<Field1>widget's controller</Field1>
+							<Field2>build number</Field2>
+							<Field3>pid</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>128</Value>
+		</Field>
+		<Field>
+			<Name>text box</Name>
+			<Type>Explanation</Type>
+			<Value>parameters specific to text box widgets
+NOTE: the string list tag can also be used for lists whose items come from a string list tag</Value>
+		</Field>
+		<Field>
+			<Name>text label unicode strings list</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>ustr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>text font</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>font</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>text color</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>justification</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>left justify</Field0>
+				<Field1>right justify</Field1>
+				<Field2>center justify</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>editable</Field0>
+				<Field1>password</Field1>
+				<Field2>flashing</Field2>
+				<Field3>don't do that weird focus test</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>more text box parameters</Name>
+			<Type>Explanation</Type>
+			<Value>blah blah blah</Value>
+		</Field>
+		<Field>
+			<Name>string list index#default is 0</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>horiz offset#offsets text position in its bounding area</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>vert offset#offsets the text position in its bounding area</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>26</Value>
+		</Field>
+		<Field>
+			<Name>list items</Name>
+			<Type>Explanation</Type>
+			<Value>These options affect list items for both spinner and column lists
+* child widgets are used to define the visible list items
+* for lists with code-generated list items, the child widgets are used
+  as templated for visible list item placement
+IMPORTANT: for list widgets, the ONLY thing you can have as child widgets are the list item widgets!</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>list items generated in code</Field0>
+				<Field1>list items from string list tag</Field1>
+				<Field2>list items only one tooltip</Field2>
+				<Field3>list single preview no scroll</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>spinner list</Name>
+			<Type>Explanation</Type>
+			<Value>parameters specific to spinner list widgets
+child widgets are the list items</Value>
+		</Field>
+		<Field>
+			<Name>list header bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>list footer bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>header bounds</Name>
+			<Type>Rectangle_2D</Type>
+		</Field>
+		<Field>
+			<Name>footer bounds</Name>
+			<Type>Rectangle_2D</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>column list</Name>
+			<Type>Explanation</Type>
+			<Value>parameters specific to column list widgets
+child widgets are the list items</Value>
+		</Field>
+		<Field>
+			<Name>extended description widget</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>DeLa</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>256</Value>
+		</Field>
+		<Field>
+			<Name>conditional widgets</Name>
+			<Type>Explanation</Type>
+			<Value>use this to attach widgets that are loaded only
+if some internal criteria is met while processing a widget event</Value>
+		</Field>
+		<Field>
+			<Name>conditional widgets</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>conditional_widget_reference_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>80</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>widget tag</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>DeLa</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>name (unused)</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>load if event handler function fails</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>custom controller index (unused)</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>26</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>128</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>128</Value>
+		</Field>
+		<Field>
+			<Name>child widgets</Name>
+			<Type>Explanation</Type>
+			<Value>use this to attach widgets that are loaded as 'children'
+of this widget (children are always loaded as part of the parent widget)</Value>
+		</Field>
+		<Field>
+			<Name>child widgets</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>child_widget_reference_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>80</Size>
+				<FieldCount>8</FieldCount>
+				<Fields>
+					<Field>
+						<Name>widget tag</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>DeLa</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>name (unused)</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>use custom controller index</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>custom controller index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>vertical offset</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>horizontal offset</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>22</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

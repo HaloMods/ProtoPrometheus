@@ -1,0 +1,36 @@
+shader_transparent_chicago_extended
+Struct 0 Main 120
+	TagRef 56
+	Struct 72 Extra_Layers 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End Extra_Layers
+	Struct 84 4_Stage_Maps 220
+		TagRef 0x6c
+		LongSwapRange 0x00 to 0x54
+		IntSwapRange 0x54 to 0xa4
+		LongSwapRange 0xa4 to 0xa8
+		IntSwapRange 0xa8 to 0xb4
+		LongSwapRange 0xb4 to 0xb8
+		IntSwapRange 0xb8 to 0xc4
+		LongSwapRange 0xc4 to 0xc8
+		IntSwapRange 0xc8 to 0xdc
+	End 4_Stage_Maps
+	IntClear 96
+	Struct 96 2_Stage_Maps 220
+		TagRef 0x6c
+		LongSwapRange 0x00 to 0x54
+		IntSwapRange 0x54 to 0xa4
+		LongSwapRange 0xa4 to 0xa8
+		IntSwapRange 0xa8 to 0xb4
+		LongSwapRange 0xb4 to 0xb8
+		IntSwapRange 0xb8 to 0xc4
+		LongSwapRange 0xc4 to 0xc8
+		IntSwapRange 0xc8 to 0xdc
+	End 2_Stage_Maps
+	LongSwapRange 0x00 to 0x04
+	IntSwapRange 0x04 to 0x20
+	LongSwapRange 0x20 to 0x24
+	LongSwapRange 0x2a to 0x34
+	IntSwapRange 0x34 to 0x6c
+End Main

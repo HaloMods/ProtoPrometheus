@@ -1,0 +1,11 @@
+Light
+Struct 0x00 ligh_main 0xE4
+	TagRef 0x78
+	TagRef 0x90
+	TagRef 0x9C
+	Struct 0xC4 ligh_sub_1 0x08
+		Struct 0x00 ligh_sub_1_1 0x01
+		End ligh_sub_1_1
+	End ligh_sub_1
+	TagRef 0xDC
+End ligh_main

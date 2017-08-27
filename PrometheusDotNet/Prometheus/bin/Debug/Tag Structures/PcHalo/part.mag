@@ -1,0 +1,10 @@
+Particle
+Struct 0 ParticleMain 356
+	TagRef 4
+	TagRef 20
+	TagRef 36
+	TagRef 72
+	TagRef 88
+	TagRef 252
+	IntSwapRange 0 to 356
+End ParticleMain

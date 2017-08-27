@@ -1,0 +1,46 @@
+shader_transparent_glass
+Struct 0 Main 480
+	TagRef 100
+	TagRef 172
+	TagRef 192
+	TagRef 344
+	TagRef 364
+	TagRef 416
+	TagRef 436
+	IntSwap 4
+	IntSwap 8
+	IntSwap 12
+	IntSwap 16
+	IntSwap 20
+	IntSwap 24
+	IntSwap 28
+	IntSwap 84
+	IntSwap 88
+	IntSwap 92
+	IntSwap 96
+	IntSwap 140
+	IntSwap 144
+	IntSwap 148
+	IntSwap 152
+	IntSwap 156
+	IntSwap 160
+	IntSwap 164
+	IntSwap 168
+	IntSwap 188
+	IntSwap 340
+	IntSwap 360
+	IntSwap 412
+	IntSwap 432
+	LongSwap 0
+	LongSwap 2
+	LongSwap 34
+	LongSwap 40
+	LongSwap 138
+	IntSwapRange 100 to 116
+	IntSwapRange 172 to 188
+	IntSwapRange 192 to 208
+	IntSwapRange 344 to 360
+	IntSwapRange 364 to 380
+	IntSwapRange 416 to 432
+	IntSwapRange 436 to 452
+End Main

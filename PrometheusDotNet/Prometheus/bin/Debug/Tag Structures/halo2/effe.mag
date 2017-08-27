@@ -1,0 +1,47 @@
+effect
+Struct 0x00 effe_main 0x30
+	ScriptRef 0x04
+	Struct 0x0C effe_sub_1 0x04
+	End effe_sub_1
+	Struct 0x14 effe_sub_2 0x38
+		Struct 0x18 effe_missed_2_1 0x38
+			ScriptRef 0x00
+			ScriptRef 0x04
+			TagRef 0x0C
+		End effe_missed_2_1
+		Struct 0x28 effe_missed_2_2 0x14
+		End effe_missed_2_2
+		Struct 0x30 effe_sub_2_1 0x38
+			TagRef 0x00
+			ScriptRef 0x0c
+			ScriptRef 0x10
+			Struct 0x30 effe_sub_2_1_1 0xB8
+				TagRef 0x00
+				ScriptRef 0x08
+				ScriptRef 0x18
+				Struct 0x10 effe_sub_2_1_1_1 0x01
+				End effe_sub_2_1_1_1
+				Struct 0x20 effe_sub_2_1_1_2 0x01
+				End effe_sub_2_1_1_2
+				Struct 0x30 effe_sub_2_1_1_3 0x01
+				End effe_sub_2_1_1_3
+				ScriptRef 0x38
+				Struct 0x40 effe_sub_2_1_1_4 0x01
+				End effe_sub_2_1_1_4
+				Struct 0x50 effe_sub_2_1_1_5 0x01
+				End effe_sub_2_1_1_5
+				ScriptRef 0x58
+				Struct 0x60 effe_sub_2_1_1_6 0x01
+				End effe_sub_2_1_1_6
+				Struct 0x70 effe_sub_2_1_1_7 0x01
+				End effe_sub_2_1_1_7
+				Struct 0x84 effe_sub_2_1_1_8 0x01
+				End effe_sub_2_1_1_8
+				Struct 0x94 effe_sub_2_1_1_9 0x01
+				End effe_sub_2_1_1_9
+			End effe_sub_2_1_1
+		End effe_sub_2_1
+	End effe_sub_2
+	TagRef 0x1C
+End effe_main
+

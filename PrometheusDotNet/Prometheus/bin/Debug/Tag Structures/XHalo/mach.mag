@@ -1,0 +1,31 @@
+Device_machine
+Struct 0 Main 804
+	TagRef 40
+	TagRef 56
+	TagRef 112
+	TagRef 128
+	TagRef 144
+	TagRef 160
+	Struct 320 Reflexive_0 72
+		TagRef 0
+	End Reflexive_0
+	Struct 332 Reflexive_1 32
+		TagRef 0
+	End Reflexive_1
+	Struct 344 Reflexive_2 360
+	End Reflexive_2
+	Struct 356 Reflexive_3 44
+		Struct 32 Reflexive_3_4 28
+		End Reflexive_3_4
+	End Reflexive_3
+	TagRef 416
+	TagRef 432
+	TagRef 448
+	TagRef 464
+	TagRef 480
+	TagRef 496
+	TagRef 524
+	IntClear 368
+	IntClear 372
+	IntClear 376
+End Main

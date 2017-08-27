@@ -1,0 +1,7 @@
+Light
+Struct 0 LightMain 352
+	TagRef 100
+	TagRef 124
+	TagRef 172
+	IntSwapRange 0 to 352
+End LightMain

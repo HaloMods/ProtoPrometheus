@@ -1,0 +1,7 @@
+camera_track
+Struct 0 CameraTrack 48
+	Struct 4 ControlPoints 60
+		IntSwapRange 0 to 60
+	End ControlPoints
+	IntSwapRange 0 to 48
+End CameraTrack

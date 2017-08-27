@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>light</Group>
+	<GroupTag>ligh</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>3</Version>
+	<HeaderSize>352</HeaderSize>
+	<FieldCount>43</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>dynamic#dynamically illuminate interiors</Field0>
+				<Field1>no specular#for dynamic lights, cast only diffuse light.</Field1>
+				<Field2>don't light own object#for dynamic lights, don't light the object that the light is attached to.</Field2>
+				<Field3>supersize in first person#for dynamic lights, light every environment surface if this light is on the gun of the current window.</Field3>
+				<Field4>first person flashlight</Field4>
+				<Field5>don't fade active camouflage</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>SHAPE</Name>
+			<Type>Explanation</Type>
+			<Value>the size and shape of the light</Value>
+		</Field>
+		<Field>
+			<Name>radius#the radius where illumination is zero. (lens flare only if this is 0)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>radius modifer#how the radius changes with external scale</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>falloff angle#the angle at which the light begins to fade.</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>cutoff angle#the angle at which the illumination is zero.</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>lens flare only radius</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>COLOR</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>interpolation flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>blend in hsv#blends colors in hsv rather than rgb space</Field0>
+				<Field1>...more colors#blends colors through more hues (goes the long way around the color wheel)</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>color lower bound</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>color upper bound</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>GEL</Name>
+			<Type>Explanation</Type>
+			<Value>the gel map tints the light per-pixel of cube map</Value>
+		</Field>
+		<Field>
+			<Name>primary cube map#used for diffuse and specular light</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>texture animation function#a function to control texture animation</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>texture animation period:seconds#time between repeats</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>secondary cube map#used for specular light</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>yaw function#a function to control rotation of the gel in yaw</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>yaw period:seconds#time between repeats</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>roll function#a function to control rotation of the gel in roll</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>roll period:seconds#time between repeats</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>pitch function#a function to control rotation of the gel in pitch</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>pitch period:seconds#time between repeats</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>LENS FLARE</Name>
+			<Type>Explanation</Type>
+			<Value>optional lens flare associated with this light</Value>
+		</Field>
+		<Field>
+			<Name>lens flare</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>lens</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>RADIOSITY</Name>
+			<Type>Explanation</Type>
+			<Value>how the light affects the lightmaps (ignored for dynamic lights)</Value>
+		</Field>
+		<Field>
+			<Name>intensity</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>EFFECT PARAMETERS</Name>
+			<Type>Explanation</Type>
+			<Value>if the light is created by an effect, it will animate itself as follows</Value>
+		</Field>
+		<Field>
+			<Name>duration:seconds#the light will last this long when created by an effect</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>falloff function#the scale of the light will diminish over time according to this function</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>linear</Field0>
+				<Field1>early</Field1>
+				<Field2>very early</Field2>
+				<Field3>late</Field3>
+				<Field4>very late</Field4>
+				<Field5>cosine</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>92</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

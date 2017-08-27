@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>physics</Group>
+	<GroupTag>phys</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>4</Version>
+	<HeaderSize>128</HeaderSize>
+	<FieldCount>25</FieldCount>
+	<Fields>
+		<Field>
+			<Name>radius#positive uses old inferior physics, negative uses new improved physics</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>moment scale</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>mass</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>center of mass*</Name>
+			<Type>Real_Point_3D</Type>
+		</Field>
+		<Field>
+			<Name>density</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>gravity scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ground friction</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ground depth</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ground damp fraction</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>ground normal k1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ground normal k0</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>water friction</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>water depth</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>water density</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>air friction</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>xx moment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>yy moment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>zz moment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>inertial matrix and inverse*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>inertial_matrix_block</Name>
+				<MaxElements>2</MaxElements>
+				<Size>36</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>yy+zz    -xy     -zx</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name> -xy    zz+xx    -yz</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name> -zx     -yz    xx+yy</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>powered mass points</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>powered_mass_point_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>128</Size>
+				<FieldCount>10</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>7</FieldCount>
+						<Fields>
+							<Field0>ground friction</Field0>
+							<Field1>water friction</Field1>
+							<Field2>air friction</Field2>
+							<Field3>water lift</Field3>
+							<Field4>air lift</Field4>
+							<Field5>thrust</Field5>
+							<Field6>antigrav</Field6>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>antigrav strength</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>antigrav offset</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>antigrav height</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>antigrav damp fraction</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>antigrav normal k1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>antigrav normal k0</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>68</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>mass points</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>mass_point_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>128</Size>
+				<FieldCount>18</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>powered mass point</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>powered_mass_point_block</Block>
+					</Field>
+					<Field>
+						<Name>model node*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>metallic</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>relative mass</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>mass*</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>relative density</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>density*</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>forward</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name>up</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name>friction type</Name>
+						<Type>Enum</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>point</Field0>
+							<Field1>forward</Field1>
+							<Field2>left</Field2>
+							<Field3>up</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>friction parallel scale</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>friction perpendicular scale</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>radius</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>20</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

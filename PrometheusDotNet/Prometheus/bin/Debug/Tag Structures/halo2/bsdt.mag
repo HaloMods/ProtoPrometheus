@@ -1,0 +1,31 @@
+bsdt
+Struct 0x00 bsdt_main 0x20
+	TagRef 0x04
+	TagRef 0x0C
+	Struct 0x14 bsdt_sub_1 0x38
+		TagRef 0x00
+		Struct 0x30 bsdt_sub_1_1 0xB8
+			TagRef 0x00
+			Struct 0x10 bsdt_sub_1_1_1 0x01
+			End bsdt_sub_1_1_1
+			ScriptRef 0x18
+			Struct 0x20 bsdt_sub_1_1_2 0x01
+			End bsdt_sub_1_1_2
+			Struct 0x30 bsdt_sub_1_1_3 0x01
+			End bsdt_sub_1_1_3
+			Struct 0x40 bsdt_sub_1_1_4 0x01
+			End bsdt_sub_1_1_4
+			Struct 0x50 bsdt_sub_1_1_5 0x01
+			End bsdt_sub_1_1_5
+			ScriptRef 0x58
+			Struct 0x60 bsdt_sub_1_1_6 0x01
+			End bsdt_sub_1_1_6
+			Struct 0x70 bsdt_sub_1_1_7 0x01
+			End bsdt_sub_1_1_7
+			Struct 0x84 bsdt_sub_1_1_8 0x01
+			End bsdt_sub_1_1_8
+			Struct 0x94 bsdt_sub_1_1_9 0x01
+			End bsdt_sub_1_1_9
+		End bsdt_sub_1_1
+	End bsdt_sub_1
+End bsdt_main

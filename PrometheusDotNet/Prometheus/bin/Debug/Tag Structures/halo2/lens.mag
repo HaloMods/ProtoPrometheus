@@ -1,0 +1,11 @@
+lens
+Struct 0 lens_main 0x64
+	TagRef 0x20
+	ScriptRef 0x28
+	Struct 0x40 lens_sub_1 0x30
+	End lens_sub_1
+	Struct 0x4C lens_sub_2 0x08
+	End lens_sub_2
+	Struct 0x54 lens_sub_3 0x08
+	End lens_sub_3
+End lens_main

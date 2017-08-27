@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>hud_number</Group>
+	<GroupTag>hud#</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>100</HeaderSize>
+	<FieldCount>10</FieldCount>
+	<Fields>
+		<Field>
+			<Name>digits bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>bitmap digit width</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>screen digit width</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>x offset</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>y offset</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>decimal point width</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>colon width</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>76</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>device</Group>
+	<GroupTag>devi</GroupTag>
+	<ParentGroupTag>obje</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>276</HeaderSize>
+	<FieldCount>25</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ DEVICE $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>position loops</Field0>
+				<Field1>position not interpolated</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>power transition time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>power acceleration time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>position transition time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>position acceleration time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>depowered position transition time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>depowered position acceleration time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>A in</Name>
+			<Type>Enum</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>power</Field1>
+				<Field2>change in power</Field2>
+				<Field3>position</Field3>
+				<Field4>change in position</Field4>
+				<Field5>locked</Field5>
+				<Field6>delay</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>B in</Name>
+			<Type>Enum</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>power</Field1>
+				<Field2>change in power</Field2>
+				<Field3>position</Field3>
+				<Field4>change in position</Field4>
+				<Field5>locked</Field5>
+				<Field6>delay</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>C in</Name>
+			<Type>Enum</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>power</Field1>
+				<Field2>change in power</Field2>
+				<Field3>position</Field3>
+				<Field4>change in position</Field4>
+				<Field5>locked</Field5>
+				<Field6>delay</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>D in</Name>
+			<Type>Enum</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>power</Field1>
+				<Field2>change in power</Field2>
+				<Field3>position</Field3>
+				<Field4>change in position</Field4>
+				<Field5>locked</Field5>
+				<Field6>delay</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>open (up)</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>close (down)</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>opened</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>closed</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>depowered</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>repowered</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>delay time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>delay effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>automatic activation radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>84</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

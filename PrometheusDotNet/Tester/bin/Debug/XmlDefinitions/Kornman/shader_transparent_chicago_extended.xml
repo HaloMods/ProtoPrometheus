@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>shader_transparent_chicago_extended</Group>
+	<GroupTag>scex</GroupTag>
+	<ParentGroupTag>shdr</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>80</HeaderSize>
+	<FieldCount>17</FieldCount>
+	<Fields>
+		<Field>
+			<Name>chicago shader extended</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>numeric counter limit:[0,255]</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Byte_Flags</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>alpha-tested</Field0>
+				<Field1>decal</Field1>
+				<Field2>two-sided</Field2>
+				<Field3>first map is in screenspace</Field3>
+				<Field4>draw before water</Field4>
+				<Field5>ignore effect</Field5>
+				<Field6>scale first map with distance</Field6>
+				<Field7>numeric</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>first map type</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>2D map</Field0>
+				<Field1>first map is reflection cube map</Field1>
+				<Field2>first map is object-centered cube map</Field2>
+				<Field3>first map is viewer-centered cube map</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer blend function</Name>
+			<Type>Enum</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>alpha blend</Field0>
+				<Field1>multiply</Field1>
+				<Field2>double multiply</Field2>
+				<Field3>add</Field3>
+				<Field4>subtract</Field4>
+				<Field5>component min</Field5>
+				<Field6>component max</Field6>
+				<Field7>alpha-multiply add</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer fade mode</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>fade when perpendicular</Field1>
+				<Field2>fade when parallel</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer fade source#fade is multiplied by this external value</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>lens flares</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>lens flare spacing:world units#0 places a single lens flare</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>lens flare</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>lens</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>extra layers</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>shader_transparent_layer_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>shader</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>shdr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>4 stage maps</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>shader_transparent_chicago_map_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>220</Size>
+				<FieldCount>32</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>unfiltered</Field0>
+							<Field1>alpha replicate</Field1>
+							<Field2>u-clamped</Field2>
+							<Field3>v-clamped</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>40</Value>
+					</Field>
+					<Field>
+						<Name>color function#ignored for last map</Name>
+						<Type>Enum</Type>
+						<FieldCount>13</FieldCount>
+						<Fields>
+							<Field0>current</Field0>
+							<Field1>next map</Field1>
+							<Field2>multiply</Field2>
+							<Field3>double-multiply</Field3>
+							<Field4>add</Field4>
+							<Field5>add-signed current</Field5>
+							<Field6>add-signed next map</Field6>
+							<Field7>subtract current</Field7>
+							<Field8>subtract next map</Field8>
+							<Field9>blend current alpha</Field9>
+							<Field10>blend current alpha-inverse</Field10>
+							<Field11>blend next map alpha</Field11>
+							<Field12>blend next map alpha-inverse</Field12>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>alpha function#ignored for last map</Name>
+						<Type>Enum</Type>
+						<FieldCount>13</FieldCount>
+						<Fields>
+							<Field0>current</Field0>
+							<Field1>next map</Field1>
+							<Field2>multiply</Field2>
+							<Field3>double-multiply</Field3>
+							<Field4>add</Field4>
+							<Field5>add-signed current</Field5>
+							<Field6>add-signed next map</Field6>
+							<Field7>subtract current</Field7>
+							<Field8>subtract next map</Field8>
+							<Field9>blend current alpha</Field9>
+							<Field10>blend current alpha-inverse</Field10>
+							<Field11>blend next map alpha</Field11>
+							<Field12>blend next map alpha-inverse</Field12>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>36</Value>
+					</Field>
+					<Field>
+						<Name>map u-scale#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map v-scale#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map u-offset</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map v-offset</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map rotation:degrees</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>mipmap bias:[0,1]</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>map^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>40</Value>
+					</Field>
+					<Field>
+						<Name>2D texture animation</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>u-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>u-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>u-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>u-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>u-animation scale:repeats#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>v-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>v-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation scale:repeats#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rotation-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rotation-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation scale:degrees#0 defaults to 360</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation center</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>2 stage maps</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>shader_transparent_chicago_map_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>220</Size>
+				<FieldCount>32</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>unfiltered</Field0>
+							<Field1>alpha replicate</Field1>
+							<Field2>u-clamped</Field2>
+							<Field3>v-clamped</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>40</Value>
+					</Field>
+					<Field>
+						<Name>color function#ignored for last map</Name>
+						<Type>Enum</Type>
+						<FieldCount>13</FieldCount>
+						<Fields>
+							<Field0>current</Field0>
+							<Field1>next map</Field1>
+							<Field2>multiply</Field2>
+							<Field3>double-multiply</Field3>
+							<Field4>add</Field4>
+							<Field5>add-signed current</Field5>
+							<Field6>add-signed next map</Field6>
+							<Field7>subtract current</Field7>
+							<Field8>subtract next map</Field8>
+							<Field9>blend current alpha</Field9>
+							<Field10>blend current alpha-inverse</Field10>
+							<Field11>blend next map alpha</Field11>
+							<Field12>blend next map alpha-inverse</Field12>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>alpha function#ignored for last map</Name>
+						<Type>Enum</Type>
+						<FieldCount>13</FieldCount>
+						<Fields>
+							<Field0>current</Field0>
+							<Field1>next map</Field1>
+							<Field2>multiply</Field2>
+							<Field3>double-multiply</Field3>
+							<Field4>add</Field4>
+							<Field5>add-signed current</Field5>
+							<Field6>add-signed next map</Field6>
+							<Field7>subtract current</Field7>
+							<Field8>subtract next map</Field8>
+							<Field9>blend current alpha</Field9>
+							<Field10>blend current alpha-inverse</Field10>
+							<Field11>blend next map alpha</Field11>
+							<Field12>blend next map alpha-inverse</Field12>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>36</Value>
+					</Field>
+					<Field>
+						<Name>map u-scale#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map v-scale#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map u-offset</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map v-offset</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map rotation:degrees</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>mipmap bias:[0,1]</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>map^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>40</Value>
+					</Field>
+					<Field>
+						<Name>2D texture animation</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>u-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>u-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>u-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>u-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>u-animation scale:repeats#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>v-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>v-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation scale:repeats#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rotation-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rotation-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation scale:degrees#0 defaults to 360</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation center</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>extra flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>don't fade active-camouflage</Field0>
+				<Field1>numeric countdown timer</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

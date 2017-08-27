@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>scenario_structure_bsp</Group>
+	<GroupTag>sbsp</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>5</Version>
+	<HeaderSize>648</HeaderSize>
+	<FieldCount>54</FieldCount>
+	<Fields>
+		<Field>
+			<Name>lightmaps</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>vehicle floor:world units#height below which vehicles get pushed up by an unstoppable force</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>vehicle ceiling:world units#height above which vehicles get pushed down by an unstoppable force</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>default ambient color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>default distant light 0 color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>default distant light 0 direction</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name>default distant light 1 color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>default distant light 1 direction</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>default reflection tint</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>default shadow vector</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name>default shadow color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>collision materials*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_collision_materials_block</Name>
+				<MaxElements>512</MaxElements>
+				<Size>20</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>shader*</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>shdr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>collision bsp*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>bsp</Name>
+				<MaxElements>1</MaxElements>
+				<Size>96</Size>
+				<FieldCount>0</FieldCount>
+				<Fields>
+					<Field>
+						<Name>bsp3d nodes*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>bsp3d node</Name>
+							<MaxElements>131072</MaxElements>
+							<Size>12</Size>
+							<FieldCount>4</FieldCount>
+							<Fields>
+								<Field>
+									<Name>plane*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>back child*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>front child*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>planes*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>plane</Name>
+							<MaxElements>65536</MaxElements>
+							<Size>16</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>plane*</Name>
+									<Type>Real_Plane_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>leaves*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>leaf</Name>
+							<MaxElements>65536</MaxElements>
+							<Size>8</Size>
+							<FieldCount>4</FieldCount>
+							<Fields>
+								<Field>
+									<Name>flags*</Name>
+									<Type>Word_Flags</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>contains double-sided surfaces</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>bsp2d reference count*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>first bsp2d reference*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>bsp2d references*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>bsp2d reference</Name>
+							<MaxElements>131072</MaxElements>
+							<Size>8</Size>
+							<FieldCount>3</FieldCount>
+							<Fields>
+								<Field>
+									<Name>plane*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>bsp2d node*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>bsp2d nodes*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>bsp2d node</Name>
+							<MaxElements>65535</MaxElements>
+							<Size>20</Size>
+							<FieldCount>4</FieldCount>
+							<Fields>
+								<Field>
+									<Name>plane*</Name>
+									<Type>Real_Plane_2D</Type>
+								</Field>
+								<Field>
+									<Name>left child*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>right child*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>surfaces*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>surface</Name>
+							<MaxElements>131072</MaxElements>
+							<Size>12</Size>
+							<FieldCount>6</FieldCount>
+							<Fields>
+								<Field>
+									<Name>plane*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>first edge*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>flags*</Name>
+									<Type>Byte_Flags</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>two sided</Field0>
+										<Field1>invisible</Field1>
+										<Field2>climbable</Field2>
+										<Field3>breakable</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>breakable surface*</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>material*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>edges*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>edge</Name>
+							<MaxElements>262144</MaxElements>
+							<Size>24</Size>
+							<FieldCount>7</FieldCount>
+							<Fields>
+								<Field>
+									<Name>start vertex*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>end vertex*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>forward edge*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>reverse edge*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>left surface*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>right surface*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>vertices*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>vertex</Name>
+							<MaxElements>131072</MaxElements>
+							<Size>16</Size>
+							<FieldCount>3</FieldCount>
+							<Fields>
+								<Field>
+									<Name>point*</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name>first edge*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>nodes*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_node_block</Name>
+				<MaxElements>131072</MaxElements>
+				<Size>6</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Skip</Type>
+						<Value>6</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>world bounds x*</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>world bounds y*</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>world bounds z*</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>leaves*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_leaf_block</Name>
+				<MaxElements>65536</MaxElements>
+				<Size>16</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Skip</Type>
+						<Value>6</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>cluster*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>surface reference count*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>surface references*</Name>
+						<Type>Long_Block_Index</Type>
+						<Block>structure_bsp_surface_reference_block</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>leaf surfaces*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_surface_reference_block</Name>
+				<MaxElements>262144</MaxElements>
+				<Size>8</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>surface*</Name>
+						<Type>Long_Block_Index</Type>
+						<Block>structure_bsp_surface_block</Block>
+					</Field>
+					<Field>
+						<Name>node*</Name>
+						<Type>Long_Block_Index</Type>
+						<Block>structure_bsp_node_block</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>surfaces*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_surface_block</Name>
+				<MaxElements>131072</MaxElements>
+				<Size>6</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>vertices*</Name>
+						<Type>Array_Start</Type>
+						<Array>
+							<FieldCount>3</FieldCount>
+						</Array>
+						<Field>
+							<Name>a</Name>
+							<Type>Short_Integer</Type>
+						</Field>
+						<Field>
+							<Name />
+							<Type>Array_End</Type>
+						</Field>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>lightmaps*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_lightmap_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>32</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>bitmap*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>materials*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>structure_bsp_material_block</Name>
+							<MaxElements>2048</MaxElements>
+							<Size>256</Size>
+							<FieldCount>29</FieldCount>
+							<Fields>
+								<Field>
+									<Name>shader*</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>shdr</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>shader permutation*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>flags</Name>
+									<Type>Word_Flags</Type>
+									<FieldCount>2</FieldCount>
+									<Fields>
+										<Field0>coplanar*</Field0>
+										<Field1>fog plane*</Field1>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>surfaces*</Name>
+									<Type>Long_Block_Index</Type>
+									<Block>structure_bsp_surface_block</Block>
+								</Field>
+								<Field>
+									<Name>surface count*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>centroid*</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name>ambient color*</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>distant light count*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>distant light 0 color*</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>distant light 0 direction*</Name>
+									<Type>Real_Vector_3D</Type>
+								</Field>
+								<Field>
+									<Name>distant light 1 color*</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>distant light 1 direction*</Name>
+									<Type>Real_Vector_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name>reflection tint*</Name>
+									<Type>Real_ARGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>shadow vector*</Name>
+									<Type>Real_Vector_3D</Type>
+								</Field>
+								<Field>
+									<Name>shadow color*</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>plane*</Name>
+									<Type>Real_Plane_3D</Type>
+								</Field>
+								<Field>
+									<Name>breakable surface*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>vertex buffers*</Name>
+									<Type>Array_Start</Type>
+									<Array>
+										<FieldCount>2</FieldCount>
+									</Array>
+									<Field>
+										<Name />
+										<Type>Pad</Type>
+										<Value>4</Value>
+									</Field>
+									<Field>
+										<Name>count*</Name>
+										<Type>Long_Integer</Type>
+									</Field>
+									<Field>
+										<Name>offset*</Name>
+										<Type>Long_Integer</Type>
+									</Field>
+									<Field>
+										<Name />
+										<Type>Pad</Type>
+										<Value>8</Value>
+									</Field>
+									<Field>
+										<Name />
+										<Type>Array_End</Type>
+									</Field>
+								</Field>
+								<Field>
+									<Name>uncompressed vertices</Name>
+									<Type>Data</Type>
+									<Data>
+										<Name />
+										<MaxSize>10279064</MaxSize>
+									</Data>
+								</Field>
+								<Field>
+									<Name>compressed vertices</Name>
+									<Type>Data</Type>
+									<Data>
+										<Name />
+										<MaxSize>0</MaxSize>
+									</Data>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>lens flares*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_lens_flare_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>lens flare</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>lens</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>lens flare markers*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_lens_flare_marker_block</Name>
+				<MaxElements>65536</MaxElements>
+				<Size>16</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>position*</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>direction i-component*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>direction j-component*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>direction k-component*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>lens flare index*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>clusters*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_cluster_block</Name>
+				<MaxElements>8192</MaxElements>
+				<Size>104</Size>
+				<FieldCount>16</FieldCount>
+				<Fields>
+					<Field>
+						<Name>sky*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>fog*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>background sound*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>structure_bsp_background_sound_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>sound environment*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>structure_bsp_sound_environment_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>weather*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>structure_bsp_weather_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>transition structure bsp</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name>predicted resources*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>predicted_resource_block</Name>
+							<MaxElements>1024</MaxElements>
+							<Size>8</Size>
+							<FieldCount>4</FieldCount>
+							<Fields>
+								<Field>
+									<Name>type</Name>
+									<Type>Enum</Type>
+									<FieldCount>2</FieldCount>
+									<Fields>
+										<Field0>bitmap</Field0>
+										<Field1>sound</Field1>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>resource index</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>tag index</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>subclusters*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>structure_bsp_subcluster_block</Name>
+							<MaxElements>4096</MaxElements>
+							<Size>36</Size>
+							<FieldCount>5</FieldCount>
+							<Fields>
+								<Field>
+									<Name>world bounds x*</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>world bounds y*</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>world bounds z*</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>surface indices*</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>structure_bsp_subcluster_surface_index_block</Name>
+										<MaxElements>128</MaxElements>
+										<Size>4</Size>
+										<FieldCount>2</FieldCount>
+										<Fields>
+											<Field>
+												<Name>index*</Name>
+												<Type>Long_Integer</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>first lens flare marker index*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>lens flare marker count*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>surface indices*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>structure_bsp_cluster_surface_index_block</Name>
+							<MaxElements>32768</MaxElements>
+							<Size>4</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>index*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>mirrors*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>structure_bsp_mirror_block</Name>
+							<MaxElements>16</MaxElements>
+							<Size>64</Size>
+							<FieldCount>5</FieldCount>
+							<Fields>
+								<Field>
+									<Name>plane*</Name>
+									<Type>Real_Plane_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>20</Value>
+								</Field>
+								<Field>
+									<Name>shader*</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>shdr</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>vertices*</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>structure_bsp_mirror_vertex_block</Name>
+										<MaxElements>512</MaxElements>
+										<Size>12</Size>
+										<FieldCount>2</FieldCount>
+										<Fields>
+											<Field>
+												<Name>point*</Name>
+												<Type>Real_Point_3D</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>portals*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>structure_bsp_cluster_portal_index_block</Name>
+							<MaxElements>128</MaxElements>
+							<Size>2</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>portal*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>cluster data*</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>10281300</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name>cluster portals*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_cluster_portal_block</Name>
+				<MaxElements>512</MaxElements>
+				<Size>64</Size>
+				<FieldCount>9</FieldCount>
+				<Fields>
+					<Field>
+						<Name>front cluster*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>back cluster*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>plane index*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name>centroid*</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>bounding radius*</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>flags*</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>ai can't hear through this shit</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name>vertices*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>structure_bsp_cluster_portal_vertex_block</Name>
+							<MaxElements>128</MaxElements>
+							<Size>12</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>point*</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>breakable surfaces*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_breakable_surface_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>48</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>centroid*</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>radius*</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>collision surface index*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>28</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>fog planes*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_fog_plane_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>32</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>front region*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>structure_bsp_fog_region_block</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>plane*</Name>
+						<Type>Real_Plane_3D</Type>
+					</Field>
+					<Field>
+						<Name>vertices*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>structure_bsp_fog_plane_vertex_block</Name>
+							<MaxElements>4096</MaxElements>
+							<Size>12</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>point*</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>fog regions*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_fog_region_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>40</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>36</Value>
+					</Field>
+					<Field>
+						<Name>fog palette*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>structure_bsp_fog_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>weather palette*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>structure_bsp_weather_palette_block</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>fog palette*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_fog_palette_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>136</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>fog</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>fog </Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>fog scale function</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>52</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>weather palette*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_weather_palette_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>240</Size>
+				<FieldCount>12</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>particle system</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>rain</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>particle system scale function</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>44</Value>
+					</Field>
+					<Field>
+						<Name>wind</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>wind</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>wind direction</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name>wind magnitude</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>wind scale function</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>44</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>weather polyhedra*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_weather_polyhedron_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>32</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>bounding sphere center*</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>bounding sphere radius*</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>planes*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>structure_bsp_weather_polyhedron_plane_block</Name>
+							<MaxElements>16</MaxElements>
+							<Size>16</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>plane*</Name>
+									<Type>Real_Plane_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>pathfinding surfaces*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_pathfinding_surfaces_block</Name>
+				<MaxElements>131072</MaxElements>
+				<Size>1</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>data*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>pathfinding edges*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_pathfinding_edges_block</Name>
+				<MaxElements>262144</MaxElements>
+				<Size>1</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>midpoint*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>background sound palette*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_background_sound_palette_block</Name>
+				<MaxElements>64</MaxElements>
+				<Size>116</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>background sound</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>lsnd</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>scale function</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>sound environment palette*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_sound_environment_palette_block</Name>
+				<MaxElements>64</MaxElements>
+				<Size>80</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>sound environment</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snde</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>sound PAS data*</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>24</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>markers*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_marker_block</Name>
+				<MaxElements>1024</MaxElements>
+				<Size>60</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Quaternion</Type>
+					</Field>
+					<Field>
+						<Name>position*</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>detail objects*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_detail_object_data_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>64</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>cells</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>global_detail_object_cells_block</Name>
+							<MaxElements>262144</MaxElements>
+							<Size>32</Size>
+							<FieldCount>9</FieldCount>
+							<Fields>
+								<Field>
+									<Name>*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>instances</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>global_detail_object_block</Name>
+							<MaxElements>2097152</MaxElements>
+							<Size>6</Size>
+							<FieldCount>6</FieldCount>
+							<Fields>
+								<Field>
+									<Name>*</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>counts</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>global_detail_object_counts_block</Name>
+							<MaxElements>8388608</MaxElements>
+							<Size>2</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>z reference vectors</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>global_z_reference_vector_block</Name>
+							<MaxElements>262144</MaxElements>
+							<Size>16</Size>
+							<FieldCount>5</FieldCount>
+							<Fields>
+								<Field>
+									<Name>*</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>*</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>runtime decals*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>structure_bsp_runtime_decal_block</Name>
+				<MaxElements>6144</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Skip</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>leaf map leaves</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>global_map_leaf_block</Name>
+				<MaxElements>65536</MaxElements>
+				<Size>24</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>faces*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>map_leaf_face_block</Name>
+							<MaxElements>256</MaxElements>
+							<Size>16</Size>
+							<FieldCount>3</FieldCount>
+							<Fields>
+								<Field>
+									<Name>node index*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name>vertices*</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>map_leaf_face_vertex_block</Name>
+										<MaxElements>64</MaxElements>
+										<Size>8</Size>
+										<FieldCount>2</FieldCount>
+										<Fields>
+											<Field>
+												<Name>vertex*</Name>
+												<Type>Real_Point_2D</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>portal indices*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>map_leaf_portal_index_block</Name>
+							<MaxElements>256</MaxElements>
+							<Size>4</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>portal index*</Name>
+									<Type>Long_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>leaf map portals</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>global_leaf_portal_block</Name>
+				<MaxElements>524288</MaxElements>
+				<Size>24</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>plane index*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name>back leaf index*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name>front leaf index*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name>vertices*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>leaf_portal_vertex_block</Name>
+							<MaxElements>64</MaxElements>
+							<Size>12</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>point*</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>happy day</Name>
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

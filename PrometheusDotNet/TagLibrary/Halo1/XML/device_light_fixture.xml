@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xml>
+  <name type="lifi" parenttype="devi">DeviceLightFixture</name>
+  <platform>Halo1</platform>
+  <plugin>
+    <struct name="DeviceLightFixture">
+      <value type="Pad" name="_unnamed">
+        <length>64</length>
+      </value>
+    </struct>
+  </plugin>
+</xml>

@@ -1,0 +1,42 @@
+shader_transparent_generic
+Struct 0 Main 108
+	TagRef 56
+	Struct 72 Reflexive_0 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End Reflexive_0
+	Struct 84 Reflexive_1 100
+		TagRef 28
+		IntSwap 4
+		IntSwap 8
+		IntSwap 12
+		IntSwap 16
+		IntSwap 20
+		IntSwap 24
+		IntSwap 48
+		LongSwap 0
+		LongSwap 44
+		IntSwapRange 28 to 44
+	End Reflexive_1
+	Struct 96 Reflexive_2 112
+		IntSwapRange 0 to 112
+	End Reflexive_2
+	TagRef 56
+	IntSwap 4
+	IntSwap 8
+	IntSwap 12
+	IntSwap 16
+	IntSwap 20
+	IntSwap 24
+	IntSwap 28
+	IntSwap 52
+	LongSwap 0
+	LongSwap 2
+	LongSwap 34
+	LongSwap 44
+	LongSwap 46
+	IntSwapRange 56 to 72
+	IntSwapRange 72 to 84
+	IntSwapRange 84 to 96
+	IntSwapRange 96 to 108
+End Main

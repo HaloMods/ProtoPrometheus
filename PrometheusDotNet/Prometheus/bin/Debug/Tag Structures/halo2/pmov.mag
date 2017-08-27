@@ -1,0 +1,10 @@
+pmov
+Struct 0x00 pmov_main 0x14
+	TagRef 0x00
+	Struct 0x0C pmov_sub_1 0x14
+		Struct 0x04 pmov_sub_1_1 0x14
+			Struct 0x0C pmov_sub_1_1_1 0x01
+			End pmov_sub_1_1_1
+		End pmov_sub_1_1
+	End pmov_sub_1
+End pmov_main

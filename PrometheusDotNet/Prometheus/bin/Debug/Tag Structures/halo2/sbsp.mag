@@ -1,0 +1,97 @@
+Scenario_Structure_Bsp
+Struct 0 SbspMain 0x23c
+	Struct 0x0c Collision_Materials 0x14
+		TagRef 0x00
+		TagRef 0x0C
+	End Collision_Materials
+	Struct 0x14 Collision_BSP 0x44
+		Struct 0x00 BSP3D_Nodes 0x08
+		End BSP3D_Nodes
+		Struct 0x08 Planes 0x10
+		End Planes
+		Struct 0x10 Leaves 0x04
+		End Leaves
+		Struct 0x18 BSP2D_References 0x04
+		End BSP2D_References
+		Struct 0x20 BSP2D_Nodes 0x10
+		End BSP2D_Nodes
+		Struct 0x28 Surfaces 0x08
+		End Surfaces
+		Struct 0x30 Edges 0x0C
+		End Edges
+		Struct 0x38 Vertices 0x10
+		End Vertices
+	End Collision_BSP
+	Struct 0x2C Nodes 0x08
+	End Nodes
+	Struct 0x4C Leaves 0x08
+	End Leaves
+	Struct 0x54 Leaf_Surfaces 0x01
+	End Leaf_Surfaces
+	Struct 0x5C UnKnown1 0x24
+		Struct 0x1C UnKnown2 0x0c
+		End Unknown2
+	End UnKnown1
+	Struct 0x64 UnKnown3 0x18
+	End UnKnown3
+	Struct 0x94 UnKnown4 0x24
+	End UnKnown4
+	Struct 0x9c Lightmaps 0xb0
+		Rsrc 0x28
+		Struct 0x38 UnKnown1 0x10
+		End UnKnown1
+		Struct 0x84 UnKnown2 0x08
+		End UnKnown2
+		Struct 0x8C UnKnown3 0x02
+		End UnKnown3
+		Struct 0x98 UnKnown4 0x04
+		End UnKnown4
+		Struct 0xA8 UnKnown5 0x01
+		End UnKnown5
+	End Lightmaps
+	Struct 0xa4 UnKnown5 0x20
+		TagRef 0x08
+	End UnKnown5
+	Struct 0xaC UnKnown6 0x02
+	End UnKnown6
+	Struct 0xd4 UnKnown7 0x64
+		TagRef 0x20
+	End UnKnown7
+	Struct 0xdC UnKnown8 0x48
+		TagRef 0x20
+	End UnKnown8
+	Struct 0x138 bsp_Scenery 0xC8
+		Struct 0x18 UnK1 0x38
+		End UnK1
+		rsrc 0x28
+		Struct 0x38 UnK2 0x10
+		End UnK2
+		Struct 0x70 UnK3 0x08
+		End UnK3
+		Struct 0x78 UnK4 0x10
+		End UnK4
+		Struct 0x80 UnK5 0x04
+		End UnK5
+		Struct 0x88 UnK6 0x04
+		End UnK6
+		Struct 0x90 UnK7 0x10
+		End UnK7
+		Struct 0x98 UnK8 0x08
+		End UnK8
+		Struct 0xA0 UnK9 0x0C
+		End UnK9
+		Struct 0xA8 Unk10 0x10
+		End UnK10
+		Struct 0xB0 UnK11 0x70
+			Struct 0x64 Unk1 0x01
+			End UnK1
+		End UnK11
+		Struct 0xB8 UnK12 0x08
+		End UnK12
+		Struct 0xC0 UnK13 0x06
+		End UnK13
+	End bsp_Scenery
+	Struct 0x140 SceneryPlacement 0x58
+	End SceneryPlacement
+End SbspMain
+

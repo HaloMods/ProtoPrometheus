@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>shader_transparent_glass</Group>
+	<GroupTag>sgla</GroupTag>
+	<ParentGroupTag>shdr</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>440</HeaderSize>
+	<FieldCount>35</FieldCount>
+	<Fields>
+		<Field>
+			<Name>glass shader</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>alpha-tested</Field0>
+				<Field1>decal</Field1>
+				<Field2>two-sided</Field2>
+				<Field3>bump map is specular mask</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>background tint properties</Name>
+			<Type>Explanation</Type>
+			<Value>Background pixels are multiplied by the tint map and constant tint color.</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>40</Value>
+		</Field>
+		<Field>
+			<Name>background tint color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>background tint map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>background tint map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>reflection properties</Name>
+			<Type>Explanation</Type>
+			<Value>Reflection maps are multiplied by fresnel terms (glancing angles cause reflections to disappear) and then added to the background. The primary reflection map is textured normally, while the secondary reflection map is magnified.</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>reflection type</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>bumped cube-map</Field0>
+				<Field1>flat cube-map</Field1>
+				<Field2>dynamic mirror</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>perpendicular brightness:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>perpendicular tint color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>parallel brightness:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>parallel tint color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>reflection map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>bump map scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>bump map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>128</Value>
+		</Field>
+		<Field>
+			<Name>diffuse properties</Name>
+			<Type>Explanation</Type>
+			<Value>Diffuse lights are accumulated in monochrome and then alpha-blended with diffuse map and diffuse detail map. The color is determined by double-multiplying both maps and multiplying with the accumulated light, the result being alpha-blended into the framebuffer. The opacity is determined by multiplying both map's alpha channels. Since this effect is alpha-blended, it covers up tinting and reflection on pixels with high opacity.</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>diffuse map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>diffuse map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>diffuse detail map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>diffuse detail map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>specular properties</Name>
+			<Type>Explanation</Type>
+			<Value>Specular lights are accumulated in monochrome and then alpha-blended with diffuse map and diffuse detail map. The color is determined by double-multiplying both maps and multiplying with the accumulated light, the result being alpha-blended into the framebuffer. The opacity is determined by multiplying both map's alpha channels. Since this effect is alpha-blended, it covers up tinting, reflection and diffuse texture on pixels with high opacity.</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>specular map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>specular map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>specular detail map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>specular detail map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

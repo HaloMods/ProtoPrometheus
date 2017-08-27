@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xml>
+  <name type="plac" parenttype="obje">Placeholder</name>
+  <platform>Halo1</platform>
+  <plugin>
+    <struct name="Placeholder">
+      <value type="Pad" name="_unnamed">
+        <length>128</length>
+      </value>
+    </struct>
+  </plugin>
+</xml>

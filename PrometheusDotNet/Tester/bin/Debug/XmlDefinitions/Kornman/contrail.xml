@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>contrail</Group>
+	<GroupTag>cont</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>3</Version>
+	<HeaderSize>324</HeaderSize>
+	<FieldCount>50</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>first point unfaded</Field0>
+				<Field1>last point unfaded</Field1>
+				<Field2>points start pinned to media</Field2>
+				<Field3>points start pinned to ground</Field3>
+				<Field4>points always pinned to media</Field4>
+				<Field5>points always pinned to ground</Field5>
+				<Field6>edge effect fades slowly</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>scale flags#these flags determine which fields are scaled by the contrail density</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>10</FieldCount>
+			<Fields>
+				<Field0>point generation rate</Field0>
+				<Field1>point velocity</Field1>
+				<Field2>point velocity delta</Field2>
+				<Field3>point velocity cone angle</Field3>
+				<Field4>inherited velocity fraction</Field4>
+				<Field5>sequence animation rate</Field5>
+				<Field6>texture scale u</Field6>
+				<Field7>texture scale v</Field7>
+				<Field8>texture animation u</Field8>
+				<Field9>texture animation v</Field9>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>point creation</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>point generation rate:points per second#this many points are generated per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>point velocity:world units per second#velocity added to each point's initial velocity</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>point velocity cone angle:degrees#initial velocity is inside the cone defined by the marker's forward vector and this angle</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>inherited velocity fraction#fraction of parent object's velocity that is inherited by contrail points.</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>rendering</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>render type#this specifies how the contrail is oriented in space</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>vertical orientation</Field0>
+				<Field1>horizontal orientation</Field1>
+				<Field2>media mapped</Field2>
+				<Field3>ground mapped</Field3>
+				<Field4>viewer facing</Field4>
+				<Field5>double-marker linked</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>texture repeats u#texture repeats per contrail segment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>texture repeats v#texture repeats across contrail width</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>texture animation u:repeats per second#the texture along the contrail is animated by this value</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>texture animation v:repeats per second#the texture across the contrail is animated by this value</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>animation rate:frames per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>first sequence index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>sequence count</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>64</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>40</Value>
+		</Field>
+		<Field>
+			<Name>shader flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>sort bias</Field0>
+				<Field1>nonlinear tint</Field1>
+				<Field2>don't overdraw fp weapon</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer blend function</Name>
+			<Type>Enum</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>alpha blend</Field0>
+				<Field1>multiply</Field1>
+				<Field2>double multiply</Field2>
+				<Field3>add</Field3>
+				<Field4>subtract</Field4>
+				<Field5>component min</Field5>
+				<Field6>component max</Field6>
+				<Field7>alpha-multiply add</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer fade mode</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>fade when perpendicular</Field1>
+				<Field2>fade when parallel</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>map flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>unfiltered</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>Secondary Map</Name>
+			<Type>Explanation</Type>
+			<Value>Optional multitextured second map</Value>
+		</Field>
+		<Field>
+			<Name>bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>anchor</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>with primary</Field0>
+				<Field1>with screen space</Field1>
+				<Field2>zsprite</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>unfiltered</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>u-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>u-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>u-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>u-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>u-animation scale:repeats#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>v-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>v-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation scale:repeats#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>rotation-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>rotation-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation scale:degrees#0 defaults to 360</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation center</Name>
+			<Type>Real_Point_2D</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>zsprite radius scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>point states</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>contrail_point_states_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>104</Size>
+				<FieldCount>11</FieldCount>
+				<Fields>
+					<Field>
+						<Name>state timing</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>duration:seconds:seconds#the time a point spends in this state</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>transition duration:seconds#the time a point takes to transition to the next state</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>point variables</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>physics</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>pphy</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>width:world units#contrail width at this point</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>color lower bound#contrail color at this point</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>color upper bound#contrail color at this point</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>scale flags#these flags determine which fields are scaled by the contrail density</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>6</FieldCount>
+						<Fields>
+							<Field0>duration</Field0>
+							<Field1>duration delta</Field1>
+							<Field2>transition duration</Field2>
+							<Field3>transition duration delta</Field3>
+							<Field4>width</Field4>
+							<Field5>color</Field5>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

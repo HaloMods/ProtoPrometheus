@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>color_table</Group>
+	<GroupTag>colo</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>12</HeaderSize>
+	<FieldCount>2</FieldCount>
+	<Fields>
+		<Field>
+			<Name>colors</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>color_block</Name>
+				<MaxElements>512</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>color</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

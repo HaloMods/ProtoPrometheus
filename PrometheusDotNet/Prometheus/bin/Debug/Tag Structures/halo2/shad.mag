@@ -1,0 +1,48 @@
+shad
+Struct 0 shad_main 0x54
+	TagRef 0x00
+	ScriptRef 0x08
+	Struct 0x0C shad_sub_1 0x50
+		TagRef 0x0
+		TagRef 0x8
+		TagRef 0x2C
+		TagRef 0x34
+	End shad_sub_1
+	Struct 0x20 shad_sub_2 0x7C
+		Struct 0x04 shad_sub_2_1 0x0C
+		End shad_sub_2_1
+		Struct 0x0C shad_sub_2_2 0x04
+		End shad_sub_2_2
+		Struct 0x14 shad_sub_2_3 0x10
+		End shad_sub_2_3
+		Struct 0x1C shad_sub_2_4 0x06
+		End shad_sub_2_4
+		Struct 0x24 shad_sub_2_5 0x02
+		End shad_sub_2_5
+		Struct 0x2C shad_sub_2_6 0x02
+		End shad_sub_2_6
+		Struct 0x34 shad_sub_2_7 0x0A
+		End shad_sub_2_7
+		Struct 0x3C shad_missed_2_1 0x14
+			ScriptRef 0x00
+			ScriptRef 0x04
+			Struct 0x0C shad_missed_2_1_1 0x01
+			End shad_missed_2_1_1
+		End shad_missed_2_1
+		Struct 0x44 shad_missed_2_2 0x04
+		End shad_missed_2_2
+		Struct 0x4C shad_missed_2_3 0x04
+		End shad_missed_2_3
+		Struct 0x54 shad_missed_2_4 0x04
+		End shad_missed_2_4
+		Struct 0x5C shad_sub_2_8 0x04
+		End shad_sub_2_8
+		Struct 0x64 shad_sub_2_9 0x04
+		End shad_sub_2_9
+		Struct 0x6C shad_sub_2_10 0x04
+		End shad_sub_2_10
+	End shad_sub_2
+	Struct 0x2C shad_sub_3 0x08
+		TagRef 0x00
+	End shad_sub_3
+End shad_main

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>projectile</Group>
+	<GroupTag>proj</GroupTag>
+	<ParentGroupTag>obje</ParentGroupTag>
+	<Version>5</Version>
+	<HeaderSize>208</HeaderSize>
+	<FieldCount>35</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ PROJECTILE $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>oriented along velocity</Field0>
+				<Field1>AI must use ballistic aiming</Field1>
+				<Field2>detonation max time if attached</Field2>
+				<Field3>has super combining explosion</Field3>
+				<Field4>combine initial velocity with parent velocity</Field4>
+				<Field5>random attached detonation time</Field5>
+				<Field6>minimum unattached detonation time</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>detonation timer starts</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>immediately</Field0>
+				<Field1>after first bounce</Field1>
+				<Field2>when at rest</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>impact noise</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>silent</Field0>
+				<Field1>medium</Field1>
+				<Field2>loud</Field2>
+				<Field3>shout</Field3>
+				<Field4>quiet</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>A in</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>range remaining</Field1>
+				<Field2>time remaining</Field2>
+				<Field3>tracer</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>B in</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>range remaining</Field1>
+				<Field2>time remaining</Field2>
+				<Field3>tracer</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>C in</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>range remaining</Field1>
+				<Field2>time remaining</Field2>
+				<Field3>tracer</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>D in</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>range remaining</Field1>
+				<Field2>time remaining</Field2>
+				<Field3>tracer</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>super detonation</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>effe</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>AI perception radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>collision radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>detonation</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>arming time:seconds#won't detonate before this time elapses</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>danger radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>effe</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>timer:seconds#detonation countdown (zero is untimed)</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>minimum velocity:world units per second#detonates when slowed below this velocity</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum range:world units#detonates after travelling this distance</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>physics</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>air gravity scale#the proportion of normal gravity applied to the projectile when in air.</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>air damage range:world units#the range over which damage is scaled when the projectile is in air.</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>water gravity scale#the proportion of normal gravity applied to the projectile when in water.</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>water damage range:world units#the range over which damage is scaled when the projectile is in water.</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>initial velocity:world units per second#bullet's velocity when inflicting maximum damage</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>final velocity:world units per second#bullet's velocity when inflicting minimum damage</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>guided angular velocity:degrees per second</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>detonation noise</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>silent</Field0>
+				<Field1>medium</Field1>
+				<Field2>loud</Field2>
+				<Field3>shout</Field3>
+				<Field4>quiet</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>detonation started</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>effe</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flyby sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>attached detonation damage</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>jpt!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>impact damage</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>jpt!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>material responses</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>projectile_material_response_block</Name>
+				<MaxElements>33</MaxElements>
+				<Size>160</Size>
+				<FieldCount>27</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>cannot be overpenetrated</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>default result</Name>
+						<Type>Explanation</Type>
+						<Value>(if the potential result, below, fails to happen)</Value>
+					</Field>
+					<Field>
+						<Name>response</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>disappear</Field0>
+							<Field1>detonate</Field1>
+							<Field2>reflect</Field2>
+							<Field3>overpenetrate</Field3>
+							<Field4>attach</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>effe</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>potential result</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>response</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>disappear</Field0>
+							<Field1>detonate</Field1>
+							<Field2>reflect</Field2>
+							<Field3>overpenetrate</Field3>
+							<Field4>attach</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>only against units</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>skip fraction:[0,1]</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>between:degrees</Name>
+						<Type>Angle_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>and:world units per second</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>effe</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>misc</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>scale effects by</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>damage</Field0>
+							<Field1>angle</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>angular noise:degrees#the angle of incidence is randomly perturbed by at most this amount to simulate irregularity.</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>velocity noise:world units per second#the velocity is randomly perturbed by at most this amount to simulate irregularity.</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>detonation effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>effe</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name>penetration</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>initial friction#the fraction of the projectile's velocity lost on penetration</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>maximum distance#the maximum distance the projectile can travel through on object of this material</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>reflection</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>parallel friction#the fraction of the projectile's velocity parallel to the surface lost on impact</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>perpendicular friction#the fraction of the projectile's velocity perpendicular to the surface lost on impact</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

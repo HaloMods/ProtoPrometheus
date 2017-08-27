@@ -1,0 +1,6 @@
+Decal
+Struct 0 Decal 268
+	TagRef 8 
+	TagRef 216
+	IntSwapRange 0 to 268 
+End Decal

@@ -1,0 +1,9 @@
+multiplayer_scenario_description
+Struct 0 multiplayer_scenario_description 12
+	struct 0 multiplayer_scenario 68
+		TagRef 0
+		TagRef 16
+		IntSwapRange 0 to 32
+	End multiplayer_scenario
+	IntSwapRange 0 to 12
+End multiplayer_scenario_description

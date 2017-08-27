@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>device_machine</Group>
+	<GroupTag>mach</GroupTag>
+	<ParentGroupTag>devi</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>148</HeaderSize>
+	<FieldCount>10</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ MACHINE $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>door</Field0>
+				<Field1>platform</Field1>
+				<Field2>gear</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>pathfinding obstacle</Field0>
+				<Field1>...but not when open</Field1>
+				<Field2>elevator#lighting based on what's around, rather than what's below</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>door open time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>80</Value>
+		</Field>
+		<Field>
+			<Name>collision response</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>pause until crushed</Field0>
+				<Field1>reverse directions</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>elevator node</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>52</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

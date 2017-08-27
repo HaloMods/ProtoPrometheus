@@ -1,0 +1,4 @@
+wind
+Struct 0 WindMain 64
+	IntSwapRange 0 to 64
+End WindMain

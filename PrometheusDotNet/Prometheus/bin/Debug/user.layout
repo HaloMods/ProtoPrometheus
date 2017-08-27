@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Layout>
+  <Window Guid="15a76d4f-5a40-4825-8ac3-556f55236106" FloatingSize="1136, 791" FloatingLocation="-1, -1" DockLocation="Left" />
+  <Window Guid="f9977666-8d9f-4bbc-ab1a-85138faa4bfd" FloatingSize="250, 400" FloatingLocation="-1, -1" DockLocation="Right" />
+  <Window Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" FloatingSize="250, 400" FloatingLocation="-1, -1" DockLocation="Bottom" />
+  <Window Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" FloatingSize="250, 400" FloatingLocation="-1, -1" DockLocation="Bottom" />
+  <Window Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" FloatingSize="250, 400" FloatingLocation="-1, -1" DockLocation="Bottom" />
+  <Window Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" FloatingSize="250, 400" FloatingLocation="-1, -1" DockLocation="Bottom" />
+  <Window Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" FloatingSize="250, 400" FloatingLocation="-1, -1" DockLocation="Bottom" />
+  <Container Guid="b50aee8f-7396-493c-adc8-0fed9d78788d" Size="1140, 816">
+    <SplitLayoutSystem WorkingSize="250, 400" SplitMode="Horizontal" LayoutSystems="1">
+      <ControlLayoutSystem WorkingSize="1136, 816" Collapsed="False" Controls="1" SelectedControl="15a76d4f-5a40-4825-8ac3-556f55236106" PopupSize="1136">
+        <Controls>
+          <Control Guid="15a76d4f-5a40-4825-8ac3-556f55236106" />
+        </Controls>
+      </ControlLayoutSystem>
+    </SplitLayoutSystem>
+  </Container>
+  <Container Guid="704a7a97-bcb7-414d-95c8-62f769a75b7b" Size="304, 816">
+    <SplitLayoutSystem WorkingSize="250, 400" SplitMode="Horizontal" LayoutSystems="1">
+      <ControlLayoutSystem WorkingSize="300, 816" Collapsed="False" Controls="1" SelectedControl="f9977666-8d9f-4bbc-ab1a-85138faa4bfd" PopupSize="300">
+        <Controls>
+          <Control Guid="f9977666-8d9f-4bbc-ab1a-85138faa4bfd" />
+        </Controls>
+      </ControlLayoutSystem>
+    </SplitLayoutSystem>
+  </Container>
+  <Container Guid="1eaae9ac-2c47-4d6c-9d33-21f434bd0244" Size="1600, 240">
+    <SplitLayoutSystem WorkingSize="250, 400" SplitMode="Vertical" LayoutSystems="1">
+      <ControlLayoutSystem WorkingSize="1600, 236" Collapsed="False" Controls="5" SelectedControl="6502bb4c-26a2-4944-a03e-bd6b6280999d" PopupSize="236">
+        <Controls>
+          <Control Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" />
+          <Control Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" />
+          <Control Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" />
+          <Control Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" />
+          <Control Guid="6502bb4c-26a2-4944-a03e-bd6b6280999d" />
+        </Controls>
+      </ControlLayoutSystem>
+    </SplitLayoutSystem>
+  </Container>
+  <Container Guid="d8024366-8491-4597-b5ca-3a5ca3148a75" Size="1600, 0">
+    <SplitLayoutSystem WorkingSize="250, 400" SplitMode="Horizontal" LayoutSystems="0" />
+  </Container>
+</Layout>

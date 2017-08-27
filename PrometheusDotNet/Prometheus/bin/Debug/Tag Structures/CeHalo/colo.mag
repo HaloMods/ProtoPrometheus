@@ -1,0 +1,10 @@
+Color_table
+Struct 0 ColorTable 12
+	Struct 0 Colors 48
+		IntSwap 32
+		IntSwap 36
+		IntSwap 40
+		IntSwap 44
+	End Colors
+	IntSwap 0
+End ColorTable

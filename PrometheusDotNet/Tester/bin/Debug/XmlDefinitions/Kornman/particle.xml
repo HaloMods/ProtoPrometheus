@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>particle</Group>
+	<GroupTag>part</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>356</HeaderSize>
+	<FieldCount>56</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>can animate backwards</Field0>
+				<Field1>animation stops at rest</Field1>
+				<Field2>animation starts on random frame</Field2>
+				<Field3>animate once per frame</Field3>
+				<Field4>dies at rest</Field4>
+				<Field5>dies on contact with structure</Field5>
+				<Field6>tint from diffuse texture</Field6>
+				<Field7>dies on contact with water</Field7>
+				<Field8>dies on contact with air</Field8>
+				<Field9>self-illuminated#don't cast world-lights onto this particle</Field9>
+				<Field10>random horizontal mirroring</Field10>
+				<Field11>random vertical mirroring</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>physics</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>pphy</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>marty traded his kids for this</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>foot</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>lifespan:seconds</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>fade in time</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fade out time</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>collision effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>death effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>minimum size:pixels#in the distance, don't get any smaller than this size on the screen</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>radius animation#when created, the radius is multiplied by the first number. at the end of the lifetime, the radius is multiplied by the second number.</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>animation rate:frames per second#rate at which the particle animates</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>contact deterioration#the decrease in the frame rate caused by a collision</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fade start size:pixels#begin fading the particle out when it's smaller than this size on the screen</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fade end size:pixels#kill the particle when it's smaller than this size on the screen</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>first sequence index#the index of the first sequence in the bitmap group used by this particle</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>initial sequence count</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>looping sequence count</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>final sequence count</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>orientation</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>screen facing</Field0>
+				<Field1>parallel to direction</Field1>
+				<Field2>perpendicular to direction</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>40</Value>
+		</Field>
+		<Field>
+			<Name>shader flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>sort bias</Field0>
+				<Field1>nonlinear tint</Field1>
+				<Field2>don't overdraw fp weapon</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer blend function</Name>
+			<Type>Enum</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>alpha blend</Field0>
+				<Field1>multiply</Field1>
+				<Field2>double multiply</Field2>
+				<Field3>add</Field3>
+				<Field4>subtract</Field4>
+				<Field5>component min</Field5>
+				<Field6>component max</Field6>
+				<Field7>alpha-multiply add</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer fade mode</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>fade when perpendicular</Field1>
+				<Field2>fade when parallel</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>map flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>unfiltered</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>Secondary Map</Name>
+			<Type>Explanation</Type>
+			<Value>Optional multitextured second map</Value>
+		</Field>
+		<Field>
+			<Name>bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>anchor</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>with primary</Field0>
+				<Field1>with screen space</Field1>
+				<Field2>zsprite</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>unfiltered</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>u-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>u-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>u-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>u-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>u-animation scale:repeats#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>v-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>v-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation scale:repeats#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>rotation-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>rotation-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation scale:degrees#0 defaults to 360</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation center</Name>
+			<Type>Real_Point_2D</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>zsprite radius scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>gbxmodel</Group>
+	<GroupTag>mod2</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>5</Version>
+	<HeaderSize>232</HeaderSize>
+	<FieldCount>23</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags*</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>blend shared normals</Field0>
+				<Field1>parts have local nodes</Field1>
+				<Field2>ignore skinning</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>node list checksum*</Name>
+			<Type>Long_Integer</Type>
+		</Field>
+		<Field>
+			<Name>super-high detail cutoff:pixels</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>high detail cutoff:pixels</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>medium detail cutoff:pixels</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>low detail cutoff:pixels</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>super-low cutoff:pixels</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>super-high detail node count*:nodes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>high detail node count*:nodes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>medium detail node count*:nodes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>low detail node count*:nodes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>super-low detail node count*:nodes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>base map u-scale*#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>base map v-scale*#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>116</Value>
+		</Field>
+		<Field>
+			<Name>markers*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>model_markers_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>64</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>magic identifier*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>instances*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>model_marker_instance_block</Name>
+							<MaxElements>32</MaxElements>
+							<Size>32</Size>
+							<FieldCount>7</FieldCount>
+							<Fields>
+								<Field>
+									<Name>region index*</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>permutation index*</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>node index*</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>1</Value>
+								</Field>
+								<Field>
+									<Name>translation*</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name>rotation*</Name>
+									<Type>Real_Quaternion</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>nodes*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>model_node_block</Name>
+				<MaxElements>64</MaxElements>
+				<Size>156</Size>
+				<FieldCount>11</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>next sibling node index*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>model_node_block</Block>
+					</Field>
+					<Field>
+						<Name>first child node index*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>model_node_block</Block>
+					</Field>
+					<Field>
+						<Name>parent node index*</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>model_node_block</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>default translation*</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>default rotation*</Name>
+						<Type>Real_Quaternion</Type>
+					</Field>
+					<Field>
+						<Name>node distance from parent*</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>52</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>regions*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>gbxmodel_region_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>76</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>permutations*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>gbxmodel_region_permutation_block</Name>
+							<MaxElements>32</MaxElements>
+							<Size>88</Size>
+							<FieldCount>11</FieldCount>
+							<Fields>
+								<Field>
+									<Name>name^*</Name>
+									<Type>String</Type>
+								</Field>
+								<Field>
+									<Name>flags*</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>cannot be chosen randomly</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>28</Value>
+								</Field>
+								<Field>
+									<Name>super low*</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>gbxmodel_geometry_block</Block>
+								</Field>
+								<Field>
+									<Name>low*</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>gbxmodel_geometry_block</Block>
+								</Field>
+								<Field>
+									<Name>medium*</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>gbxmodel_geometry_block</Block>
+								</Field>
+								<Field>
+									<Name>high*</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>gbxmodel_geometry_block</Block>
+								</Field>
+								<Field>
+									<Name>super high*</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>gbxmodel_geometry_block</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>markers*</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>model_region_permutation_marker_block</Name>
+										<MaxElements>64</MaxElements>
+										<Size>80</Size>
+										<FieldCount>7</FieldCount>
+										<Fields>
+											<Field>
+												<Name>name^*</Name>
+												<Type>String</Type>
+											</Field>
+											<Field>
+												<Name>node index*</Name>
+												<Type>Short_Block_Index</Type>
+												<Block>model_node_block</Block>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Pad</Type>
+												<Value>2</Value>
+											</Field>
+											<Field>
+												<Name>rotation*</Name>
+												<Type>Real_Quaternion</Type>
+											</Field>
+											<Field>
+												<Name>translation*</Name>
+												<Type>Real_Point_3D</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Pad</Type>
+												<Value>16</Value>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>geometries*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>gbxmodel_geometry_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>48</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags*</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>0</FieldCount>
+						<Fields />
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>parts*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>gbxmodel_geometry_part_block</Name>
+							<MaxElements>32</MaxElements>
+							<Size>132</Size>
+							<FieldCount>20</FieldCount>
+							<Fields>
+								<Field>
+									<Name>flags*</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>2</FieldCount>
+									<Fields>
+										<Field0>stripped (INTERNAL)</Field0>
+										<Field1>ZONER: _model_part_local_nodes</Field1>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>shader index*</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>model_shader_reference_block</Block>
+								</Field>
+								<Field>
+									<Name>prev filthy part index</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>next filthy part index</Name>
+									<Type>Char_Integer</Type>
+								</Field>
+								<Field>
+									<Name>centroid primary node*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>centroid secondary node*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>centroid primary weight*</Name>
+									<Type>Real_Fraction</Type>
+								</Field>
+								<Field>
+									<Name>centroid secondary weight*</Name>
+									<Type>Real_Fraction</Type>
+								</Field>
+								<Field>
+									<Name>centroid*</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name>uncompressed vertices*</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>model_vertex_uncompressed_block</Name>
+										<MaxElements>65535</MaxElements>
+										<Size>68</Size>
+										<FieldCount>10</FieldCount>
+										<Fields>
+											<Field>
+												<Name>position*</Name>
+												<Type>Real_Point_3D</Type>
+											</Field>
+											<Field>
+												<Name>normal*</Name>
+												<Type>Real_Vector_3D</Type>
+											</Field>
+											<Field>
+												<Name>binormal*</Name>
+												<Type>Real_Vector_3D</Type>
+											</Field>
+											<Field>
+												<Name>tangent*</Name>
+												<Type>Real_Vector_3D</Type>
+											</Field>
+											<Field>
+												<Name>texture coords*</Name>
+												<Type>Real_Point_2D</Type>
+											</Field>
+											<Field>
+												<Name>node0 index*</Name>
+												<Type>Short_Integer</Type>
+											</Field>
+											<Field>
+												<Name>node1 index*</Name>
+												<Type>Short_Integer</Type>
+											</Field>
+											<Field>
+												<Name>node0 weight*</Name>
+												<Type>Real</Type>
+											</Field>
+											<Field>
+												<Name>node1 weight*</Name>
+												<Type>Real</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name>compressed vertices*</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>model_vertex_compressed_block</Name>
+										<MaxElements>65535</MaxElements>
+										<Size>32</Size>
+										<FieldCount>10</FieldCount>
+										<Fields>
+											<Field>
+												<Name>position*</Name>
+												<Type>Real_Point_3D</Type>
+											</Field>
+											<Field>
+												<Name>normal[11.11.10-bit]*</Name>
+												<Type>Long_Integer</Type>
+											</Field>
+											<Field>
+												<Name>binormal[11.11.10-bit]*</Name>
+												<Type>Long_Integer</Type>
+											</Field>
+											<Field>
+												<Name>tangent[11.11.10-bit]*</Name>
+												<Type>Long_Integer</Type>
+											</Field>
+											<Field>
+												<Name>texture coordinate u[16-bit]*</Name>
+												<Type>Short_Integer</Type>
+											</Field>
+											<Field>
+												<Name>texture coordinate v[16-bit]*</Name>
+												<Type>Short_Integer</Type>
+											</Field>
+											<Field>
+												<Name>node0 index(x3)*</Name>
+												<Type>Char_Integer</Type>
+											</Field>
+											<Field>
+												<Name>node1 index(x3)*</Name>
+												<Type>Char_Integer</Type>
+											</Field>
+											<Field>
+												<Name>node0 weight[16-bit]*</Name>
+												<Type>Short_Integer</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name>triangles*</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>model_triangle_block</Name>
+										<MaxElements>65535</MaxElements>
+										<Size>6</Size>
+										<FieldCount>4</FieldCount>
+										<Fields>
+											<Field>
+												<Name>vertex0 index*</Name>
+												<Type>Short_Integer</Type>
+											</Field>
+											<Field>
+												<Name>vertex1 index*</Name>
+												<Type>Short_Integer</Type>
+											</Field>
+											<Field>
+												<Name>vertex2 index*</Name>
+												<Type>Short_Integer</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>20</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>16</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>1</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>1</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>1</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>1</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>24</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>shaders*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>model_shader_reference_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>32</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>shader^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>shdr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>permutation</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

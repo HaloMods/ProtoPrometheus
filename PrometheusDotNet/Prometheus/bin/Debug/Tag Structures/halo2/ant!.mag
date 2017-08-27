@@ -1,0 +1,8 @@
+Antenna
+Struct 0 ant!_main 0xA0
+	ScriptRef 0x00
+	TagRef 0x04
+	TagRef 0x0C
+	Struct 0x98 ant!_sub_1 0x80
+	End ant!_sub_1
+End ant!_main

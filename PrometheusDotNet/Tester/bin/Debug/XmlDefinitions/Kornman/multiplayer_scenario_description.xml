@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>multiplayer_scenario_description</Group>
+	<GroupTag>mply</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>12</HeaderSize>
+	<FieldCount>2</FieldCount>
+	<Fields>
+		<Field>
+			<Name>multiplayer scenarios</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_description_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>68</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>net map info</Name>
+						<Type>Explanation</Type>
+						<Value>these provide the info required by the UI to load a net map</Value>
+					</Field>
+					<Field>
+						<Name>descriptive bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>displayed map name</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>ustr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>scenario tag directory path#this is the path to the directory containing the scenario tag file of the same name</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

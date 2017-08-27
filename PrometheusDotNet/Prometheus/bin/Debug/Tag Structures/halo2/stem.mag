@@ -1,0 +1,20 @@
+stem
+Struct 0x00 stem_main 0x60
+	TagRef 0x20
+	TagRef 0x40
+	TagRef 0x4C
+	Struct 0x58 stem_sub_1 0x28
+		Struct 0x00 stem_sub_1_1 0x0C
+		End stem_sub_1_1
+		Struct 0x08 stem_sub_1_2 0x02
+		End stem_sub_1_2
+		Struct 0x10 stem_sub_1_3 0x0C
+			TagRef 0x00
+		End stem_sub_1_3
+		Struct 0x18 stem_sub_1_4 0x08
+		End stem_sub_1_4
+		Struct 0x20 stem_sub_1_5 0x04
+		End stem_sub_1_5
+	End stem_sub_1
+End stem_main
+

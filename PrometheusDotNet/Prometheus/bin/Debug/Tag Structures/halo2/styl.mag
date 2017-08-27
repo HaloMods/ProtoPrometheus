@@ -1,0 +1,7 @@
+styl
+Struct 0x00 styl_main 0x5C
+	Struct 0x4C styl_sub_1 0x04
+	End styl_sub_1
+	Struct 0x54 styl_sub_2 0x54
+	End styl_sub_2
+End styl_main

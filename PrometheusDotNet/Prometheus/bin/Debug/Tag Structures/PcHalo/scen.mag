@@ -1,0 +1,45 @@
+Scenery
+Struct 0 Scenery_Main 508
+	TagRef 40
+	TagRef 56
+	TagRef 112
+	TagRef 128
+	TagRef 144
+	TagRef 160
+	Struct 320 Attachments 72
+		TagRef 0
+		IntSwapRange 0 to 16
+		LongSwapRange 48 to 56
+		IntSwapRange 56 to 72
+	End Attachments
+	Struct 332 Widgets 32
+		TagRef 0
+		IntSwapRange 0 to 32
+	End Widgets
+	Struct 344 Functions 360  
+		IntSwapRange 0 to 8
+		LongSwapRange 8 to 16
+		IntSwapRange 16 to 28
+		LongSwapRange 28 to 40
+		IntSwapRange 40 to 328
+	End Functions
+	Struct 356 ChangeColors 44
+		Struct 32 ChangeColorsPermutations 28
+			IntSwapRange 0 to 28
+		End ChangeColorsPermutations
+		LongSwapRange 0 to 4
+		IntSwapRange 4 to 44
+	End ChangeColors
+	IntSwapRange 0 to 264
+	LongSwapRange 264 to 272
+	IntSwapRange 272 to 316
+	LongSwapRange 316 to 320
+	IntSwapRange 320 to 384
+	LongSwapRange 384 to 388
+	IntSwapRange 388 to 408
+	LongSwapRange 408 to 416
+	IntSwapRange 416 to 508
+	IntClear 368
+	IntClear 372
+	IntClear 376
+End Scenery_Main

@@ -1,0 +1,33 @@
+wgit
+Struct 0x00 wgit_main 0x68
+	TagRef 0x18
+	Struct 0x20 wgit_sub_1 0x4C
+		Struct 0x04 wgit_sub_1_1 0x3C
+			TagRef 0x24
+			ScriptRef 0x30
+		End wgit_sub_1_1
+		Struct 0x0C wgit_sub_1_2 0x18
+		End wgit_sub_1_2
+		Struct 0x1C wgit_sub_1_3 0x2C
+			ScriptRef 0x24
+		End wgit_sub_1_3
+		Struct 0x24 wgit_sub_1_4 0x38
+			TagRef 0x18
+		End wgit_sub_1_4
+		Struct 0x2C wgit_sub_1_5 0x4C
+			Struct 0x0C wgit_sub_1_5_1 0x20
+			End wgit_sub_1_5_1
+			Struct 0x14 wgit_sub_1_5_2 0x20
+			End wgit_sub_1_5_2
+		End wgit_sub_1_5
+		Struct 0x44 wgit_sub_1_6 0x18
+			TagRef 0x04
+		End wgit_sub_1_6
+	End wgit_sub_1
+	ScriptRef 0x2C
+	Struct 0x30 wgit_sub_2 0x0C
+		ScriptRef 0x00
+		Struct 0x04 wgit_sub_2_1 0x04
+		End wgit_sub_2_1
+	End wgit_sub_2
+End wgit_main

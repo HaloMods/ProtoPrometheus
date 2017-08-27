@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>actor_variant</Group>
+	<GroupTag>actv</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>568</HeaderSize>
+	<FieldCount>103</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>can shoot while flying</Field0>
+				<Field1>interpolate color in HSV</Field1>
+				<Field2>has unlimited grenades</Field2>
+				<Field3>moveswitch stay w/ friends</Field3>
+				<Field4>active camouflage</Field4>
+				<Field5>super active camouflage</Field5>
+				<Field6>cannot use ranged weapons</Field6>
+				<Field7>prefer passenger seat</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>actor definition</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>actr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>unit</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>unit</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>major variant</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>actv</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>movement switching</Name>
+			<Type>Explanation</Type>
+			<Value>note: only the flood combat forms will ever try to switch movement types voluntarily during combat</Value>
+		</Field>
+		<Field>
+			<Name>movement type#when we have a choice of movement types, which type we will use</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>always run</Field0>
+				<Field1>always crouch</Field1>
+				<Field2>switch types</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>initial crouch chance:[0,1]#actors that start their movement try to maintain this fraction of crouched actors</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>crouch time:seconds#when switching movement types, how long we will stay crouched for before running</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>run time:seconds#when switching movement types, how long we will run for before slowing to a crouch</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>ranged combat</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>weapon</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>weap</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>maximum firing distance:world units#we can only fire our weapon at targets within this distance</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rate of fire#how many times per second we pull the trigger (zero = continuously held down)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>projectile error:degrees#error added to every projectile we fire</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>first burst delay time:seconds</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>new-target firing pattern time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>surprise delay time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>surprise fire-wildly time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>death fire-wildly chance:[0,1]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>death fire-wildly time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>desired combat range:world units</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>custom stand gun offset#custom standing gun offset for overriding the default in the base actor</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name>custom crouch gun offset#custom crouching gun offset for overriding the default in the base actor</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name>target tracking:[0,1]#how well our bursts track moving targets. 0.0= fire at the position they were standing when we started the burst. 1.0= fire at current position</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>target leading:[0,1]#how much we lead moving targets. 0.0= no prediction. 1.0= predict completely.</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>weapon damage modifier#what fraction of its normal damage our weapon inflicts (zero = no modifier)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>damage per second#only used if weapon damage modifier is zero... how much damage we should deliver to the target per second while firing a burst at them (zero = use weapon default)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>burst geometry</Name>
+			<Type>Explanation</Type>
+			<Value>at the start of every burst we pick a random point near the target to fire at, on either the left or the right side.
+the burst origin angle controls whether this error is exactly horizontal or might have some vertical component.
+
+over the course of the burst we move our projectiles back in the opposite direction towards the target. this return motion is also controlled by an angle that specifies how close to the horizontal it is.
+
+for example if the burst origin angle and the burst return angle were both zero, and the return length was the same as the burst length, every burst would start the same amount away from the target (on either the left or right) and move back to exactly over the target at the end of the burst.</Value>
+		</Field>
+		<Field>
+			<Name>burst origin radius:world units#how far away from the target the starting point is</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>burst origin angle:degrees#the range from the horizontal that our starting error can be</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>burst return length:world units#how far the burst point moves back towards the target (could be negative)</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>burst return angle:degrees#the range from the horizontal that the return direction can be</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>burst duration:seconds#how long each burst we fire is</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>burst separation:seconds#how long we wait between bursts</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>burst angular velocity:degrees per second#the maximum rate at which we can sweep our fire (zero = unlimited)</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>special damage modifier:[0,1]#damage modifier for special weapon fire (applied in addition to the normal damage modifier. zero = no change)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>special projectile error:degrees#projectile error angle for special weapon fire (applied in addition to the normal error)</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>firing patterns</Name>
+			<Type>Explanation</Type>
+			<Value>a firing pattern lets you modify the properties of an actor's burst geometry. actors choose which firing pattern to use based on their current state:
+     'new-target' when the target just appeared
+     'moving' when the actor is moving
+     'berserk' if the actor is berserk
+if none of these apply, no firing pattern is used.
+
+the default values in the burst geometry are multiplied by any non-zero modifiers in the firing pattern.</Value>
+		</Field>
+		<Field>
+			<Name>new-target burst duration#burst duration multiplier for newly appeared targets (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>new-target burst separation#burst separation multiplier for newly appeared targets (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>new-target rate of fire#rate-of-fire multiplier for newly appeared targets (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>new-target projectile error#error multiplier for newly appeared targets (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>moving burst duration#burst duration multiplier when the actor is moving (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>moving burst separation#burst separation multiplier when the actor is moving (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>moving rate of fire#rate-of-fire multiplier when the actor is moving (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>moving projectile error#error multiplier when the actor is moving (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>berserk burst duration#burst duration multiplier when the actor is berserk (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk burst separation#burst separation multiplier when the actor is berserk (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk rate of fire#rate-of-fire multiplier when the actor is berserk (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk projectile error#error multiplier when the actor is berserk (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>special-case firing properties</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>super-ballistic range#we try to aim our shots super-ballistically if target is outside this range (zero = never)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>bombardment range#we offset our burst targets randomly by this range when firing at non-visible enemies (zero = never)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>modified vision range#any custom vision range that this actor variant has (zero = normal)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>special-fire mode#the type of special weapon fire that we can use</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>overcharge</Field1>
+				<Field2>secondary trigger</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>special-fire situation#when we will decide to use our special weapon fire mode</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>never</Field0>
+				<Field1>enemy visible</Field1>
+				<Field2>enemy out of sight</Field2>
+				<Field3>strafing</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>special-fire chance:[0,1]#how likely we are to use our special weapon fire mode</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>special-fire delay:seconds#how long we must wait between uses of our special weapon fire mode</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserking and melee</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>melee range:world units#how close an enemy target must get before triggering a melee charge</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>melee abort range:world units#if our target gets this far away from us, we stop trying to melee them</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk firing ranges:world units#if we are outside maximum range, we advance towards target, stopping when we reach minimum range</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>berserk melee range:world units#while berserking, how close an enemy target must get before triggering a melee charge</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk melee abort range:world units#while berserking, if our target gets this far away from us, we stop trying to melee them</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>grenades</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>grenade type#type of grenades that we throw</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>human fragmentation</Field0>
+				<Field1>covenant plasma</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>trajectory type#how we throw our grenades</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>toss</Field0>
+				<Field1>lob</Field1>
+				<Field2>bounce</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>grenade stimulus#what causes us to consider throwing a grenade</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>never</Field0>
+				<Field1>visible target</Field1>
+				<Field2>seek cover</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>minimum enemy count#how many enemies must be within the radius of the grenade before we will consider throwing there</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>enemy radius:world units#we consider enemies within this radius when determining where to throw</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>grenade velocity:world units per second#how fast we can throw our grenades</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>grenade ranges:world units#ranges within which we will consider throwing a grenade</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>collateral damage radius:world units#we won't throw if there are friendlies around our target within this range</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>grenade chance:[0,1]#how likely we are to throw a grenade</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>grenade check time:seconds#for continuous stimuli (e.g. visible target), how often we check to see if we want to throw a grenade</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>encounter grenade timeout:seconds#we cannot throw grenades if someone else in our encounter threw one this recently</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>items</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>equipment#equipment item to drop when we die</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>eqip</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>grenade count#number of grenades that we start with</Name>
+			<Type>Short_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>dont drop grenades chance:[0,1]#how likely we are not to drop any grenades when we die, even if we still have some</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>drop weapon loaded#amount of ammo loaded into the weapon that we drop (in fractions of a clip, e.g. 0.3 to 0.5)</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>drop weapon ammo#total number of rounds in the weapon that we drop (ignored for energy weapons)</Name>
+			<Type>Short_Bounds</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>unit</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>body vitality#maximum body vitality of our unit</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>shield vitality#maximum shield vitality of our unit</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>shield sapping radius:world units#how far away we can drain the player's shields</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>forced shader permutation#if nonzero, overrides the unit's shader permutation</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>change colors</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>actor_variant_change_colors_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>32</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>color lower bound</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>color upper bound</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

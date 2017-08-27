@@ -1,0 +1,7 @@
+decal
+Struct 0 deca_main 0xAC
+	ScriptRef 0x00
+	ScriptRef 0x04
+	TagRef 0x08
+	TagRef 0x88
+End deca_main

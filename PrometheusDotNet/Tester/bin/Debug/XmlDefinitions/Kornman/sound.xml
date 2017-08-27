@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>sound</Group>
+	<GroupTag>snd!</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>4</Version>
+	<HeaderSize>164</HeaderSize>
+	<FieldCount>33</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>fit to adpcm blocksize</Field0>
+				<Field1>split long sound into permutations</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>class</Name>
+			<Type>Enum</Type>
+			<FieldCount>51</FieldCount>
+			<Fields>
+				<Field0>projectile_impact</Field0>
+				<Field1>projectile_detonation</Field1>
+				<Field2 />
+				<Field3 />
+				<Field4>weapon_fire</Field4>
+				<Field5>weapon_ready</Field5>
+				<Field6>weapon_reload</Field6>
+				<Field7>weapon_empty</Field7>
+				<Field8>weapon_charge</Field8>
+				<Field9>weapon_overheat</Field9>
+				<Field10>weapon_idle</Field10>
+				<Field11 />
+				<Field12 />
+				<Field13>object_impacts</Field13>
+				<Field14>particle_impacts</Field14>
+				<Field15>slow_particle_impacts</Field15>
+				<Field16 />
+				<Field17 />
+				<Field18>unit_footsteps</Field18>
+				<Field19>unit_dialog</Field19>
+				<Field20 />
+				<Field21 />
+				<Field22>vehicle_collision</Field22>
+				<Field23>vehicle_engine</Field23>
+				<Field24 />
+				<Field25 />
+				<Field26>device_door</Field26>
+				<Field27>device_force_field</Field27>
+				<Field28>device_machinery</Field28>
+				<Field29>device_nature</Field29>
+				<Field30>device_computers</Field30>
+				<Field31 />
+				<Field32>music</Field32>
+				<Field33>ambient_nature</Field33>
+				<Field34>ambient_machinery</Field34>
+				<Field35>ambient_computers</Field35>
+				<Field36 />
+				<Field37 />
+				<Field38 />
+				<Field39>first_person_damage</Field39>
+				<Field40 />
+				<Field41 />
+				<Field42 />
+				<Field43 />
+				<Field44>scripted_dialog_player</Field44>
+				<Field45>scripted_effect</Field45>
+				<Field46>scripted_dialog_other</Field46>
+				<Field47>scripted_dialog_force_unspatialized</Field47>
+				<Field48 />
+				<Field49 />
+				<Field50>game_event</Field50>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>sample rate*</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>22kHz</Field0>
+				<Field1>44kHz</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>minimum distance:world units#the distance below which this sound no longer gets louder</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum distance:world units#the distance beyond which this sound is no longer audible</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>skip fraction#fraction of requests to play this sound that will be ignored (0 means always play.)</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>randomization</Name>
+			<Type>Explanation</Type>
+			<Value>these settings control random variation of volume and pitch.</Value>
+		</Field>
+		<Field>
+			<Name>random pitch bounds#the sound's pitch will be randomly selected and will be in this range. (1.0 is the recorded pitch.)</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>inner cone angle:degrees#within the cone defined by this angle and the sound's direction, the sound plays with a gain of 1.0.</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>outer cone angle:degrees#outside the cone defined by this angle and the sound's direction, the sound plays with a gain of OUTER CONE GAIN. (0 means the sound does not attenuate with direction.)</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>outer cone gain#the gain to use when the sound is directed away from the listener</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>gain modifier</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum bend per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>when scale is ZERO</Name>
+			<Type>Explanation</Type>
+			<Value>as the sound's input scale changes from zero to one, these modifiers move between the two values specified here. the sound will play using the current scale modifier multiplied by the value specified above. (0 values are ignored.)</Value>
+		</Field>
+		<Field>
+			<Name>skip fraction modifier</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>gain modifier</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>pitch modifier</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>when scale is ONE</Name>
+			<Type>Explanation</Type>
+			<Value>as the sound's input scale changes from zero to one, these modifiers move between the two values specified here. the sound will play using the current scale modifier multiplied by the value specified above. (0 values are ignored.)</Value>
+		</Field>
+		<Field>
+			<Name>skip fraction modifier</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>gain modifier</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>pitch modifier</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>import properties</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>encoding*</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>mono</Field0>
+				<Field1>stereo</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>compression*</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>xbox adpcm</Field1>
+				<Field2>ima adpcm</Field2>
+				<Field3>ogg</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>promotion sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>promotion count#when there are this many instances of the sound, promote to the new sound.</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>pitch ranges#pitch ranges allow multiple samples to represent the same sound at different pitches</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>sound_pitch_range_block</Name>
+				<MaxElements>8</MaxElements>
+				<Size>72</Size>
+				<FieldCount>9</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name*#the name of the imported pitch range directory</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>pitch control</Name>
+						<Type>Explanation</Type>
+						<Value>these settings control what pitches this set of samples represents. if there is only one pitch range, all three values are ignored.</Value>
+					</Field>
+					<Field>
+						<Name>natural pitch#the apparent pitch when these samples are played at their recorded pitch.</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>bend bounds#the range of pitches that will be represented using this sample. this should always contain the natural pitch.</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>actual permutation count*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name>permutations#permutations represent equivalent variations of this sound.</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>sound_permutations_block</Name>
+							<MaxElements>256</MaxElements>
+							<Size>124</Size>
+							<FieldCount>10</FieldCount>
+							<Fields>
+								<Field>
+									<Name>name*^#name of the file from which this sample was imported</Name>
+									<Type>String</Type>
+								</Field>
+								<Field>
+									<Name>skip fraction#fraction of requests to play this permutation that are ignored (a different permutation is selected.)</Name>
+									<Type>Real_Fraction</Type>
+								</Field>
+								<Field>
+									<Name>gain#fraction of recorded volume to play at.</Name>
+									<Type>Real_Fraction</Type>
+								</Field>
+								<Field>
+									<Name>compression*</Name>
+									<Type>Enum</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>xbox adpcm</Field1>
+										<Field2>ima adpcm</Field2>
+										<Field3>ogg</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>next permutation index*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>20</Value>
+								</Field>
+								<Field>
+									<Name>samples#sampled sound data</Name>
+									<Type>Data</Type>
+									<Data>
+										<Name />
+										<MaxSize>10195568</MaxSize>
+									</Data>
+								</Field>
+								<Field>
+									<Name>mouth data</Name>
+									<Type>Data</Type>
+									<Data>
+										<Name />
+										<MaxSize>10195584</MaxSize>
+									</Data>
+								</Field>
+								<Field>
+									<Name>subtitle data</Name>
+									<Type>Data</Type>
+									<Data>
+										<Name />
+										<MaxSize>0</MaxSize>
+									</Data>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>microsoft is totally gay.</Name>
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

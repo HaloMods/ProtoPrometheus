@@ -1,0 +1,8 @@
+wgtz
+Struct 0x00 wgtz_main 0x20
+	TagRef 0x00
+	Struct 0x08 wgtz_sub_1 0x08
+		TagRef 0x00
+	End wgtz_sub_1
+	TagRef 0x18
+End wgtz_main

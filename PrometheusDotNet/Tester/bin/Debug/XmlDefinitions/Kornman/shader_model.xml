@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>shader_model</Group>
+	<GroupTag>soso</GroupTag>
+	<ParentGroupTag>shdr</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>400</HeaderSize>
+	<FieldCount>63</FieldCount>
+	<Fields>
+		<Field>
+			<Name>model shader</Name>
+			<Type>Explanation</Type>
+			<Value>Setting &lt;true atmospheric fog&gt; enables per-pixel atmospheric fog but disables point/spot lights, planar fog, and the ability to control the atmospheric fog density for this shader.</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>detail after reflection</Field0>
+				<Field1>two-sided</Field1>
+				<Field2>not alpha-tested</Field2>
+				<Field3>alpha-blended decal</Field3>
+				<Field4>true atmospheric fog</Field4>
+				<Field5>disable two-sided culling</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>translucency#amount of light that can illuminate the shader from behind</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>change color</Name>
+			<Type>Explanation</Type>
+			<Value>Change color is used to recolor the diffuse map, it affects pixels based on the BLUE channel of the multipurpose map.</Value>
+		</Field>
+		<Field>
+			<Name>change color source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A</Field1>
+				<Field2>B</Field2>
+				<Field3>C</Field3>
+				<Field4>D</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>self-illumination</Name>
+			<Type>Explanation</Type>
+			<Value>Self-illumination adds diffuse light to pixels based on the GREEN channel of the multipurpose map. The external self-illumination color referenced by &lt;color source&gt; is modulated by the self-illumination animation.</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>no random phase</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>color source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A</Field1>
+				<Field2>B</Field2>
+				<Field3>C</Field3>
+				<Field4>D</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>animation period:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>animation color lower bound</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>animation color upper bound</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>maps</Name>
+			<Type>Explanation</Type>
+			<Value>Base map alpha is used for alpha-testing.
+
+Multipurpose map is used for the following:
+* RED: specular reflection mask (modulates reflections)
+* GREEN: self-illumination mask (adds to diffuse light)
+* BLUE: primary change color mask (recolors diffuse map)
+* ALPHA: auxiliary mask
+
+Note that when DXT1 compressed color-key textures are used for the multipurpose map (as they should be normally), the alpha channel is 1-bit and any non-zero alpha pixels must have zero-color, therefore the secondary change color mask cannot affect pixels already affected by any of the other channels.
+
+Detail map affects diffuse map, and optionally affects reflection if &lt;detail after reflection&gt; flag is set.</Value>
+		</Field>
+		<Field>
+			<Name>map u-scale#0 defaults to 1; scales all 2D maps simultaneously</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>map v-scale#0 defaults to 1; scales all 2D maps simultaneously</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>base map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>multipurpose map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>detail function#controls how detail map is applied to diffuse map</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>double/biased multiply</Field0>
+				<Field1>multiply</Field1>
+				<Field2>double/biased add</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>detail mask#controls how detail map is masked</Name>
+			<Type>Enum</Type>
+			<FieldCount>9</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>reflection mask inverse</Field1>
+				<Field2>reflection mask</Field2>
+				<Field3>self-illumination mask inverse</Field3>
+				<Field4>self-illumination mask</Field4>
+				<Field5>change-color mask inverse</Field5>
+				<Field6>change-color mask</Field6>
+				<Field7>multipurpose map alpha inverse</Field7>
+				<Field8>multipurpose map alpha</Field8>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>detail map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>detail map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>detail map v-scale#0 defaults to 1 (applied on top of detail map scale above)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>texture scrolling animation</Name>
+			<Type>Explanation</Type>
+			<Value>Scrolls all 2D maps simultaneously.</Value>
+		</Field>
+		<Field>
+			<Name>u-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>u-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>u-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>u-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>u-animation scale:repeats#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>v-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>v-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>v-animation scale:repeats#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>rotation-animation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>rotation-animation period:seconds#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation phase</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation scale:degrees#0 defaults to 360</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rotation-animation center</Name>
+			<Type>Real_Point_2D</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>reflection properties</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>reflection falloff distance:world units#distance at which the reflection begins to fade out</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>reflection cutoff distance:world units#distance at which the reflection fades out entirely (0 means no cutoff)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>perpendicular brightness:[0,1]#reflection brightness when viewed perpendicularly</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>perpendicular tint color#reflection tint color when viewed perpendicularly</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>parallel brightness:[0,1]#reflection brightness when viewed at a glancing angle</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>parallel tint color#reflection tint color when viewed at a glancing angle</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>reflection cube map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

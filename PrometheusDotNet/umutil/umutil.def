@@ -1,0 +1,5 @@
+LIBRARY	umutil
+
+EXPORTS
+CompressMapFile @1
+DecompressMapFile @2

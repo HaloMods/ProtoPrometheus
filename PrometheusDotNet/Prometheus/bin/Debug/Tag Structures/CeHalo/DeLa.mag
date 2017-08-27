@@ -1,0 +1,32 @@
+Ui_Widget_Definition
+Struct 0 Ui_widget_definition 1004
+	TagRef 56
+	struct 72 GameDataInputs 36
+	End GameDataInputs
+	Struct 84 EventHandlers 72
+		TagRef 8
+		TagRef 24
+		IntSwap 0
+		LongSwapRange 4 to 8
+		IntSwapRange 8 to 72
+	End EventHandlers
+	Struct 96 SearchAndReplace 34
+	End SearchAndReplace
+	TagRef 236
+	TagRef 252
+	TagRef 340
+	TagRef 356
+	TagRef 420
+	Struct 724 ConditionalWidgets 80
+	End ConditionalWidgets
+	Struct 992 ChildWidgets 80
+	End ChildWidgets
+	LongSwapRange 0 to 4
+	longSwapRange 36 to 56
+	IntSwapRange 56 to 284
+	LongSwapRange 284 to 288
+	IntSwapRange 288 to 304
+	LongSwapRange 304 to 308
+	IntSwapRange 308 to 1004
+End Ui_widget_definition
+

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>bitmap</Group>
+	<GroupTag>bitm</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>7</Version>
+	<HeaderSize>108</HeaderSize>
+	<FieldCount>32</FieldCount>
+	<Fields>
+		<Field>
+			<Name />
+			<Type>Custom</Type>
+			<Custom>bshw</Custom>
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Explanation</Type>
+			<Value>Type controls bitmap 'geometry'. All dimensions must be a power of two except for SPRITES and INTERFACE BITMAPS:
+
+* 2D TEXTURES: Ordinary, 2D textures will be generated.
+* 3D TEXTURES: Volume textures will be generated from each sequence of 2D texture 'slices'.
+* CUBE MAPS: Cube maps will be generated from each consecutive set of six 2D textures in each sequence, all faces of a cube map must be square and the same size.
+* SPRITES: Sprite texture pages will be generated.
+* INTERFACE BITMAPS: Similar to 2D TEXTURES, but without mipmaps and without the power of two restriction.</Value>
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>2D textures</Field0>
+				<Field1>3D textures</Field1>
+				<Field2>cube maps</Field2>
+				<Field3>sprites</Field3>
+				<Field4>interface bitmaps</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>format</Name>
+			<Type>Explanation</Type>
+			<Value>Format controls how pixels will be stored internally:
+
+* COMPRESSED WITH COLOR-KEY TRANSPARENCY: DXT1 compression, uses 4 bits per pixel. 4x4 blocks of pixels are reduced to 2 colors and interpolated, alpha channel uses color-key transparency instead of alpha from the plate (all zero-alpha pixels also have zero-color).
+* COMPRESSED WITH EXPLICIT ALPHA: DXT2/3 compression, uses 8 bits per pixel. Same as DXT1 without the color key transparency, alpha channel uses alpha from plate quantized down to 4 bits per pixel.
+* COMPRESSED WITH INTERPOLATED ALPHA: DXT4/5 compression, uses 8 bits per pixel. Same as DXT2/3, except alpha is smoother. Better for smooth alpha gradients, worse for noisy alpha.
+* 16-BIT COLOR: Uses 16 bits per pixel. Depending on the alpha channel, bitmaps are quantized to either r5g6b5 (no alpha), a1r5g5b5 (1-bit alpha), or a4r4g4b4 (&gt;1-bit alpha).
+* 32-BIT COLOR: Uses 32 bits per pixel. Very high quality, can have alpha at no added cost. This format takes up the most memory, however. Bitmap formats are x8r8g8b8 and a8r8g8b.
+* MONOCHROME: Uses either 8 or 16 bits per pixel. Bitmap formats are a8 (alpha), y8 (intensity), ay8 (combined alpha-intensity) and a8y8 (separate alpha-intensity).
+
+Note: Height maps (a.k.a. bump maps) should use 32-bit color; this is internally converted to a palettized format which takes less memory.</Value>
+		</Field>
+		<Field>
+			<Name>format</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>compressed with color-key transparency</Field0>
+				<Field1>compressed with explicit alpha</Field1>
+				<Field2>compressed with interpolated alpha</Field2>
+				<Field3>16-bit color</Field3>
+				<Field4>32-bit color</Field4>
+				<Field5>monochrome</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>usage</Name>
+			<Type>Explanation</Type>
+			<Value>Usage controls how mipmaps are generated:
+
+* ALPHA BLEND: Pixels with zero alpha are ignored in mipmaps, to prevent bleeding the transparent color.
+* DEFAULT: Downsampling works normally, as in Photoshop.
+* HEIGHT MAP: The bitmap (normally grayscale) is a height map which gets converted to a bump map. Uses &lt;bump height&gt; below. Alpha is passed through unmodified.
+* DETAIL MAP: Mipmap color fades to gray, controlled by &lt;detail fade factor&gt; below. Alpha fades to white.
+* LIGHT MAP: Generates no mipmaps. Do not use!
+* VECTOR MAP: Used mostly for special effects; pixels are treated as XYZ vectors and normalized after downsampling. Alpha is passed through unmodified.</Value>
+		</Field>
+		<Field>
+			<Name>usage</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>alpha-blend</Field0>
+				<Field1>default</Field1>
+				<Field2>height map</Field2>
+				<Field3>detail map</Field3>
+				<Field4>light map</Field4>
+				<Field5>vector map</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>enable diffusion dithering</Field0>
+				<Field1>disable height map compression</Field1>
+				<Field2>uniform sprite sequences</Field2>
+				<Field3>filthy sprite bug fix</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>post-processing</Name>
+			<Type>Explanation</Type>
+			<Value>These properties control how mipmaps are post-processed.</Value>
+		</Field>
+		<Field>
+			<Name>detail fade factor:[0,1]#0 means fade to gray by last mipmap, 1 means fade to gray by first mipmap</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>sharpen amount:[0,1]#sharpens mipmap after downsampling</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>bump height:repeats#the apparent height of the bump map above the triangle it is textured onto, in texture repeats (i.e., 1.0 would be as high as the texture is wide)</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>sprite processing</Name>
+			<Type>Explanation</Type>
+			<Value>When creating a sprite group, specify the number and size of textures that the group is allowed to occupy. During importing, you'll receive feedback about how well the alloted space was used.</Value>
+		</Field>
+		<Field>
+			<Name>sprite budget size</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>32x32</Field0>
+				<Field1>64x64</Field1>
+				<Field2>128x128</Field2>
+				<Field3>256x256</Field3>
+				<Field4>512x512</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>sprite budget count</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>color plate</Name>
+			<Type>Explanation</Type>
+			<Value>The original TIFF file used to import the bitmap group.</Value>
+		</Field>
+		<Field>
+			<Name>color plate width*:pixels</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>color plate height*:pixels</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>compressed color plate data*</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>9279084</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name>processed pixel data</Name>
+			<Type>Explanation</Type>
+			<Value>Pixel data after being processed by the tool.</Value>
+		</Field>
+		<Field>
+			<Name>processed pixel data*</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>8997649</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name>miscellaneous</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>blur filter size:[0,10] pixels#blurs the bitmap before generating mipmaps</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>alpha bias:[-1,1]#affects alpha mipmap generation</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>mipmap count:levels#0 defaults to all levels</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>...more sprite processing</Name>
+			<Type>Explanation</Type>
+			<Value>Sprite usage controls the background color of sprite plates.</Value>
+		</Field>
+		<Field>
+			<Name>sprite usage</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>blend/add/subtract/max</Field0>
+				<Field1>multiply/min</Field1>
+				<Field2>double multiply</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>sprite spacing*</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>sequences*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>bitmap_group_sequence_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>64</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>first bitmap index*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>bitmap count*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>sprites*</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>bitmap_group_sprite_block</Name>
+							<MaxElements>64</MaxElements>
+							<Size>32</Size>
+							<FieldCount>9</FieldCount>
+							<Fields>
+								<Field>
+									<Name>bitmap index*</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name>left*</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>right*</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>top*</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>bottom*</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>registration point*</Name>
+									<Type>Real_Point_2D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>bitmaps*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>bitmap_data_block</Name>
+				<MaxElements>2048</MaxElements>
+				<Size>48</Size>
+				<FieldCount>17</FieldCount>
+				<Fields>
+					<Field>
+						<Name>signature*</Name>
+						<Type>Tag</Type>
+					</Field>
+					<Field>
+						<Name>width*:pixels</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>height*:pixels</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>depth*:pixels#depth is 1 for 2D textures and cube maps</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>type*#determines bitmap 'geometry'</Name>
+						<Type>Enum</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>2D texture</Field0>
+							<Field1>3D texture</Field1>
+							<Field2>cube map</Field2>
+							<Field3>white</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>format*#determines how pixels are represented internally</Name>
+						<Type>Enum</Type>
+						<FieldCount>18</FieldCount>
+						<Fields>
+							<Field0>a8</Field0>
+							<Field1>y8</Field1>
+							<Field2>ay8</Field2>
+							<Field3>a8y8</Field3>
+							<Field4>unused1</Field4>
+							<Field5>unused2</Field5>
+							<Field6>r5g6b5</Field6>
+							<Field7>unused3</Field7>
+							<Field8>a1r5g5b5</Field8>
+							<Field9>a4r4g4b4</Field9>
+							<Field10>x8r8g8b8</Field10>
+							<Field11>a8r8g8b8</Field11>
+							<Field12>unused4</Field12>
+							<Field13>unused5</Field13>
+							<Field14>dxt1</Field14>
+							<Field15>dxt3</Field15>
+							<Field16>dxt5</Field16>
+							<Field17>p8-bump</Field17>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>flags*</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>6</FieldCount>
+						<Fields>
+							<Field0>power of two dimensions</Field0>
+							<Field1>compressed</Field1>
+							<Field2>palettized</Field2>
+							<Field3>swizzled</Field3>
+							<Field4>linear</Field4>
+							<Field5>v16u16</Field5>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>registration point*</Name>
+						<Type>Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>mipmap count*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>pixels offset*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>base address</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

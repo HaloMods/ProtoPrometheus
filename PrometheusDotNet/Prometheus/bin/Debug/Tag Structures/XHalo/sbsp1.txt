@@ -1,0 +1,145 @@
+Scenario_Structure_Bsp
+Struct 0 SbspMain 648
+	TagRef 0
+	Struct 164 CollisionMaterials 20
+		TagRef 0
+		IntSwapRange 0 to 20
+	End CollisionMaterials
+	Struct 176 CollisionBsp 96                  
+		Struct 0 CollisionBsp_Bsp3dNodes 12
+			IntSwapRange 0 to 12
+		End CollisionBsp_Bsp3dNodes
+		Struct 12 CollisionBsp_Planes 16
+			IntSwapRange 0 to 16 
+		End CollisionBsp_Planes
+		Struct 24 CollisionBsp_Leaves 8
+			LongSwap 0
+			LongSwap 2
+			IntSwap 4
+		End CollisionBsp_Leaves
+		Struct 36 CollisionBsp_BSP2DReferences 8
+			IntSwapRange 0 to 8
+		End CollisionBsp_BSP2DReferences
+		Struct 48 CollisionBsp_BSP2DNodes 20
+			IntSwapRange 0 to 20
+		End CollisionBsp_BSP2DNodes
+		Struct 60 CollisionBsp_Surfaces 12
+			IntSwap 0
+			IntSwap 4
+			LongSwap 10
+		End CollisionBsp_Surfaces
+		Struct 72 CollisionBsp_Edges 24   
+			IntSwapRange 0 to 24
+		End CollisionBsp_Edges
+		Struct 84 CollisionBsp_Vertices 16
+			IntSwapRange 0 to 16  	
+		End CollisionBsp_Vertices
+		IntSwapRange 0 to 96
+	End CollisionBsp
+	Struct 188 Nodes 6
+	End Nodes
+	Struct 224 Leaves 16
+		LongSwap 8
+		LongSwap 10
+		IntSwap 12
+	End Leaves
+	Struct 236 LeafSurfaces 8            
+		IntSwapRange 0 to 8
+	End LeafSurfaces
+	Struct 248 Surfaces 6
+		LongSwapRange 0 to 6
+	End Surfaces
+	Struct 260 LightMaps 32                   
+		Struct 20 LightMapsMaterials 256 
+			TagRef 0
+			Vertices 216 And 236
+			IntSwapRange 0 to 52
+			LongSwap 52
+			LongSwap 54
+			IntSwapRange 56 to 172
+			LongSwap 172
+			LongSwap 174
+			LongSwap 176
+			LongSwap 178
+			IntSwap 180
+			IntSwap 184
+			IntSwap 200
+			IntSwap 216
+			IntSwap 236
+		End LightMapsMaterials
+		IntSwapRange 0 to 32
+	End LightMaps
+	Struct 284 LensFlares 16                 
+		TagRef 0
+		IntSwapRange 0 to 16
+	End LensFlares
+	Struct 296 LensFlareMarkers 16              
+	End LensFlareMarkers
+	Struct 308 Clusters 104                     
+		Struct 40 PredictedResources 8      
+		End PredictedResources
+		Struct 52 SubClusters 36            
+			Struct 24 SurfaceIndices 4  
+			End SurfaceIndices
+		End SubClusters
+	End Clusters
+	struct 340 ClusterPortals 64
+		Struct 52 ClusterPortalsVertices 12
+		End ClusterPortalsVertices	
+	End ClusterPortals
+	Struct 364 BreakableSurface 48
+	End BreakableSurface
+	Struct 376 FogPlanes 32
+		Struct 20 FogPlanesVertices 12
+		End FogPlanesVertices
+	End FogPlanes
+	Struct 388 FogRegions 40
+	End FogRegions
+	Struct 400 FogPalette 136
+	End FogPalette
+	Struct 436 WeatherPalette 240
+		TagRef 32
+		TagRef 128
+	End WeatherPalette
+	Struct 448 WeatherPoly 32
+		Struct 20 WeatherPolyPlanes 16
+		End WeatherPolyPlanes
+	End WeatherPoly
+	Struct 484 PathFindingSurfaces 1
+	end PathFindingSurfaces
+	Struct 496 PathFindingEdges 1
+	End PathFindingEdges
+	Struct 508 BackGroundSounds 116
+		TagRef 32
+	End BackGroundSounds
+	Struct 520 SoundEnvironment 80
+		TagRef 32
+	End SoundEnvironment
+	Struct 576 Markers 60
+	End Markers
+	Struct 588 DetailObjects 64
+		Struct 0 Cells 32
+		End Cells
+		Struct 12 Instances 6
+		End Instances
+		Struct 24 Counts 2
+		End COunts
+		Struct 36 ZReferenceVectors 16
+		End ZReferenceVectors
+	End DetailObjects
+	Struct 600 RunTimeDecals 16
+	End RunTimeDecals
+	Struct 624 LeafMapLeaves 24
+		Struct 0 Faces 16
+			Struct 4 LeafMapLeavesFacesVertices 8
+			End LeafMapLeavesFacesVertices
+		End Faces
+		Struct 12 LeafMapLeavesPortalIndices 4
+		End LeafMapLeavesPortalIndices
+	End LeafMapLeaves
+	Struct 636 LeafMapPortals 24
+		Struct 12 LeafMapPortalsVertices 12
+		End LeafMapPortalsVertices
+	End LeafMapPortals
+	IntSwapRange 0 to 648
+End SbspMain

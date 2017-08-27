@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>string_list</Group>
+	<GroupTag>str#</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>12</HeaderSize>
+	<FieldCount>2</FieldCount>
+	<Fields>
+		<Field>
+			<Name>string references</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>string reference</Name>
+				<MaxElements>800</MaxElements>
+				<Size>20</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>string</Name>
+						<Type>Data</Type>
+						<Data>
+							<Name />
+							<MaxSize>0</MaxSize>
+						</Data>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,109 @@
+weapon
+Struct 0 Weapon 1288
+	TagRef 0x28
+	TagRef 0x38
+	TagRef 0x70
+	TagRef 0x80
+	TagRef 0x90
+	TagRef 0xa0
+	struct 0x140 Attachments 72
+		TagRef 0
+		IntSwapRange 0 to 16
+		LongSwapRange 48 to 56
+		IntSwapRange 56 to 72
+	End Attachments
+	Struct 0x14C Widgets 32
+		TagRef 0
+		IntSwapRange 0 to 32
+	End Widgets
+	Struct 0x158 Functions 360
+		IntSwapRange 0 to 8
+		LongSwapRange 8 to 16
+		IntSwapRange 16 to 28
+		LongSwapRange 28 to 40
+		IntSwapRange 40 to 328		
+	End Functions
+	Struct 0x164 Change_Colors 44
+		Struct 0x20 Permutations 28
+			IntSwapRange 0 to 28
+		End Permutations
+		LongSwapRange 0 to 4
+		IntSwapRange 4 to 44
+	End Change_Colors
+	//Predicted Resources Must be Deleted
+	IntClear 0x170
+	//Predicted Resources Must be Deleted
+	TagRef 0x248
+	TagRef 0x258
+	TagRef 0x2e8
+	TagRef 0x2f8
+	TagRef 0x33c
+	TagRef 0x374
+	TagRef 0x384
+	TagRef 0x394
+	TagRef 0x3a4
+	TagRef 0x3bc
+	TagRef 0x420
+	TagRef 0x430
+	TagRef 0x45c
+	TagRef 0x46c
+	TagRef 0x480
+	TagRef 0x490
+	TagRef 0x4a0
+	TagRef 0x4b0
+	//Predicted Resources Must be Deleted
+	IntClear 0x4e4
+	//Predicted Resources Must be Deleted
+	Struct 0x4F0 Magazines 112
+		TagRef 0x38
+		TagRef 0x48
+		Struct 0x64 Magazines_Magazines 28
+			TagRef 0xc
+			LongSwapRange 0x0 to 0xc
+			IntSwapRange 0xc to 0x1c
+		End Magazines_Magazines
+		IntSwapRange 0x0 to 0x4
+		LongSwapRange 0x4 to 0x0c
+		IntSwapRange 0x0c to 0x18
+		LongSwapRange 0x18 to 0x1C
+		IntSwapRange 0x1c to 0x70
+	End Magazines
+	Struct 0x4FC Triggers 276
+		TagRef 0x5c
+		TagRef 0x94
+		Struct 0x108 Firing_Effects 132
+			TagRef 0x24
+			TagRef 0x34
+			TagRef 0x44
+			TagRef 0x54
+			TagRef 0x64
+			TagRef 0x74
+			LongSwapRange 0x0 to 0x4
+			IntSwapRange 0x4 to 0x84
+		End Firing_Effects
+		IntSwapRange 0x0 to 0x20
+		LongSwapRange 0x20 to 0x30
+		IntSwapRange 0x30 to 0x50
+		LongSwapRange 0x50 to 0x54
+		IntSwapRange 0x54 to 0x6c
+		LongSwapRange 0x6c to 0x70
+		IntSwapRange 0x70 to 0x114
+	End Triggers
+	LongSwapRange 0x0 to 0x04
+	IntSwapRange 0x04 to 0x108
+	LongSwapRange 0x108 to 0x140
+	IntswapRange 0x140 to 0x180
+	LongswapRange 0x180 to 0x184
+	IntSwapRange 0x184 to 0x188
+	LongSwapRange 0x188 to 0x18c
+	IntSwapRange 0x18c to 0x30c
+	IntSwapRange 0x310 to 0x32c
+	LongSwapRange 0x32c to 0x338
+	IntSwapRange 0x338 to 0x3d8
+	LongSwapRange 0x3d8 to 0x3dc
+	IntSwapRange 0x3dc to 0x3fc
+	LongSwapRange 0x3fc to 0x400
+	IntSwapRange 0x400 to 0x4e0
+	LongSwapRange 0x4e0 to 0x4e4
+	IntSwapRange 0x4e4 to 0x508
+End Weapon

@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>damage_effect</Group>
+	<GroupTag>jpt!</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>6</Version>
+	<HeaderSize>672</HeaderSize>
+	<FieldCount>120</FieldCount>
+	<Fields>
+		<Field>
+			<Name>radius:world units</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>cutoff scale:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>don't scale damage by distance</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>screen flash</Name>
+			<Type>Explanation</Type>
+			<Value>There are seven screen flash types:
+
+NONE: DST'= DST
+LIGHTEN: DST'= DST(1 - A) + C
+DARKEN: DST'= DST(1 - A) - C
+MAX: DST'= MAX[DST(1 - C), (C - A)(1-DST)]
+MIN: DST'= MIN[DST(1 - C), (C + A)(1-DST)]
+TINT: DST'= DST(1 - C) + (A*PIN[2C - 1, 0, 1] + A)(1-DST)
+INVERT: DST'= DST(1 - C) + A)
+
+In the above equations C and A represent the color and alpha of the screen flash, DST represents the color in the framebuffer before the screen flash is applied, and DST' represents the color after the screen flash is applied.</Value>
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>lighten</Field1>
+				<Field2>darken</Field2>
+				<Field3>max</Field3>
+				<Field4>min</Field4>
+				<Field5>invert</Field5>
+				<Field6>tint</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>priority</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>low</Field0>
+				<Field1>medium</Field1>
+				<Field2>high</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>duration:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fade function</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>linear</Field0>
+				<Field1>early</Field1>
+				<Field2>very early</Field2>
+				<Field3>late</Field3>
+				<Field4>very late</Field4>
+				<Field5>cosine</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>maximum intensity:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>color</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>low frequency vibrate</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>frequency:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>duration:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fade function</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>linear</Field0>
+				<Field1>early</Field1>
+				<Field2>very early</Field2>
+				<Field3>late</Field3>
+				<Field4>very late</Field4>
+				<Field5>cosine</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>high frequency vibrate</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>frequency:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>duration:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fade function</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>linear</Field0>
+				<Field1>early</Field1>
+				<Field2>very early</Field2>
+				<Field3>late</Field3>
+				<Field4>very late</Field4>
+				<Field5>cosine</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>temporary camera impulse</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>duration:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fade function</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>linear</Field0>
+				<Field1>early</Field1>
+				<Field2>very early</Field2>
+				<Field3>late</Field3>
+				<Field4>very late</Field4>
+				<Field5>cosine</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>rotation:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>pushback:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>jitter:world units</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>permanent camera impulse</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>angle:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>camera shaking</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>duration:seconds#the effect will last for this duration.</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>falloff function#a function to envelope the effect's magnitude over time</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>linear</Field0>
+				<Field1>early</Field1>
+				<Field2>very early</Field2>
+				<Field3>late</Field3>
+				<Field4>very late</Field4>
+				<Field5>cosine</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>random translation:world units#random translation in all directions</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>random rotation:degrees#random rotation in all directions</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>wobble function#a function to perturb the effect's behavior over time</Name>
+			<Type>Enum</Type>
+			<FieldCount>12</FieldCount>
+			<Fields>
+				<Field0>one</Field0>
+				<Field1>zero</Field1>
+				<Field2>cosine</Field2>
+				<Field3>cosine (variable period)</Field3>
+				<Field4>diagonal wave</Field4>
+				<Field5>diagonal wave (variable period)</Field5>
+				<Field6>slide</Field6>
+				<Field7>slide (variable period)</Field7>
+				<Field8>noise</Field8>
+				<Field9>jitter</Field9>
+				<Field10>wander</Field10>
+				<Field11>spark</Field11>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>wobble function period:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>wobble weight#a value of 0.0 signifies that the wobble function has no effect; a value of 1.0 signifies that the effect will not be felt when the wobble function's value is zero.</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>sound</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>112</Value>
+		</Field>
+		<Field>
+			<Name>breaking effect</Name>
+			<Type>Explanation</Type>
+			<Value>Controls particle velocities when a damage effect shatters a materal.</Value>
+		</Field>
+		<Field>
+			<Name>forward velocity:world units per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>forward radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>forward exponent</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>outward velocity:world units per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>outward radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>outward exponent</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>damage</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>side effect</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>harmless</Field1>
+				<Field2>lethal to the unsuspecting</Field2>
+				<Field3>emp</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>category</Name>
+			<Type>Enum</Type>
+			<FieldCount>13</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>falling</Field1>
+				<Field2>bullet</Field2>
+				<Field3>grenade</Field3>
+				<Field4>high explosive</Field4>
+				<Field5>sniper</Field5>
+				<Field6>melee</Field6>
+				<Field7>flame</Field7>
+				<Field8>mounted weapon</Field8>
+				<Field9>vehicle</Field9>
+				<Field10>plasma</Field10>
+				<Field11>needle</Field11>
+				<Field12>shotgun</Field12>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>13</FieldCount>
+			<Fields>
+				<Field0>does not hurt owner</Field0>
+				<Field1>can cause headshots</Field1>
+				<Field2>pings resistant units</Field2>
+				<Field3>does not hurt friends</Field3>
+				<Field4>does not ping units</Field4>
+				<Field5>detonates explosives</Field5>
+				<Field6>only hurts shields</Field6>
+				<Field7>causes flaming death</Field7>
+				<Field8>damage indicators always point down</Field8>
+				<Field9>skips shields</Field9>
+				<Field10>only hurts one infection form</Field10>
+				<Field11>can cause multiplayer headshots</Field11>
+				<Field12>infection form pop</Field12>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>AOE core radius:world units#if this is area of effect damage</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>damage lower bound</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>damage upper bound</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>vehicle passthrough penalty:[0,1]#zero damages passengers in vehicles, one does not</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>active camouflage damage:[0,1]#how much more visible this damage makes a player who is active camouflaged</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>stun:[0,1]#amount of stun added to damaged unit</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum stun:[0,1]#damaged unit's stun will never exceed this amount</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>stun time:seconds#duration of stun due to this damage</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>instantaneous acceleration:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>damage modifiers</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>dirt:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>sand:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>stone:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>snow:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>wood:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>metal (hollow):[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>metal (thin):[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>metal (thick):[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>rubber:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>glass:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>force field:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>grunt:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hunter armor:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hunter skin:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>elite:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>jackal:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>jackal energy shield:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>engineer:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>engineer force field:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flood combat form:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flood carrier form:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>cyborg:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>cyborg energy shield:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>armored human:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>human:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>sentinel:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>monitor:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>plastic:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>water:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>leaves:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>elite energy shield:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ice:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hunter shield:[0,+inf]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

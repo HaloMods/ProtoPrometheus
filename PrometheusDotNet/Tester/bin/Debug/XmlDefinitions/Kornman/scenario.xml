@@ -1,0 +1,4290 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>scenario</Group>
+	<GroupTag>scnr</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>1456</HeaderSize>
+	<FieldCount>71</FieldCount>
+	<Fields>
+		<Field>
+			<Name>DON'T USE</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>sbsp</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>WON'T USE</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>sbsp</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>CAN'T USE#set me!! me!!!  i do something cool!!!  you'll be happy forever if there this tag reference is filled in!  don't believe the lies!!! LIESSSS!!!!!!!!  YESS, MY PRECIOUSSSSS, LIESSSS...</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>sky </Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>skies</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_sky_reference_block</Name>
+				<MaxElements>8</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>sky</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>sky </Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>solo</Field0>
+				<Field1>multiplayer</Field1>
+				<Field2>main menu</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>cortana hack#sort cortana in front of other transparent geometry</Field0>
+				<Field1>use demo UI#uses alternate UI collection for demo</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>child scenarios</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_child_scenario_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>32</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>child scenario</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>scnr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>local north</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>136</Value>
+		</Field>
+		<Field>
+			<Name>predicted resources*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>predicted_resource_block</Name>
+				<MaxElements>1024</MaxElements>
+				<Size>8</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>bitmap</Field0>
+							<Field1>sound</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>resource index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>tag index</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>functions</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_function_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>120</Size>
+				<FieldCount>23</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>scripted#the level script will set this value; the other settings here will be ignored.</Field0>
+							<Field1>invert#result of function is one minus actual result</Field1>
+							<Field2>additive</Field2>
+							<Field3>always active#function does not deactivate when at or below lower bound</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>period:seconds#this is the period for the above function (lower values make the function oscillate quickly, higher values make it oscillate slowly)</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>scale period by#multiply this function by the above period</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_function_block</Block>
+					</Field>
+					<Field>
+						<Name>function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>scale function by#multiply this function by the result of the above function</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_function_block</Block>
+					</Field>
+					<Field>
+						<Name>wobble function#the curve used for the wobble</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>wobble period:seconds#the length of time it takes for the magnitude of this function to complete a wobble</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>wobble magnitude:percent#the amount of random wobble in the magnitude</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>square wave threshold#if non-zero, all values above the square wave threshold are snapped to 1.0, and all values below it are snapped to 0.0 to create a square wave.</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>step count#the number of discrete values to snap to (e.g., a step count of 5 would snap the function to 0.00,0.25,0.50,0.75 or 1.00)</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>map to</Name>
+						<Type>Enum</Type>
+						<FieldCount>6</FieldCount>
+						<Fields>
+							<Field0>linear</Field0>
+							<Field1>early</Field1>
+							<Field2>very early</Field2>
+							<Field3>late</Field3>
+							<Field4>very late</Field4>
+							<Field5>cosine</Field5>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>sawtooth count#the number of times this function should repeat (e.g., a sawtooth count of 5 would give the function a value of 1.0 at each of 0.25,0.50,0.75 as well as at 1.0</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>scale result by#multiply this function (from a weapon, vehicle, etc.) final result of all of the above math</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_function_block</Block>
+					</Field>
+					<Field>
+						<Name>bounds mode#controls how the bounds, below, are used</Name>
+						<Type>Enum</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>clip</Field0>
+							<Field1>clip and normalize</Field1>
+							<Field2>scale to fit</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>bounds</Name>
+						<Type>Real_Fraction_Bounds</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>turn off with#if the specified function is off, so is this function</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_function_block</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>editor scenario data</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>10277928</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name>comments</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>editor_comment_block</Name>
+				<MaxElements>1024</MaxElements>
+				<Size>48</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>comment</Name>
+						<Type>Data</Type>
+						<Data>
+							<Name />
+							<MaxSize>0</MaxSize>
+						</Data>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>224</Value>
+		</Field>
+		<Field>
+			<Name>object names*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_object_names_block</Name>
+				<MaxElements>512</MaxElements>
+				<Size>36</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>scenery</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_scenery_block</Name>
+				<MaxElements>2000</MaxElements>
+				<Size>72</Size>
+				<FieldCount>11</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_scenery_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>scenery palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_scenery_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>scen</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>bipeds</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_biped_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>120</Size>
+				<FieldCount>15</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_biped_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>body vitality:[0,1]</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>dead</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>biped palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_biped_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bipd</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>vehicles</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_vehicle_block</Name>
+				<MaxElements>80</MaxElements>
+				<Size>120</Size>
+				<FieldCount>18</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_vehicle_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>body vitality:[0,1]</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>dead</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>multiplayer team index#on a multiplayer map, this determines which team the vehicle belongs to for custom vehicle sets.</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>1</Value>
+					</Field>
+					<Field>
+						<Name>multiplayer spawn flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>16</FieldCount>
+						<Fields>
+							<Field0>slayer default#vehicle will spawn when default vehicle set is used in a slayer game</Field0>
+							<Field1>ctf default#vehicle will spawn when default vehicle set is used in a ctf game</Field1>
+							<Field2>king default#vehicle will spawn when default vehicle set is used in a king game</Field2>
+							<Field3>oddball default#vehicle will spawn when default vehicle set is used in a oddball game</Field3>
+							<Field4>unused#unused</Field4>
+							<Field5>unused#unused</Field5>
+							<Field6>unused#unused</Field6>
+							<Field7>unused#unused</Field7>
+							<Field8>slayer allowed#vehicle can spawn in a slayer game</Field8>
+							<Field9>ctf allowed#vehicle can spawn in a ctf game</Field9>
+							<Field10>king allowed#vehicle can spawn in a king game</Field10>
+							<Field11>oddball allowed#vehicle can spawn in a oddball game</Field11>
+							<Field12>unused#unused</Field12>
+							<Field13>unused#unused</Field13>
+							<Field14>unused#unused</Field14>
+							<Field15>unused#unused</Field15>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>28</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>vehicle palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_vehicle_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>vehi</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>equipment</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_equipment_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>40</Size>
+				<FieldCount>10</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_equipment_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>misc flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>initially at rest (doesn't fall)</Field0>
+							<Field1>obsolete</Field1>
+							<Field2>does accelerate (moves due to explosions)</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>equipment palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_equipment_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>eqip</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>weapons</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_weapon_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>92</Size>
+				<FieldCount>16</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_weapon_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>rounds left</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>rounds loaded</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>initially at rest (doesn't fall)</Field0>
+							<Field1>obsolete</Field1>
+							<Field2>does accelerate (moves due to explosions)</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>weapon palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_weapon_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>weap</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>device groups</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>device_group_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>52</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>initial value:[0,1]</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>can change only once</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>machines</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_machine_block</Name>
+				<MaxElements>400</MaxElements>
+				<Size>64</Size>
+				<FieldCount>13</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_machine_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>power group</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>device_group_block</Block>
+					</Field>
+					<Field>
+						<Name>position group</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>device_group_block</Block>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>initially open (1.0)</Field0>
+							<Field1>initially off (0.0)</Field1>
+							<Field2>can change only once</Field2>
+							<Field3>position reversed</Field3>
+							<Field4>not usable from any side</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>does not operate automatically</Field0>
+							<Field1>one-sided</Field1>
+							<Field2>never appears locked</Field2>
+							<Field3>opened by melee attack</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>machine palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_machine_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>mach</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>controls</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_control_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>64</Size>
+				<FieldCount>16</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_control_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>power group</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>device_group_block</Block>
+					</Field>
+					<Field>
+						<Name>position group</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>device_group_block</Block>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>initially open (1.0)</Field0>
+							<Field1>initially off (0.0)</Field1>
+							<Field2>can change only once</Field2>
+							<Field3>position reversed</Field3>
+							<Field4>not usable from any side</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>usable from both sides</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>*DON'T TOUCH THIS</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Custom</Type>
+						<Custom>ugh@</Custom>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>control palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_control_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>ctrl</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>light fixtures</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_light_fixture_block</Name>
+				<MaxElements>500</MaxElements>
+				<Size>88</Size>
+				<FieldCount>16</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_light_fixture_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>power group</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>device_group_block</Block>
+					</Field>
+					<Field>
+						<Name>position group</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>device_group_block</Block>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>initially open (1.0)</Field0>
+							<Field1>initially off (0.0)</Field1>
+							<Field2>can change only once</Field2>
+							<Field3>position reversed</Field3>
+							<Field4>not usable from any side</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>color</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>intensity</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>falloff angle:degrees</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>cutoff angle:degrees</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>light fixtures palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_light_fixture_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>lifi</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>sound scenery</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_sound_scenery_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>40</Size>
+				<FieldCount>8</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_sound_scenery_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>name</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_object_names_block</Block>
+					</Field>
+					<Field>
+						<Name>not placed</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>automatically</Field0>
+							<Field1>on easy</Field1>
+							<Field2>on normal</Field2>
+							<Field3>on hard</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>desired permutation#if non-zero, will try to use model permutations with names that end in that number, e.g. 7 would pick "body-7" and "head-7"</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>rotation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>sound scenery palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_sound_scenery_palette_block</Name>
+				<MaxElements>100</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>ssce</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>84</Value>
+		</Field>
+		<Field>
+			<Name>player starting profile</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_profiles_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>104</Size>
+				<FieldCount>15</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>starting health modifier:[0,1]</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>starting shield modifier:[0,1]</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>primary weapon</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>weap</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rounds loaded</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>rounds total</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>secondary weapon</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>weap</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rounds loaded</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>rounds total</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>starting fragmentation grenade count</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>starting plasma grenade count</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>starting &lt;unknown&gt; grenade count</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>starting &lt;unknown&gt; grenade count</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>20</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>player starting locations</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_players_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>52</Size>
+				<FieldCount>10</FieldCount>
+				<Fields>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>facing:degrees</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>team index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>bsp index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>type 0</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 1</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 2</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 3</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>trigger volumes</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_trigger_volume_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>96</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Skip</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Array_Start</Type>
+						<Array>
+							<FieldCount>15</FieldCount>
+						</Array>
+						<Field>
+							<Name />
+							<Type>Real</Type>
+						</Field>
+						<Field>
+							<Name />
+							<Type>Array_End</Type>
+						</Field>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>recorded animations</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>recorded_animation_block</Name>
+				<MaxElements>1024</MaxElements>
+				<Size>64</Size>
+				<FieldCount>10</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>version*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>raw animation data*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>unit control data version*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>1</Value>
+					</Field>
+					<Field>
+						<Name>length of animation*:ticks</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>recorded animation event stream*</Name>
+						<Type>Data</Type>
+						<Data>
+							<Name />
+							<MaxSize>0</MaxSize>
+						</Data>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>netgame flags</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_netgame_flags_block</Name>
+				<MaxElements>200</MaxElements>
+				<Size>148</Size>
+				<FieldCount>7</FieldCount>
+				<Fields>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>facing:degress</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>type</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>ctf - flag</Field0>
+							<Field1>ctf - vehicle</Field1>
+							<Field2>oddball - ball spawn</Field2>
+							<Field3>race - track</Field3>
+							<Field4>race - vehicle</Field4>
+							<Field5>vegas - bank</Field5>
+							<Field6>teleport from</Field6>
+							<Field7>teleport to</Field7>
+							<Field8>hill - flag</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>team index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>weapon group</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>itmc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>112</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>netgame equipment</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_netgame_equipment_block</Name>
+				<MaxElements>200</MaxElements>
+				<Size>144</Size>
+				<FieldCount>13</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>levitate</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 0</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 1</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 2</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 3</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>team index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>spawn time (in seconds, 0 = default)</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>48</Value>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>facing:degress</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>item collection</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>itmc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>48</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>starting equipment</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_starting_equipment_block</Name>
+				<MaxElements>200</MaxElements>
+				<Size>204</Size>
+				<FieldCount>14</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>no grenades</Field0>
+							<Field1>plasma grenades</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 0</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 1</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 2</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>type 3</Name>
+						<Type>Enum</Type>
+						<FieldCount>15</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>ctf</Field1>
+							<Field2>slayer</Field2>
+							<Field3>oddball</Field3>
+							<Field4>king of the hill</Field4>
+							<Field5>race</Field5>
+							<Field6>terminator</Field6>
+							<Field7>stub</Field7>
+							<Field8>ignored1</Field8>
+							<Field9>ignored2</Field9>
+							<Field10>ignored3</Field10>
+							<Field11>ignored4</Field11>
+							<Field12>all games</Field12>
+							<Field13>all except ctf</Field13>
+							<Field14>all except race &amp; ctf</Field14>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>48</Value>
+					</Field>
+					<Field>
+						<Name>item collection 1</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>itmc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>item collection 2</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>itmc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>item collection 3</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>itmc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>item collection 4</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>itmc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>item collection 5</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>itmc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>item collection 6</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>itmc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>48</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>bsp switch trigger volumes</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_bsp_switch_trigger_volume_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>8</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>trigger volume</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_trigger_volume_block</Block>
+					</Field>
+					<Field>
+						<Name>source</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>destination</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>decals</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_decals_block</Name>
+				<MaxElements>65536</MaxElements>
+				<Size>16</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>decal type^</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>scenario_decal_palette_block</Block>
+					</Field>
+					<Field>
+						<Name>yaw[-127,127]*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>pitch[-127,127]*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>position*</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>decal palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_decal_palette_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>reference^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>deca</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>detail object collection palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_detail_object_collection_palette_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>dobc</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>84</Value>
+		</Field>
+		<Field>
+			<Name>actor palette</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>actor_palette_block</Name>
+				<MaxElements>64</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>reference^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>actv</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>encounters</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>encounter_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>176</Size>
+				<FieldCount>13</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>7</FieldCount>
+						<Fields>
+							<Field0>not initially created</Field0>
+							<Field1>respawn enabled</Field1>
+							<Field2>initially blind</Field2>
+							<Field3>initially deaf</Field3>
+							<Field4>initially braindead</Field4>
+							<Field5>3d firing positions</Field5>
+							<Field6>manual bsp index specified</Field6>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>team index</Name>
+						<Type>Enum</Type>
+						<FieldCount>10</FieldCount>
+						<Fields>
+							<Field0>0 / default by unit</Field0>
+							<Field1>1 / player</Field1>
+							<Field2>2 / human</Field2>
+							<Field3>3 / covenant</Field3>
+							<Field4>4 / flood</Field4>
+							<Field5>5 / sentinel</Field5>
+							<Field6>6 / unused6</Field6>
+							<Field7>7 / unused7</Field7>
+							<Field8>8 / unused8</Field8>
+							<Field9>9 / unused9</Field9>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Skip</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>search behavior</Name>
+						<Type>Enum</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>normal</Field0>
+							<Field1>never</Field1>
+							<Field2>tenacious</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>manual bsp index#structure bsp index that this encounter belongs to... ignored unless 'manual bsp index' flag is checked. if this flag is not checked, the structure bsp is found automatically (may fail in areas of overlapping geometry)</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>respawn delay:seconds#delay between respawning actors in this encounter</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>76</Value>
+					</Field>
+					<Field>
+						<Name>squads</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>squads_block</Name>
+							<MaxElements>64</MaxElements>
+							<Size>232</Size>
+							<FieldCount>35</FieldCount>
+							<Fields>
+								<Field>
+									<Name>name</Name>
+									<Type>String</Type>
+								</Field>
+								<Field>
+									<Name>actor type</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>actor_palette_block</Block>
+								</Field>
+								<Field>
+									<Name>platoon</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>platoons_block</Block>
+								</Field>
+								<Field>
+									<Name>initial state#state that this actor starts in</Name>
+									<Type>Enum</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>sleeping</Field1>
+										<Field2>alert</Field2>
+										<Field3>moving - repeat same position</Field3>
+										<Field4>moving - loop</Field4>
+										<Field5>moving - loop back and forth</Field5>
+										<Field6>moving - loop randomly</Field6>
+										<Field7>moving - randomly</Field7>
+										<Field8>guarding</Field8>
+										<Field9>guarding at guard position</Field9>
+										<Field10>searching</Field10>
+										<Field11>fleeing</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>return state#state that this actor will return to when it has nothing to do</Name>
+									<Type>Enum</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>sleeping</Field1>
+										<Field2>alert</Field2>
+										<Field3>moving - repeat same position</Field3>
+										<Field4>moving - loop</Field4>
+										<Field5>moving - loop back and forth</Field5>
+										<Field6>moving - loop randomly</Field6>
+										<Field7>moving - randomly</Field7>
+										<Field8>guarding</Field8>
+										<Field9>guarding at guard position</Field9>
+										<Field10>searching</Field10>
+										<Field11>fleeing</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>flags</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>6</FieldCount>
+									<Fields>
+										<Field0>unused</Field0>
+										<Field1>never search</Field1>
+										<Field2>start timer immediately</Field2>
+										<Field3>no timer, delay forever</Field3>
+										<Field4>magic sight after timer</Field4>
+										<Field5>automatic migration</Field5>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>unique leader type#what kind of leader this squad has (e.g. a sarge for marines) - 'normal' is based on the size of the squad, 'random' always creates a leader, or you can specify an individual type</Name>
+									<Type>Enum</Type>
+									<FieldCount>5</FieldCount>
+									<Fields>
+										<Field0>normal</Field0>
+										<Field1>none</Field1>
+										<Field2>random</Field2>
+										<Field3>sgt johnson</Field3>
+										<Field4>sgt lehto</Field4>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>28</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>maneuver to squad</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>squads_block</Block>
+								</Field>
+								<Field>
+									<Name>squad delay time:seconds</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>attacking</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>26</FieldCount>
+									<Fields>
+										<Field0>A</Field0>
+										<Field1>B</Field1>
+										<Field2>C</Field2>
+										<Field3>D</Field3>
+										<Field4>E</Field4>
+										<Field5>F</Field5>
+										<Field6>G</Field6>
+										<Field7>H</Field7>
+										<Field8>I</Field8>
+										<Field9>J</Field9>
+										<Field10>K</Field10>
+										<Field11>L</Field11>
+										<Field12>M</Field12>
+										<Field13>N</Field13>
+										<Field14>O</Field14>
+										<Field15>P</Field15>
+										<Field16>Q</Field16>
+										<Field17>R</Field17>
+										<Field18>S</Field18>
+										<Field19>T</Field19>
+										<Field20>U</Field20>
+										<Field21>V</Field21>
+										<Field22>W</Field22>
+										<Field23>X</Field23>
+										<Field24>Y</Field24>
+										<Field25>Z</Field25>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>attacking search</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>26</FieldCount>
+									<Fields>
+										<Field0>A</Field0>
+										<Field1>B</Field1>
+										<Field2>C</Field2>
+										<Field3>D</Field3>
+										<Field4>E</Field4>
+										<Field5>F</Field5>
+										<Field6>G</Field6>
+										<Field7>H</Field7>
+										<Field8>I</Field8>
+										<Field9>J</Field9>
+										<Field10>K</Field10>
+										<Field11>L</Field11>
+										<Field12>M</Field12>
+										<Field13>N</Field13>
+										<Field14>O</Field14>
+										<Field15>P</Field15>
+										<Field16>Q</Field16>
+										<Field17>R</Field17>
+										<Field18>S</Field18>
+										<Field19>T</Field19>
+										<Field20>U</Field20>
+										<Field21>V</Field21>
+										<Field22>W</Field22>
+										<Field23>X</Field23>
+										<Field24>Y</Field24>
+										<Field25>Z</Field25>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>attacking guard</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>26</FieldCount>
+									<Fields>
+										<Field0>A</Field0>
+										<Field1>B</Field1>
+										<Field2>C</Field2>
+										<Field3>D</Field3>
+										<Field4>E</Field4>
+										<Field5>F</Field5>
+										<Field6>G</Field6>
+										<Field7>H</Field7>
+										<Field8>I</Field8>
+										<Field9>J</Field9>
+										<Field10>K</Field10>
+										<Field11>L</Field11>
+										<Field12>M</Field12>
+										<Field13>N</Field13>
+										<Field14>O</Field14>
+										<Field15>P</Field15>
+										<Field16>Q</Field16>
+										<Field17>R</Field17>
+										<Field18>S</Field18>
+										<Field19>T</Field19>
+										<Field20>U</Field20>
+										<Field21>V</Field21>
+										<Field22>W</Field22>
+										<Field23>X</Field23>
+										<Field24>Y</Field24>
+										<Field25>Z</Field25>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>defending</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>26</FieldCount>
+									<Fields>
+										<Field0>A</Field0>
+										<Field1>B</Field1>
+										<Field2>C</Field2>
+										<Field3>D</Field3>
+										<Field4>E</Field4>
+										<Field5>F</Field5>
+										<Field6>G</Field6>
+										<Field7>H</Field7>
+										<Field8>I</Field8>
+										<Field9>J</Field9>
+										<Field10>K</Field10>
+										<Field11>L</Field11>
+										<Field12>M</Field12>
+										<Field13>N</Field13>
+										<Field14>O</Field14>
+										<Field15>P</Field15>
+										<Field16>Q</Field16>
+										<Field17>R</Field17>
+										<Field18>S</Field18>
+										<Field19>T</Field19>
+										<Field20>U</Field20>
+										<Field21>V</Field21>
+										<Field22>W</Field22>
+										<Field23>X</Field23>
+										<Field24>Y</Field24>
+										<Field25>Z</Field25>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>defending search</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>26</FieldCount>
+									<Fields>
+										<Field0>A</Field0>
+										<Field1>B</Field1>
+										<Field2>C</Field2>
+										<Field3>D</Field3>
+										<Field4>E</Field4>
+										<Field5>F</Field5>
+										<Field6>G</Field6>
+										<Field7>H</Field7>
+										<Field8>I</Field8>
+										<Field9>J</Field9>
+										<Field10>K</Field10>
+										<Field11>L</Field11>
+										<Field12>M</Field12>
+										<Field13>N</Field13>
+										<Field14>O</Field14>
+										<Field15>P</Field15>
+										<Field16>Q</Field16>
+										<Field17>R</Field17>
+										<Field18>S</Field18>
+										<Field19>T</Field19>
+										<Field20>U</Field20>
+										<Field21>V</Field21>
+										<Field22>W</Field22>
+										<Field23>X</Field23>
+										<Field24>Y</Field24>
+										<Field25>Z</Field25>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>defending guard</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>26</FieldCount>
+									<Fields>
+										<Field0>A</Field0>
+										<Field1>B</Field1>
+										<Field2>C</Field2>
+										<Field3>D</Field3>
+										<Field4>E</Field4>
+										<Field5>F</Field5>
+										<Field6>G</Field6>
+										<Field7>H</Field7>
+										<Field8>I</Field8>
+										<Field9>J</Field9>
+										<Field10>K</Field10>
+										<Field11>L</Field11>
+										<Field12>M</Field12>
+										<Field13>N</Field13>
+										<Field14>O</Field14>
+										<Field15>P</Field15>
+										<Field16>Q</Field16>
+										<Field17>R</Field17>
+										<Field18>S</Field18>
+										<Field19>T</Field19>
+										<Field20>U</Field20>
+										<Field21>V</Field21>
+										<Field22>W</Field22>
+										<Field23>X</Field23>
+										<Field24>Y</Field24>
+										<Field25>Z</Field25>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>pursuing</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>26</FieldCount>
+									<Fields>
+										<Field0>A</Field0>
+										<Field1>B</Field1>
+										<Field2>C</Field2>
+										<Field3>D</Field3>
+										<Field4>E</Field4>
+										<Field5>F</Field5>
+										<Field6>G</Field6>
+										<Field7>H</Field7>
+										<Field8>I</Field8>
+										<Field9>J</Field9>
+										<Field10>K</Field10>
+										<Field11>L</Field11>
+										<Field12>M</Field12>
+										<Field13>N</Field13>
+										<Field14>O</Field14>
+										<Field15>P</Field15>
+										<Field16>Q</Field16>
+										<Field17>R</Field17>
+										<Field18>S</Field18>
+										<Field19>T</Field19>
+										<Field20>U</Field20>
+										<Field21>V</Field21>
+										<Field22>W</Field22>
+										<Field23>X</Field23>
+										<Field24>Y</Field24>
+										<Field25>Z</Field25>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>8</Value>
+								</Field>
+								<Field>
+									<Name>normal diff count#initial number of actors on normal difficulty</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>insane diff count#initial number of actors on insane difficulty (hard difficulty is midway between normal and insane)</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>major upgrade</Name>
+									<Type>Enum</Type>
+									<FieldCount>5</FieldCount>
+									<Fields>
+										<Field0>normal</Field0>
+										<Field1>few</Field1>
+										<Field2>many</Field2>
+										<Field3>none</Field3>
+										<Field4>all</Field4>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>respawn min actors#minimum number of actors alive at once (will spawn instantly if less than this number)</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>respawn max actors#maximum number of actors alive at once (never spawns above this number)</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>respawn total#total number to respawn (zero = infinite)</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>respawn delay:seconds#delay between respawning actors in this squad</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>48</Value>
+								</Field>
+								<Field>
+									<Name>move positions</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>move_positions_block</Name>
+										<MaxElements>32</MaxElements>
+										<Size>80</Size>
+										<FieldCount>10</FieldCount>
+										<Fields>
+											<Field>
+												<Name>position</Name>
+												<Type>Real_Point_3D</Type>
+											</Field>
+											<Field>
+												<Name>facing:degrees</Name>
+												<Type>Angle</Type>
+											</Field>
+											<Field>
+												<Name>weight</Name>
+												<Type>Real</Type>
+											</Field>
+											<Field>
+												<Name>time:seconds</Name>
+												<Type>Real_Bounds</Type>
+											</Field>
+											<Field>
+												<Name>animation</Name>
+												<Type>Short_Block_Index</Type>
+												<Block>ai_animation_reference_block</Block>
+											</Field>
+											<Field>
+												<Name>sequence ID#identifies this move position as belonging to a sequence, only actors whose starting locations match this sequence ID can use it (zero = no sequence)</Name>
+												<Type>Char_Integer</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Pad</Type>
+												<Value>1</Value>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Pad</Type>
+												<Value>44</Value>
+											</Field>
+											<Field>
+												<Name>surface index*</Name>
+												<Type>Long_Integer</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name>starting locations</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>actor_starting_locations_block</Name>
+										<MaxElements>32</MaxElements>
+										<Size>28</Size>
+										<FieldCount>10</FieldCount>
+										<Fields>
+											<Field>
+												<Name>position</Name>
+												<Type>Real_Point_3D</Type>
+											</Field>
+											<Field>
+												<Name>facing:degrees</Name>
+												<Type>Angle</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Pad</Type>
+												<Value>2</Value>
+											</Field>
+											<Field>
+												<Name>sequence ID#which move position sequence we can use (zero = no specific sequences)</Name>
+												<Type>Char_Integer</Type>
+											</Field>
+											<Field>
+												<Name>flags</Name>
+												<Type>Byte_Flags</Type>
+												<FieldCount>1</FieldCount>
+												<Fields>
+													<Field0>required</Field0>
+												</Fields>
+											</Field>
+											<Field>
+												<Name>return state#state that this actor will return to when it has nothing to do</Name>
+												<Type>Enum</Type>
+												<FieldCount>12</FieldCount>
+												<Fields>
+													<Field0>none</Field0>
+													<Field1>sleeping</Field1>
+													<Field2>alert</Field2>
+													<Field3>moving - repeat same position</Field3>
+													<Field4>moving - loop</Field4>
+													<Field5>moving - loop back and forth</Field5>
+													<Field6>moving - loop randomly</Field6>
+													<Field7>moving - randomly</Field7>
+													<Field8>guarding</Field8>
+													<Field9>guarding at guard position</Field9>
+													<Field10>searching</Field10>
+													<Field11>fleeing</Field11>
+												</Fields>
+											</Field>
+											<Field>
+												<Name>initial state#state that this actor starts in</Name>
+												<Type>Enum</Type>
+												<FieldCount>12</FieldCount>
+												<Fields>
+													<Field0>none</Field0>
+													<Field1>sleeping</Field1>
+													<Field2>alert</Field2>
+													<Field3>moving - repeat same position</Field3>
+													<Field4>moving - loop</Field4>
+													<Field5>moving - loop back and forth</Field5>
+													<Field6>moving - loop randomly</Field6>
+													<Field7>moving - randomly</Field7>
+													<Field8>guarding</Field8>
+													<Field9>guarding at guard position</Field9>
+													<Field10>searching</Field10>
+													<Field11>fleeing</Field11>
+												</Fields>
+											</Field>
+											<Field>
+												<Name>actor type</Name>
+												<Type>Short_Block_Index</Type>
+												<Block>actor_palette_block</Block>
+											</Field>
+											<Field>
+												<Name>command list</Name>
+												<Type>Short_Block_Index</Type>
+												<Block>ai_command_list_block</Block>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>platoons</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>platoons_block</Name>
+							<MaxElements>32</MaxElements>
+							<Size>172</Size>
+							<FieldCount>14</FieldCount>
+							<Fields>
+								<Field>
+									<Name>name^</Name>
+									<Type>String</Type>
+								</Field>
+								<Field>
+									<Name>flags</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>flee when maneuvering</Field0>
+										<Field1>say 'advancing' when maneuver</Field1>
+										<Field2>start in defending state</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name>change attacking/defending state when</Name>
+									<Type>Enum</Type>
+									<FieldCount>10</FieldCount>
+									<Fields>
+										<Field0>(never)</Field0>
+										<Field1>&lt; 75% strength</Field1>
+										<Field2>&lt; 50% strength</Field2>
+										<Field3>&lt; 25% strength</Field3>
+										<Field4>anybody dead</Field4>
+										<Field5>25% dead</Field5>
+										<Field6>50% dead</Field6>
+										<Field7>75% dead</Field7>
+										<Field8>all but one dead</Field8>
+										<Field9>all dead</Field9>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>happens to</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>platoons_block</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name>maneuver when</Name>
+									<Type>Enum</Type>
+									<FieldCount>10</FieldCount>
+									<Fields>
+										<Field0>(never)</Field0>
+										<Field1>&lt; 75% strength</Field1>
+										<Field2>&lt; 50% strength</Field2>
+										<Field3>&lt; 25% strength</Field3>
+										<Field4>anybody dead</Field4>
+										<Field5>25% dead</Field5>
+										<Field6>50% dead</Field6>
+										<Field7>75% dead</Field7>
+										<Field8>all but one dead</Field8>
+										<Field9>all dead</Field9>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>happens to</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>platoons_block</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>64</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>36</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>firing positions</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>firing_positions_block</Name>
+							<MaxElements>512</MaxElements>
+							<Size>24</Size>
+							<FieldCount>5</FieldCount>
+							<Fields>
+								<Field>
+									<Name>position</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name>group index</Name>
+									<Type>Enum</Type>
+									<FieldCount>26</FieldCount>
+									<Fields>
+										<Field0>A</Field0>
+										<Field1>B</Field1>
+										<Field2>C</Field2>
+										<Field3>D</Field3>
+										<Field4>E</Field4>
+										<Field5>F</Field5>
+										<Field6>G</Field6>
+										<Field7>H</Field7>
+										<Field8>I</Field8>
+										<Field9>J</Field9>
+										<Field10>K</Field10>
+										<Field11>L</Field11>
+										<Field12>M</Field12>
+										<Field13>N</Field13>
+										<Field14>O</Field14>
+										<Field15>P</Field15>
+										<Field16>Q</Field16>
+										<Field17>R</Field17>
+										<Field18>S</Field18>
+										<Field19>T</Field19>
+										<Field20>U</Field20>
+										<Field21>V</Field21>
+										<Field22>W</Field22>
+										<Field23>X</Field23>
+										<Field24>Y</Field24>
+										<Field25>Z</Field25>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>10</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Custom</Type>
+									<Custom>cfpf</Custom>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>player starting locations</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>scenario_players_block</Name>
+							<MaxElements>256</MaxElements>
+							<Size>52</Size>
+							<FieldCount>10</FieldCount>
+							<Fields>
+								<Field>
+									<Name>position</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name>facing:degrees</Name>
+									<Type>Angle</Type>
+								</Field>
+								<Field>
+									<Name>team index</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>bsp index</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>type 0</Name>
+									<Type>Enum</Type>
+									<FieldCount>15</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>ctf</Field1>
+										<Field2>slayer</Field2>
+										<Field3>oddball</Field3>
+										<Field4>king of the hill</Field4>
+										<Field5>race</Field5>
+										<Field6>terminator</Field6>
+										<Field7>stub</Field7>
+										<Field8>ignored1</Field8>
+										<Field9>ignored2</Field9>
+										<Field10>ignored3</Field10>
+										<Field11>ignored4</Field11>
+										<Field12>all games</Field12>
+										<Field13>all except ctf</Field13>
+										<Field14>all except race &amp; ctf</Field14>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>type 1</Name>
+									<Type>Enum</Type>
+									<FieldCount>15</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>ctf</Field1>
+										<Field2>slayer</Field2>
+										<Field3>oddball</Field3>
+										<Field4>king of the hill</Field4>
+										<Field5>race</Field5>
+										<Field6>terminator</Field6>
+										<Field7>stub</Field7>
+										<Field8>ignored1</Field8>
+										<Field9>ignored2</Field9>
+										<Field10>ignored3</Field10>
+										<Field11>ignored4</Field11>
+										<Field12>all games</Field12>
+										<Field13>all except ctf</Field13>
+										<Field14>all except race &amp; ctf</Field14>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>type 2</Name>
+									<Type>Enum</Type>
+									<FieldCount>15</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>ctf</Field1>
+										<Field2>slayer</Field2>
+										<Field3>oddball</Field3>
+										<Field4>king of the hill</Field4>
+										<Field5>race</Field5>
+										<Field6>terminator</Field6>
+										<Field7>stub</Field7>
+										<Field8>ignored1</Field8>
+										<Field9>ignored2</Field9>
+										<Field10>ignored3</Field10>
+										<Field11>ignored4</Field11>
+										<Field12>all games</Field12>
+										<Field13>all except ctf</Field13>
+										<Field14>all except race &amp; ctf</Field14>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>type 3</Name>
+									<Type>Enum</Type>
+									<FieldCount>15</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>ctf</Field1>
+										<Field2>slayer</Field2>
+										<Field3>oddball</Field3>
+										<Field4>king of the hill</Field4>
+										<Field5>race</Field5>
+										<Field6>terminator</Field6>
+										<Field7>stub</Field7>
+										<Field8>ignored1</Field8>
+										<Field9>ignored2</Field9>
+										<Field10>ignored3</Field10>
+										<Field11>ignored4</Field11>
+										<Field12>all games</Field12>
+										<Field13>all except ctf</Field13>
+										<Field14>all except race &amp; ctf</Field14>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>24</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>command lists</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>ai_command_list_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>96</Size>
+				<FieldCount>9</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>6</FieldCount>
+						<Fields>
+							<Field0>allow initiative#lets an actor decide to stop following its commands and attack an enemy</Field0>
+							<Field1>allow targeting#lets an actor shoot at enemies while following its commands</Field1>
+							<Field2>disable looking#stops an actor from turning, stopping or looking around in response to stimuli received while following its commands</Field2>
+							<Field3>disable communication#stops an actor from communicating while following its commands</Field3>
+							<Field4>disable falling damage#makes an actor not take any damage from falling while following its commands</Field4>
+							<Field5>manual bsp index#set if the command list is manually attached to a specific bsp</Field5>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>manual bsp index#structure bsp index that this encounter belongs to... ignored unless 'manual bsp index' flag is checked. if this flag is not checked, the structure bsp is found automatically (may fail in areas of overlapping geometry)</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>commands</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>ai_command_block</Name>
+							<MaxElements>64</MaxElements>
+							<Size>32</Size>
+							<FieldCount>13</FieldCount>
+							<Fields>
+								<Field>
+									<Name>atom type</Name>
+									<Type>Enum</Type>
+									<FieldCount>28</FieldCount>
+									<Fields>
+										<Field0>pause</Field0>
+										<Field1>go to</Field1>
+										<Field2>go to and face</Field2>
+										<Field3>move in direction</Field3>
+										<Field4>look</Field4>
+										<Field5>animation mode</Field5>
+										<Field6>crouch</Field6>
+										<Field7>shoot</Field7>
+										<Field8>grenade</Field8>
+										<Field9>vehicle</Field9>
+										<Field10>running jump</Field10>
+										<Field11>targeted jump</Field11>
+										<Field12>script</Field12>
+										<Field13>animate</Field13>
+										<Field14>recording</Field14>
+										<Field15>action</Field15>
+										<Field16>vocalize</Field16>
+										<Field17>targeting</Field17>
+										<Field18>initiative</Field18>
+										<Field19>wait</Field19>
+										<Field20>loop</Field20>
+										<Field21>die</Field21>
+										<Field22>move immediate</Field22>
+										<Field23>look random</Field23>
+										<Field24>look player</Field24>
+										<Field25>look object</Field25>
+										<Field26>set radius</Field26>
+										<Field27>teleport</Field27>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>atom modifier</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>parameter1</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>parameter2</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>point 1</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>ai_command_point_block</Block>
+								</Field>
+								<Field>
+									<Name>point 2</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>ai_command_point_block</Block>
+								</Field>
+								<Field>
+									<Name>animation</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>ai_animation_reference_block</Block>
+								</Field>
+								<Field>
+									<Name>script</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>ai_script_reference_block</Block>
+								</Field>
+								<Field>
+									<Name>recording</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>ai_recording_reference_block</Block>
+								</Field>
+								<Field>
+									<Name>command</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>ai_command_block</Block>
+								</Field>
+								<Field>
+									<Name>object name</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>scenario_object_names_block</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>6</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>points</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>ai_command_point_block</Name>
+							<MaxElements>64</MaxElements>
+							<Size>20</Size>
+							<FieldCount>3</FieldCount>
+							<Fields>
+								<Field>
+									<Name>position</Name>
+									<Type>Real_Point_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>8</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>ai animation references</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>ai_animation_reference_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>60</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>animation name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>animation graph#leave this blank to use the unit's normal animation graph</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>antr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>ai script references</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>ai_script_reference_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>40</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>script name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>ai recording references</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>ai_recording_reference_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>40</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>recording name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>ai conversations</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>ai_conversation_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>116</Size>
+				<FieldCount>10</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>stop if death#this conversation will be aborted if any participant dies</Field0>
+							<Field1>stop if damaged#an actor will abort this conversation if they are damaged</Field1>
+							<Field2>stop if visible enemy#an actor will abort this conversation if they see an enemy</Field2>
+							<Field3>stop if alerted to enemy#an actor will abort this conversation if they suspect an enemy</Field3>
+							<Field4>player must be visible#this conversation cannot take place unless the participants can _see_ a nearby player</Field4>
+							<Field5>stop other actions#participants stop doing whatever they were doing in order to perform this conversation</Field5>
+							<Field6>keep trying to play#if this conversation fails initially, it will keep testing to see when it can play</Field6>
+							<Field7>player must be looking#this conversation will not start until the player is looking at one of the participants</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>trigger distance:world units#distance the player must enter before the conversation can trigger</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>run-to-player dist:world units#if the 'involves player' flag is set, when triggered the conversation's participant(s) will run to within this distance of the player</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>36</Value>
+					</Field>
+					<Field>
+						<Name>participants</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>ai_conversation_participant_block</Name>
+							<MaxElements>8</MaxElements>
+							<Size>84</Size>
+							<FieldCount>12</FieldCount>
+							<Fields>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>flags</Name>
+									<Type>Word_Flags</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>optional#the conversation can continue even if nobody for this participant was found</Field0>
+										<Field1>has alternate#if nobody for this participant can be found, we use a participant marked as 'is alternate' instead, e.g. someone from over the radio</Field1>
+										<Field2>is alternate#this participant is only used if some participant in this conversation was marked as 'has alternate' could not be found</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>selection type</Name>
+									<Type>Enum</Type>
+									<FieldCount>8</FieldCount>
+									<Fields>
+										<Field0>friendly actor</Field0>
+										<Field1>disembodied</Field1>
+										<Field2>in player's vehicle</Field2>
+										<Field3>not in a vehicle</Field3>
+										<Field4>prefer sergeant</Field4>
+										<Field5>any actor</Field5>
+										<Field6>radio unit</Field6>
+										<Field7>radio sergeant</Field7>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>actor type</Name>
+									<Type>Enum</Type>
+									<FieldCount>16</FieldCount>
+									<Fields>
+										<Field0>elite</Field0>
+										<Field1>jackal</Field1>
+										<Field2>grunt</Field2>
+										<Field3>hunter</Field3>
+										<Field4>engineer</Field4>
+										<Field5>assassin</Field5>
+										<Field6>player</Field6>
+										<Field7>marine</Field7>
+										<Field8>crew</Field8>
+										<Field9>combat form</Field9>
+										<Field10>infection form</Field10>
+										<Field11>carrier form</Field11>
+										<Field12>monitor</Field12>
+										<Field13>sentinel</Field13>
+										<Field14>none</Field14>
+										<Field15>mounted weapon</Field15>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>use this object#if a unit with this name exists, we try to pick them to start the conversation</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>scenario_object_names_block</Block>
+								</Field>
+								<Field>
+									<Name>set new name#once we pick a unit, we name it this</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>scenario_object_names_block</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name>encounter name</Name>
+									<Type>String</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>lines</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>ai_conversation_line_block</Name>
+							<MaxElements>32</MaxElements>
+							<Size>124</Size>
+							<FieldCount>14</FieldCount>
+							<Fields>
+								<Field>
+									<Name>flags</Name>
+									<Type>Word_Flags</Type>
+									<FieldCount>6</FieldCount>
+									<Fields>
+										<Field0>addressee look at speaker</Field0>
+										<Field1>everyone look at speaker</Field1>
+										<Field2>everyone look at addressee</Field2>
+										<Field3>wait after until told to advance</Field3>
+										<Field4>wait until speaker nearby</Field4>
+										<Field5>wait until everyone nearby</Field5>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>participant</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>ai_conversation_participant_block</Block>
+								</Field>
+								<Field>
+									<Name>addressee</Name>
+									<Type>Enum</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>player</Field1>
+										<Field2>participant</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>addressee participant#this field is only used if the addressee type is 'participant'</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>ai_conversation_participant_block</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name>line delay time</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name>variant 1</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>variant 2</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>variant 3</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>variant 4</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>variant 5</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>variant 6</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>script syntax data</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>10564268</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name>script string data</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>10563752</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name>scripts*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>hs_scripts_block</Name>
+				<MaxElements>512</MaxElements>
+				<Size>92</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>script type*</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>startup</Field0>
+							<Field1>dormant</Field1>
+							<Field2>continuous</Field2>
+							<Field3>static</Field3>
+							<Field4>stub</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>return type*</Name>
+						<Type>Enum</Type>
+						<FieldCount>49</FieldCount>
+						<Fields>
+							<Field0>unparsed</Field0>
+							<Field1>special form</Field1>
+							<Field2>function name</Field2>
+							<Field3>passthrough</Field3>
+							<Field4>void</Field4>
+							<Field5>boolean</Field5>
+							<Field6>real</Field6>
+							<Field7>short</Field7>
+							<Field8>long</Field8>
+							<Field9>string</Field9>
+							<Field10>script</Field10>
+							<Field11>trigger_volume</Field11>
+							<Field12>cutscene_flag</Field12>
+							<Field13>cutscene_camera_point</Field13>
+							<Field14>cutscene_title</Field14>
+							<Field15>cutscene_recording</Field15>
+							<Field16>device_group</Field16>
+							<Field17>ai</Field17>
+							<Field18>ai_command_list</Field18>
+							<Field19>starting_profile</Field19>
+							<Field20>conversation</Field20>
+							<Field21>navpoint</Field21>
+							<Field22>hud_message</Field22>
+							<Field23>object_list</Field23>
+							<Field24>sound</Field24>
+							<Field25>effect</Field25>
+							<Field26>damage</Field26>
+							<Field27>looping_sound</Field27>
+							<Field28>animation_graph</Field28>
+							<Field29>actor_variant</Field29>
+							<Field30>damage_effect</Field30>
+							<Field31>object_definition</Field31>
+							<Field32>game_difficulty</Field32>
+							<Field33>team</Field33>
+							<Field34>ai_default_state</Field34>
+							<Field35>actor_type</Field35>
+							<Field36>hud_corner</Field36>
+							<Field37>object</Field37>
+							<Field38>unit</Field38>
+							<Field39>vehicle</Field39>
+							<Field40>weapon</Field40>
+							<Field41>device</Field41>
+							<Field42>scenery</Field42>
+							<Field43>object_name</Field43>
+							<Field44>unit_name</Field44>
+							<Field45>vehicle_name</Field45>
+							<Field46>weapon_name</Field46>
+							<Field47>device_name</Field47>
+							<Field48>scenery_name</Field48>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>root expression index*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>52</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>globals*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>hs_globals_block</Name>
+				<MaxElements>128</MaxElements>
+				<Size>92</Size>
+				<FieldCount>7</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>type*</Name>
+						<Type>Enum</Type>
+						<FieldCount>49</FieldCount>
+						<Fields>
+							<Field0>unparsed</Field0>
+							<Field1>special form</Field1>
+							<Field2>function name</Field2>
+							<Field3>passthrough</Field3>
+							<Field4>void</Field4>
+							<Field5>boolean</Field5>
+							<Field6>real</Field6>
+							<Field7>short</Field7>
+							<Field8>long</Field8>
+							<Field9>string</Field9>
+							<Field10>script</Field10>
+							<Field11>trigger_volume</Field11>
+							<Field12>cutscene_flag</Field12>
+							<Field13>cutscene_camera_point</Field13>
+							<Field14>cutscene_title</Field14>
+							<Field15>cutscene_recording</Field15>
+							<Field16>device_group</Field16>
+							<Field17>ai</Field17>
+							<Field18>ai_command_list</Field18>
+							<Field19>starting_profile</Field19>
+							<Field20>conversation</Field20>
+							<Field21>navpoint</Field21>
+							<Field22>hud_message</Field22>
+							<Field23>object_list</Field23>
+							<Field24>sound</Field24>
+							<Field25>effect</Field25>
+							<Field26>damage</Field26>
+							<Field27>looping_sound</Field27>
+							<Field28>animation_graph</Field28>
+							<Field29>actor_variant</Field29>
+							<Field30>damage_effect</Field30>
+							<Field31>object_definition</Field31>
+							<Field32>game_difficulty</Field32>
+							<Field33>team</Field33>
+							<Field34>ai_default_state</Field34>
+							<Field35>actor_type</Field35>
+							<Field36>hud_corner</Field36>
+							<Field37>object</Field37>
+							<Field38>unit</Field38>
+							<Field39>vehicle</Field39>
+							<Field40>weapon</Field40>
+							<Field41>device</Field41>
+							<Field42>scenery</Field42>
+							<Field43>object_name</Field43>
+							<Field44>unit_name</Field44>
+							<Field45>vehicle_name</Field45>
+							<Field46>weapon_name</Field46>
+							<Field47>device_name</Field47>
+							<Field48>scenery_name</Field48>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>initialization expression index*</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>48</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>references*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>hs_references_block</Name>
+				<MaxElements>256</MaxElements>
+				<Size>40</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name>reference*^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>????</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>source files*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>hs_source_files_block</Name>
+				<MaxElements>8</MaxElements>
+				<Size>52</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>source</Name>
+						<Type>Data</Type>
+						<Data>
+							<Name />
+							<MaxSize>0</MaxSize>
+						</Data>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>cutscene flags</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_cutscene_flag_block</Name>
+				<MaxElements>512</MaxElements>
+				<Size>92</Size>
+				<FieldCount>6</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>facing</Name>
+						<Type>Real_Euler_Angles_2D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>36</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>cutscene camera points</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_cutscene_camera_point_block</Name>
+				<MaxElements>512</MaxElements>
+				<Size>104</Size>
+				<FieldCount>8</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>position</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name>orientation</Name>
+						<Type>Real_Euler_Angles_3D</Type>
+					</Field>
+					<Field>
+						<Name>field of view</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>36</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>cutscene titles</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_cutscene_title_block</Name>
+				<MaxElements>64</MaxElements>
+				<Size>96</Size>
+				<FieldCount>16</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>text bounds (on screen)</Name>
+						<Type>Rectangle_2D</Type>
+					</Field>
+					<Field>
+						<Name>string index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>justification</Name>
+						<Type>Enum</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>left</Field0>
+							<Field1>right</Field1>
+							<Field2>center</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>text color</Name>
+						<Type>ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>shadow color</Name>
+						<Type>ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>fade in time [seconds]</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>up time [seconds]</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>fade out time [seconds]</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>108</Value>
+		</Field>
+		<Field>
+			<Name>custom object names</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>ustr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>ingame help text</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>ustr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>hud messages</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>hmt </Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>structure bsps</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>scenario_structure_bsps_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>32</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>structure bsp^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>sbsp</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

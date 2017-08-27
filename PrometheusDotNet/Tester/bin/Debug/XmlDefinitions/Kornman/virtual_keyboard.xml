@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>virtual_keyboard</Group>
+	<GroupTag>vcky</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>60</HeaderSize>
+	<FieldCount>5</FieldCount>
+	<Fields>
+		<Field>
+			<Name>display font</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>font</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>background bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>special key labels string list</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>ustr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>virtual keys</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>virtual_key_block</Name>
+				<MaxElements>44</MaxElements>
+				<Size>80</Size>
+				<FieldCount>14</FieldCount>
+				<Fields>
+					<Field>
+						<Name>keyboard key</Name>
+						<Type>Enum</Type>
+						<FieldCount>44</FieldCount>
+						<Fields>
+							<Field0>1</Field0>
+							<Field1>2</Field1>
+							<Field2>3</Field2>
+							<Field3>4</Field3>
+							<Field4>5</Field4>
+							<Field5>6</Field5>
+							<Field6>7</Field6>
+							<Field7>8</Field7>
+							<Field8>9</Field8>
+							<Field9>0</Field9>
+							<Field10>A</Field10>
+							<Field11>B</Field11>
+							<Field12>C</Field12>
+							<Field13>D</Field13>
+							<Field14>E</Field14>
+							<Field15>F</Field15>
+							<Field16>G</Field16>
+							<Field17>H</Field17>
+							<Field18>I</Field18>
+							<Field19>J</Field19>
+							<Field20>K</Field20>
+							<Field21>L</Field21>
+							<Field22>M</Field22>
+							<Field23>N</Field23>
+							<Field24>O</Field24>
+							<Field25>P</Field25>
+							<Field26>Q</Field26>
+							<Field27>R</Field27>
+							<Field28>S</Field28>
+							<Field29>T</Field29>
+							<Field30>U</Field30>
+							<Field31>V</Field31>
+							<Field32>W</Field32>
+							<Field33>X</Field33>
+							<Field34>Y</Field34>
+							<Field35>Z</Field35>
+							<Field36>DONE</Field36>
+							<Field37>SHIFT</Field37>
+							<Field38>CAPS LOCK</Field38>
+							<Field39>SYMBOLS</Field39>
+							<Field40>BACKSPACE</Field40>
+							<Field41>LEFT</Field41>
+							<Field42>RIGHT</Field42>
+							<Field43>SPACE</Field43>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>key codes</Name>
+						<Type>Explanation</Type>
+						<Value>enter unicode character values as integer numbers</Value>
+					</Field>
+					<Field>
+						<Name>lowercase character</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>shift character</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>caps character</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>symbols character</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>shift+caps character</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>shift+symbols character</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>caps+symbols character</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>unselected background bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>selected background bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>active background bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>sticky background bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

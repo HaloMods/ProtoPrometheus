@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>fog</Group>
+	<GroupTag>fog </GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>396</HeaderSize>
+	<FieldCount>42</FieldCount>
+	<Fields>
+		<Field>
+			<Name>FLAGS</Name>
+			<Type>Explanation</Type>
+			<Value>Setting &lt;atmosphere dominant&gt; prevents polygon popping when the atmospheric fog maximum density (in the sky tag) is 1 and the atmospheric fog opaque distance is less than the diameter of the map. However, this flag will cause artifacts when the camera goes below the fog plane - so it should only be used when the fog plane is close to the ground.</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>is water</Field0>
+				<Field1>atmosphere dominant</Field1>
+				<Field2>fog screen only</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>76</Value>
+		</Field>
+		<Field>
+			<Name>DENSITY</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>maximum density:[0,1]#planar fog density is clamped to this value</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>opaque distance:world units#the fog becomes opaque at this distance from the viewer</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>opaque depth:world units#the fog becomes opaque at this distance from its surface</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>distance to water plane:world units#the fog becomes water at this distance from its surface</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>COLOR</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>SCREEN LAYERS</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>no environment multipass</Field0>
+				<Field1>no model multipass</Field1>
+				<Field2>no texture-based falloff</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>layer count:[0,4]#0 layers disables the effect</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>distance gradient:world units</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>density gradient:[0,1]</Name>
+			<Type>Real_Fraction_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>start distance from fog plane:world units#do NOT set this to the same value as maximum_depth</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>color#0 defaults to planar fog color</Name>
+			<Type>RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>rotation multiplier:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>strafing multiplier:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>zoom multiplier:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>map scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>SCREEN LAYER ANIMATION</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>animation period:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>wind velocity:world units per second</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>wind period:seconds#0 defaults to 1</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>wind acceleration weight:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>wind perpendicular weight:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>SOUND</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>background sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>lsnd</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>sound environment</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snde</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>120</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

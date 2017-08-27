@@ -1,0 +1,17 @@
+Sound_Looping
+Struct 0 modemain 84
+	TagRef 0x2c
+	Struct 0x3c Tracks 160
+		TagRef 0x30
+		TagRef 0x40
+		TagRef 0x50
+		TagRef 0x80
+		TagRef 0x90
+		IntSwapRange 0 to 160
+	End Tracks
+	Struct 0x48 DetailSounds 104
+		TagRef 0x0
+		IntSwapRange 0 to 104
+	End DetailSounds
+	IntSwapRange 0 to 84
+End modemain

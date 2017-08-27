@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<xml>
+  <name type="effe" parenttype="????">Effect</name>
+  <platform>Halo1</platform>
+  <plugin>
+    <struct name="Effect">
+      <value type="Flags" name="flags" length="4">
+        <bit index="0" name="deleted when attachment deactivates" />
+        <bit index="1" name="required for gameplay cannot optimize out" />
+      </value>
+      <value type="ShortBlockIndex" name="loop start event" />
+      <value type="ShortBlockIndex" name="loop stop event" />
+      <value type="Pad" name="_unnamed">
+        <length>32</length>
+      </value>
+      <struct name="EffectLocations">
+        <value type="FixedLengthString" name="marker name" />
+      </struct>
+      <value type="Block" name="locations" struct="EffectLocations">
+        <maxelements>32</maxelements>
+      </value>
+      <struct name="EffectEvent">
+        <value type="Pad" name="_unnamed">
+          <length>4</length>
+        </value>
+        <value type="RealFraction" name="skip fraction">
+          <tooltip>chance that this event will be skipped entirely</tooltip>
+        </value>
+        <value type="RealBounds" name="delay bounds">
+          <tooltip>delay before this event takes place</tooltip>
+        </value>
+        <value type="RealBounds" name="duration bounds">
+          <tooltip>duration of this event</tooltip>
+        </value>
+        <value type="Pad" name="_unnamed2">
+          <length>20</length>
+        </value>
+        <struct name="EffectPart">
+          <value type="Enum" name="create in">
+            <item value="0" name="any environment" />
+            <item value="1" name="air only" />
+            <item value="2" name="water only" />
+            <item value="3" name="space only" />
+          </value>
+          <value type="Enum" name="create in2">
+            <item value="0" name="either mode" />
+            <item value="1" name="violent mode only" />
+            <item value="2" name="nonviolent mode only" />
+          </value>
+          <value type="ShortBlockIndex" name="location" />
+          <value type="Flags" name="flags" length="2">
+            <bit index="0" name="face down regardless of location decals" />
+          </value>
+          <value type="Pad" name="_unnamed">
+            <length>16</length>
+          </value>
+          <value type="TagReference" name="type" />
+          <value type="Pad" name="_unnamed2">
+            <length>24</length>
+          </value>
+          <value type="RealBounds" name="velocity bounds">
+            <tooltip>initial velocity along the location's forward</tooltip>
+          </value>
+          <value type="Angle" name="velocity cone angle">
+            <tooltip>initial velocity will be inside the cone defined by this angle.</tooltip>
+          </value>
+          <value type="AngleBounds" name="angular velocity bounds" />
+          <value type="RealBounds" name="radius modifier bounds" />
+          <value type="Pad" name="_unnamed3">
+            <length>4</length>
+          </value>
+          <value type="Flags" name="A scales values" length="4">
+            <bit index="0" name="velocity" />
+            <bit index="1" name="velocity delta" />
+            <bit index="2" name="velocity cone angle" />
+            <bit index="3" name="angular velocity" />
+            <bit index="4" name="angular velocity delta" />
+            <bit index="5" name="typ" />
+          </value>
+          <value type="Flags" name="B scales values" length="4">
+            <bit index="0" name="velocity" />
+            <bit index="1" name="velocity delta" />
+            <bit index="2" name="velocity cone angle" />
+            <bit index="3" name="angular velocity" />
+            <bit index="4" name="angular velocity delta" />
+            <bit index="5" name="typ" />
+          </value>
+        </struct>
+        <value type="Block" name="parts" struct="EffectPart">
+          <maxelements>32</maxelements>
+        </value>
+        <struct name="EffectParticles">
+          <value type="Enum" name="create in">
+            <item value="0" name="any environment" />
+            <item value="1" name="air only" />
+            <item value="2" name="water only" />
+            <item value="3" name="space only" />
+          </value>
+          <value type="Enum" name="create in2">
+            <item value="0" name="either mode" />
+            <item value="1" name="violent mode only" />
+            <item value="2" name="nonviolent mode only" />
+          </value>
+          <value type="Enum" name="create">
+            <item value="0" name="independent of camera mode" />
+            <item value="1" name="only in first person" />
+            <item value="2" name="only in third person" />
+            <item value="3" name="in first person if possible" />
+          </value>
+          <value type="Pad" name="_unnamed">
+            <length>2</length>
+          </value>
+          <value type="ShortBlockIndex" name="location" />
+          <value type="Pad" name="_unnamed2">
+            <length>2</length>
+          </value>
+          <value type="RealEulerAngles2D" name="relative direction">
+            <tooltip>particle initial velocity direction relative to the location's forward</tooltip>
+          </value>
+          <value type="RealVector3D" name="relative offset">
+            <tooltip>particle initial position offset relative to the locatin's forward</tooltip>
+          </value>
+          <value type="Pad" name="_unnamed3">
+            <length>12</length>
+          </value>
+          <value type="Pad" name="_unnamed4">
+            <length>40</length>
+          </value>
+          <value type="TagReference" name="particle type" />
+          <value type="Flags" name="flags" length="4">
+            <bit index="0" name="stay attached to marker" />
+            <bit index="1" name="random initial angle" />
+            <bit index="2" name="tint from object color" />
+            <bit index="3" name="interpolate tint as HSV" />
+            <bit index="4" name="... across the long hue path" />
+          </value>
+          <value type="Enum" name="distribution function">
+            <tooltip>describes how the part creations are distributed over the event duration</tooltip>
+            <item value="0" name="start" />
+            <item value="1" name="end" />
+            <item value="2" name="constant" />
+            <item value="3" name="buildup" />
+            <item value="4" name="falloff" />
+            <item value="5" name="buildup and falloff" />
+          </value>
+          <value type="Pad" name="_unnamed5">
+            <length>2</length>
+          </value>
+          <value type="ShortBounds" name="count">
+            <tooltip>number of particles created</tooltip>
+          </value>
+          <value type="RealBounds" name="distribution radius">
+            <tooltip>initial distance from the location's origin</tooltip>
+          </value>
+          <value type="Pad" name="_unnamed6">
+            <length>12</length>
+          </value>
+          <value type="RealBounds" name="velocity">
+            <tooltip>initial velocity along the specified direction</tooltip>
+          </value>
+          <value type="Angle" name="velocity cone angle">
+            <tooltip>particle initial velocities will be inside the cone defined by this angle and the specified direction</tooltip>
+          </value>
+          <value type="AngleBounds" name="angular velocity" />
+          <value type="Pad" name="_unnamed7">
+            <length>8</length>
+          </value>
+          <value type="RealBounds" name="radius">
+            <tooltip>particle radius</tooltip>
+          </value>
+          <value type="Pad" name="_unnamed8">
+            <length>8</length>
+          </value>
+          <value type="RealARGBColor" name="tint lower bound" />
+          <value type="RealARGBColor" name="tint upper bound" />
+          <value type="Pad" name="_unnamed9">
+            <length>16</length>
+          </value>
+          <value type="Flags" name="A scales values" length="4">
+            <bit index="0" name="velocity" />
+            <bit index="1" name="velocity delta" />
+            <bit index="2" name="velocity cone angle" />
+            <bit index="3" name="angular velocity" />
+            <bit index="4" name="angular velocity delta" />
+            <bit index="5" name="count" />
+            <bit index="6" name="count delta" />
+            <bit index="7" name="distribution radius" />
+            <bit index="8" name="distribution radius delta" />
+            <bit index="9" name="particle radius" />
+            <bit index="10" name="particle radius delta" />
+            <bit index="11" name="tint" />
+          </value>
+          <value type="Flags" name="B scales values" length="4">
+            <bit index="0" name="velocity" />
+            <bit index="1" name="velocity delta" />
+            <bit index="2" name="velocity cone angle" />
+            <bit index="3" name="angular velocity" />
+            <bit index="4" name="angular velocity delta" />
+            <bit index="5" name="count" />
+            <bit index="6" name="count delta" />
+            <bit index="7" name="distribution radius" />
+            <bit index="8" name="distribution radius delta" />
+            <bit index="9" name="particle radius" />
+            <bit index="10" name="particle radius delta" />
+            <bit index="11" name="tint" />
+          </value>
+        </struct>
+        <value type="Block" name="particles" struct="EffectParticles">
+          <maxelements>32</maxelements>
+        </value>
+      </struct>
+      <value type="Block" name="events" struct="EffectEvent">
+        <maxelements>32</maxelements>
+      </value>
+    </struct>
+  </plugin>
+</xml>

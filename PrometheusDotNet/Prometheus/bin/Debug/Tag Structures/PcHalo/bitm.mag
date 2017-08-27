@@ -1,0 +1,42 @@
+Bitmap
+Struct 0 Bitmapmain 108
+	BitMapRaw 96
+	Struct 84 Sequences 64
+		Struct 52 Sprites 32
+			//IntSwapRange 0 to 32
+		end Sprites
+		LongSwap 32
+		LongSwap 34
+		IntSwapRange 0 to 32
+		IntSwapRange 36 to 64
+	End Sequences
+	Struct 96 BitMaps 48
+		AddPrevSize
+		IntSwap 0
+		LongSwap 4
+		LongSwap 6
+		LongSwap 8
+		LongSwap 10
+		LongSwap 12
+		LongSwap 14
+		LongSwap 16
+		LongSwap 18
+		LongSwap 20
+		IntSwap 24
+		byteclear 14
+	End Bitmaps
+	LongSwap 0
+	LongSwap 2
+	LongSwap 4
+	LongSwap 6
+	LongSwap 20
+	LongSwap 22
+	LongSwap 24
+	LongSwap 26
+	IntSwap 28
+	IntSwap 48
+	IntSwap 68
+	LongSwapRange 76 to 84
+	IntSwap 84
+	IntSwap 96
+End Bitmapmain

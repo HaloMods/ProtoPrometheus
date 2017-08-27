@@ -1,0 +1,434 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D1F41DC-AB16-441C-8F0D-A24D4BFD7E38}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TagLibrary</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TagLibrary</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\actor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\actor_variant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\antenna.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\biped.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\bitmap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\camera_track.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\color_table.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\continuous_damage_effect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\contrail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\damage_effect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\decal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\detail_object_collection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\device.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\device_control.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\device_light_fixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\device_machine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\dialogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\effect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\equipment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\flag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\fog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\font.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\garbage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\gbxmodel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\glow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\hud_globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\hud_message_text.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\hud_number.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\input_device_defaults.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\item_collection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\lens_flare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\light.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\lightning.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\light_volume.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\material_effects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\meter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\model.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\model_animations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\model_collision_geometry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\multiplayer_scenario_description.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\object.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\particle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\particle_system.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\physics.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\placeholder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\point_physics.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\preferences_network_game.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\projectile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\scenario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\scenario_structure_bsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\scenery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader_environment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader_model.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader_transparent_chicago.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader_transparent_generic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader_transparent_glass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader_transparent_meter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader_transparent_plasma.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\shader_transparent_water.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\sky.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\sound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\sound_environment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\sound_looping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\sound_scenery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\spheroid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\string_list.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\tag_collection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\ui_widget_collection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\ui_widget_definition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\unicode_string_list.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\unit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\vehicle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\virtual_keyboard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\weapon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\weather_particle_system.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Halo1\wind.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TagDefinitionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TagUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Types.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Halo1\XML\actor.xml" />
+    <EmbeddedResource Include="Halo1\XML\actor_variant.xml" />
+    <EmbeddedResource Include="Halo1\XML\antenna.xml" />
+    <EmbeddedResource Include="Halo1\XML\biped.xml" />
+    <EmbeddedResource Include="Halo1\XML\bitmap.xml" />
+    <EmbeddedResource Include="Halo1\XML\camera_track.xml" />
+    <EmbeddedResource Include="Halo1\XML\color_table.xml" />
+    <EmbeddedResource Include="Halo1\XML\continuous_damage_effect.xml" />
+    <EmbeddedResource Include="Halo1\XML\contrail.xml" />
+    <EmbeddedResource Include="Halo1\XML\damage_effect.xml" />
+    <EmbeddedResource Include="Halo1\XML\decal.xml" />
+    <EmbeddedResource Include="Halo1\XML\detail_object_collection.xml" />
+    <EmbeddedResource Include="Halo1\XML\device.xml" />
+    <EmbeddedResource Include="Halo1\XML\device_control.xml" />
+    <EmbeddedResource Include="Halo1\XML\device_light_fixture.xml" />
+    <EmbeddedResource Include="Halo1\XML\device_machine.xml" />
+    <EmbeddedResource Include="Halo1\XML\dialogue.xml" />
+    <EmbeddedResource Include="Halo1\XML\effect.xml" />
+    <EmbeddedResource Include="Halo1\XML\equipment.xml" />
+    <EmbeddedResource Include="Halo1\XML\flag.xml" />
+    <EmbeddedResource Include="Halo1\XML\fog.xml" />
+    <EmbeddedResource Include="Halo1\XML\font.xml" />
+    <EmbeddedResource Include="Halo1\XML\garbage.xml" />
+    <EmbeddedResource Include="Halo1\XML\gbxmodel.xml" />
+    <EmbeddedResource Include="Halo1\XML\globals.xml" />
+    <EmbeddedResource Include="Halo1\XML\glow.xml" />
+    <EmbeddedResource Include="Halo1\XML\grenade_hud_interface.xml" />
+    <EmbeddedResource Include="Halo1\XML\hud_globals.xml" />
+    <EmbeddedResource Include="Halo1\XML\hud_message_text.xml" />
+    <EmbeddedResource Include="Halo1\XML\hud_number.xml" />
+    <EmbeddedResource Include="Halo1\XML\input_device_defaults.xml" />
+    <EmbeddedResource Include="Halo1\XML\item.xml" />
+    <EmbeddedResource Include="Halo1\XML\item_collection.xml" />
+    <EmbeddedResource Include="Halo1\XML\lens_flare.xml" />
+    <EmbeddedResource Include="Halo1\XML\light.xml" />
+    <EmbeddedResource Include="Halo1\XML\lightning.xml" />
+    <EmbeddedResource Include="Halo1\XML\light_volume.xml" />
+    <EmbeddedResource Include="Halo1\XML\material_effects.xml" />
+    <EmbeddedResource Include="Halo1\XML\meter.xml" />
+    <EmbeddedResource Include="Halo1\XML\model.xml" />
+    <EmbeddedResource Include="Halo1\XML\model_animations.xml" />
+    <EmbeddedResource Include="Halo1\XML\model_collision_geometry.xml" />
+    <EmbeddedResource Include="Halo1\XML\multiplayer_scenario_description.xml" />
+    <EmbeddedResource Include="Halo1\XML\object.xml" />
+    <EmbeddedResource Include="Halo1\XML\particle.xml" />
+    <EmbeddedResource Include="Halo1\XML\particle_system.xml" />
+    <EmbeddedResource Include="Halo1\XML\physics.xml" />
+    <EmbeddedResource Include="Halo1\XML\placeholder.xml" />
+    <EmbeddedResource Include="Halo1\XML\point_physics.xml" />
+    <EmbeddedResource Include="Halo1\XML\preferences_network_game.xml" />
+    <EmbeddedResource Include="Halo1\XML\projectile.xml" />
+    <EmbeddedResource Include="Halo1\XML\scenario.xml" />
+    <EmbeddedResource Include="Halo1\XML\scenario_structure_bsp.xml" />
+    <EmbeddedResource Include="Halo1\XML\scenery.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_environment.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_model.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_transparent_chicago.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_transparent_chicago_extended.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_transparent_generic.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_transparent_glass.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_transparent_meter.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_transparent_plasma.xml" />
+    <EmbeddedResource Include="Halo1\XML\shader_transparent_water.xml" />
+    <EmbeddedResource Include="Halo1\XML\sky.xml" />
+    <EmbeddedResource Include="Halo1\XML\sound.xml" />
+    <EmbeddedResource Include="Halo1\XML\sound_environment.xml" />
+    <EmbeddedResource Include="Halo1\XML\sound_looping.xml" />
+    <EmbeddedResource Include="Halo1\XML\sound_scenery.xml" />
+    <EmbeddedResource Include="Halo1\XML\spheroid.xml" />
+    <EmbeddedResource Include="Halo1\XML\string_list.xml" />
+    <EmbeddedResource Include="Halo1\XML\tag_collection.xml" />
+    <EmbeddedResource Include="Halo1\XML\ui_widget_collection.xml" />
+    <EmbeddedResource Include="Halo1\XML\ui_widget_definition.xml" />
+    <EmbeddedResource Include="Halo1\XML\unicode_string_list.xml" />
+    <EmbeddedResource Include="Halo1\XML\unit.xml" />
+    <EmbeddedResource Include="Halo1\XML\unit_hud_interface.xml" />
+    <EmbeddedResource Include="Halo1\XML\vehicle.xml" />
+    <EmbeddedResource Include="Halo1\XML\virtual_keyboard.xml" />
+    <EmbeddedResource Include="Halo1\XML\weapon.xml" />
+    <EmbeddedResource Include="Halo1\XML\weapon_hud_interface.xml" />
+    <EmbeddedResource Include="Halo1\XML\weather_particle_system.xml" />
+    <EmbeddedResource Include="Halo1\XML\wind.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,10 @@
+bitmap
+Struct 0 bitm_main 0x4C
+	Struct 0x3C bitm_Sub_1 0x3C
+		Struct 0x34 bitm_missed_1 0x20
+		End bitm_missed_1
+	End bitm_Sub_1
+	Struct 0x44 bitm_Sub_2 0x74
+		BITMAPS
+	End bitm_Sub_2
+End bitm_main 

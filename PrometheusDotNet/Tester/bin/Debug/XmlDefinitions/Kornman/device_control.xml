@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>device_control</Group>
+	<GroupTag>ctrl</GroupTag>
+	<ParentGroupTag>devi</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>136</HeaderSize>
+	<FieldCount>9</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ CONTROL $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>toggle switch</Field0>
+				<Field1>on button</Field1>
+				<Field2>off button</Field2>
+				<Field3>call button</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>triggers when</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>touched by player</Field0>
+				<Field1>destroyed</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>call value:[0,1]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>80</Value>
+		</Field>
+		<Field>
+			<Name>on</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>off</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>deny</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

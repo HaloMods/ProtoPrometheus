@@ -1,0 +1,107 @@
+Scenario
+Struct 0 scnr_main 0x3E0
+	TagRef 0x00
+	Struct 0x08 scnr_sub_1 0x08
+		TagRef 0x00
+	End scnr_sub_1
+	Struct 0x48 scnr_sub_2 0x24
+	End scnr_sub_2
+	Struct 0x50 scnr_sub_3 0x5C
+		ScriptRef 0x24
+	End scnr_sub_3
+	Struct 0x58 scnr_sub_4 0x28
+		TagRef 0x00
+	End scnr_sub_4
+	Struct 0xD8 scnr_sub_5 0x50
+	End scnr_sub_5
+	Struct 0xE0 scnr_sub_6 0x28
+		TagRef 0x00
+	End scnr_sub_6
+	Struct 0xE8 scnr_sub_7 0x6C
+		ScriptRef 0x3C
+	End scnr_sub_7
+	Struct 0xF0 scnr_sub_8 0x28
+		TagRef 0x00
+	End scnr_sub_8
+	Struct 0x100 scnr_sub_9 0x34
+	End scnr_sub_9
+	Struct 0x118 scnr_sub_10 0x20
+		ScriptRef 0x10
+	End scnr_sub_10
+	Struct 0x120 scnr_sub_11 0x90
+		TagRef 0x58
+	End scnr_sub_11
+	Struct 0x128 scnr_sub_12 0x9C
+		TagRef 0x3C
+		TagRef 0x44
+		TagRef 0x4C
+		TagRef 0x54
+		TagRef 0x5C
+		TagRef 0x64
+	End scnr_sub_12
+	Struct 0x1B0 scnr_sub_13 0x01
+	End scnr_sub_13
+	Struct 0x1D8 scnr_sub_14 0x80
+	End scnr_sub_14
+	TagRef 0x1F8
+	TagRef 0x200
+	Struct 0x210 scnr_sub_15 0x44
+		TagRef 0x10
+		TagRef 0x18
+	End scnr_sub_15
+	Struct 0x238 scnr_sub_16 0x06
+	End scnr_sub_16
+	Struct 0x250 scnr_sub_17 0x64
+		TagRef 0x20
+		TagRef 0x28
+	End scnr_sub_17
+	Struct 0x258 scnr_sub_18 0x48
+		TagRef 0x20
+	End scnr_sub_18
+	Struct 0x290 scnr_sub_19 0x34
+		TagRef 0x00
+		Struct 0x08 scnr_sub_19_1 0x04
+		End scnr_sub_19_1
+		Struct 0x10 scnr_sub_19_2 0x04
+		End scnr_sub_19_2
+		Struct 0x1C scnr_sub_19_3 0x0C
+		End scnr_sub_19_3
+		Struct 0x24 scnr_sub_19_4 0x04
+		End scnr_sub_19_4
+		Struct 0x2C scnr_sub_19_5 0x04
+		End scnr_sub_19_5
+	End scnr_sub_19
+	Struct 0x318 scnr_sub_20 0x60
+		Struct 0x50 scnr_sub_20_1 0x30
+			ScriptRef 0x00
+		End scnr_sub_20_1
+		Struct 0x58 scnr_sub_20_2 0x30
+			ScriptRef 0x00
+		End scnr_sub_20_2
+	End scnr_sub_20
+	TagRef 0x320
+	Struct 0x328 scnr_sub_21 0x4C
+	End scnr_sub_21
+	Struct 0x330 scnr_sub_22 0x28
+		TagRef 0x00
+	End scnr_sub_22
+	TagRef 0x338
+	TagRef 0x358
+	Struct 0x378 scnr_sub_23 0x08
+		TagRef 0x00
+	End scnr_sub_23
+	Struct 0x388 scnr_sub_24 0x10
+		TagRef 0x00
+	End scnr_sub_24
+	Struct 0x398 scnr_sub_25 0x18
+		TagRef 0x00
+		Struct 0x10 scnr_sub_25_1 0xC64
+			TagRef 0x04
+		End scnr_sub_25_1
+	End scnr_sub_25
+	TagRef 0x3A0
+	TagRef 0x3B8
+	Struct 0x3D8 scnr_sub_26 0x04
+	End scnr_sub_26
+End scnr_main
+ 

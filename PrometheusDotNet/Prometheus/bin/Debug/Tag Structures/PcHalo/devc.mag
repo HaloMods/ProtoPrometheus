@@ -1,0 +1,6 @@
+Input_Device_Defaults
+Struct 0 Input_Device_Defaults 44
+	LongSwap 0
+	LongSwap 2
+	IntSwapRange 4 to 44	
+End Input_Device_Defaults

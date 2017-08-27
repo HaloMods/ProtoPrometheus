@@ -1,0 +1,42 @@
+model_collision_geometry
+Struct 0x00 coll_main 0x34
+	Struct 0x14 coll_sub_1 0x04
+	End coll_sub_1
+	Struct 0x1C coll_sub_2 0x0C
+		ScriptRef 0x00
+		Struct 0x04 coll_sub_2_1 0x14
+			ScriptRef 0x00
+			Struct 0x04 coll_sub_2_1_1 0x44
+				Struct 0x04 coll_sub_2_1_1_1 0x08
+					ScriptRef 0x0
+				End coll_sub_2_1_1_1
+				Struct 0x0C coll_sub_2_1_1_2 0x10
+				End coll_sub_2_1_1_2
+				Struct 0x14 coll_sub_2_1_1_3 0x04
+				End coll_sub_2_1_1_3
+				Struct 0x1C coll_sub_2_1_1_4 0x04
+				End coll_sub_2_1_1_4
+				Struct 0x24 coll_missed_2_1_1_1 0x10
+				End coll_missed_2_1_1_1
+				Struct 0x2C coll_sub_2_1_1_5 0x08
+					ScriptRef 0x00
+				End coll_sub_2_1_1_5
+				Struct 0x34 coll_sub_2_1_1_6 0x0C
+					ScriptRef 0x00
+					ScriptRef 0x04
+				End coll_sub_2_1_1_6
+				Struct 0x3C coll_sub_2_1_1_7 0x10
+				End coll_sub_2_1_1_7
+			End coll_sub_2_1_1
+			Struct 0x0C coll_missed_2_1_1 0x70
+				Struct 0x64 coll_missed_2_1_1_1 0x01
+				End coll_missed_2_1_1_1
+			End coll_missed_2_1_1
+		End coll_sub_2_1
+	End coll_sub_2
+	Struct 0x24 coll_sub_3 0x14
+	End coll_sub_3
+	Struct 0x2C coll_sub_4 0x0C
+		ScriptRef 0x00
+	End coll_sub_4
+End coll_main

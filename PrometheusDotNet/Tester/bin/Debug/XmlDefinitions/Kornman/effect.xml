@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>effect</Group>
+	<GroupTag>effe</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>4</Version>
+	<HeaderSize>64</HeaderSize>
+	<FieldCount>7</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>deleted when attachment deactivates</Field0>
+				<Field1>required for gameplay (cannot optimize out)</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>loop start event</Name>
+			<Type>Short_Block_Index</Type>
+			<Block>effect_event_block</Block>
+		</Field>
+		<Field>
+			<Name>loop stop event</Name>
+			<Type>Short_Block_Index</Type>
+			<Block>effect_event_block</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>locations</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>effect_locations_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>32</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>marker name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>events</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>effect_event_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>68</Size>
+				<FieldCount>8</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>skip fraction#chance that this event will be skipped entirely</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>delay bounds:seconds#delay before this event takes place</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>duration bounds:seconds#duration of this event</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>20</Value>
+					</Field>
+					<Field>
+						<Name>parts</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>effect_part_block</Name>
+							<MaxElements>32</MaxElements>
+							<Size>104</Size>
+							<FieldCount>16</FieldCount>
+							<Fields>
+								<Field>
+									<Name>create in</Name>
+									<Type>Enum</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>any environment</Field0>
+										<Field1>air only</Field1>
+										<Field2>water only</Field2>
+										<Field3>space only</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>create in</Name>
+									<Type>Enum</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>either mode</Field0>
+										<Field1>violent mode only</Field1>
+										<Field2>nonviolent mode only</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>location</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>effect_locations_block</Block>
+								</Field>
+								<Field>
+									<Name>flags</Name>
+									<Type>Word_Flags</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>face down regardless of location (decals)</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>16</Value>
+								</Field>
+								<Field>
+									<Name>type^</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>5</FieldCount>
+									<Fields>
+										<Field0>jpt!</Field0>
+										<Field1>obje</Field1>
+										<Field2>pctl</Field2>
+										<Field3>snd!</Field3>
+										<Field4>deca</Field4>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>24</Value>
+								</Field>
+								<Field>
+									<Name>velocity bounds:world units per second#initial velocity along the location's forward</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>velocity cone angle:degrees#initial velocity will be inside the cone defined by this angle.</Name>
+									<Type>Angle</Type>
+								</Field>
+								<Field>
+									<Name>angular velocity bounds:degrees per second</Name>
+									<Type>Angle_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>radius modifier bounds</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name>SCALE MODIFIERS</Name>
+									<Type>Explanation</Type>
+									<Value />
+								</Field>
+								<Field>
+									<Name>A scales values:</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>6</FieldCount>
+									<Fields>
+										<Field0>velocity</Field0>
+										<Field1>velocity delta</Field1>
+										<Field2>velocity cone angle</Field2>
+										<Field3>angular velocity</Field3>
+										<Field4>angular velocity delta</Field4>
+										<Field5>type-specific scale</Field5>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>B scales values:</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>6</FieldCount>
+									<Fields>
+										<Field0>velocity</Field0>
+										<Field1>velocity delta</Field1>
+										<Field2>velocity cone angle</Field2>
+										<Field3>angular velocity</Field3>
+										<Field4>angular velocity delta</Field4>
+										<Field5>type-specific scale</Field5>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>particles</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>effect_particles_block</Name>
+							<MaxElements>32</MaxElements>
+							<Size>232</Size>
+							<FieldCount>30</FieldCount>
+							<Fields>
+								<Field>
+									<Name>create in</Name>
+									<Type>Enum</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>any environment</Field0>
+										<Field1>air only</Field1>
+										<Field2>water only</Field2>
+										<Field3>space only</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>create in</Name>
+									<Type>Enum</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>either mode</Field0>
+										<Field1>violent mode only</Field1>
+										<Field2>nonviolent mode only</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>create</Name>
+									<Type>Enum</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>independent of camera mode</Field0>
+										<Field1>only in first person</Field1>
+										<Field2>only in third person</Field2>
+										<Field3>in first person if possible</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>location</Name>
+									<Type>Short_Block_Index</Type>
+									<Block>effect_locations_block</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>relative direction#particle initial velocity direction relative to the location's forward</Name>
+									<Type>Real_Euler_Angles_2D</Type>
+								</Field>
+								<Field>
+									<Name>relative offset#particle initial position offset relative to the locatin's forward</Name>
+									<Type>Real_Vector_3D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>40</Value>
+								</Field>
+								<Field>
+									<Name>particle type^</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>part</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>flags</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>5</FieldCount>
+									<Fields>
+										<Field0>stay attached to marker</Field0>
+										<Field1>random initial angle</Field1>
+										<Field2>tint from object color</Field2>
+										<Field3>interpolate tint as HSV</Field3>
+										<Field4>... across the long hue path</Field4>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>distribution function#describes how the part creations are distributed over the event duration</Name>
+									<Type>Enum</Type>
+									<FieldCount>6</FieldCount>
+									<Fields>
+										<Field0>start</Field0>
+										<Field1>end</Field1>
+										<Field2>constant</Field2>
+										<Field3>buildup</Field3>
+										<Field4>falloff</Field4>
+										<Field5>buildup and falloff</Field5>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>count#number of particles created</Name>
+									<Type>Short_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>distribution radius:world units#initial distance from the location's origin</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name>velocity:world units per second#initial velocity along the specified direction</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>velocity cone angle:degrees#particle initial velocities will be inside the cone defined by this angle and the specified direction</Name>
+									<Type>Angle</Type>
+								</Field>
+								<Field>
+									<Name>angular velocity:degrees per second</Name>
+									<Type>Angle_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>8</Value>
+								</Field>
+								<Field>
+									<Name>radius:world units#particle radius</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>8</Value>
+								</Field>
+								<Field>
+									<Name>tint lower bound</Name>
+									<Type>Real_ARGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>tint upper bound</Name>
+									<Type>Real_ARGB_Color</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>16</Value>
+								</Field>
+								<Field>
+									<Name>SCALE MODIFIERS</Name>
+									<Type>Explanation</Type>
+									<Value />
+								</Field>
+								<Field>
+									<Name>A scales values:</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>velocity</Field0>
+										<Field1>velocity delta</Field1>
+										<Field2>velocity cone angle</Field2>
+										<Field3>angular velocity</Field3>
+										<Field4>angular velocity delta</Field4>
+										<Field5>count</Field5>
+										<Field6>count delta</Field6>
+										<Field7>distribution radius</Field7>
+										<Field8>distribution radius delta</Field8>
+										<Field9>particle radius</Field9>
+										<Field10>particle radius delta</Field10>
+										<Field11>tint</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>B scales values:</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>velocity</Field0>
+										<Field1>velocity delta</Field1>
+										<Field2>velocity cone angle</Field2>
+										<Field3>angular velocity</Field3>
+										<Field4>angular velocity delta</Field4>
+										<Field5>count</Field5>
+										<Field6>count delta</Field6>
+										<Field7>distribution radius</Field7>
+										<Field8>distribution radius delta</Field8>
+										<Field9>particle radius</Field9>
+										<Field10>particle radius delta</Field10>
+										<Field11>tint</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

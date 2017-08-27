@@ -1,0 +1,8 @@
+lightning
+Struct 0 LightningMain 264
+	TagRef 52
+	Struct 152 Markers 228
+	End Markers
+	Struct 164 Shaders 180
+	End Shaders
+End LightningMain

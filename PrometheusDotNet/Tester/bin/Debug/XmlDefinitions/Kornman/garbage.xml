@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>garbage</Group>
+	<GroupTag>garb</GroupTag>
+	<ParentGroupTag>item</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>168</HeaderSize>
+	<FieldCount>2</FieldCount>
+	<Fields>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>168</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

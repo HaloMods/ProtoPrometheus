@@ -1,0 +1,77 @@
+<Configuration>
+  <RecentFilesTracker>
+    <RecentFilesTracker>
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Core\LibraryArchive.cs" offset="3939" line="75" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Core\ArchiveFileSystem.cs" offset="1497" line="491" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Core\SimpleArchiveFileSystem.cs" offset="6473" line="291" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\TagLibrary\Types.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\TagLibrary\TagUtils.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\TagEditor\TagEditor.cs" offset="0" line="54" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\TagEditor\Controls\Real.cs" offset="0" line="1" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\TagEditor\Controls\Field.cs" offset="0" line="2" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\TagEditor\Controls\Block.cs" offset="0" line="150" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Core\TagSystem\TagDefinitions.cs" offset="46834" line="1335" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Prometheus\PrometheusGUI.cs" offset="14045" line="296" column="14" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Core\Util\ActionStack.cs" offset="2077" line="38" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Prometheus\Prometheus.cs" offset="100571" line="531" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Prometheus\RichTextBoxTraceListener.cs" offset="2114" line="21" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Core\Render\Console.cs" offset="437" line="4" column="0" />
+      <TrackedFile location="C:\SourceCode\Source\PrometheusDotNet\Core\Render\MdxRender.cs" offset="7712" line="267" column="0" />
+    </RecentFilesTracker>
+  </RecentFilesTracker>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@System">
+      <Item value="Windows" priority="0" />
+      <Item value="Collections" priority="0" />
+      <Item value="EventArgs" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms">
+      <Item value="Control" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Core.Util.ActionStack.Stack">
+      <Item value="Push" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ephemetheus.Document.DocumentType">
+      <Item value="Tag" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Ephemetheus.Blam">
+      <Item value="String" priority="0" />
+      <Item value="Flags" priority="0" />
+      <Item value="TagReference" priority="0" />
+      <Item value="ShortInteger" priority="2" />
+      <Item value="Data" priority="0" />
+      <Item value="Definition" priority="3" />
+      <Item value="Block" priority="1" />
+      <Item value="TagDefinition" priority="0" />
+      <Item value="Pad" priority="1" />
+      <Item value="RealEulerAngles3D" priority="0" />
+      <Item value="Enum" priority="0" />
+      <Item value="BlockIndex" priority="0" />
+      <Item value="RealPoint3D" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@">
+      <Item value="Click" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Controls" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="DarkBlue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows">
+      <Item value="Forms" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Ephemetheus.Blam.FieldType">
+      <Item value="Word_Flags" priority="0" />
+      <Item value="Short_Block_Index" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,15 @@
+lightning
+Struct 0 LightningMain 264
+	TagRef 52
+	Struct 152 Markers 228
+		LongSwapRange 32 to 116
+		IntSwapRange 116 to 228
+	End Markers
+	Struct 164 Shaders 180
+		LongSwapRange 0 to 180
+	End Shaders
+	LongSwapRange 0 to 20
+	IntSwapRange 20 to 28
+	LongSwapRange 28 to 52
+	IntSwapRange 52 to 264
+End LightningMain

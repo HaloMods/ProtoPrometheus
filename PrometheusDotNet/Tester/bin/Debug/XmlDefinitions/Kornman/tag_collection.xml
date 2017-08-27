@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>tag_collection</Group>
+	<GroupTag>tagc</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>12</HeaderSize>
+	<FieldCount>2</FieldCount>
+	<Fields>
+		<Field>
+			<Name>tag references</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>tag reference</Name>
+				<MaxElements>200</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>tag</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>????</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

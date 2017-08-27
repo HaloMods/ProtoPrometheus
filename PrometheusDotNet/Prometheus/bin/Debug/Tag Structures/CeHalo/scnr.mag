@@ -1,0 +1,251 @@
+Scenario
+Struct 0 ScnrMain 1456
+	//IntClear 0x30
+	Struct 0x30 skies 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End skies
+	IntClear 0x40
+	//Struct 0x40 ChildScenarios 32
+	//End ChildScenarios
+	IntClear 0xf8
+	//struct 0xf8 Functions 120
+	//End Functions
+	IntClear 268
+	IntClear 260
+	//Struct 268 ObjectNames 1 / 260
+	//End ObjectNames
+	IntClear 0x118
+	//struct 0x118 Comments 48
+	//End Comments
+	intClear 0x204
+	//IntClear 528
+	Struct 528 Scenery 72
+		LongSwapRange 0 to 8
+		IntSwapRange 8 to 72
+	End Scenery
+	//IntClear 540
+	Struct 540 SceneryPal 48
+		TagRef 0
+		IntSwapRange 0 to 48
+	End SceneryPal
+	IntClear 0x228
+	//struct 0x228 Bipeds 120
+	//end Bipeds
+	IntClear 564
+	//Struct 564 BipedPal 48
+		//TagRef 0
+		//IntSwapRange 0 to 48
+	//End BipedPal
+	//IntClear 576
+	Struct 576 Vehicles 120
+		LongSwapRange 0 to 8
+		IntSwapRange 8 to 36
+	End Vehicles
+	//IntClear 588
+	Struct 588 VehiclePal 48
+		TagRef 0
+		IntSwapRange 0 to 48
+	End VehiclePal
+	IntClear 0x258
+	//Struct 0x258 Equipment 40
+	//End Equipment
+	IntClear 0x264
+	//Struct 0x264 EquipmentPal 48
+		//TagRef 0
+		//IntSwapRange 0 to 48
+	//End EquipmentPal
+	intClear 0x270
+	//Struct 0x270 Weapons 92
+	//End Weapons
+	IntClear 0x27c
+	//Struct 0x27c WeaponsPal 48
+	//End WeaponsPal
+	IntClear 0x288
+	//Struct 0x288 DeviceGroups 52
+	//End DeviceGroups
+	IntClear 0x294
+	//Struct 0x294 Machines 64
+	//End Machines
+	IntClear 0x2a0
+	//Struct 0x2a0 MachinesPal 48
+	//End MachinesPal
+	IntClear 0x2ac
+	//Struct 0x2ac Controls 64
+	//End Controls
+	IntClear 0x2b8
+	//Struct 0x2b8 ControlsPal 48
+	//End ControlsPal
+	IntClear 0x2c4
+	//Struct 0x2c4 LightFixtures 88
+	//End LightFixtures
+	IntClear 0x2d0
+	//Struct 0x2d0 LightFixturePal 48
+	//End LightFixturesPal
+	//IntClear 732
+	Struct 732 SoundScenery 40
+		LongSwapRange 0 to 8
+		IntSwapRange 8 to 40
+	end SoundScenery
+	//IntClear 744
+	Struct 744 SoundSceneryPal 48
+		TagRef 0
+		IntSwapRange 0 to 48
+	End SoundSceneryPal
+	//IntClear 0x348
+	Struct 0x348 PlayerStartingPro 104
+		TagRef 0x28
+		TagRef 0x3c
+		IntSwapRange 0x20 to 0x38
+		LongSwapRange 0x38 to 0x3c
+		IntSwapRange 0x3c to 0x4c
+		LongSwapRange 0x4c to 104
+	End PlayerStartingPro
+	//IntClear 852
+	Struct 852 PlayerStartingLocation 52
+		IntSwapRange 0 to 16
+		Longswap 16
+		LongSwap 18
+		LongSwap 20
+		LongSwap 22
+		IntSwapRange 24 to 52
+	End PlayerStartingLocation
+	//IntClear 0x360
+	Struct 0x360 TriggerVolumes 96
+		IntSwapRange 32 to 96
+	End TriggerVolumes
+	IntClear 0x36c
+	//Struct 0x36c RecordedAnimation 64
+	//End RecordedAnimation
+	//IntClear 888
+	Struct 888 NetGameFlags 148
+		TagRef 20
+		IntSwapRange 0 to 16
+		LongSwap 16
+		LongSwap 18
+		IntSwapRange 20 to 148
+	End NetGameFlags
+	//IntClear 900
+	Struct 900 NetGameEquipment 144
+		TagRef 80
+		Intswap 0
+		LongSwap 4
+		LongSwap 6
+		IntSwapRange 8 to 144
+	End NetGameEquipment
+	//IntClear 912
+	Struct 912 StartingEquipment 204 
+		TagRef 60
+		TagRef 76
+		TagRef 92
+		TagRef 108
+		TagRef 124
+		TagRef 140
+		LongSwapRange 0 to 60
+		IntSwapRange 60 to 204
+	End StartingEquipment
+	//IntClear 0x39c
+	Struct 0x39c BspSwitchTrigger 8
+		LongSwapRange 0 to 8
+		LongClear 6
+	End BspSwitchTrigger
+	IntClear 936
+	//Struct 936 Decals 16
+	//End Decals
+	IntClear 948
+	//Struct 948 DecalPal 16
+		//TagRef 0
+		//IntSwapRange 0 to 16
+	//End DecalPal
+	IntClear 0x3c0
+	//Struct 0x3c0 DetailObjectCollection 48
+		//tagref 0
+		//intswaprange 0 to 48
+	//End DetailObjectCollection
+	//IntClear 0x420
+	Struct 0x420 ActorPalette 16
+		TagRef 0x0
+		IntSwapRange 0 to 16
+	End ActorPalette
+	//IntClear 0x42c
+	Struct 0x42c Encounters 176
+		IntClear 0x80
+		//Struct 0x80 Squads 232
+			//Struct 0xc4 MovePostions 80
+			//End MovePostions
+			//Struct 0xd0 StartingLocations 28
+			//End StartingLocations
+		//End Squads
+		IntClear 0x8c
+		//Struct 0x8c Platoons 172
+		//End Platoons
+		IntClear 0x98
+		//Struct 0x98 FireingPositions 24
+		//End FireingPositions
+		IntClear 0xa4
+		//Struct 0xa4 EncPlayerStartingLocation 52
+		//End EncPlayerStartingLocation
+	//End Encounters
+	IntClear 0x438
+	//Struct 0x438 CommandsList 96		
+		//IntClear 0xe0
+		//Struct 0xe0 Commands 32
+		//End Commands
+		//IntClear 0xec
+		//Struct 0xec Points 20
+		//End Points
+	//End CommandsList
+	IntClear 0x444
+	//Struct 0x444 AIAnimationRef 60
+	//End AIAnimationRef
+	IntClear 0x450
+	//Struct 0x450 AIScriptRef 40
+	//End AIScriptRef
+	IntClear 0x45c
+	//Struct 0x45c AIRecordingRef 40
+	//End AIRecordingRef
+	IntClear 0x468
+	//Struct 0x468 AIConversations 116
+		//Struct 0x50 Participants 84
+		//End Participants
+		//Struct 0x5c Lines 124
+		//End Lines
+	//End AIConversations
+	IntClear 1148
+	IntClear 1140
+	//Struct 1148 ScriptSYnTexData 1 / 1140
+	//End ScriptSYnTexData
+	IntClear 1168
+	IntClear 1160
+	//Struct 1168 ScriptStringData 1 / 1160
+	//End ScriptStringData
+	//IntClear 1444
+	//intClear 0x49c
+	Struct 0x49c Scripts 92
+		LongSwapRange 0x20 to 0x24
+		IntSwapRange 0x24 to 92
+	End Scripts
+	Struct 1444 BSP 32
+		TagRef 16
+		IntSwapRange 0 to 32
+		IntClear 0
+		IntClear 4
+		IntClear 8
+		IntClear 12
+	End BSP
+	IntClear 236
+	IntClear 240
+	IntClear 244
+	
+	//IntClear 0x49c
+	IntClear 0x4a8
+	IntClear 0x4f0
+	IntClear 0x4b4
+	IntClear 0x4e4
+	IntClear 0x4fc
+	IntSwapRange 0 to 60
+	LongSwap 60
+	LongSwap 62
+	LongSwapRange 60 to 64
+	IntSwapRange 64 to 1456
+end ScnrMain

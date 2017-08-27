@@ -1,0 +1,9 @@
+fog
+Struct 0 FogMain 396
+	TagRef 188
+	TagRef 244
+	TagRef 260
+	IntSwapRange 0 to 132
+	LongSwapRange 132 to 136
+	IntSwapRange 136 to 396
+End FogMain

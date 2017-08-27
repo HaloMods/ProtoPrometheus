@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>material_effects</Group>
+	<GroupTag>foot</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>140</HeaderSize>
+	<FieldCount>3</FieldCount>
+	<Fields>
+		<Field>
+			<Name>effects</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>material_effect_block</Name>
+				<MaxElements>13</MaxElements>
+				<Size>28</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>materials</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>material_effect_material_block</Name>
+							<MaxElements>33</MaxElements>
+							<Size>48</Size>
+							<FieldCount>4</FieldCount>
+							<Fields>
+								<Field>
+									<Name>effect</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>effe</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>sound</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>16</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>128</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

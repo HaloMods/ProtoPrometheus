@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>point_physics</Group>
+	<GroupTag>pphy</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>64</HeaderSize>
+	<FieldCount>10</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>flamethrower particle collision</Field0>
+				<Field1>collides with structures</Field1>
+				<Field2>collides with water surface</Field2>
+				<Field3>uses simple wind#the wind on this point won't have high-frequency variations</Field3>
+				<Field4>uses damped wind#the wind on this point will be artificially slow</Field4>
+				<Field5>no gravity#the point is not affected by gravity</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>density:g/mL</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>air friction</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>water friction</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>surface friction#when hitting the ground or interior, percentage of velocity lost in one collision</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>elasticity#0.0 is inelastic collisions (no bounce) 1.0 is perfectly elastic (reflected velocity equals incoming velocity)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>Densities (g/mL)</Name>
+			<Type>Explanation</Type>
+			<Value>air        0.0011 (g/mL)
+snow       0.128
+cork       0.24
+cedar      0.43
+oak        0.866
+ice        0.897
+water      1.0
+soil       1.1
+cotton     1.491
+dry earth  1.52
+sand       1.7
+granite    2.4
+glass      2.5
+iron       7.65
+steel      7.77
+lead       11.37
+uranium    18.74
+gold       19.3
+</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

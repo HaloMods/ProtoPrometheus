@@ -1,0 +1,12 @@
+Material_Effects
+Struct 0 Material_EffectsMain 140
+	struct 0 Effects 28
+		Struct 0 Materials 48
+			TagRef 0
+			TagRef 16
+			IntSwapRange 0 to 48
+		End Materials
+		IntSwapRange 0 to 28
+	End Effects
+	IntSwapRange 0 to 140
+End Material_EffectsMain

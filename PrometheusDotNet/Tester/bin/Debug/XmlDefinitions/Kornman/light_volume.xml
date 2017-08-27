@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>light_volume</Group>
+	<GroupTag>mgs2</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>332</HeaderSize>
+	<FieldCount>26</FieldCount>
+	<Fields>
+		<Field>
+			<Name>light volume</Name>
+			<Type>Explanation</Type>
+			<Value>Draws a sequence of glow bitmaps along a line. Can be used for contrail-type effects as well as volumetric lights.</Value>
+		</Field>
+		<Field>
+			<Name>attachment marker#the marker name that the light volume should be attached to</Name>
+			<Type>String</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>interpolate color in hsv</Field0>
+				<Field1>...more colors</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>brightness scale</Name>
+			<Type>Explanation</Type>
+			<Value>Fades the effect in and out with distance, viewer angle, and external source.</Value>
+		</Field>
+		<Field>
+			<Name>near fade distance:world units#distance at which light volume is full brightness</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>far fade distance:world units#distance at which light volume is zero brightness</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>perpendicular brightness scale:[0,1]#brightness scale when viewed at a 90-degree angle</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>parallel brightness scale:[0,1]#brightness scale when viewed directly</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>brightness scale source#scales brightness based on external value</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>bitmaps</Name>
+			<Type>Explanation</Type>
+			<Value>Bitmap tag used to draw the light volume, repeated &lt;count&gt; times. Default is 'tags\rasterizer_textures\glow'. Note that sprite plates are not valid for light volumes.</Value>
+		</Field>
+		<Field>
+			<Name>map#NOT A SPRITE PLATE</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>sequence index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>count#number of bitmaps to draw (0 causes light volume not to render)</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>72</Value>
+		</Field>
+		<Field>
+			<Name>frame animation</Name>
+			<Type>Explanation</Type>
+			<Value>Frames are descriptions of the light volume at a particular point in time, interpolated by an external source. For example, a bolt of energy can be made to stretch out and grow thinner as it is fired from a weapon.</Value>
+		</Field>
+		<Field>
+			<Name>frame animation source#interpolates between frames based on external value</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>36</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>64</Value>
+		</Field>
+		<Field>
+			<Name>frames</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>light_volume_frame_block</Name>
+				<MaxElements>2</MaxElements>
+				<Size>176</Size>
+				<FieldCount>15</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>offset from marker:world units</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>offset exponent#0 defaults to 1; &gt;1 compresses light near marker, &lt;1 compresses light near far end</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>length:world units#0 causes light volume not to render</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>radius hither:world units#radius near the marker</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>radius yon:world units#radius at far end of light volume</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>radius exponent#0 defaults to 1; &gt;1 values are more teardrop-shaped, &lt;1 values are more pill-shaped</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>tint color hither#tint color near the marker (alpha is brightness)</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>tint color yon#tint color at far end of light volume (alpha is brightness)</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>tint color exponent#0 defaults to 1; affects tint color only, not brightness</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>brightness exponent#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

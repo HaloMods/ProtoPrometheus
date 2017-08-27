@@ -1,0 +1,7 @@
+garb
+Struct 0 garb_main 0x1D4
+	TagRef 0x34
+	TagRef 0x54
+	Struct 0xB4 garb_sub_1 0x08
+	End garb_sub_1
+End garb_main

@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>shader_transparent_generic</Group>
+	<GroupTag>sotr</GroupTag>
+	<ParentGroupTag>shdr</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>68</HeaderSize>
+	<FieldCount>15</FieldCount>
+	<Fields>
+		<Field>
+			<Name>generic transparent shader</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>numeric counter limit:[0,255]</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Byte_Flags</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>alpha-tested</Field0>
+				<Field1>decal</Field1>
+				<Field2>two-sided</Field2>
+				<Field3>first map is in screenspace</Field3>
+				<Field4>draw before water</Field4>
+				<Field5>ignore effect</Field5>
+				<Field6>scale first map with distance</Field6>
+				<Field7>numeric</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>first map type</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>2D map</Field0>
+				<Field1>reflection cube map</Field1>
+				<Field2>object-centered cube map</Field2>
+				<Field3>viewer-centered cube map</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer blend function</Name>
+			<Type>Enum</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>alpha blend</Field0>
+				<Field1>multiply</Field1>
+				<Field2>double multiply</Field2>
+				<Field3>add</Field3>
+				<Field4>subtract</Field4>
+				<Field5>component min</Field5>
+				<Field6>component max</Field6>
+				<Field7>alpha-multiply add</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer fade mode</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>fade when perpendicular</Field1>
+				<Field2>fade when parallel</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>framebuffer fade source#fade is multiplied by this external value</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>lens flares</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>lens flare spacing:world units#0 places a single lens flare</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>lens flare</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>lens</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>extra layers</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>shader_transparent_layer_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>shader</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>shdr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>maps</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>shader_transparent_generic_map_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>100</Size>
+				<FieldCount>27</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>unfiltered</Field0>
+							<Field1>u-clamped</Field1>
+							<Field2>v-clamped</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>map u-scale#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map v-scale#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map u-offset</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map v-offset</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map rotation:degrees</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>mipmap bias:[0,1]</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>map</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>2D texture animation</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>u-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>u-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>u-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>u-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>u-animation scale:repeats#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>v-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>v-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>v-animation scale:repeats#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rotation-animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rotation-animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation phase</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation scale:degrees#0 defaults to 360</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation-animation center</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>stages</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>shader_transparent_generic_stage_block</Name>
+				<MaxElements>7</MaxElements>
+				<Size>112</Size>
+				<FieldCount>40</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>color mux</Field0>
+							<Field1>alpha mux</Field1>
+							<Field2>A-out controls color0 animation</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>constants and animation</Name>
+						<Type>Explanation</Type>
+						<Value>Constant color 0 is animated in exactly the same way as the self-illumination color of the model shader, except that it has an alpha component in addition to the RGB components. Constant color 1 is just a constant.</Value>
+					</Field>
+					<Field>
+						<Name>color0 source</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A</Field1>
+							<Field2>B</Field2>
+							<Field3>C</Field3>
+							<Field4>D</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>color0 animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>color0 animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>color0 animation lower bound</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>color0 animation upper bound</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>color1</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>color inputs</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>input A</Name>
+						<Type>Enum</Type>
+						<FieldCount>25</FieldCount>
+						<Fields>
+							<Field0>zero</Field0>
+							<Field1>one</Field1>
+							<Field2>one half</Field2>
+							<Field3>negative one</Field3>
+							<Field4>negative one half</Field4>
+							<Field5>map color 0</Field5>
+							<Field6>map color 1</Field6>
+							<Field7>map color 2</Field7>
+							<Field8>map color 3</Field8>
+							<Field9>vertex color 0 / diffuse light</Field9>
+							<Field10>vertex color 1 / fade(perpendicular)</Field10>
+							<Field11>scratch color 0</Field11>
+							<Field12>scratch color 1</Field12>
+							<Field13>constant color 0</Field13>
+							<Field14>constant color 1</Field14>
+							<Field15>map alpha 0</Field15>
+							<Field16>map alpha 1</Field16>
+							<Field17>map alpha 2</Field17>
+							<Field18>map alpha 3</Field18>
+							<Field19>vertex alpha 0 / fade(none)</Field19>
+							<Field20>vertex alpha 1 / fade(perpendicular)</Field20>
+							<Field21>scratch alpha 0</Field21>
+							<Field22>scratch alpha 1</Field22>
+							<Field23>constant alpha 0</Field23>
+							<Field24>constant alpha 1</Field24>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input A mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>clamp(x)</Field0>
+							<Field1>1 - clamp(x)</Field1>
+							<Field2>2*clamp(x) - 1</Field2>
+							<Field3>1 - 2*clamp(x)</Field3>
+							<Field4>clamp(x) - 1/2</Field4>
+							<Field5>1/2 - clamp(x)</Field5>
+							<Field6>x</Field6>
+							<Field7>-x</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input B</Name>
+						<Type>Enum</Type>
+						<FieldCount>25</FieldCount>
+						<Fields>
+							<Field0>zero</Field0>
+							<Field1>one</Field1>
+							<Field2>one half</Field2>
+							<Field3>negative one</Field3>
+							<Field4>negative one half</Field4>
+							<Field5>map color 0</Field5>
+							<Field6>map color 1</Field6>
+							<Field7>map color 2</Field7>
+							<Field8>map color 3</Field8>
+							<Field9>vertex color 0 / diffuse light</Field9>
+							<Field10>vertex color 1 / fade(perpendicular)</Field10>
+							<Field11>scratch color 0</Field11>
+							<Field12>scratch color 1</Field12>
+							<Field13>constant color 0</Field13>
+							<Field14>constant color 1</Field14>
+							<Field15>map alpha 0</Field15>
+							<Field16>map alpha 1</Field16>
+							<Field17>map alpha 2</Field17>
+							<Field18>map alpha 3</Field18>
+							<Field19>vertex alpha 0 / fade(none)</Field19>
+							<Field20>vertex alpha 1 / fade(perpendicular)</Field20>
+							<Field21>scratch alpha 0</Field21>
+							<Field22>scratch alpha 1</Field22>
+							<Field23>constant alpha 0</Field23>
+							<Field24>constant alpha 1</Field24>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input B mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>clamp(x)</Field0>
+							<Field1>1 - clamp(x)</Field1>
+							<Field2>2*clamp(x) - 1</Field2>
+							<Field3>1 - 2*clamp(x)</Field3>
+							<Field4>clamp(x) - 1/2</Field4>
+							<Field5>1/2 - clamp(x)</Field5>
+							<Field6>x</Field6>
+							<Field7>-x</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input C</Name>
+						<Type>Enum</Type>
+						<FieldCount>25</FieldCount>
+						<Fields>
+							<Field0>zero</Field0>
+							<Field1>one</Field1>
+							<Field2>one half</Field2>
+							<Field3>negative one</Field3>
+							<Field4>negative one half</Field4>
+							<Field5>map color 0</Field5>
+							<Field6>map color 1</Field6>
+							<Field7>map color 2</Field7>
+							<Field8>map color 3</Field8>
+							<Field9>vertex color 0 / diffuse light</Field9>
+							<Field10>vertex color 1 / fade(perpendicular)</Field10>
+							<Field11>scratch color 0</Field11>
+							<Field12>scratch color 1</Field12>
+							<Field13>constant color 0</Field13>
+							<Field14>constant color 1</Field14>
+							<Field15>map alpha 0</Field15>
+							<Field16>map alpha 1</Field16>
+							<Field17>map alpha 2</Field17>
+							<Field18>map alpha 3</Field18>
+							<Field19>vertex alpha 0 / fade(none)</Field19>
+							<Field20>vertex alpha 1 / fade(perpendicular)</Field20>
+							<Field21>scratch alpha 0</Field21>
+							<Field22>scratch alpha 1</Field22>
+							<Field23>constant alpha 0</Field23>
+							<Field24>constant alpha 1</Field24>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input C mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>clamp(x)</Field0>
+							<Field1>1 - clamp(x)</Field1>
+							<Field2>2*clamp(x) - 1</Field2>
+							<Field3>1 - 2*clamp(x)</Field3>
+							<Field4>clamp(x) - 1/2</Field4>
+							<Field5>1/2 - clamp(x)</Field5>
+							<Field6>x</Field6>
+							<Field7>-x</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input D</Name>
+						<Type>Enum</Type>
+						<FieldCount>25</FieldCount>
+						<Fields>
+							<Field0>zero</Field0>
+							<Field1>one</Field1>
+							<Field2>one half</Field2>
+							<Field3>negative one</Field3>
+							<Field4>negative one half</Field4>
+							<Field5>map color 0</Field5>
+							<Field6>map color 1</Field6>
+							<Field7>map color 2</Field7>
+							<Field8>map color 3</Field8>
+							<Field9>vertex color 0 / diffuse light</Field9>
+							<Field10>vertex color 1 / fade(perpendicular)</Field10>
+							<Field11>scratch color 0</Field11>
+							<Field12>scratch color 1</Field12>
+							<Field13>constant color 0</Field13>
+							<Field14>constant color 1</Field14>
+							<Field15>map alpha 0</Field15>
+							<Field16>map alpha 1</Field16>
+							<Field17>map alpha 2</Field17>
+							<Field18>map alpha 3</Field18>
+							<Field19>vertex alpha 0 / fade(none)</Field19>
+							<Field20>vertex alpha 1 / fade(perpendicular)</Field20>
+							<Field21>scratch alpha 0</Field21>
+							<Field22>scratch alpha 1</Field22>
+							<Field23>constant alpha 0</Field23>
+							<Field24>constant alpha 1</Field24>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input D mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>clamp(x)</Field0>
+							<Field1>1 - clamp(x)</Field1>
+							<Field2>2*clamp(x) - 1</Field2>
+							<Field3>1 - 2*clamp(x)</Field3>
+							<Field4>clamp(x) - 1/2</Field4>
+							<Field5>1/2 - clamp(x)</Field5>
+							<Field6>x</Field6>
+							<Field7>-x</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>color outputs</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>output AB</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>discard</Field0>
+							<Field1>scratch color 0 / final color</Field1>
+							<Field2>scratch color 1</Field2>
+							<Field3>vertex color 0</Field3>
+							<Field4>vertex color 1</Field4>
+							<Field5>map color 0</Field5>
+							<Field6>map color 1</Field6>
+							<Field7>map color 2</Field7>
+							<Field8>map color 3</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>output AB function</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>multiply</Field0>
+							<Field1>dot product</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>output CD</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>discard</Field0>
+							<Field1>scratch color 0 / final color</Field1>
+							<Field2>scratch color 1</Field2>
+							<Field3>vertex color 0</Field3>
+							<Field4>vertex color 1</Field4>
+							<Field5>map color 0</Field5>
+							<Field6>map color 1</Field6>
+							<Field7>map color 2</Field7>
+							<Field8>map color 3</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>output CD function</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>multiply</Field0>
+							<Field1>dot product</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>output AB CD mux/sum</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>discard</Field0>
+							<Field1>scratch color 0 / final color</Field1>
+							<Field2>scratch color 1</Field2>
+							<Field3>vertex color 0</Field3>
+							<Field4>vertex color 1</Field4>
+							<Field5>map color 0</Field5>
+							<Field6>map color 1</Field6>
+							<Field7>map color 2</Field7>
+							<Field8>map color 3</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>output mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>6</FieldCount>
+						<Fields>
+							<Field0>identity</Field0>
+							<Field1>scale by 1/2</Field1>
+							<Field2>scale by 2</Field2>
+							<Field3>scale by 4</Field3>
+							<Field4>bias by -1/2</Field4>
+							<Field5>expand normal</Field5>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>alpha inputs</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>input A</Name>
+						<Type>Enum</Type>
+						<FieldCount>25</FieldCount>
+						<Fields>
+							<Field0>zero</Field0>
+							<Field1>one</Field1>
+							<Field2>one half</Field2>
+							<Field3>negative one</Field3>
+							<Field4>negative one half</Field4>
+							<Field5>map alpha 0</Field5>
+							<Field6>map alpha 1</Field6>
+							<Field7>map alpha 2</Field7>
+							<Field8>map alpha 3</Field8>
+							<Field9>vertex alpha 0 / fade(none)</Field9>
+							<Field10>vertex alpha 1 / fade(perpendicular)</Field10>
+							<Field11>scratch alpha 0</Field11>
+							<Field12>scratch alpha 1</Field12>
+							<Field13>constant alpha 0</Field13>
+							<Field14>constant alpha 1</Field14>
+							<Field15>map blue 0</Field15>
+							<Field16>map blue 1</Field16>
+							<Field17>map blue 2</Field17>
+							<Field18>map blue 3</Field18>
+							<Field19>vertex blue 0 / blue light</Field19>
+							<Field20>vertex blue 1 / fade(parallel)</Field20>
+							<Field21>scratch blue 0</Field21>
+							<Field22>scratch blue 1</Field22>
+							<Field23>constant blue 0</Field23>
+							<Field24>constant blue 1</Field24>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input A mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>clamp(x)</Field0>
+							<Field1>1 - clamp(x)</Field1>
+							<Field2>2*clamp(x) - 1</Field2>
+							<Field3>1 - 2*clamp(x)</Field3>
+							<Field4>clamp(x) - 1/2</Field4>
+							<Field5>1/2 - clamp(x)</Field5>
+							<Field6>x</Field6>
+							<Field7>-x</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input B</Name>
+						<Type>Enum</Type>
+						<FieldCount>25</FieldCount>
+						<Fields>
+							<Field0>zero</Field0>
+							<Field1>one</Field1>
+							<Field2>one half</Field2>
+							<Field3>negative one</Field3>
+							<Field4>negative one half</Field4>
+							<Field5>map alpha 0</Field5>
+							<Field6>map alpha 1</Field6>
+							<Field7>map alpha 2</Field7>
+							<Field8>map alpha 3</Field8>
+							<Field9>vertex alpha 0 / fade(none)</Field9>
+							<Field10>vertex alpha 1 / fade(perpendicular)</Field10>
+							<Field11>scratch alpha 0</Field11>
+							<Field12>scratch alpha 1</Field12>
+							<Field13>constant alpha 0</Field13>
+							<Field14>constant alpha 1</Field14>
+							<Field15>map blue 0</Field15>
+							<Field16>map blue 1</Field16>
+							<Field17>map blue 2</Field17>
+							<Field18>map blue 3</Field18>
+							<Field19>vertex blue 0 / blue light</Field19>
+							<Field20>vertex blue 1 / fade(parallel)</Field20>
+							<Field21>scratch blue 0</Field21>
+							<Field22>scratch blue 1</Field22>
+							<Field23>constant blue 0</Field23>
+							<Field24>constant blue 1</Field24>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input B mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>clamp(x)</Field0>
+							<Field1>1 - clamp(x)</Field1>
+							<Field2>2*clamp(x) - 1</Field2>
+							<Field3>1 - 2*clamp(x)</Field3>
+							<Field4>clamp(x) - 1/2</Field4>
+							<Field5>1/2 - clamp(x)</Field5>
+							<Field6>x</Field6>
+							<Field7>-x</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input C</Name>
+						<Type>Enum</Type>
+						<FieldCount>25</FieldCount>
+						<Fields>
+							<Field0>zero</Field0>
+							<Field1>one</Field1>
+							<Field2>one half</Field2>
+							<Field3>negative one</Field3>
+							<Field4>negative one half</Field4>
+							<Field5>map alpha 0</Field5>
+							<Field6>map alpha 1</Field6>
+							<Field7>map alpha 2</Field7>
+							<Field8>map alpha 3</Field8>
+							<Field9>vertex alpha 0 / fade(none)</Field9>
+							<Field10>vertex alpha 1 / fade(perpendicular)</Field10>
+							<Field11>scratch alpha 0</Field11>
+							<Field12>scratch alpha 1</Field12>
+							<Field13>constant alpha 0</Field13>
+							<Field14>constant alpha 1</Field14>
+							<Field15>map blue 0</Field15>
+							<Field16>map blue 1</Field16>
+							<Field17>map blue 2</Field17>
+							<Field18>map blue 3</Field18>
+							<Field19>vertex blue 0 / blue light</Field19>
+							<Field20>vertex blue 1 / fade(parallel)</Field20>
+							<Field21>scratch blue 0</Field21>
+							<Field22>scratch blue 1</Field22>
+							<Field23>constant blue 0</Field23>
+							<Field24>constant blue 1</Field24>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input C mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>clamp(x)</Field0>
+							<Field1>1 - clamp(x)</Field1>
+							<Field2>2*clamp(x) - 1</Field2>
+							<Field3>1 - 2*clamp(x)</Field3>
+							<Field4>clamp(x) - 1/2</Field4>
+							<Field5>1/2 - clamp(x)</Field5>
+							<Field6>x</Field6>
+							<Field7>-x</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input D</Name>
+						<Type>Enum</Type>
+						<FieldCount>25</FieldCount>
+						<Fields>
+							<Field0>zero</Field0>
+							<Field1>one</Field1>
+							<Field2>one half</Field2>
+							<Field3>negative one</Field3>
+							<Field4>negative one half</Field4>
+							<Field5>map alpha 0</Field5>
+							<Field6>map alpha 1</Field6>
+							<Field7>map alpha 2</Field7>
+							<Field8>map alpha 3</Field8>
+							<Field9>vertex alpha 0 / fade(none)</Field9>
+							<Field10>vertex alpha 1 / fade(perpendicular)</Field10>
+							<Field11>scratch alpha 0</Field11>
+							<Field12>scratch alpha 1</Field12>
+							<Field13>constant alpha 0</Field13>
+							<Field14>constant alpha 1</Field14>
+							<Field15>map blue 0</Field15>
+							<Field16>map blue 1</Field16>
+							<Field17>map blue 2</Field17>
+							<Field18>map blue 3</Field18>
+							<Field19>vertex blue 0 / blue light</Field19>
+							<Field20>vertex blue 1 / fade(parallel)</Field20>
+							<Field21>scratch blue 0</Field21>
+							<Field22>scratch blue 1</Field22>
+							<Field23>constant blue 0</Field23>
+							<Field24>constant blue 1</Field24>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>input D mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>clamp(x)</Field0>
+							<Field1>1 - clamp(x)</Field1>
+							<Field2>2*clamp(x) - 1</Field2>
+							<Field3>1 - 2*clamp(x)</Field3>
+							<Field4>clamp(x) - 1/2</Field4>
+							<Field5>1/2 - clamp(x)</Field5>
+							<Field6>x</Field6>
+							<Field7>-x</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>alpha outputs</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>output AB</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>discard</Field0>
+							<Field1>scratch alpha 0 / final alpha</Field1>
+							<Field2>scratch alpha 1</Field2>
+							<Field3>vertex alpha 0 / fog</Field3>
+							<Field4>vertex alpha 1</Field4>
+							<Field5>map alpha 0</Field5>
+							<Field6>map alpha 1</Field6>
+							<Field7>map alpha 2</Field7>
+							<Field8>map alpha 3</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>output CD</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>discard</Field0>
+							<Field1>scratch alpha 0 / final alpha</Field1>
+							<Field2>scratch alpha 1</Field2>
+							<Field3>vertex alpha 0 / fog</Field3>
+							<Field4>vertex alpha 1</Field4>
+							<Field5>map alpha 0</Field5>
+							<Field6>map alpha 1</Field6>
+							<Field7>map alpha 2</Field7>
+							<Field8>map alpha 3</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>output AB CD mux/sum</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>discard</Field0>
+							<Field1>scratch alpha 0 / final alpha</Field1>
+							<Field2>scratch alpha 1</Field2>
+							<Field3>vertex alpha 0 / fog</Field3>
+							<Field4>vertex alpha 1</Field4>
+							<Field5>map alpha 0</Field5>
+							<Field6>map alpha 1</Field6>
+							<Field7>map alpha 2</Field7>
+							<Field8>map alpha 3</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>output mapping</Name>
+						<Type>Enum</Type>
+						<FieldCount>6</FieldCount>
+						<Fields>
+							<Field0>identity</Field0>
+							<Field1>scale by 1/2</Field1>
+							<Field2>scale by 2</Field2>
+							<Field3>scale by 4</Field3>
+							<Field4>bias by -1/2</Field4>
+							<Field5>expand normal</Field5>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,10 @@
+Contrail
+Struct 0 Contrail 324
+	TagRef 48 
+	TagRef 208 
+	Struct 312 PointStates 104
+		TagRef 16
+		IntSwapRange 0 to 104
+	End PointStates
+	IntSwapRange 0 to 324
+End Contrail

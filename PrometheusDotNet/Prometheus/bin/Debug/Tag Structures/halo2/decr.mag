@@ -1,0 +1,19 @@
+decr
+Struct 0 decr_main 0x6C
+	Struct 0x10 decr_sub_1 0x14
+		ScriptRef 0x00
+		Struct 0x0C decr_sub_1_1 0x28
+			ScriptRef 0x00
+		End decr_sub_1_1
+	End decr_sub_1
+	Struct 0x18 decr_sub_2 0x08
+		ScriptRef 0x00
+	End decr_sub_2
+	Struct 0x20 decr_sub_3 0x38
+	End decr_sub_3
+	Struct 0x28 decr_sub_4 0x02
+	End decr_sub_4
+	RSRC 0x38
+	Struct 0x48 decr_sub_5 0x10
+	End decr_sub_5
+End decr_main

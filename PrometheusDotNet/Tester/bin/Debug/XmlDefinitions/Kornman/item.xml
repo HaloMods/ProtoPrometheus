@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>item</Group>
+	<GroupTag>item</GroupTag>
+	<ParentGroupTag>obje</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>396</HeaderSize>
+	<FieldCount>21</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ ITEM $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>always maintains z up</Field0>
+				<Field1>destroyed by explosions</Field1>
+				<Field2>unaffected by gravity</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>message-index</Name>
+			<Type>Explanation</Type>
+			<Value>This sets which string from tags\ui\hud\hud_item_messages.unicode_string_list to display.</Value>
+		</Field>
+		<Field>
+			<Name>message index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>sort order</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hud message value scale</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>A in</Name>
+			<Type>Enum</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>B in</Name>
+			<Type>Enum</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>C in</Name>
+			<Type>Enum</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>D in</Name>
+			<Type>Enum</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>164</Value>
+		</Field>
+		<Field>
+			<Name>material effects</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>foot</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>collision sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>120</Value>
+		</Field>
+		<Field>
+			<Name>detonation delay:seconds</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>detonating effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>effe</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>detonation effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>effe</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

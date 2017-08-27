@@ -1,0 +1,81 @@
+prt3
+Struct 0x00 prt3_main 0xBC
+	ScriptRef 0x00
+	ScriptRef 0x08
+	TagRef 0x0C
+	Struct 0x14 prt3_sub_1 0x28
+		ScriptRef 0x00
+		TagRef 0x08
+	End prt3_sub_1
+	Struct 0x24 prt3_sub_2 0x01
+	End prt3_sub_2
+	Struct 0x34 prt3_sub_3 0x01
+	End prt3_sub_3
+	ScriptRef 0x3C
+	Struct 0x44 prt3_sub_4 0x01
+	End prt3_sub_4
+	Struct 0x54 prt3_sub_5 0x01
+	End prt3_sub_5
+	TagRef 0x6C
+	TagRef 0x74
+	Struct 0x8C prt3_sub_6 0x7C
+		Struct 0x04 prt3_sub_6_1 0x0C
+		End prt3_sub_6_1
+		Struct 0x0C prt3_sub_6_2 0x04
+		End prt3_sub_6_2
+		Struct 0x14 prt3_sub_6_3 0x10
+		End prt3_sub_6_3
+		Struct 0x1C prt3_sub_6_4 0x08
+		End prt3_sub_6_4
+		Struct 0x24 prt3_sub_6_5 0x02
+		End prt3_sub_6_5
+		Struct 0x2C prt3_sub_6_6 0x04
+		End prt3_sub_6_6
+		Struct 0x34 prt3_sub_6_7 0x01
+		End prt3_sub_6_7
+		Struct 0x3C prt3_missed_6_2 0x14
+			Struct 0x0C prt3_missed_6_2_1 0x01
+			End prt3_missed_6_2_1
+		End prt3_missed_6_2
+		Struct 0x44 prt3_missed_6_3 0x04
+		End prt3_missed_6_3
+		Struct 0x4C prt3_missed_6_4 0x02
+		End prt3_missed_6_4
+		Struct 0x54 prt3_missed_6_5 0x04
+		End prt3_missed_6_5
+		Struct 0x5C prt3_sub_6_8 0x04
+		End prt3_sub_6_8
+		Struct 0x64 prt3_sub_6_9 0x04
+		End prt3_sub_6_9
+		Struct 0x6C prt3_sub_6_10 0x04
+		End prt3_sub_6_10
+	End prt3_sub_6
+	Struct 0x64 prt3_sub_7 0x01
+	End prt3_sub_7
+	Struct 0x7C prt3_sub_8 0x04
+	End prt3_sub_8
+	Struct 0x84 prt3_sub_9 0x38
+		TagRef 0x00
+		Struct 0x30 prt3_sub_9_1 0xB8
+			Struct 0x10 prt3_sub_9_1_1 0x01
+			End prt3_sub_9_1_1
+			Struct 0x20 prt3_sub_9_1_2 0x01
+			End prt3_sub_9_1_2
+			Struct 0x30 prt3_sub_9_1_3 0x01
+			End prt3_sub_9_1_3
+			Struct 0x40 prt3_sub_9_1_4 0x01
+			End prt3_sub_9_1_4
+			Struct 0x50 prt3_sub_9_1_5 0x01
+			End prt3_sub_9_1_5
+			ScriptRef 0x58
+			Struct 0x60 prt3_sub_9_1_6 0x01
+			End prt3_sub_9_1_6
+			Struct 0x70 prt3_sub_9_1_7 0x01
+			End prt3_sub_9_1_7
+			Struct 0x84 prt3_sub_9_1_8 0x01
+			End prt3_sub_9_1_8
+			Struct 0x94 prt3_sub_9_1_9 0x01
+			End prt3_sub_9_1_9
+		End prt3_sub_9_1
+	End prt3_sub_9
+End prt3_main

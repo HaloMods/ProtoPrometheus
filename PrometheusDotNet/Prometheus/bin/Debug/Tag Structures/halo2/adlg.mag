@@ -1,0 +1,16 @@
+adlg
+Struct 0x00 adlg_main 0x2C
+	Struct 0x00 adlg_sub_1 0x60
+		ScriptRef 0x00
+		ScriptRef 0x4C
+		Struct 0x50 adlg_sub_1_1 0x0C
+			ScriptRef 0x00
+		End adlg_sub_1_1
+	End adlg_sub_1
+	Struct 0x08 adlg_sub_2 0x05
+	End adlg_sub_2
+	Struct 0x1C adlg_sub_3 0x04
+	End adlg_sub_3
+	Struct 0x24 adlg_sub_4 0x04
+	End adlg_sub_4
+End adlg_main

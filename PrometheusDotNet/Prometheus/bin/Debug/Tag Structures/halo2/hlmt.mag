@@ -1,0 +1,80 @@
+hlmt
+Struct 0x00 hlmt_main 0xFC
+	TagRef 0x00
+	TagRef 0x08
+	TagRef 0x10
+	TagRef 0x20
+	Struct 0x50 hlmt_sub_1 0x38
+		ScriptRef 0x00
+		Struct 0x14 hlmt_sub_1_1 0x14
+			ScriptRef 0x00
+			Struct 0x08 hlmt_sub_1_1_1 0x20
+				ScriptRef 0x00
+				Struct 0x0C hlmt_sub_1_1_1_1 0x18
+					ScriptRef 0x00
+					TagRef 0x08
+					ScriptRef 0x10
+				End hlmt_sub_1_1_1_1
+			End hlmt_sub_1_1_1
+		End hlmt_sub_1_1
+		Struct 0x1C hlmt_sub_1_2 0x10
+			ScriptRef 0x00
+			TagRef 0x08
+		End hlmt_sub_1_2
+		TagRef 0x30
+	End hlmt_sub_1
+	Struct 0x58 hlmt_missed_1 0x14
+		ScriptRef 0x00
+		ScriptRef 0x0C
+	End hlmt_missed_1
+	Struct 0x60 hlmt_missed_3 0xF8
+		ScriptRef 0x04
+		TagRef 0x7C
+		ScriptRef 0x90
+		TagRef 0x84
+		TagRef 0xA4
+		TagRef 0xAC
+		TagRef 0xB4
+		Struct 0xBC hlmt_missed_3_1 0x38
+			ScriptRef 0x00
+			Struct 0x0C hlmt_missed_3_1_1 0x50
+				TagRef 0x0C
+				TagRef 0x14
+				ScriptRef 0x1C
+				ScriptRef 0x24
+				ScriptRef 0x28
+				TagRef 0x30
+				ScriptRef 0x40	
+			End hlmt_missed_3_1_1
+		End hlmt_missed_3_1
+		Struct 0xC4 hlmt_missed_3_2 0x10
+		End hlmt_missed_3_2
+		Struct 0xD8 hlmt_missed_3_3 0x14
+			ScriptRef 0x00
+		End hlmt_missed_3_3
+		Struct 0xE0 hlmt_missed_3_4 0x14
+			ScriptRef 0x00
+			ScriptRef 0x04
+			ScriptRef 0x08
+		End hlmt_missed_3_4
+		TagRef 0xE8
+		TagRef 0xF0
+	End hlmt_missed_3
+	Struct 0x68 hlmt_main_4 0x1C
+		ScriptRef 0x00
+	End hlmt_main_4
+	Struct 0x70 hlmt_sub_2 0x10
+		ScriptRef 0x00
+		Struct 0x08 hlmt_sub_2_1 0x08
+			ScriptRef 0x00
+		End hlmt_sub_2_1
+	End hlmt_sub_2
+	Struct 0x78 hlmt_sub_3 0x5C
+		ScriptRef 0x00
+	End hlmt_sub_3
+	Struct 0x84 hlmt_missed_2 0x14
+	End hlmt_missed_2
+	TagRef 0x8C
+	TagRef 0x94
+	TagRef 0xF0
+End hlmt_main

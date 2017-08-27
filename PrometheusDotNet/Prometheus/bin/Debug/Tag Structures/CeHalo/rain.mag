@@ -1,0 +1,19 @@
+weather_particle_system
+Struct 0 WeatherMain 48
+	Struct 36 Particles 604
+		TagRef 172
+		TagRef 404
+		TagRef 500
+		LongSwapRange 32 to 36
+		IntSwapRange 36 to 420
+		LongSwapRange 420 to 500
+		IntSwapRange 500 to 516
+		LongSwapRange 516 to 524
+		IntSwapRange 524 to 536
+		LongSwapRange 536 to 540
+		IntSwapRange 540 to 552
+		LongSwapRange 552 to 556
+		IntSwapRange 556 to 604
+	End Particles
+	IntSwapRange 0 to 48
+End WeatherMain

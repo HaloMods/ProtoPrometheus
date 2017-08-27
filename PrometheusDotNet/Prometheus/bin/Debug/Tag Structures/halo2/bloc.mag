@@ -1,0 +1,25 @@
+bloc
+Struct 0x00 bloc_main 0xC0
+	TagRef 0x34
+	TagRef 0x3C	
+	TagRef 0x44
+	TagRef 0x4C
+	TagRef 0x54
+	Struct 0x5C bloc_sub_1 0x10
+	End bloc_sub_1
+	Struct 0x64 bloc_sub_2 0x20
+		ScriptRef 0x04
+		ScriptRef 0x08
+		Struct 0x14 bloc_sub_2_1 0x01
+		End bloc_sub_2_1
+	End bloc_sub_2
+	Struct 0x94 bloc_sub_3 0x18
+		TagRef 0x00
+		TagRef 0x08
+	End bloc_sub_3
+	Struct 0xAC bloc_sub_4 0x10
+	End bloc_sub_4
+	Struct 0xB4 bloc_sub_5 0x08
+	End bloc_sub_5
+End bloc_main
+

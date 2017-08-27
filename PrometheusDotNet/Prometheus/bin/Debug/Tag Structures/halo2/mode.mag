@@ -1,0 +1,50 @@
+model
+Struct 0 mode_main 0x84
+	ScriptRef 0x00
+	Struct 0x14 mode_sub_1 0x38
+	End mode_sub_1
+	Struct 0x1C mode_sub_2 0x10
+		ScriptRef 0x00
+ 		Struct 0x08 mode_sub_2_1 0x10
+			ScriptRef 0x00
+		End mode_sub_2_1
+	End mode_sub_2
+	Struct 0x24 mode_sub_3 0x5C
+		RSRC 0x38
+		Struct 0x48 mode_sub_3_1 0x10  
+		End mode_sub_3_1
+	End mode_sub_3
+	Struct 0x2C mode_sub_4 0x04  
+	End mode_sub_4 
+	Struct 0x34 mode_sub_5 0x0C
+		Struct 0x04 mode_sub_5_1 0x10
+		End mode_sub_5_1
+	End mode_sub_5
+	ScriptRef 0x3C
+	Struct 0x48 mode_sub_6 0x60
+		ScriptRef 0x00
+	End mode_sub_6
+	Struct 0x58 mode_sub_7 0x0C
+		ScriptRef 0x00
+		Struct 0x04 mode_sub_7_1 0x24
+		End mode_sub_7_1
+	End mode_sub_7
+	Struct 0x60 mode_sub_8 0x20
+		TagRef 0x00
+		TagRef 0x08
+		Struct 0x10 mode_sub_8_1 0x08
+		End mode_sub_8_1
+	End mode_sub_8
+	Struct 0x74 mode_sub_9 0x58
+		Struct 0x14 mode_sub_9_1 0x0C
+			Struct 0x04 mode_sub_9_1_1 0x08
+			End mode_sub_9_1_1
+		End mode_sub_9_1
+		Struct 0x1C mode_sub_9_2 0x04
+		End mode_sub_9_2
+		Struct 0x44 mode_sub_9_3 0x10
+		End mode_sub_9_3
+	End mode_sub_9
+	Struct 0x7C mode_sub_10 0x08
+	End mode_sub_10
+End mode_main

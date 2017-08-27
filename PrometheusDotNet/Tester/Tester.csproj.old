@@ -1,0 +1,198 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{1557A44D-FA2F-420F-B05C-EB99E5454A9D}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Tester"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "Tester"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "Core"
+                    Project = "{8CA26A98-9D0C-4F91-A4C0-C8EE8DE7BDBF}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "sanddock"
+                    AssemblyName = "SandDock"
+                    HintPath = "..\shared\sanddock.dll"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "UIControls"
+                    Project = "{C3953CA2-22F7-48FE-8F76-23017C1B6082}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "DevExpress.Data3"
+                    AssemblyName = "DevExpress.Data3"
+                    HintPath = "..\..\..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.Data3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "DevExpress.Utils3"
+                    AssemblyName = "DevExpress.Utils3"
+                    HintPath = "..\..\..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.Utils3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "DevExpress.XtraBars3"
+                    AssemblyName = "DevExpress.XtraBars3"
+                    HintPath = "..\..\..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.XtraBars3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "DevExpress.XtraEditors3"
+                    AssemblyName = "DevExpress.XtraEditors3"
+                    HintPath = "..\..\..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.XtraEditors3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "TagLibrary"
+                    Project = "{7D1F41DC-AB16-441C-8F0D-A24D4BFD7E38}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "TagEditor"
+                    Project = "{6BDF9656-306E-47E9-BC83-E830030B5E08}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "SandBar"
+                    AssemblyName = "SandBar"
+                    HintPath = "..\Shared\SandBar.dll"
+                />
+                <Reference
+                    Name = "Navisight"
+                    AssemblyName = "Navisight"
+                    HintPath = "..\Shared\Navisight.dll"
+                />
+                <Reference
+                    Name = "Eyefinder"
+                    AssemblyName = "Eyefinder"
+                    HintPath = "..\Shared\Eyefinder.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "HaloMapInterface.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tester.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tester.resx"
+                    DependentUpon = "Tester.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "XMLConverter.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

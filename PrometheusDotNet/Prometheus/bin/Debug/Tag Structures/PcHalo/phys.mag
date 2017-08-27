@@ -1,0 +1,18 @@
+Physics
+Struct 0 Physics 128
+	Struct 92 Inertial_Matrix 36
+		IntSwapRange 0 to 36
+	End Inertial_Matrix
+	Struct 104 Powered_Mass_Point 128
+		IntSwapRange 32 to 128
+	End Powered_Mass_Point
+	Struct 116 Mass_Points 128
+		LongSwap 32
+		LongSwap 34
+		IntSwapRange 36 to 92
+		LongSwap 92
+		LongSwap 94
+		IntSwapRange 96 to 128
+	End Mass_Points
+	IntSwapRange 0 to 128
+End Physics

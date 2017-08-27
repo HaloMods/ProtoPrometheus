@@ -1,0 +1,847 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{7D1F41DC-AB16-441C-8F0D-A24D4BFD7E38}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "TagLibrary"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "TagLibrary"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ClassGenerator.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagDefinitionManager.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagUtils.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Types.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\actor.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\actor_variant.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\antenna.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\biped.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\bitmap.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\camera_track.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\color_table.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\continuous_damage_effect.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\contrail.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\damage_effect.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\decal.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\detail_object_collection.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\device.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\device_control.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\device_light_fixture.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\device_machine.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\dialogue.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\effect.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\equipment.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\flag.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\fog.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\font.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\garbage.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\gbxmodel.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\globals.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\glow.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\hud_globals.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\hud_message_text.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\hud_number.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\input_device_defaults.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\item.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\item_collection.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\lens_flare.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\light.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\light_volume.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\lightning.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\material_effects.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\meter.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\model.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\model_animations.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\model_collision_geometry.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\multiplayer_scenario_description.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\object.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\particle.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\particle_system.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\physics.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\placeholder.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\point_physics.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\preferences_network_game.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\projectile.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\scenario.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\scenario_structure_bsp.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\scenery.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader_environment.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader_model.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader_transparent_chicago.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader_transparent_generic.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader_transparent_glass.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader_transparent_meter.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader_transparent_plasma.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\shader_transparent_water.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\sky.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\sound.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\sound_environment.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\sound_looping.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\sound_scenery.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\spheroid.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\string_list.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\tag_collection.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\ui_widget_collection.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\ui_widget_definition.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\unicode_string_list.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\unit.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\vehicle.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\virtual_keyboard.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\weapon.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\weather_particle_system.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\wind.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Halo1\XML\actor.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\actor_variant.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\antenna.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\biped.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\bitmap.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\camera_track.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\color_table.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\continuous_damage_effect.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\contrail.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\damage_effect.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\decal.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\detail_object_collection.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\device.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\device_control.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\device_light_fixture.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\device_machine.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\dialogue.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\effect.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\equipment.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\flag.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\fog.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\font.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\garbage.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\gbxmodel.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\globals.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\glow.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\grenade_hud_interface.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\hud_globals.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\hud_message_text.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\hud_number.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\input_device_defaults.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\item.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\item_collection.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\lens_flare.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\light.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\light_volume.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\lightning.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\material_effects.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\meter.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\model.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\model_animations.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\model_collision_geometry.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\multiplayer_scenario_description.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\object.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\particle.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\particle_system.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\physics.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\placeholder.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\point_physics.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\preferences_network_game.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\projectile.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\scenario.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\scenario_structure_bsp.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\scenery.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_environment.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_model.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_transparent_chicago.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_transparent_chicago_extended.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_transparent_generic.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_transparent_glass.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_transparent_meter.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_transparent_plasma.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\shader_transparent_water.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\sky.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\sound.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\sound_environment.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\sound_looping.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\sound_scenery.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\spheroid.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\string_list.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\tag_collection.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\ui_widget_collection.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\ui_widget_definition.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\unicode_string_list.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\unit.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\unit_hud_interface.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\vehicle.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\virtual_keyboard.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\weapon.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\weapon_hud_interface.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\weather_particle_system.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Halo1\XML\wind.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

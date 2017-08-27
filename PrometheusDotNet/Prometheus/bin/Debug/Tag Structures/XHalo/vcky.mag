@@ -1,0 +1,15 @@
+virtual_keyboard
+Struct 0 KeyboardMain 60
+	TagRef 0
+	TagRef 16
+	TagRef 32
+	Struct 48 Keys 80
+		TagRef 16
+		TagRef 32
+		TagRef 48
+		TagRef 64
+		LongSwapRange 0 to 16
+		IntSwapRange 16 to 80
+	End Keys
+	IntSwapRange 0 to 60
+End KeyboardMain

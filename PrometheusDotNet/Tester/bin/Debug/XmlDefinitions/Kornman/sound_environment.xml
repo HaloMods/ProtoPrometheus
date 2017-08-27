@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>sound_environment</Group>
+	<GroupTag>snde</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>72</HeaderSize>
+	<FieldCount>17</FieldCount>
+	<Fields>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>priority#when multiple listeners are in different sound environments in split screen, the combined environment will be the one with the highest priority.</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>room intensity#intensity of the room effect</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>room intensity hf#intensity of the room effect above the reference high frequency</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>room rolloff (0 to 10)#how quickly the room effect rolls off, from 0.0 to 10.0</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>decay time (.1 to 20):seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>decay hf ratio (.1 to 2)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>reflections intensity</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>reflections delay (0 to .3):seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>reverb intensity</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>reverb delay (0 to .1):seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>diffusion</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>density</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hf reference(20 to 20,000):Hz#for hf values, what frequency defines hf, from 20 to 20,000</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

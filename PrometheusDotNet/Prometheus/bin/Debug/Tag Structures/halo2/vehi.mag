@@ -1,0 +1,77 @@
+Vehicle
+Struct 0x00 vehi_main 0x300
+	ScriptRef 0x30
+	TagRef 0x34
+	TagRef 0x54
+	Struct 0x5C vehi_sub_1 0x10
+		ScriptRef 0x04
+	End vehi_sub_1
+	Struct 0x64 vehi_sub_2 0x20
+		ScriptRef 0x04
+		ScriptRef 0x08
+		ScriptRef 0x0C
+		ScriptRef 0x10
+		Struct 0x14 vehi_sub_2_1 0x01
+		End vehi_sub_2_1
+	End vehi_sub_2
+	Struct 0x94 vehi_sub_3 0x18
+		TagRef 0x00
+		ScriptRef 0x08
+		ScriptRef 0x10
+	End vehi_sub_3
+	Struct 0x9C vehi_sub_4 0x08
+		TagRef 0x00
+	End vehi_sub_4
+	Struct 0xAC vehi_sub_44 0x10
+	End vehi_sub_44
+	Struct 0xB4 vehi_sub_5 0x08
+	End vehi_sub_5
+	ScriptRef 0xD4
+	Struct 0xE8 vehi_sub_55 0x08
+		TagRef 0x00
+	End vehi_sub_55
+	TagRef 0x134
+	ScriptRef 0x158
+	Struct 0x1A0 vehi_sub_555 0x08
+	End vehi_sub_555
+	Struct 0x1B8 vehi_sub_6 0x08
+	End vehi_sub_6
+	Struct 0x1C0 vehi_sub_7 0x08
+		TagRef 0x00
+	End vehi_sub_7
+	Struct 0x1C8 vehi_sub_8 0xB0
+		ScriptRef 0x04
+		ScriptRef 0x08
+		ScriptRef 0x0C
+		ScriptRef 0x10
+		ScriptRef 0x14
+		ScriptRef 0x18
+		ScriptRef 0x60
+		Struct 0x74 vehi_sub_8_1 0x08
+			TagRef 0x00
+		End vehi_sub_8_1
+		Struct 0x7C vehi_sub_8_2 0x08
+			TagRef 0x00
+		End vehi_sub_8_2
+		ScriptRef 0x84
+		TagRef 0x90
+		ScriptRef 0xA8
+	End vehi_sub_8
+	ScriptRef 0x21C
+	Struct 0x268 vehi_sub_9 0x44
+	End vehi_sub_9
+	TagRef 0x28C
+	TagRef 0x29C
+	TagRef 0x2A4
+	Struct 0x2E8 vehi_sub_99 0x50
+		ScriptRef 0x00
+		ScriptRef 0x34
+	End vehi_sub_99
+	Struct 0x2F0 vehi_sub_10 0x4D
+		ScriptRef 0x00
+		ScriptRef 0x3C
+		ScriptRef 0x44
+	End vehi_sub_10
+	Struct 0x2F8 vehi_sub_11 0x2A0
+	End vehi_sub_11
+End vehi_main

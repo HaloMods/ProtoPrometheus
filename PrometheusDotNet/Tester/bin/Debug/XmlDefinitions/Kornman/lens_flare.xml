@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>lens_flare</Group>
+	<GroupTag>lens</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>240</HeaderSize>
+	<FieldCount>27</FieldCount>
+	<Fields>
+		<Field>
+			<Name>lens flare</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>falloff angle:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>cutoff angle:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>occlusion</Name>
+			<Type>Explanation</Type>
+			<Value>Occlusion factor affects overall lens flare brightness and can also affect scale. Occlusion never affects rotation.</Value>
+		</Field>
+		<Field>
+			<Name>occlusion radius:world units#radius of the square used to test occlusion</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>occlusion offset direction</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>toward viewer</Field0>
+				<Field1>marker forward</Field1>
+				<Field2>none</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>near fade distance:world units#distance at which the lens flare brightness is maximum</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>far fade distance:world units#distance at which the lens flare brightness is minimum; set to zero to disable distance fading</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>bitmaps</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>bitmap#used by reflections</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>sun</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>76</Value>
+		</Field>
+		<Field>
+			<Name>corona rotation</Name>
+			<Type>Explanation</Type>
+			<Value>Controls how corona rotation is affected by viewer and light angles.</Value>
+		</Field>
+		<Field>
+			<Name>rotation function</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>rotation A</Field1>
+				<Field2>rotation B</Field2>
+				<Field3>rotation-translation</Field3>
+				<Field4>translation</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>rotation function scale:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>corona radius scale</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>horizontal scale#amount to stretch the corona along the horizontal axis; 0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>vertical scale#amount to stretch the corona along the vertical axis; 0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>reflections</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>lens_flare_reflection_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>128</Size>
+				<FieldCount>25</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>align rotation with screen center</Field0>
+							<Field1>radius NOT scaled by distance</Field1>
+							<Field2>radius scaled by occlusion factor</Field2>
+							<Field3>occluded by solid objects</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>bitmap index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>20</Value>
+					</Field>
+					<Field>
+						<Name>position:along flare axis#0 is on top of light, 1 is opposite light, 0.5 is the center of the screen, etc.</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rotation offset:degrees</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>radius:world units#interpolated by light scale</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>radius scaled by</Name>
+						<Type>Enum</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>rotation</Field1>
+							<Field2>rotation and strafing</Field2>
+							<Field3>distance from center</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>brightness:[0,1]#interpolated by light scale</Name>
+						<Type>Real_Fraction_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>brightness scaled by</Name>
+						<Type>Enum</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>rotation</Field1>
+							<Field2>rotation and strafing</Field2>
+							<Field3>distance from center</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>tint color</Name>
+						<Type>Explanation</Type>
+						<Value>Tinting and modulating are not the same; 'tinting' a reflection will color the darker regions but leave the white highlights, while 'modulating' will color everything uniformly (as in most games). The tint alpha controls how much the reflection is tinted as opposed to modulated (0 is modulated, 1 is tinted). If all components are zero, the reflection is fully tinted by the light color.</Value>
+					</Field>
+					<Field>
+						<Name>tint color#if a=r=g=b=0 use light color instead; alpha blends between modulation and tinting</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>animation</Name>
+						<Type>Explanation</Type>
+						<Value>Causes lens flare reflection to flicker, pulse, or whatever. Animated color modulates tint color, above, while animated alpha modulates brightness. Animation is ignored if tint color is BLACK or the animation function is ONE or ZERO.</Value>
+					</Field>
+					<Field>
+						<Name>color lower bound#if a=r=g=b=0, default to a=r=g=b=1</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>color upper bound#if a=r=g=b=0, default to a=r=g=b=1</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>interpolate color in hsv</Field0>
+							<Field1>...more colors</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>animation function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>animation period:seconds#0 defaults to 1</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>animation phase:seconds</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

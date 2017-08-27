@@ -1,0 +1,94 @@
+sfx+
+Struct 0 sfx+_main 428
+	Struct 0x00 sfx+_sub_1 0x38
+		ScriptRef 0x00
+		Struct 0x18 sfx+_sub_1_1 0x48
+		End sfx+_sub_1_1
+		Struct 0x20 sfx+_sub_1_2 0x30
+		End sfx+_sub_1_2
+		Struct 0x28 sfx+_sub_1_3 0x40
+		End sfx+_sub_1_3
+		Struct 0x30 sfx+_sub_1_4 0x28
+			TagRef 0x00
+			Struct 0x08 sfx+_missed_1_4_1 0x10
+				TagRef 0x00
+			End sfx+_missed_1_4_1
+			Struct 0x20 sfx+_sub_1_4_1 0x14
+				Struct 0x00 sfx+_sub_1_4_1_1 0x1C
+
+					Struct 0x00 sfx+_sub_1_4_1_1_1 0x10
+						Struct 0x04 sfx+_sub_1_4_1_1_1_1 0x01
+						End sfx+_sub_1_4_1_1_1_1
+					End sfx+_sub_1_4_1_1_1
+					Struct 0x10 sfx+_sub_1_4_1_1_2 0x04
+					End sfx+_sub_1_4_1_1_2
+
+					Struct 0x08 sfx+_sub_1_4_1_1_3 0x04
+					End sfx+_sub_1_4_1_1_3
+
+				End sfx+_sub_1_4_1_1
+				Struct 0x08 sfx+_sub_1_4_1_2 0x10
+					Struct 0x04 sfx+_sub_1_4_1_2_1 0x01
+					End sfx+_sub_1_4_1_2_1
+				End sfx+_sub_1_4_1_2
+			End sfx+_sub_1_4_1
+			
+		End sfx+_sub_1_4
+	End sfx+_sub_1
+	ScriptRef 0x08
+	Struct 0x20 sfx+_sub_2 0x48
+	End sfx+_sub_2
+	Struct 0x38 sfx+_sub_3 0x28
+		TagRef 0x00
+		Struct 0x08 sfx+_sub_3_1 0x10
+			TagRef 0x00
+		End sfx+_sub_3_1
+		Struct 0x20 sfx+_sub_3_2 0x14
+		End sfx+_sub_3_2
+	End sfx+_sub_3
+	ScriptRef 0x40
+	Struct 0x70 sfx+_sub_4 0x28
+		TagRef 0x00
+		Struct 0x20 sfx+_sub_4_1 0x14
+			Struct 0x08 sfx+_sub_4_1_1 0x10
+				Struct 0x04 sfx+_sub_4_1_1_1 0x01
+				End sfx+_sub_4_1_1_1
+			End sfx+_sub_4_1_1
+		End sfx+_sub_4_1
+	End sfx+_sub_4
+	ScriptRef 0x78
+	Struct 0x90 sfx+_sub_5 0x48
+	End sfx+_sub_5
+	Struct 0xA8 sfx+_sub_6 0x28
+		TagRef 0x00
+		Struct 0x08 sfx+_sub_6_1 0x10
+			TagRef 0x00
+		End sfx+_sub_6_1
+		Struct 0x20 sfx+_sub_6_2 0x14
+		End sfx+_sub_6_2
+	End sfx+_sub_6
+	ScriptRef 0xB0
+	Struct 0xC8 sfx+_sub_7 0x48
+	End sfx+_sub_7
+	Struct 0xD0 sfx+_sub_8 0x30
+	End sfx+_sub_8
+	Struct 0xD8 sfx+_sub_9 0x40
+	End sfx+_sub_9
+	ScriptRef 0xE8
+	Struct 0x118 sfx+_sub_10 0x28
+		TagRef 0x00
+		Struct 0x20 sfx+_sub_10_1 0x01
+		End sfx+_sub_10_1
+	End sfx+_sub_10
+	ScriptRef 0x120
+	Struct 0x150 sfx+_sub_11 0x20
+		TagRef 0x00
+	End sfx+_sub_11
+	ScriptRef 0x158
+	Struct 0x188 sfx+_sub_12 0x28
+		TagRef 0x00
+		Struct 0x20 sfx+_sub_12_1 0x01
+		End sfx+_sub_12_1
+	End sfx+_sub_12
+	ScriptRef 0x190
+End sfx+_main

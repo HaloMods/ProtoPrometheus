@@ -1,0 +1,54 @@
+Biped
+Struct 0 bipd_main 0x314
+	ScriptRef 0x18
+	ScriptRef 0x30
+	TagRef 0x34
+	TagRef 0x3C
+	TagRef 0x4C
+	TagRef 0x54
+	Struct 0x5C bipd_sub_1 0x10
+	End bipd_sub_1
+	Struct 0x64 bipd_sub_2 0x20
+		ScriptRef 0x04
+		ScriptRef 0x08
+		Struct 0x14 bipd_sub_2_1 0x01
+		End bipd_sub_2_1
+	End bipd_sub_2
+	Struct 0x94 bipd_sub_3 0x18
+		TagRef 0x00
+		ScriptRef 0x10
+	End bipd_sub_3
+	Struct 0xAC bipd_sub_4 0x10
+	End bipd_sub_4
+	Struct 0xB4 bipd_sub_5 0x08
+	End bipd_sub_5
+	TagRef 0xC4
+	ScriptRef 0xD4
+	Struct 0xE8 bipd_sub_6 0x08
+		TagRef 0x00
+	End bipd_sub_6
+	ScriptRef 0x158
+	ScriptRef 0x15C
+	ScriptRef 0x160
+	TagRef 0x164
+	TagRef 0x16C
+	TagRef 0x174
+	TagRef 0x17C
+	TagRef 0x184
+	TagRef 0x18C
+	Struct 0x1A0 bipd_sub_7 0x0A
+		TagRef 0x00
+	End bipd_sub_7
+	TagRef 0x25C
+	ScriptRef 0x278
+	ScriptRef 0x27C
+	ScriptRef 0x280
+	Struct 0x284 bipd_sub_8 0x80
+	End bipd_sub_8
+	Struct 0x28C bipd_sub_9 0x50
+	End bipd_sub_9
+	Struct 0x2F8 bipd_sub_10 0x04
+	End bipd_sub_10
+	TagRef 0x300
+	TagRef 0x308
+End bipd_main

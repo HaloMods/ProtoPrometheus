@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>antenna</Group>
+	<GroupTag>ant!</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>208</HeaderSize>
+	<FieldCount>10</FieldCount>
+	<Fields>
+		<Field>
+			<Name>attachment marker name#the marker name where the antenna should be attached</Name>
+			<Type>String</Type>
+		</Field>
+		<Field>
+			<Name>bitmaps</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>physics</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>pphy</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>80</Value>
+		</Field>
+		<Field>
+			<Name>spring strength coefficient#strength of the spring (larger values make the spring stronger)</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>falloff pixels</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>cutoff pixels</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>40</Value>
+		</Field>
+		<Field>
+			<Name>vertices</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>antenna_vertex_block</Name>
+				<MaxElements>20</MaxElements>
+				<Size>128</Size>
+				<FieldCount>11</FieldCount>
+				<Fields>
+					<Field>
+						<Name>spring strength coefficient#strength of the spring (larger values make the spring stronger)</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name>angles#direction toward next vertex</Name>
+						<Type>Real_Euler_Angles_2D</Type>
+					</Field>
+					<Field>
+						<Name>length:world units#distance between this vertex and the next</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>sequence index#bitmap group sequence index for this vertex's texture</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>color#color at this vertex</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>LOD color#color at this vertex for the low-LOD line primitives</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>40</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

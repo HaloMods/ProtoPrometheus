@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>object</Group>
+	<GroupTag>obje</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>380</HeaderSize>
+	<FieldCount>30</FieldCount>
+	<Fields>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>does not cast shadow</Field0>
+				<Field1>transparent self-occlusion</Field1>
+				<Field2>brighter than it should be</Field2>
+				<Field3>not a pathfinding obstacle</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>bounding radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>bounding offset</Name>
+			<Type>Real_Point_3D</Type>
+		</Field>
+		<Field>
+			<Name>origin offset</Name>
+			<Type>Real_Point_3D</Type>
+		</Field>
+		<Field>
+			<Name>acceleration scale:[0,+inf]#marine 1.0, grunt 1.4, elite 0.9, hunter 0.5, etc.</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>model</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>mod2</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>animation graph</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>antr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>40</Value>
+		</Field>
+		<Field>
+			<Name>collision model</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>coll</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>physics</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>phys</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>modifier shader</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>shdr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>creation effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>effe</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>84</Value>
+		</Field>
+		<Field>
+			<Name>render bounding radius:world units#if set, this radius is used to determine if the object is visible. set it for the pelican.</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>export to functions</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>A in</Name>
+			<Type>Enum</Type>
+			<FieldCount>20</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>body vitality</Field1>
+				<Field2>shield vitality</Field2>
+				<Field3>recent body damage</Field3>
+				<Field4>recent shield damage</Field4>
+				<Field5>random constant</Field5>
+				<Field6>umbrella shield vitality</Field6>
+				<Field7>shield stun</Field7>
+				<Field8>recent umbrella shield vitality</Field8>
+				<Field9>umbrella shield stun</Field9>
+				<Field10>region #00 damage</Field10>
+				<Field11>region #01 damage</Field11>
+				<Field12>region #02 damage</Field12>
+				<Field13>region #03 damage</Field13>
+				<Field14>region #04 damage</Field14>
+				<Field15>region #05 damage</Field15>
+				<Field16>region #06 damage</Field16>
+				<Field17>region #07 damage</Field17>
+				<Field18>alive</Field18>
+				<Field19>compass</Field19>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>B in</Name>
+			<Type>Enum</Type>
+			<FieldCount>20</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>body vitality</Field1>
+				<Field2>shield vitality</Field2>
+				<Field3>recent body damage</Field3>
+				<Field4>recent shield damage</Field4>
+				<Field5>random constant</Field5>
+				<Field6>umbrella shield vitality</Field6>
+				<Field7>shield stun</Field7>
+				<Field8>recent umbrella shield vitality</Field8>
+				<Field9>umbrella shield stun</Field9>
+				<Field10>region #00 damage</Field10>
+				<Field11>region #01 damage</Field11>
+				<Field12>region #02 damage</Field12>
+				<Field13>region #03 damage</Field13>
+				<Field14>region #04 damage</Field14>
+				<Field15>region #05 damage</Field15>
+				<Field16>region #06 damage</Field16>
+				<Field17>region #07 damage</Field17>
+				<Field18>alive</Field18>
+				<Field19>compass</Field19>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>C in</Name>
+			<Type>Enum</Type>
+			<FieldCount>20</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>body vitality</Field1>
+				<Field2>shield vitality</Field2>
+				<Field3>recent body damage</Field3>
+				<Field4>recent shield damage</Field4>
+				<Field5>random constant</Field5>
+				<Field6>umbrella shield vitality</Field6>
+				<Field7>shield stun</Field7>
+				<Field8>recent umbrella shield vitality</Field8>
+				<Field9>umbrella shield stun</Field9>
+				<Field10>region #00 damage</Field10>
+				<Field11>region #01 damage</Field11>
+				<Field12>region #02 damage</Field12>
+				<Field13>region #03 damage</Field13>
+				<Field14>region #04 damage</Field14>
+				<Field15>region #05 damage</Field15>
+				<Field16>region #06 damage</Field16>
+				<Field17>region #07 damage</Field17>
+				<Field18>alive</Field18>
+				<Field19>compass</Field19>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>D in</Name>
+			<Type>Enum</Type>
+			<FieldCount>20</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>body vitality</Field1>
+				<Field2>shield vitality</Field2>
+				<Field3>recent body damage</Field3>
+				<Field4>recent shield damage</Field4>
+				<Field5>random constant</Field5>
+				<Field6>umbrella shield vitality</Field6>
+				<Field7>shield stun</Field7>
+				<Field8>recent umbrella shield vitality</Field8>
+				<Field9>umbrella shield stun</Field9>
+				<Field10>region #00 damage</Field10>
+				<Field11>region #01 damage</Field11>
+				<Field12>region #02 damage</Field12>
+				<Field13>region #03 damage</Field13>
+				<Field14>region #04 damage</Field14>
+				<Field15>region #05 damage</Field15>
+				<Field16>region #06 damage</Field16>
+				<Field17>region #07 damage</Field17>
+				<Field18>alive</Field18>
+				<Field19>compass</Field19>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>44</Value>
+		</Field>
+		<Field>
+			<Name>hud text message index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>forced shader permuation index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>attachments</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>object_attachment_block</Name>
+				<MaxElements>8</MaxElements>
+				<Size>72</Size>
+				<FieldCount>8</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>ligh</Field0>
+							<Field1>mgs2</Field1>
+							<Field2>cont</Field2>
+							<Field3>pctl</Field3>
+							<Field4>effe</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>marker</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>primary scale</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>secondary scale</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A out</Field1>
+							<Field2>B out</Field2>
+							<Field3>C out</Field3>
+							<Field4>D out</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>change color</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A</Field1>
+							<Field2>B</Field2>
+							<Field3>C</Field3>
+							<Field4>D</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>widgets</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>object_widget_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>32</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>reference^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>flag</Field0>
+							<Field1>ant!</Field1>
+							<Field2>glw!</Field2>
+							<Field3>mgs2</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>functions</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>object_function_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>360</Size>
+				<FieldCount>24</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>invert#result of function is one minus actual result</Field0>
+							<Field1>additive</Field1>
+							<Field2>always active#function does not deactivate when at or below lower bound</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>period:seconds#this is the period for the above function (lower values make the function oscillate quickly, higher values make it oscillate slowly)</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>scale period by#multiply this function by the above period</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A in</Field1>
+							<Field2>B in</Field2>
+							<Field3>C in</Field3>
+							<Field4>D in</Field4>
+							<Field5>A out</Field5>
+							<Field6>B out</Field6>
+							<Field7>C out</Field7>
+							<Field8>D out</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>function</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>scale function by#multiply this function by the result of the above function</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A in</Field1>
+							<Field2>B in</Field2>
+							<Field3>C in</Field3>
+							<Field4>D in</Field4>
+							<Field5>A out</Field5>
+							<Field6>B out</Field6>
+							<Field7>C out</Field7>
+							<Field8>D out</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>wobble function#the curve used for the wobble</Name>
+						<Type>Enum</Type>
+						<FieldCount>12</FieldCount>
+						<Fields>
+							<Field0>one</Field0>
+							<Field1>zero</Field1>
+							<Field2>cosine</Field2>
+							<Field3>cosine (variable period)</Field3>
+							<Field4>diagonal wave</Field4>
+							<Field5>diagonal wave (variable period)</Field5>
+							<Field6>slide</Field6>
+							<Field7>slide (variable period)</Field7>
+							<Field8>noise</Field8>
+							<Field9>jitter</Field9>
+							<Field10>wander</Field10>
+							<Field11>spark</Field11>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>wobble period:seconds#the length of time it takes for the magnitude of this function to complete a wobble</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>wobble magnitude:percent#the amount of random wobble in the magnitude</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>square wave threshold#if non-zero, all values above the square wave threshold are snapped to 1.0, and all values below it are snapped to 0.0 to create a square wave.</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>step count#the number of discrete values to snap to (e.g., a step count of 5 would snap the function to 0.00,0.25,0.50,0.75 or 1.00)</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>map to</Name>
+						<Type>Enum</Type>
+						<FieldCount>6</FieldCount>
+						<Fields>
+							<Field0>linear</Field0>
+							<Field1>early</Field1>
+							<Field2>very early</Field2>
+							<Field3>late</Field3>
+							<Field4>very late</Field4>
+							<Field5>cosine</Field5>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>sawtooth count#the number of times this function should repeat (e.g., a sawtooth count of 5 would give the function a value of 1.0 at each of 0.25,0.50,0.75 as well as at 1.0</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>add#add this function to the final result of all of the above math</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A in</Field1>
+							<Field2>B in</Field2>
+							<Field3>C in</Field3>
+							<Field4>D in</Field4>
+							<Field5>A out</Field5>
+							<Field6>B out</Field6>
+							<Field7>C out</Field7>
+							<Field8>D out</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>scale result by#multiply this function (from a weapon, vehicle, etc.) final result of all of the above math</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A in</Field1>
+							<Field2>B in</Field2>
+							<Field3>C in</Field3>
+							<Field4>D in</Field4>
+							<Field5>A out</Field5>
+							<Field6>B out</Field6>
+							<Field7>C out</Field7>
+							<Field8>D out</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>bounds mode#controls how the bounds, below, are used</Name>
+						<Type>Enum</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>clip</Field0>
+							<Field1>clip and normalize</Field1>
+							<Field2>scale to fit</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>bounds</Name>
+						<Type>Real_Fraction_Bounds</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>turn off with#if the specified function is off, so is this function</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>object_function_block</Block>
+					</Field>
+					<Field>
+						<Name>scale by#applied before clip, ignored if zero</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>252</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>usage</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>change colors</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>object_change_colors</Name>
+				<MaxElements>4</MaxElements>
+				<Size>44</Size>
+				<FieldCount>7</FieldCount>
+				<Fields>
+					<Field>
+						<Name>darken by</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A in</Field1>
+							<Field2>B in</Field2>
+							<Field3>C in</Field3>
+							<Field4>D in</Field4>
+							<Field5>A out</Field5>
+							<Field6>B out</Field6>
+							<Field7>C out</Field7>
+							<Field8>D out</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>scale by</Name>
+						<Type>Enum</Type>
+						<FieldCount>9</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>A in</Field1>
+							<Field2>B in</Field2>
+							<Field3>C in</Field3>
+							<Field4>D in</Field4>
+							<Field5>A out</Field5>
+							<Field6>B out</Field6>
+							<Field7>C out</Field7>
+							<Field8>D out</Field8>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>scale flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>blend in hsv#blends colors in hsv rather than rgb space</Field0>
+							<Field1>...more colors#blends colors through more hues (goes the long way around the color wheel)</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>color lower bound</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>color upper bound</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>permutations</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>object_change_color_permutations</Name>
+							<MaxElements>8</MaxElements>
+							<Size>28</Size>
+							<FieldCount>4</FieldCount>
+							<Fields>
+								<Field>
+									<Name>weight</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>color lower bound</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>color upper bound</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>predicted resources*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>predicted_resource_block</Name>
+				<MaxElements>1024</MaxElements>
+				<Size>8</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>bitmap</Field0>
+							<Field1>sound</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>resource index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>tag index</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

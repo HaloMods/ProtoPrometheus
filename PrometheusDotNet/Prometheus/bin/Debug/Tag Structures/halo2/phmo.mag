@@ -1,0 +1,51 @@
+phmo
+Struct 0x00 phmo_main 0x110
+	Struct 0x30 phmo_sub_m_1 0x18
+		Struct 0x08 phmo_sub_m_1_1 0x0C
+		End phmo_sub_m_1_1
+		ScriptRef 0x10
+	End phmo_sub_m_1
+	Struct 0x38 phmo_sub_1 0x90
+	End phmo_sub_1
+	Struct 0x40 phmo_sub_2 0x10
+		ScriptRef 0x00
+		ScriptRef 0x04
+	End phmo_sub_2
+	Struct 0x48 phmo_sub_mm_1 0x80
+		ScriptRef 0x00
+	End phmo_sub_mm_1
+	Struct 0x58 phmo_sub_3 0x50
+		ScriptRef 0x00
+	End phmo_sub_3
+	Struct 0x60 phmo_sub_m_2 0x90
+		ScriptRef 0x00
+	End phmo_sub_m_2
+	Struct 0x70 phmo_missed_1 0x100
+		ScriptRef 0x00
+	End phmo_missed_1
+	Struct 0x78 phmo_missed_2 0x30
+	End phmo_missed_2
+	Struct 0x80 phmo_missed_3 0x10
+	End phmo_missed_3
+	Struct 0x90 phmo_missed_33 0x38
+	End phmo_missed_33
+	Struct 0xB4 phmo_missed_4 0x08
+	End phmo_missed_4
+	Struct 0xB8 phmo_sub_m_3 0x94
+		ScriptRef 0x00
+	End phmo_sub_m_3
+	Struct 0xC0 phmo_sub_4 0x0C
+		ScriptRef 0x00
+		Struct 0x04 phmo_sub_4_1 0x0C
+			ScriptRef 0x00
+			Struct 0x04 phmo_sub_4_1_1 0x04
+			End phmo_sub_4_1_1
+		End phmo_sub_4_1
+	End phmo_sub_4
+	Struct 0xC8 phmo_sub_5 0x0C
+		ScriptRef 0x00
+	End phmo_sub_5
+	Struct 0xE8 phmo_sub_6 0x84
+		ScriptRef 0x00
+	End phmo_sub_6
+End phmo_main

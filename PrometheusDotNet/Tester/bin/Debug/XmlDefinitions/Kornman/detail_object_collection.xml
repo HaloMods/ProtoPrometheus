@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>detail_object_collection</Group>
+	<GroupTag>dobc</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>128</HeaderSize>
+	<FieldCount>8</FieldCount>
+	<Fields>
+		<Field>
+			<Name>collection type</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>screen-facing</Field0>
+				<Field1>viewer-facing</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>global z offset:applied to all detail objects of in this collection so they don't float above the ground</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>44</Value>
+		</Field>
+		<Field>
+			<Name>sprite plate</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>types</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>detail_object_type_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>96</Size>
+				<FieldCount>15</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>sequence index:[0,15]</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>type flags</Name>
+						<Type>Byte_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>unused</Field0>
+							<Field1>unused</Field1>
+							<Field2>interpolate color in hsv</Field2>
+							<Field3>...more colors</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>color override factor#fraction of detail object color to use instead of the base map color in the environment:[0,1]</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>near fade distance:world units</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>far fade distance:world units</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>size:world units per pixel</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>minimum color:[0,1]</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>maximum color:[0,1]</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>ambient color:[0,255]</Name>
+						<Type>ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>48</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

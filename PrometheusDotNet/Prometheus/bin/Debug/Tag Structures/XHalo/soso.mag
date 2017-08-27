@@ -1,0 +1,41 @@
+shader_model
+Struct 0 Main 440
+	TagRef 164
+	TagRef 188
+	TagRef 220
+	TagRef 356
+	IntSwap 4
+	IntSwap 8
+	IntSwap 12
+	IntSwap 16
+	IntSwap 20
+	IntSwap 24
+	IntSwap 28
+	IntSwap 56
+	IntSwap 116
+	IntSwap 120
+	IntSwap 124
+	IntSwap 128
+	IntSwap 132
+	IntSwap 136
+	IntSwap 140
+	IntSwap 156
+	IntSwap 160
+	IntSwap 216
+	IntSwap 236
+	IntSwapRange 256 to 440
+	LongSwap 0
+	LongSwap 2
+	LongSwap 34
+	LongSwap 40
+	LongSwap 76
+	LongSwap 108
+	LongSwap 112
+	LongSwap 114
+	LongSwap 212
+	LongSwap 214
+	LongSwap 252
+	IntSwapRange 164 to 180
+	IntSwapRange 188 to 204
+	IntSwapRange 220 to 236
+End Main

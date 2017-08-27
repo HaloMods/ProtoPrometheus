@@ -1,0 +1,16 @@
+Actor
+Struct 0 actor 1272
+	IntSwapRange 0 to 20
+	LongSwapRange 20 to 24
+	IntSwapRange 24 to 616
+	LongSwapRange 616 to 624
+	IntSwapRange 624 to 632
+	LongSwapRange 632 to 636
+	IntSwapRange 636 to 676
+	LongSwapRange 676 to 680
+	IntSwapRange 680 to 760
+	LongSwapRange 760 to 764
+	IntSwapRange 764 to 852
+	LongSwapRange 852 to 856
+	IntSwapRange 856 to 1272
+End actor

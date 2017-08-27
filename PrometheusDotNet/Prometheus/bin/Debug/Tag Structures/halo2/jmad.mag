@@ -1,0 +1,84 @@
+jmad
+Struct 0x00 jmad_main 0xBC
+	TagRef 0x00
+	Struct 0x0C jmad_sub_1 0x20
+		ScriptRef 0x00
+	End jmad_sub_1
+	Struct 0x14 jmad_sub_2 0x0C
+		TagRef 0x00
+	End jmad_sub_2
+	Struct 0x1C jmad_sub_3 0x0C
+		TagRef 0x00
+	End jmad_sub_3
+	Struct 0x24 jmad_sub_4 0x1C
+		ScriptRef 0x00
+	End jmad_sub_4
+	Struct 0x2C jmad_sub_5 0x6C 
+		ScriptRef 0x00
+		ScriptRef 0x40
+		Struct 0x4C jmad_sub_5_1 0x04
+		End jmad_sub_5_1
+		Struct 0x54 jmad_sub_5_2 0x08
+			ScriptRef 0x00
+		End jmad_sub_5_2
+	End jmad_sub_5
+	Struct 0x34 jmad_sub_6 0x14 
+		ScriptRef 0x00
+		Struct 0x04 jmad_sub_6_1 0x14 
+			ScriptRef 0x00
+			Struct 0x04 jmad_sub_6_1_1 0x34 
+				ScriptRef 0x00
+				Struct 0x04 jmad_sub_6_1_1_1 0x08 
+				ScriptRef 0x00
+				End jmad_sub_6_1_1_1
+				Struct 0x0C jmad_sub_6_1_1_2 0x08 
+					ScriptRef 0x00
+				End jmad_sub_6_1_1_2
+				Struct 0x14 jmad_sub_6_1_1_M_1 0x0C
+					ScriptRef 0x00
+					Struct 0x04 jmad_sub_6_1_1_M_1_1 0x08
+					End jmad_sub_6_1_1_M_1_1
+				End jmad_sub_6_1_1_M_1
+				Struct 0x1C jmad_sub_66_1_1 0x14
+					ScriptRef 0x00
+					ScriptRef 0x04
+					Struct 0x0C jmad_sub_66_1_1_1 0x14
+						ScriptRef 0x00
+						ScriptRef 0x04
+						ScriptRef 0x08
+					End jmad_sub_66_1_1_1
+				End jmad_sub_66_1_1
+				Struct 0x24 jmad_sub_6_1_1_3 0x04 
+				End jmad_sub_6_1_1_3
+				Struct 0x2C jmad_sub_6_1_1_4 0x04 
+				End jmad_sub_6_1_1_4
+			End jmad_sub_6_1_1
+			Struct 0x0C jmad_sub_6_1_2 0x08
+				ScriptRef 0x00
+			End jmad_sub_6_1_2
+		End jmad_sub_6_1
+	End jmad_sub_6
+	Struct 0x3C jmad_sub_55 0x28
+		ScriptRef 0x00
+		ScriptRef 0x08
+		ScriptRef 0x18
+	End jmad_sub_55
+	Struct 0x44 jmad_sub_44 0x14
+		ScriptRef 0x00
+		ScriptRef 0x0C
+	End jmad_sub_44
+	Struct 0x4C jmad_sub_66 0x20
+		TagRef 0x00
+		Struct 0x08 jmad_sub_66_1 0x02
+		End jmad_sub_66_1
+		Struct 0x10 jmad_sub_66_2 0x04
+		End jmad_sub_66_2
+	End jmad_sub_66
+	Struct 0x54 jmad_sub_7 0x08
+		ScriptRef 0x00
+	End jmad_sub_7
+	Struct 0xAC jmad_sub_8 0x14
+	End jmad_sub_8
+	Struct 0xB4 jmad_sub_9 0x18
+	End jmad_sub_9
+End jmad_main

@@ -1,0 +1,7 @@
+Dialogue
+Struct 0x00 udlg_main 0x18
+	Struct 0x0C udlg_sub_1 0x10
+		ScriptRef 0x04
+		TagRef 0x08
+	End udlg_sub_1
+End udlg_main

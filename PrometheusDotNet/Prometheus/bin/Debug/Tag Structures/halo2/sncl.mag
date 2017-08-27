@@ -1,0 +1,5 @@
+sncl
+Struct 0 sncl_main 0x8
+	Struct 0 sncl_sub_1 0x5c
+	End sncl_sub_1
+End sncl_main

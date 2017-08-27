@@ -1,0 +1,28 @@
+mach
+Struct 0 DeviceMachine 804
+	TagRef 40
+	TagRef 56
+	TagRef 112
+	TagRef 128
+	TagRef 144
+	TagRef 160
+	TagRef 416
+	TagRef 432
+	TagRef 448
+	TagRef 464
+	TagRef 480
+	TagRef 496
+	TagRef 524
+	Struct 320 Attachments 72
+		TagRef 0
+	End Attachments
+	Struct 332 Widgets 32
+		TagRef 0
+	End Widgets
+	Struct 344 Functions 360		
+	End Functions
+	Struct 356 ChangeColors 44
+		Struct 32 Permutations 28
+		End Permutations
+	End ChangeColors
+End DeviceMachine

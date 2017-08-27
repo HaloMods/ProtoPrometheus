@@ -1,0 +1,105 @@
+Vehicle
+Struct 0 Vehicle 1008
+	TagRef 40
+	TagRef 56
+	TagRef 112
+	TagRef 128
+	TagRef 144
+	TagRef 160
+	TagRef 392
+	TagRef 588
+	TagRef 648
+	Struct 320 Attachments 72
+		TagRef 0
+		IntSwapRange 0 to 16
+		LongSwapRange 48 to 72
+	End Attachments
+	Struct 332 Widgets 32
+		TagRef 0
+		IntSwapRange 0 to 32
+	End Widgets
+	Struct 344 Functions 360
+		IntSwap 0
+		IntSwap 4
+		IntSwap 8
+		LongSwap 12
+		LongSwap 14
+		IntSwapRange 16 to 52
+		LongSwap 52
+		LongSwap 54
+		IntSwapRange 56 to 328
+	End Functions
+	Struct 356 ChangeColors 44
+		Struct 32 ChangeColors_Permutations 28
+		End ChangeColors_Permutations
+		LongSwapRange 0 to 4
+		IntSwapRange 4 to 44
+	End ChangeColors
+	Struct 496 CameraTracks 28
+		TagRef 0
+		IntSwapRange 0 to 28
+	End CameraTracks
+	Struct 680 NewHudInterfaces 48
+		TagRef 0
+		IntSwapRange 0 to 48
+	End NewHudInterfaces
+	Struct 692 DialogueVariants 24
+		TagRef 4
+		LongSwap 0
+		LongSwap 2
+		IntSwapRange 4 to 24
+	End DialogueVariants
+	Struct 716 PoweredSeats 68
+		IntSwapRange 0 to 68
+	End PoweredSeats
+	Struct 728 Weapons 36
+		TagRef 0
+		IntSwapRange 0 to 36
+	End Weapons
+	Struct 740 Seats 284
+		Struct 208 Seats_CamraTrack 28
+			TagRef 0
+			IntSwapRange 0 to 28
+		End Seats_CamraTrack
+		Struct 220 Seats_UintHudInterface 48
+			TagRef 0
+			IntSwapRange 0 to 48
+		End Seats_UintHudInterface
+		IntSwap 0
+		IntSwapRange 52 to 132
+		IntSwapRange 164 to 236
+		longSwap 236
+		LongSwap 238
+		IntSwapRange 240 to 284
+	End Seats
+	TagRef 944
+	TagRef 960
+	TagRef 976
+	TagRef 992
+	IntClear 368
+	IntClear 372
+	IntClear 376
+	IntSwapRange 4 to 316
+	LongSwap 316
+	LongSwap 318
+	IntSwapRange 320 to 384
+	LongSwap 384
+	LongSwap 386
+	IntSwapRange 388 to 408
+	LongSwap 408
+	LongSwap 410
+	IntSwapRange 412 to 756
+	longSwap 756
+	LongSwap 758
+	IntSwapRange 760 to 792
+	LongSwap 792
+	LongSwap 794
+	LongSwap 796
+	LongSwap 798
+	LongSwap 800
+	LongSwap 802
+	IntSwapRange 804 to 832
+	LongSwap 832
+	LongSwap 834
+	IntSwapRange 836 to 1008
+End Vehicle

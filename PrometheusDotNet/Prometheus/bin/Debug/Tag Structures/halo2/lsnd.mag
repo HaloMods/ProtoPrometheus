@@ -1,0 +1,14 @@
+lsnd
+Struct 0x00 lsnd_main 0x2C
+	Struct 0x1C lsnd_sub_1 0x58
+		ScriptRef 0x00
+		TagRef 0x14
+		TagRef 0x1C
+		TagRef 0x24
+		TagRef 0x2C
+	End lsnd_sub_1
+	Struct 0x24 lsnd_sub_2 0x34
+		ScriptRef 0x00
+		TagRef 0x04
+	End lsnd_sub_2
+End lsnd_main

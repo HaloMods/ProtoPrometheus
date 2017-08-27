@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>shader_transparent_plasma</Group>
+	<GroupTag>spla</GroupTag>
+	<ParentGroupTag>shdr</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>292</HeaderSize>
+	<FieldCount>40</FieldCount>
+	<Fields>
+		<Field>
+			<Name>plasma shader</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>intensity</Name>
+			<Type>Explanation</Type>
+			<Value>Controls how bright the plasma is.</Value>
+		</Field>
+		<Field>
+			<Name>intensity source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>intensity exponent#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>offset</Name>
+			<Type>Explanation</Type>
+			<Value>Controls how far the plasma energy extends from the model geometry.</Value>
+		</Field>
+		<Field>
+			<Name>offset source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>offset amount:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>offset exponent#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>color</Name>
+			<Type>Explanation</Type>
+			<Value>Controls the tint color and Fresnel brightness effects.</Value>
+		</Field>
+		<Field>
+			<Name>perpendicular brightness:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>perpendicular tint color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>parallel brightness:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>parallel tint color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>tint color source#modulates perpendicular and parallel colors above</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A</Field1>
+				<Field2>B</Field2>
+				<Field3>C</Field3>
+				<Field4>D</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>primary noise map</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>primary animation period:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>primary animation direction</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name>primary noise map scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>primary noise map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>secondary noise map</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>secondary animation period:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>secondary animation direction</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name>secondary noise map scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>secondary noise map</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,11 @@
+Actor_variant
+Struct 0 ActorVariant 568
+	TagRef 4 
+	TagRef 20 
+	TagRef 36 
+	TagRef 100 
+	TagRef 448 
+	Struct 556 ChangeColor 32
+	End ChangeColor
+	IntSwapRange 0 to 568
+End ActorVariant

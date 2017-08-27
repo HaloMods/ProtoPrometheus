@@ -1,0 +1,11 @@
+Damage_Effect
+Struct 0 DamageEffect 672
+	TagRef 276
+	IntSwapRange 0 to 56
+	LongSwap 56
+	LongSwap 58
+	IntSwapRange 60 to 452
+	LongSwap 452
+	LongSwap 454
+	IntSwapRange 456 to 672
+End DamageEffect

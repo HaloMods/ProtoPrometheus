@@ -1,0 +1,2007 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{D725BE9A-AFEC-45BE-9120-E6FA22854D91}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Prometheus"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "Prometheus"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Management"
+                    AssemblyName = "System.Management"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Management.dll"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                />
+                <Reference
+                    Name = "System.Drawing.Design"
+                    AssemblyName = "System.Drawing.Design"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.Design.dll"
+                />
+                <Reference
+                    Name = "Nini"
+                    AssemblyName = "Nini"
+                    HintPath = "..\Shared\Nini.dll"
+                />
+                <Reference
+                    Name = "SandBar"
+                    AssemblyName = "SandBar"
+                    HintPath = "..\Shared\SandBar.dll"
+                />
+                <Reference
+                    Name = "SandDock"
+                    AssemblyName = "SandDock"
+                    HintPath = "..\Shared\SandDock.dll"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX"
+                    AssemblyName = "Microsoft.DirectX"
+                    HintPath = "..\Core\Microsoft.DirectX.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.Direct3D"
+                    AssemblyName = "Microsoft.DirectX.Direct3D"
+                    HintPath = "..\Core\Microsoft.DirectX.Direct3D.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.DirectInput"
+                    AssemblyName = "Microsoft.DirectX.DirectInput"
+                    HintPath = "..\Core\Microsoft.DirectX.DirectInput.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.Direct3DX"
+                    AssemblyName = "Microsoft.DirectX.Direct3DX"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v9.02.2904\Microsoft.DirectX.Direct3DX.dll"
+                    AssemblyFolderKey = "hklm\current managed directx 9.2"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "XPPanel"
+                    AssemblyName = "XPPanel"
+                    HintPath = "..\Shared\XPPanel.dll"
+                />
+                <Reference
+                    Name = "Xceed.FileSystem"
+                    AssemblyName = "Xceed.FileSystem"
+                    HintPath = "..\Shared\Xceed.FileSystem.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Xceed.Zip"
+                    AssemblyName = "Xceed.Zip"
+                    HintPath = "..\Shared\Xceed.Zip.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Xceed.Compression"
+                    AssemblyName = "Xceed.Compression"
+                    HintPath = "..\Shared\Xceed.Compression.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Eyefinder"
+                    AssemblyName = "Eyefinder"
+                    HintPath = "..\Shared\Eyefinder.dll"
+                />
+                <Reference
+                    Name = "Core"
+                    Project = "{8CA26A98-9D0C-4F91-A4C0-C8EE8DE7BDBF}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "DevExpress.Data3"
+                    AssemblyName = "DevExpress.Data3"
+                    HintPath = "..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.Data3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "DevExpress.Utils3"
+                    AssemblyName = "DevExpress.Utils3"
+                    HintPath = "..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.Utils3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "DevExpress.XtraBars3"
+                    AssemblyName = "DevExpress.XtraBars3"
+                    HintPath = "..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.XtraBars3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "DevExpress.XtraEditors3"
+                    AssemblyName = "DevExpress.XtraEditors3"
+                    HintPath = "..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.XtraEditors3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "devexpress.xtranavbar3"
+                    AssemblyName = "DevExpress.XtraNavBar3"
+                    HintPath = "..\..\..\..\..\..\program files\common files\devexpress\.net.v3\devexpress.xtranavbar3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "devexpress.xtratreelist3"
+                    AssemblyName = "DevExpress.XtraTreeList3"
+                    HintPath = "..\..\..\..\..\..\program files\common files\devexpress\.net.v3\devexpress.xtratreelist3.dll"
+                    AssemblyFolderKey = "hklm\devexpress.net.v3"
+                />
+                <Reference
+                    Name = "UIControls"
+                    Project = "{C3953CA2-22F7-48FE-8F76-23017C1B6082}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "TagLibrary"
+                    Project = "{7D1F41DC-AB16-441C-8F0D-A24D4BFD7E38}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "TagEditor"
+                    Project = "{6BDF9656-306E-47E9-BC83-E830030B5E08}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "SharedControls"
+                    Project = "{B7DDB2D1-8F21-4633-850F-0CA1B2F4C2F0}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BetaGuardian.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CustomizePackagedTags.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CustomizePackagedTags.resx"
+                    DependentUpon = "CustomizePackagedTags.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DecompileNavigator.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DecompileNavigator.resx"
+                    DependentUpon = "DecompileNavigator.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "default.layout"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Dialogs.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GrenDebugger.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GrenDebugger.resx"
+                    DependentUpon = "GrenDebugger.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "licenses.licx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LightMapDiaglog.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LightMapDiaglog.resx"
+                    DependentUpon = "LightMapDiaglog.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ModelToolbox.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ModelToolbox.resx"
+                    DependentUpon = "ModelToolbox.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NewProjectWizard.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NewProjectWizard.resx"
+                    DependentUpon = "NewProjectWizard.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OptionsDialog.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OptionsDialog.resx"
+                    DependentUpon = "OptionsDialog.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PaletteSelector.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PaletteSelector.resx"
+                    DependentUpon = "PaletteSelector.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PrefabExportDialog.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PrefabExportDialog.resx"
+                    DependentUpon = "PrefabExportDialog.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PrefabPackager.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PrefabPackager.resx"
+                    DependentUpon = "PrefabPackager.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ProgressDialog.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ProgressDialog.resx"
+                    DependentUpon = "ProgressDialog.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ProgressStatus.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ProgressStatus.resx"
+                    DependentUpon = "ProgressStatus.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Prometheus.exe.manifest"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PrometheusGUI.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PrometheusGUI.resx"
+                    DependentUpon = "PrometheusGUI.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "RichTextBoxTraceListener.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Theming.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ThreadManager.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Win32.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\FileListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\FileListView.resx"
+                    DependentUpon = "FileListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\FileTreeView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\FileTreeView.resx"
+                    DependentUpon = "FileTreeView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\LnFListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\LnFListView.resx"
+                    DependentUpon = "LnFListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\LnFListViewControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\LnFListViewControl.resx"
+                    DependentUpon = "LnFListViewControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\MapRenderAdvanced.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\MapRenderAdvanced.resx"
+                    DependentUpon = "MapRenderAdvanced.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\MapRenderCompact.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\MapRenderCompact.resx"
+                    DependentUpon = "MapRenderCompact.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\ModelRenderAdvanced.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\ModelRenderAdvanced.resx"
+                    DependentUpon = "ModelRenderAdvanced.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\ModelRenderCompact.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\ModelRenderCompact.resx"
+                    DependentUpon = "ModelRenderCompact.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\PopupWindowHelper.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\ProgressPanel.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\ProgressPanel.resx"
+                    DependentUpon = "ProgressPanel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\ProjectExplorer.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\ProjectExplorer.resx"
+                    DependentUpon = "ProjectExplorer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\TagExplorer.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\TagExplorer.resx"
+                    DependentUpon = "TagExplorer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\TagLibraryExplorer.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\TagLibraryExplorer.resx"
+                    DependentUpon = "TagLibraryExplorer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\TaskListGUI.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\TaskListGUI.resx"
+                    DependentUpon = "TaskListGUI.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\TextureStageControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\TextureStageControl.resx"
+                    DependentUpon = "TextureStageControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\TransparantPanel.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\MultiSyncTreeView\ArchiveLibraryNodeHelper.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\MultiSyncTreeView\BaseTagLibraryNodeHelper.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\MultiSyncTreeView\DiskLibraryNodeHelper.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\MultiSyncTreeView\MultiSyncTreeView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\MultiSyncTreeView\MultiSyncTreeView.resx"
+                    DependentUpon = "MultiSyncTreeView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\MultiSyncTreeView\NodeHelper.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\MultiSyncTreeView\ObjectViewNodeHelper.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\ScenarioExplorer\ScenarioExplorer.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\ScenarioExplorer\ScenarioExplorer.resx"
+                    DependentUpon = "ScenarioExplorer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Controls\ScenarioExplorer\ScenarioItems.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Controls\ScenarioExplorer\ScenarioItems.resx"
+                    DependentUpon = "ScenarioItems.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\about.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\bookmark.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\check.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\check2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\checks.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\copy.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\cut.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\disk_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\disks.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_edit.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_info.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_lock.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_ok.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_plain_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\document_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\export1.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\export2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\find.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\find_next.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\find_previous.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\find_text.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_closed.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_edit.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_lock.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_ok.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_refresh.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_up.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\folder_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\help_earth.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\help2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\history2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\import1.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\import2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\lifebelt.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\magic-wand.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\media_fast_forward.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\media_pause.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\media_play.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\media_play_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\media_rewind.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\media_stop.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\media_stop_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\music.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_left_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_left_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_left_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_right_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_right_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_down_right_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_left_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_left_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_left_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_right_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_right_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_right_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_left_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_left_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_left_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_right_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_right_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\nav_up_right_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\paste.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\redo.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\replace.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\replace2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\save_as.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\undo.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\unknown.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\zoom_in.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\16\zoom_out.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\about.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\bookmark.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\check.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\check2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\checks.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\copy.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\cut.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\disk_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\disks.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_edit.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_info.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_lock.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_ok.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_plain_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\document_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\export1.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\export2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\find.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\find_next.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\find_previous.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\find_text.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_closed.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_edit.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_lock.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_ok.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_refresh.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_up.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\folder_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\help_earth.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\help2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\history2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\import1.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\import2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\lifebelt.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\magic-wand.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\media_fast_forward.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\media_pause.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\media_play.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\media_play_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\media_rewind.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\media_stop.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\media_stop_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\music.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_left_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_left_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_left_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_right_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_right_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_down_right_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_left_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_left_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_left_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_right_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_right_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_right_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_left_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_left_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_left_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_right_blue.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_right_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\nav_up_right_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\paste.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\redo.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\replace.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\replace2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\save_as.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\undo.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\unknown.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\zoom_in.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\App Basics\32\zoom_out.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\cabinet.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_copy.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_disk.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_edit.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_lock.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_ok.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_refresh.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_unknown.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\data_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\index.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\index_up.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\note_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\note_edit.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\note_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\16\note_pinned.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\cabinet.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_copy.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_disk.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_edit.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_lock.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_ok.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_refresh.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_unknown.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\data_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\index.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\index_up.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\note_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\note_edit.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\note_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Data Coll\32\note_pinned.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\bomb.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_card.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_card_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_card_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_card_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_card_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_card_ok.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_card_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_card_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\id_cards.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\key1.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\link.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\lock.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\lock_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\lock_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\lock_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\lock_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\lock_open.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\lock_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\lock_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\mail_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\mail_write.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\mail2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\mailbox_empty.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\mailbox_full.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\news.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\news_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\security_agent.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\server_client_exchange.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\16\server_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\bomb.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_card.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_card_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_card_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_card_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_card_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_card_ok.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_card_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_card_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\id_cards.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\key1.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\link.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\lock.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\lock_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\lock_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\lock_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\lock_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\lock_open.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\lock_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\lock_warning.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\mail_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\mail_write.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\mail2.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\mailbox_empty.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\mailbox_full.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\news.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\news_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\security_agent.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\server_client_exchange.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Net and Sec\32\server_error.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\angel.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\colors.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\devil.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\keyboard_key.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\monitor_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\mouse.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\PCI-card_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\trafficlight_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\trafficlight_off.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\trafficlight_on.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\trafficlight_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\trafficlight_red_yellow.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\trafficlight_yellow.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\user1.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\user1_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\user1_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\user1_earth.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\user1_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\user1_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\16\user1_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\angel.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\colors.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\devil.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\keyboard_key.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\monitor_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\mouse.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\PCI-card_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\trafficlight_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\trafficlight_off.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\trafficlight_on.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\trafficlight_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\trafficlight_red_yellow.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\trafficlight_yellow.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\user1.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\user1_add.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\user1_delete.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\user1_earth.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\user1_information.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\user1_new.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Objs and People\32\user1_preferences.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\16\bug_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\16\bug_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\16\bug_yellow.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\16\bug-mail.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\16\console.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\32\bug_green.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\32\bug_red.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\32\bug_yellow.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\32\bug-mail.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Icons\Soft Dev\32\console.png"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Testing\MonoxideC.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Testing\MonoxideC.resx"
+                    DependentUpon = "MonoxideC.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Wizards\NewProjectWizard.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Wizards\NewProjectWizard.resx"
+                    DependentUpon = "NewProjectWizard.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

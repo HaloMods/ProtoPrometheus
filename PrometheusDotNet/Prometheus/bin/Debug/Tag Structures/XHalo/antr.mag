@@ -1,0 +1,105 @@
+Model_Animations
+Struct 0 ModelAnimations 128
+	Struct 0 Objects 20
+		LongSwapRange 0 to 20
+	End Objects
+	Struct 12 Units 100
+		Struct 64 UnitsAnimations 2
+			LongSwap 0 
+		End UnitsAnimations
+		Struct 76 UnitsIKPoints 64
+		End UnitsIKPoints
+		Struct 88 UnitsWeapons 188
+			Struct 152 UnitsWeaponsAnimation 2
+				LongSwap 0
+			End UnitsWeaponsAnimation
+			Struct 164 UnitsWeaponsIKPoints 64
+			End UnitsWeaponsIKPoints
+			Struct 176 UnitsWeaponTypes 60
+				Struct 48 UnitsWeaponTypesAnimations 2
+					LongSwap 0
+				End UnitsWeaponTypesAnimations
+				IntSwapRange 32 to 60
+			End UnitsWeaponTypes
+			IntSwap 96
+			IntSwap 100
+			LongSwap 104
+			LongSwap 106
+			IntSwap 108
+			IntSwap 112
+			LongSwap 116
+			LongSwap 118
+			IntSwapRange 120 to 188
+		End UnitsWeapons
+		IntSwapRange 32 to 100
+	End Units
+	Struct 24 Weapons 28
+		Struct 16 WeaponsAnimations 2
+			LongSwap 0 
+		End WeaponsAnimations
+		IntSwapRange 0 to 28
+	End Weapons
+	Struct 36 Vehicles 116
+		Struct 92 VehiclesAnimations 2
+			LongSwap 0 
+		End VehiclesAnimations
+		Struct 104 VehiclesSuspensionAnimations 20
+			LongSwap 0
+			LongSwap 2
+			IntSwap 4
+			IntSwap 8
+			IntSwap 12
+			IntSwap 16
+		End VehiclesSuspensionAnimations
+		IntSwap 0
+		IntSwap 4
+		LongSwap 8
+		LongSwap 10
+		IntSwap 12
+		IntSwap 16
+		LongSwap 20
+		LongSwap 22
+		IntSwapRange 24 to 116
+	End Vehicles
+	Struct 48 Devices 96
+		Struct 84 DevicesAnimations 2
+			LongSwap 0 
+		End DevicesAnimations
+		IntSwapRange 0 to 96
+	End Devices
+	Struct 60 UnitDamage 2
+		LongSwap 0 
+	End UnitDamage
+	Struct 72 FirstPersonWeapon 28
+		Struct 16 FirstPersonWeaponAnimations 2
+			LongSwap 0 
+		End FirstPersonWeaponAnimations
+		IntSwapRange 0 to 28
+	End FirstPersonWeapon
+	Struct 84 SoundReferences 20
+		TagRef 0
+		IntSwapRange 0 to 20
+	End SoundReferences
+	Struct 104 Nodes 64
+		IntSwapRange 32 to 64
+	End Nodes
+	Struct 116 Animations 180
+		Struct 80 FrameInfo 1 / 72
+		End FrameInfo
+		Struct 148 DefaultData 1 / 140
+		End DefaultData
+		Struct 168 FrameData 1 / 160
+		End FrameData
+		LongSwap 32
+		LongSwap 34
+		LongSwap 36
+		LongSwap 38
+		IntSwap 40
+		LongSwapRange 44 to 68
+		IntSwap 68
+		IntSwap 72
+		IntSwapRange 84 to 144
+		IntSwap 160
+	End Animations
+	IntSwapRange 0 to 128
+End ModelAnimations

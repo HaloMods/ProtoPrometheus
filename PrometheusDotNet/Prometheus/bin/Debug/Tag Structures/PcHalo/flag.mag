@@ -1,0 +1,11 @@
+Flag
+Struct 0 Flag 96
+	TagRef 24
+	TagRef 40
+	TagRef 68
+	Struct 84 Attachment_Points 52
+		LongSwapRange 0 to 20
+	End Attachment_Points
+	LongSwapRange 0 to 24
+	IntSwapRange 24 to 96
+End Flag

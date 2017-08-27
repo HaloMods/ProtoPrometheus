@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>weapon</Group>
+	<GroupTag>weap</GroupTag>
+	<ParentGroupTag>item</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>512</HeaderSize>
+	<FieldCount>81</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ WEAPON $$$</Name>
+			<Type>Explanation</Type>
+			<Value>All weapons should have 'primary trigger' and 'secondary trigger' markers as appropriate.
+Blurred permutations are called '$primary-blur' and '$secondary-blur'.</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>16</FieldCount>
+			<Fields>
+				<Field0>vertical heat display</Field0>
+				<Field1>mutually exclusive triggers</Field1>
+				<Field2>attacks automatically on bump</Field2>
+				<Field3>must be readied</Field3>
+				<Field4>doesn't count toward maximum</Field4>
+				<Field5>aim assists only when zoomed</Field5>
+				<Field6>prevents grenade throwing</Field6>
+				<Field7>must be picked up</Field7>
+				<Field8>holds triggers when dropped</Field8>
+				<Field9>prevents melee attack</Field9>
+				<Field10>detonates when dropped</Field10>
+				<Field11>cannot fire at maximum age</Field11>
+				<Field12>secondary trigger overrides grenades</Field12>
+				<Field13>(OBSOLETE)does not depower active camo in multilplayer</Field13>
+				<Field14>enables integrated night vision</Field14>
+				<Field15>AIs use weapon melee damage</Field15>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>label#the string used to match this weapon to an animation mode in the unit carrying it</Name>
+			<Type>String</Type>
+		</Field>
+		<Field>
+			<Name>secondary trigger mode</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>normal</Field0>
+				<Field1>slaved to primary</Field1>
+				<Field2>inhibits primary</Field2>
+				<Field3>loads alterate ammunition</Field3>
+				<Field4>loads multiple primary ammunition</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>maximum alternate shots loaded#if the second trigger loads alternate ammunition, this is the maximum number of shots that can be loaded at a time</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>export to functions</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>A in</Name>
+			<Type>Enum</Type>
+			<FieldCount>19</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>heat</Field1>
+				<Field2>primary ammunition</Field2>
+				<Field3>secondary ammunition</Field3>
+				<Field4>primary rate of fire</Field4>
+				<Field5>secondary rate of fire</Field5>
+				<Field6>ready</Field6>
+				<Field7>primary ejection port</Field7>
+				<Field8>secondary ejection port</Field8>
+				<Field9>overheated</Field9>
+				<Field10>primary charged</Field10>
+				<Field11>secondary charged</Field11>
+				<Field12>illumination</Field12>
+				<Field13>age</Field13>
+				<Field14>integrated light</Field14>
+				<Field15>primary firing</Field15>
+				<Field16>secondary firing</Field16>
+				<Field17>primary firing on</Field17>
+				<Field18>secondary firing on</Field18>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>B in</Name>
+			<Type>Enum</Type>
+			<FieldCount>19</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>heat</Field1>
+				<Field2>primary ammunition</Field2>
+				<Field3>secondary ammunition</Field3>
+				<Field4>primary rate of fire</Field4>
+				<Field5>secondary rate of fire</Field5>
+				<Field6>ready</Field6>
+				<Field7>primary ejection port</Field7>
+				<Field8>secondary ejection port</Field8>
+				<Field9>overheated</Field9>
+				<Field10>primary charged</Field10>
+				<Field11>secondary charged</Field11>
+				<Field12>illumination</Field12>
+				<Field13>age</Field13>
+				<Field14>integrated light</Field14>
+				<Field15>primary firing</Field15>
+				<Field16>secondary firing</Field16>
+				<Field17>primary firing on</Field17>
+				<Field18>secondary firing on</Field18>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>C in</Name>
+			<Type>Enum</Type>
+			<FieldCount>19</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>heat</Field1>
+				<Field2>primary ammunition</Field2>
+				<Field3>secondary ammunition</Field3>
+				<Field4>primary rate of fire</Field4>
+				<Field5>secondary rate of fire</Field5>
+				<Field6>ready</Field6>
+				<Field7>primary ejection port</Field7>
+				<Field8>secondary ejection port</Field8>
+				<Field9>overheated</Field9>
+				<Field10>primary charged</Field10>
+				<Field11>secondary charged</Field11>
+				<Field12>illumination</Field12>
+				<Field13>age</Field13>
+				<Field14>integrated light</Field14>
+				<Field15>primary firing</Field15>
+				<Field16>secondary firing</Field16>
+				<Field17>primary firing on</Field17>
+				<Field18>secondary firing on</Field18>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>D in</Name>
+			<Type>Enum</Type>
+			<FieldCount>19</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>heat</Field1>
+				<Field2>primary ammunition</Field2>
+				<Field3>secondary ammunition</Field3>
+				<Field4>primary rate of fire</Field4>
+				<Field5>secondary rate of fire</Field5>
+				<Field6>ready</Field6>
+				<Field7>primary ejection port</Field7>
+				<Field8>secondary ejection port</Field8>
+				<Field9>overheated</Field9>
+				<Field10>primary charged</Field10>
+				<Field11>secondary charged</Field11>
+				<Field12>illumination</Field12>
+				<Field13>age</Field13>
+				<Field14>integrated light</Field14>
+				<Field15>primary firing</Field15>
+				<Field16>secondary firing</Field16>
+				<Field17>primary firing on</Field17>
+				<Field18>secondary firing on</Field18>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>ready time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ready effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>heat</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>heat recovery threshold:[0,1]#the heat value a weapon must return to before leaving the overheated state, once it has become overheated in the first place</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>overheated threshold:[0,1]#the heat value over which a weapon first becomes overheated (should be greater than the heat recovery threshold)</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>heat detonation threshold:[0,1]#the heat value above which the weapon has a chance of exploding each time it is fired</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>heat detonation fraction:[0,1]#the percent chance (between 0.0 and 1.0) the weapon will explode when fired over the heat detonation threshold</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>heat loss per second:[0,1]#the amount of heat lost each second when the weapon is not being fired</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>heat illumination:[0,1]#the amount of illumination given off when the weapon is overheated</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>overheated</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>detonation</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>player melee damage</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>jpt!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>player melee response</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>jpt!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>actor firing parameters</Name>
+			<Type>Explanation</Type>
+			<Value>an optional actor variant that specifies the burst geometry and firing patterns to be used with this weapon</Value>
+		</Field>
+		<Field>
+			<Name>actor firing parameters</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>actv</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>reticle</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>near reticle range:world units#the range at which the closer of the two static target reticles will be drawn</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>far reticle range:world units#the range at which the farther of the two static target reticles will be drawn</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>intersection reticle range#the maximum range at which the dynamic target reticle will be drawn</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>zoom</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>magnification levels#the number of magnification levels this weapon allows</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>magnification range</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>aim assist</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>autoaim angle:degrees#the maximum angle that autoaim works at full strength</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>autoaim range:world units#the maximum distance that autoaim works at full strength</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>magnetism angle:degrees#the maximum angle that magnetism works at full strength</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>magnetism range:world units#the maximum distance that magnetism works at full strength</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>deviation angle:degrees#the maximum angle that a projectile is allowed to deviate from the gun barrel</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>movement</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>movement penalized</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>always</Field0>
+				<Field1>when zoomed</Field1>
+				<Field2>when zoomed or reloading</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>forward movement penalty#percent slowdown to forward movement for units carrying this weapon</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>sideways movement penalty#percent slowdown to sideways and backward movement for units carrying this weapon</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>AI targeting parameters</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>minimum target range#minimum range that actors using this weapon will try and target stuff at</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>looking time modifier#how much faster actors look around idly using this weapon (zero is unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>miscellaneous</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>light power-on time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>light power-off time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>light power-on effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>light power-off effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>age heat recovery penalty#how much the weapon's heat recovery is penalized as it ages</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>age rate of fire penalty#how much the weapon's rate of fire is penalized as it ages</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>age misfire start:[0,1]#the age threshold when the weapon begins to misfire</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>age misfire chance:[0,1]#at age 1.0, the misfire chance per shot</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>interface</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>first person model</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>mod2</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>first person animations</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>antr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>hud interface</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>wphi</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>pickup sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>zoom-in sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>zoom-out sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>active camo ding#how much to decrease active camo when a round is fired</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>active camo regrowth rate#how fast to increase active camo (per tick) when a round is fired</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>more miscellaneous</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>weapon type</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>undefined</Field0>
+				<Field1>shotgun</Field1>
+				<Field2>needler</Field2>
+				<Field3>plasma pistol</Field3>
+				<Field4>plasma rifle</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>predicted resources</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>predicted_resource_block</Name>
+				<MaxElements>1024</MaxElements>
+				<Size>8</Size>
+				<FieldCount>4</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>bitmap</Field0>
+							<Field1>sound</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>resource index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>tag index</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>magazines</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>magazines</Name>
+				<MaxElements>2</MaxElements>
+				<Size>112</Size>
+				<FieldCount>17</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>wastes rounds when reloaded</Field0>
+							<Field1>every round must be chambered</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>rounds recharged:per second</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>rounds total initial</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>rounds total maximum</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>rounds loaded maximum</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>reload time:seconds#the length of time it takes to load a single magazine into the weapon</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>rounds reloaded</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>chamber time:seconds#the length of time it takes to chamber the next round</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>reloading effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>chambering effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name>magazines</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>magazine_objects</Name>
+							<MaxElements>8</MaxElements>
+							<Size>28</Size>
+							<FieldCount>4</FieldCount>
+							<Fields>
+								<Field>
+									<Name>rounds</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>10</Value>
+								</Field>
+								<Field>
+									<Name>equipment</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>eqip</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>triggers</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>triggers</Name>
+				<MaxElements>2</MaxElements>
+				<Size>276</Size>
+				<FieldCount>49</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>14</FieldCount>
+						<Fields>
+							<Field0>tracks fired projectile#poo poo ca ca pee pee</Field0>
+							<Field1>random firing effects#rather than being chosen sequentially, firing effects are picked randomly</Field1>
+							<Field2>can fire with partial ammo#allows a weapon to be fired as long as there is a non-zero amount of ammunition loaded</Field2>
+							<Field3>does not repeat automatically#once fired, this trigger must be released and pressed to fire again</Field3>
+							<Field4>locks in on/off state#once depressed, this trigger must be released and pressed again to turn it off (and likewise to turn it back on)</Field4>
+							<Field5>projectiles use weapon origin#instead of coming out of the magic first person camera origin, the projectiles for this weapon actually come out of the gun</Field5>
+							<Field6>sticks when dropped#if this trigger is pressed when its owner drops the weapon (for whatever reason) this trigger stays down</Field6>
+							<Field7>ejects during chamber#this trigger's ejection port is started during the key frame of its chamber animation</Field7>
+							<Field8>discharging spews</Field8>
+							<Field9>analog rate of fire</Field9>
+							<Field10>use error when unzoomed</Field10>
+							<Field11>projectile vector cannot be adjusted#projectiles fired by this weapon cannot have their direction adjusted by the AI to hit the target</Field11>
+							<Field12>projectiles have identical error</Field12>
+							<Field13>projectile is client-side only</Field13>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>firing</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>rounds per second#the number of firing effects created per second</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>acceleration time:seconds#the continuous firing time it takes for the weapon to achieve its final rounds per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>deceleration time:seconds#the continuous idle time it takes for the weapon to return from its final rounds per second to its initial</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>blurred rate of fire#a percentage between 0 and 1 which controls how soon in its firing animation the weapon blurs</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>magazine#the magazine from which this trigger draws its ammunition</Name>
+						<Type>Short_Block_Index</Type>
+						<Block>magazines</Block>
+					</Field>
+					<Field>
+						<Name>rounds per shot#the number of rounds expended to create a single firing effect</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>minimum rounds loaded#the minimum number of rounds necessary to fire the weapon</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>rounds between tracers#the number of non-tracer rounds fired between tracers</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>6</Value>
+					</Field>
+					<Field>
+						<Name>firing noise#how loud this weapon appears to the AI</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>silent</Field0>
+							<Field1>medium</Field1>
+							<Field2>loud</Field2>
+							<Field3>shout</Field3>
+							<Field4>quiet</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>error</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>error#the accuracy (between 0.0 and 1.0) of the weapon during firing</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>acceleration time:seconds#the continuous firing time it takes for the weapon to achieve its final error</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>deceleration time:seconds#the continuous idle time it takes for the weapon to return to its initial error</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>charging</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>charging time:seconds#the amount of time it takes for this trigger to become fully charged</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>charged time:seconds#the amount of time this trigger can be charged before becoming overcharged</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>overcharged action</Name>
+						<Type>Enum</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>explode</Field1>
+							<Field2>discharge</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>charged illumination:[0,1]#the amount of illumination given off when the weapon is fully charged</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>spew time:seconds#length of time the weapon will spew (fire continuously) while discharging</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>charging effect#the charging effect is created once when the trigger begins to charge</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>projectile</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>distribution function</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>point</Field0>
+							<Field1>horizontal fan</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>projectiles per shot</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>distribution angle:degrees</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>minimum error:degrees</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>error angle:degrees</Name>
+						<Type>Angle_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>first person offset:world units#+x is forward, +z is up, +y is left</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>projectile</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>proj</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>misc</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>ejection port recovery time#the amount of time (in seconds) it takes for the ejection port to transition from 1.0 (open) to 0.0 (closed) after a shot has been fired</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>illumination recovery time#the amount of time (in seconds) it takes the illumination function to transition from 1.0 (bright) to 0.0 (dark) after a shot has been fired</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name>heat generated per round:[0,1]#the amount of heat generated each time the trigger is fired</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>age generated per round:[0,1]#the amount the weapon ages each time the trigger is fired</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>overload time:seconds#the next trigger fires this often while holding down this trigger</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name>firing effects#firing effects determine what happens when this trigger is fired</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>trigger_firing_effect_block</Name>
+							<MaxElements>8</MaxElements>
+							<Size>132</Size>
+							<FieldCount>10</FieldCount>
+							<Fields>
+								<Field>
+									<Name>shot count lower bound#the minimum number of times this firing effect will be used, once it has been chosen</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name>shot count upper bound#the maximum number of times this firing effect will be used, once it has been chosen</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>32</Value>
+								</Field>
+								<Field>
+									<Name>firing effect^#this effect is used when the weapon is loaded and fired normally</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>misfire effect#this effect is used when the weapon is loaded but fired while overheated</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>empty effect#this effect is used when the weapon is not loaded</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>firing damage#this effect is used when the weapon is loaded and fired normally</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>jpt!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>misfire damage#this effect is used when the weapon is loaded but fired while overheated</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>jpt!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>empty damage#this effect is used when the weapon is not loaded</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>jpt!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

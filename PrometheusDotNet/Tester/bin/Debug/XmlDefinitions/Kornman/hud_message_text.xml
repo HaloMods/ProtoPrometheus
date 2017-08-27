@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>hud_message_text</Group>
+	<GroupTag>hmt </GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>128</HeaderSize>
+	<FieldCount>5</FieldCount>
+	<Fields>
+		<Field>
+			<Name>text data*</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>10234468</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name>message elements*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>hud_message_elements_block</Name>
+				<MaxElements>8192</MaxElements>
+				<Size>2</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>type*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>data*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>messages*</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>hud_messages_block</Name>
+				<MaxElements>1024</MaxElements>
+				<Size>64</Size>
+				<FieldCount>7</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name*</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>start index into text blob*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>start index of message block*</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>panel count*</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>3</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>84</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,14 @@
+shader_transparent_water
+Struct 0 ShaderWaterMain 320
+	TagRef 76
+	TagRef 156
+	TagRef 200
+	LongSwapRange 0 to 4
+	IntSwapRange 4 to 30
+	LongSwapRange 30 to 76
+	IntSwapRange 76 to 320
+	Struct 292 Ripples 76
+		IntSwapRange 0 to 54
+		LongSwapRange 54 to 76
+	End Ripples
+End ShaderWaterMain

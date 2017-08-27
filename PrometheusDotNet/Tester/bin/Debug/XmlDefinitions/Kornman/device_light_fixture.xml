@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>device_light_fixture</Group>
+	<GroupTag>lifi</GroupTag>
+	<ParentGroupTag>devi</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>64</HeaderSize>
+	<FieldCount>3</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ LIGHT FIXTURE $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>64</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

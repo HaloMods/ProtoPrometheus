@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>placeholder</Group>
+	<GroupTag>plac</GroupTag>
+	<ParentGroupTag>obje</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>128</HeaderSize>
+	<FieldCount>2</FieldCount>
+	<Fields>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>128</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>actor</Group>
+	<GroupTag>actr</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>1272</HeaderSize>
+	<FieldCount>138</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>32</FieldCount>
+			<Fields>
+				<Field0>can see in darkness</Field0>
+				<Field1>sneak uncovering target</Field1>
+				<Field2>sneak uncovering pursuit position</Field2>
+				<Field3>unused</Field3>
+				<Field4>shoot at target's last location</Field4>
+				<Field5>try to stay still when crouched</Field5>
+				<Field6>crouch when not in combat</Field6>
+				<Field7>crouch when guarding</Field7>
+				<Field8>unused</Field8>
+				<Field9>must crouch to shoot</Field9>
+				<Field10>panic when surprised</Field10>
+				<Field11>always charge at enemies</Field11>
+				<Field12>gets in vehicles with player</Field12>
+				<Field13>start firing before aligned</Field13>
+				<Field14>standing must move forward</Field14>
+				<Field15>crouching must move forward</Field15>
+				<Field16>defensive crouch while charging</Field16>
+				<Field17>use stalking behavior</Field17>
+				<Field18>stalking freeze if exposed</Field18>
+				<Field19>always berserk in attacking mode</Field19>
+				<Field20>berserking uses panicked movement</Field20>
+				<Field21>flying</Field21>
+				<Field22>panicked by unopposable enemy</Field22>
+				<Field23>crouch when hiding from unopposable</Field23>
+				<Field24>always charge in 'attacking' mode</Field24>
+				<Field25>dive off ledges</Field25>
+				<Field26>swarm</Field26>
+				<Field27>suicidal melee attack</Field27>
+				<Field28>cannot move while crouching</Field28>
+				<Field29>fixed crouch facing</Field29>
+				<Field30>crouch when in line of fire</Field30>
+				<Field31>avoid friends' line of fire</Field31>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>more flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>avoid all enemy attack vectors</Field0>
+				<Field1>must stand to fire</Field1>
+				<Field2>must stop to fire</Field2>
+				<Field3>disallow vehicle combat</Field3>
+				<Field4>pathfinding ignores danger</Field4>
+				<Field5>panic in groups</Field5>
+				<Field6>no corpse shooting</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>16</FieldCount>
+			<Fields>
+				<Field0>elite</Field0>
+				<Field1>jackal</Field1>
+				<Field2>grunt</Field2>
+				<Field3>hunter</Field3>
+				<Field4>engineer</Field4>
+				<Field5>assassin</Field5>
+				<Field6>player</Field6>
+				<Field7>marine</Field7>
+				<Field8>crew</Field8>
+				<Field9>combat form</Field9>
+				<Field10>infection form</Field10>
+				<Field11>carrier form</Field11>
+				<Field12>monitor</Field12>
+				<Field13>sentinel</Field13>
+				<Field14>none</Field14>
+				<Field15>mounted weapon</Field15>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>perception</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>max vision distance:world units#maximum range of sight</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>central vision angle:degrees#horizontal angle within which we see targets out to our maximum range</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>max vision angle:degrees#maximum horizontal angle within which we see targets at range</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>peripheral vision angle:degrees#maximum horizontal angle within which we can see targets out of the corner of our eye</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>peripheral distance:world units#maximum range at which we can see targets our of the corner of our eye</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>standing gun offset#offset of gun from feet when standing (x=forward, y=left, z=up)</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name>crouching gun offset#offset of gun from feet when crouch (x=forward, y=left, z=up)</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name>hearing distance:world units#maximum range at which sounds can be heard</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>notice projectile chance:[0,1]#random chance of noticing a dangerous enemy projectile (e.g. grenade)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>notice vehicle chance:[0,1]#random chance of noticing a dangerous vehicle</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>combat perception time:seconds#time required to acknowledge a visible enemy when we are already in combat or searching for them</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>guard perception time:seconds#time required to acknowledge a visible enemy when we have been alerted</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>non-combat perception time:seconds#time required to acknowledge a visible enemy when we are not alerted</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>movement</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>dive into cover chance:[0,1]#chance of running a dive animation when moving into cover</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>emerge from cover chance:[0,1]#chance of running an emerge animation when uncovering a target</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>dive from grenade chance:[0,1]#chance of running a dive animation when moving away from a grenade</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>pathfinding radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>glass ignorance chance:[0,1]#chance of not noticing that breakable surfaces have been destroyed</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>stationary movement dist:world units#movement distance which is considered 'stationary' for considering whether we crouch</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>free-flying sidestep:world units#distance which we allow sidestepping for flying units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>begin moving angle:degrees#we must be facing this close to our target before we start applying the throttle (default: 180 degrees)</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>looking</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>maximum aiming deviation:degrees#how far we can turn our weapon</Name>
+			<Type>Real_Euler_Angles_2D</Type>
+		</Field>
+		<Field>
+			<Name>maximum looking deviation:degrees#how far we can turn our head</Name>
+			<Type>Real_Euler_Angles_2D</Type>
+		</Field>
+		<Field>
+			<Name>noncombat look delta L:degrees#how far we can turn our head left away from our aiming vector when not in combat</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>noncombat look delta R:degrees#how far we can turn our head right away from our aiming vector when not in combat</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>combat look delta L:degrees#how far we can turn our head left away from our aiming vector when in combat</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>combat look delta R:degrees#how far we can turn our head right away from our aiming vector when in combat</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>idle aiming range:degrees#range in which we select random directions to aim in</Name>
+			<Type>Real_Euler_Angles_2D</Type>
+		</Field>
+		<Field>
+			<Name>idle looking range:degrees#range in which we select random directions to look at</Name>
+			<Type>Real_Euler_Angles_2D</Type>
+		</Field>
+		<Field>
+			<Name>event look time modifier#multiplier for how long we look at interesting events (zero = unchanged)</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>noncombat idle facing:seconds#rate at which we change facing when looking around randomly when not in combat</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>noncombat idle aiming:seconds#rate at which we change aiming directions when looking around randomly when not in combat</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>noncombat idle looking:seconds#rate at which we change look around randomly when not in combat</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>guard idle facing:seconds#rate at which we change facing when looking around randomly when guarding</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>guard idle aiming:seconds#rate at which we change aiming directions when looking around randomly when guarding</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>guard idle looking:seconds#rate at which we change look around randomly when guarding</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>combat idle facing:seconds#rate at which we change facing when looking around randomly when searching or in combat</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>combat idle aiming:seconds#rate at which we change aiming directions when looking around randomly when searching or in combat</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>combat idle looking:seconds#rate at which we change look around randomly when searching or in combat</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>DO NOT USE: weapon</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>weap</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>268</Value>
+		</Field>
+		<Field>
+			<Name>DO NOT USE: projectile</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>proj</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>unopposable</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>unreachable danger trigger#danger level of an unreachable enemy which will trigger a retreat if it continues over time</Name>
+			<Type>Enum</Type>
+			<FieldCount>10</FieldCount>
+			<Fields>
+				<Field0>never</Field0>
+				<Field1>visible</Field1>
+				<Field2>shooting</Field2>
+				<Field3>shooting near us</Field3>
+				<Field4>damaging us</Field4>
+				<Field5>unused</Field5>
+				<Field6>unused</Field6>
+				<Field7>unused</Field7>
+				<Field8>unused</Field8>
+				<Field9>unused</Field9>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>vehicle danger trigger#danger level of a vehicle-based enemy which will trigger a retreat if it continues over time</Name>
+			<Type>Enum</Type>
+			<FieldCount>10</FieldCount>
+			<Fields>
+				<Field0>never</Field0>
+				<Field1>visible</Field1>
+				<Field2>shooting</Field2>
+				<Field3>shooting near us</Field3>
+				<Field4>damaging us</Field4>
+				<Field5>unused</Field5>
+				<Field6>unused</Field6>
+				<Field7>unused</Field7>
+				<Field8>unused</Field8>
+				<Field9>unused</Field9>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>player danger trigger#danger level of an enemy player which will trigger a retreat if it continues over time</Name>
+			<Type>Enum</Type>
+			<FieldCount>10</FieldCount>
+			<Fields>
+				<Field0>never</Field0>
+				<Field1>visible</Field1>
+				<Field2>shooting</Field2>
+				<Field3>shooting near us</Field3>
+				<Field4>damaging us</Field4>
+				<Field5>unused</Field5>
+				<Field6>unused</Field6>
+				<Field7>unused</Field7>
+				<Field8>unused</Field8>
+				<Field9>unused</Field9>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>danger trigger time:seconds#how long it takes for an unopposable enemy that has the above danger level to trigger a retreat</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>friends killed trigger#if this many of our friends are killed by an unopposable enemy, we trigger a retreat (zero = never use this as a retreat condition)</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>friends retreating trigger#if this many of our friends are retreating from an unopposable enemy, we retreat as well (zero = never use this as a retreat condition)</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>retreat time:seconds#how long we retreat from an unopposable enemy for</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>panic</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>cowering time:seconds#how long we hide in cover after being panicked</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>friend killed panic chance:[0,1]#chance of panicking when we see a friend killed near us and the enemy is looking at us too</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>leader type#if we see a friend of this type killed we have a chance of panicking</Name>
+			<Type>Enum</Type>
+			<FieldCount>16</FieldCount>
+			<Fields>
+				<Field0>elite</Field0>
+				<Field1>jackal</Field1>
+				<Field2>grunt</Field2>
+				<Field3>hunter</Field3>
+				<Field4>engineer</Field4>
+				<Field5>assassin</Field5>
+				<Field6>player</Field6>
+				<Field7>marine</Field7>
+				<Field8>crew</Field8>
+				<Field9>combat form</Field9>
+				<Field10>infection form</Field10>
+				<Field11>carrier form</Field11>
+				<Field12>monitor</Field12>
+				<Field13>sentinel</Field13>
+				<Field14>none</Field14>
+				<Field15>mounted weapon</Field15>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>leader killed panic chance:[0,1]#chance of panicking when we see a leader killed</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>panic damage threshold:[0,1]#panic if we take this much body damage in a short period of time</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>surprise distance:world units#the distance at which newly acknowledged props or weapon impacts are considered 'close' for surprise purposes</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>defensive</Name>
+			<Type>Explanation</Type>
+			<Value>danger values: being aimed at: 0.7
+an enemy shooting in our general direction: 1.2
+an enemy shooting directly at us: 1.6
+an enemy damaging us: 2.0</Value>
+		</Field>
+		<Field>
+			<Name>hide behind cover time:seconds#how long we stay behind cover after seeking cover</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>hide target-not-visible time:seconds#if this is non-zero then we will only seek cover if our target has not been visible recently</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hide shield fraction:[0,1]#elites and jackals only seek cover if their shield falls below this value</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>attack shield fraction:[0,1]#elites and jackals only come out from cover to attack if they have this much shields</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>pursue shield fraction:[0,1]#elites and jackals only come out from cover to pursue if they have this much shields</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>defensive crouch type</Name>
+			<Type>Enum</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>never</Field0>
+				<Field1>danger</Field1>
+				<Field2>low shields</Field2>
+				<Field3>hide behind shield</Field3>
+				<Field4>any target</Field4>
+				<Field5>flood shamble</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>attacking crouch threshold#when in attacking mode, if our crouch type is based on shields, we crouch when our shields are below this number; if our crouch type is based on danger, we crouch when our danger is above this number</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>defending crouch threshold#when in defending mode, if our crouch type is based on shields, we crouch when our shields are below this number; if our crouch type is based on danger, we crouch when our danger is above this number</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>min stand time:seconds#minimum time to remain standing (zero = default)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>min crouch time:seconds#minimum time to remain crouching (zero = default)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>defending hide time modifier#how much longer we hide behind cover for when in the defending state (zero = unchanged)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>attacking evasion threshold#when in attacking mode, we consider seeking cover or evading when our danger gets this high</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>defending evasion threshold#when in defending mode, we consider seeking cover or evading when our danger gets this high</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>evasion seek-cover chance:[0,1]#chance of seeking cover (otherwise we just evade)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>evasion delay time:seconds#minimum time period between evasion moves</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>max seek-cover distance:world units#maximum distance we will consider going to find cover (zero = default)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>cover damage threshold:[0,1]#how much damage we must take before we are allowed to seek cover (zero = always allowed to)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>stalking discovery time:seconds#if our target sees us for this long while we are stalking them, our cover is blown and we do something else (zero = never stop stalking)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>stalking max distance:world units#distance outside of which we don't bother stalking</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>stationary facing angle:angle#angle outside of which we must abandon a stationary facing direction and suffer any penalties</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>change-facing stand time:seconds#how long we must stand up for after changing our fixed stationary facing</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>pursuit</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>uncover delay time:seconds#time to look at target's position after it becomes visible</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>target search time:seconds#time we search at target's position</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>pursuit-position time:seconds#time we search at a pursuit position</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>num positions (coord):[0,n]#number of pursuit positions to check when in coordinated group search mode</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>num positions (normal):[0,n]#number of pursuit positions to check when in normal search mode</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>berserk</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>melee attack delay:seconds#how long we must wait between attempting melee attacks</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>melee fudge factor:world units#fudge factor that offsets how far in front of the target we start our attack (negative = we try to time our attack so that we go _through_ the target). this should be close to zero, but might be bigger for suiciding units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>melee charge time:seconds#how long we can stay in the charging state trying to reach our target before we give up</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>melee leap range:world units#we can launch leaping melee attacks at targets within these ranges (zero = can't leap)</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>melee leap velocity:world units per tick#how fast we spring at targets when launching a leaping melee attack</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>melee leap chance:[0,1]#chance of launching a leaping melee attack at a ground-based target (we always leap at flying targets)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>melee leap ballistic:[0,1]#fraction that controls how ballistic our leaping melee trajectory is</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk damage amount:[0,1]#amount of body damage in a short time that makes us berserk</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk damage threshold:[0,1]#how low our body health must get before we will consider berserking</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk proximity:world units#if we ever get this close to a target, we berserk</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>suicide sensing dist:world units#when we are this close to a target, we check to see if they're getting away and if so blow up</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>berserk grenade chance:[0,1]#chance of berserking when we have a dangerous projectile stuck to us</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>firing positions</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>guard position time:seconds#time after which we decide to change guard positions (zero = never)</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>combat position time:seconds#time after which we change combat firing positions</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>old position avoid dist:world units#distance we try and stay from our last discarded firing position</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>friend avoid dist:world units#distance we try and stay from any friends</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>40</Value>
+		</Field>
+		<Field>
+			<Name>communication</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>noncombat idle speech time:seconds#time between idle vocalizations when we are not in combat</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>combat idle speech time:seconds#time between idle vocalizations when we are in combat or searching</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>48</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>128</Value>
+		</Field>
+		<Field>
+			<Name>DO NOT USE: major upgrade</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>actr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>48</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,24 @@
+Font
+Struct 0 Font 156
+	Struct 48 Character_Tables 12
+		Struct 0 Character_Table 2
+			LongSwap 0
+		End Character_Table
+		IntSwapRange 0 to 12
+	End Character_Tables
+	TagRef 60
+	TagRef 76
+	TagRef 92
+	TagRef 108
+	intClear 114
+	Struct 114 Characters 20
+		LongSwapRange 0 to 16
+		IntSwap 16
+	End Characters
+	Struct 0x7c Unknown 20
+	End Unknown
+	InternalRaw 0x88 0x90
+	IntSwap 0
+	LongSwapRange 0 to 48
+	IntSwapRange 48 to 156
+End Font

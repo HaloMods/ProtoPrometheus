@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>sound_looping</Group>
+	<GroupTag>lsnd</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>3</Version>
+	<HeaderSize>84</HeaderSize>
+	<FieldCount>12</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>deafening to AIs#when used as a background stereo track, causes nearby AIs to be unable to hear</Field0>
+				<Field1>not a loop#this is a collection of permutations strung together that should play once then stop.</Field1>
+				<Field2>stops music#all other music loops will stop when this one starts.</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>when scale is ZERO</Name>
+			<Type>Explanation</Type>
+			<Value>as the sound's input scale changes from zero to one, these modifiers move between the two values specified here. the sound will play using the current scale modifier multiplied by the value specified below. (0 values are ignored.)</Value>
+		</Field>
+		<Field>
+			<Name>detail sound period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>when scale is ONE</Name>
+			<Type>Explanation</Type>
+			<Value>as the sound's input scale changes from zero to one, these modifiers move between the two values specified here. the sound will play using the current scale modifier multiplied by the value specified below. (0 values are ignored.)</Value>
+		</Field>
+		<Field>
+			<Name>detail sound period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>continuous damage effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>cdmg</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>tracks#tracks play in parallel and loop continuously for the duration of the looping sound.</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>looping_sound_track_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>160</Size>
+				<FieldCount>13</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>fade in at start#the loop sound should fade in while the start sound is playing.</Field0>
+							<Field1>fade out at stop#the loop sound should fade out while the stop sound is playing.</Field1>
+							<Field2>fade in alternate#when the sound changes to the alternate version,  .</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>gain</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>fade in duration:seconds</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>fade out duration:seconds</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>start</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>loop^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>end</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>alternate loop</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>alternate end</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Custom</Type>
+						<Custom>mply</Custom>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>detail sounds#detail sounds play at random throughout the duration of the looping sound.</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>looping_sound_detail_block</Name>
+				<MaxElements>32</MaxElements>
+				<Size>104</Size>
+				<FieldCount>11</FieldCount>
+				<Fields>
+					<Field>
+						<Name>sound^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>frequency of play</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>random period bounds:seconds#the time between successive playings of this sound will be randomly selected from this range.</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>gain</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>don't play with alternate</Field0>
+							<Field1>don't play without alternate</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>48</Value>
+					</Field>
+					<Field>
+						<Name>random spatialization</Name>
+						<Type>Explanation</Type>
+						<Value>if the sound specified above is not stereo it will be randomly spatialized according to the following constraints. if both lower and upper bounds are zero for any of the following fields, the sound's position will be randomly selected from all possible directions or distances.</Value>
+					</Field>
+					<Field>
+						<Name>yaw bounds:degrees#the sound's position along the horizon will be randomly selected from this range.</Name>
+						<Type>Angle_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>pitch bounds:degrees#the sound's position above (positive values) or below (negative values) the horizon will be randomly selected from this range.</Name>
+						<Type>Angle_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>distance bounds:world units#the sound's distance (from its spatialized looping sound or from the listener if the looping sound is stereo) will be randomly selected from this range.</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

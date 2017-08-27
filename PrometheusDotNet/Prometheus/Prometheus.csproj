@@ -1,0 +1,800 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D725BE9A-AFEC-45BE-9120-E6FA22854D91}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Prometheus</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Prometheus</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data3">
+      <Name>DevExpress.Data3</Name>
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.Data3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.Utils3">
+      <Name>DevExpress.Utils3</Name>
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.Utils3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars3">
+      <Name>DevExpress.XtraBars3</Name>
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.XtraBars3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors3">
+      <Name>DevExpress.XtraEditors3</Name>
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET.v3\DevExpress.XtraEditors3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar3">
+      <Name>devexpress.xtranavbar3</Name>
+      <HintPath>..\..\..\..\..\..\program files\common files\devexpress\.net.v3\devexpress.xtranavbar3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList3">
+      <Name>devexpress.xtratreelist3</Name>
+      <HintPath>..\..\..\..\..\..\program files\common files\devexpress\.net.v3\devexpress.xtratreelist3.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net.v3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Eyefinder">
+      <Name>Eyefinder</Name>
+      <HintPath>..\Shared\Eyefinder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX">
+      <Name>Microsoft.DirectX</Name>
+      <HintPath>..\Core\Microsoft.DirectX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D">
+      <Name>Microsoft.DirectX.Direct3D</Name>
+      <HintPath>..\Core\Microsoft.DirectX.Direct3D.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX">
+      <Name>Microsoft.DirectX.Direct3DX</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v9.02.2904\Microsoft.DirectX.Direct3DX.dll</HintPath>
+      <AssemblyFolderKey>hklm\current managed directx 9.2</AssemblyFolderKey>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectInput">
+      <Name>Microsoft.DirectX.DirectInput</Name>
+      <HintPath>..\Core\Microsoft.DirectX.DirectInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="Nini">
+      <Name>Nini</Name>
+      <HintPath>..\Shared\Nini.dll</HintPath>
+    </Reference>
+    <Reference Include="SandBar">
+      <Name>SandBar</Name>
+      <HintPath>..\Shared\SandBar.dll</HintPath>
+    </Reference>
+    <Reference Include="SandDock">
+      <Name>SandDock</Name>
+      <HintPath>..\Shared\SandDock.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Xceed.Compression">
+      <Name>Xceed.Compression</Name>
+      <HintPath>..\Shared\Xceed.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.FileSystem">
+      <Name>Xceed.FileSystem</Name>
+      <HintPath>..\Shared\Xceed.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Zip">
+      <Name>Xceed.Zip</Name>
+      <HintPath>..\Shared\Xceed.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XPPanel">
+      <Name>XPPanel</Name>
+      <HintPath>..\Shared\XPPanel.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Name>Core</Name>
+      <Project>{8CA26A98-9D0C-4F91-A4C0-C8EE8DE7BDBF}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedControls\SharedControls.csproj">
+      <Name>SharedControls</Name>
+      <Project>{B7DDB2D1-8F21-4633-850F-0CA1B2F4C2F0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\TagEditor\TagEditor.csproj">
+      <Name>TagEditor</Name>
+      <Project>{6BDF9656-306E-47E9-BC83-E830030B5E08}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\TagLibrary\TagLibrary.csproj">
+      <Name>TagLibrary</Name>
+      <Project>{7D1F41DC-AB16-441C-8F0D-A24D4BFD7E38}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\UIControls\UIControls.csproj">
+      <Name>UIControls</Name>
+      <Project>{C3953CA2-22F7-48FE-8F76-23017C1B6082}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BetaGuardian.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\FileListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FileTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LnFListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LnFListViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MapRenderAdvanced.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MapRenderCompact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ModelRenderAdvanced.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ModelRenderCompact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MultiSyncTreeView\ArchiveLibraryNodeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MultiSyncTreeView\BaseTagLibraryNodeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MultiSyncTreeView\DiskLibraryNodeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MultiSyncTreeView\MultiSyncTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MultiSyncTreeView\NodeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MultiSyncTreeView\ObjectViewNodeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\PopupWindowHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProjectExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ScenarioExplorer\ScenarioExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ScenarioExplorer\ScenarioItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TagExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TagLibraryExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TaskListGUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextureStageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TransparantPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomizePackagedTags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecompileNavigator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrenDebugger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LightMapDiaglog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelToolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewProjectWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaletteSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrefabExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrefabPackager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrometheusGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RichTextBoxTraceListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Testing\MonoxideC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theming.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreadManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Win32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewProjectWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Controls\FileListView.resx">
+      <DependentUpon>FileListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FileTreeView.resx">
+      <DependentUpon>FileTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LnFListView.resx">
+      <DependentUpon>LnFListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LnFListViewControl.resx">
+      <DependentUpon>LnFListViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MapRenderAdvanced.resx">
+      <DependentUpon>MapRenderAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MapRenderCompact.resx">
+      <DependentUpon>MapRenderCompact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ModelRenderAdvanced.resx">
+      <DependentUpon>ModelRenderAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ModelRenderCompact.resx">
+      <DependentUpon>ModelRenderCompact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MultiSyncTreeView\MultiSyncTreeView.resx">
+      <DependentUpon>MultiSyncTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProgressPanel.resx">
+      <DependentUpon>ProgressPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProjectExplorer.resx">
+      <DependentUpon>ProjectExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScenarioExplorer\ScenarioExplorer.resx">
+      <DependentUpon>ScenarioExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScenarioExplorer\ScenarioItems.resx">
+      <DependentUpon>ScenarioItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TagExplorer.resx">
+      <DependentUpon>TagExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TagLibraryExplorer.resx">
+      <DependentUpon>TagLibraryExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TaskListGUI.resx">
+      <DependentUpon>TaskListGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextureStageControl.resx">
+      <DependentUpon>TextureStageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomizePackagedTags.resx">
+      <DependentUpon>CustomizePackagedTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecompileNavigator.resx">
+      <DependentUpon>DecompileNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.layout" />
+    <EmbeddedResource Include="GrenDebugger.resx">
+      <DependentUpon>GrenDebugger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\App Basics\16\about.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\bookmark.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\check.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\check2.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\checks.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\copy.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\cut.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\disks.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\disk_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_add.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_delete.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_edit.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_error.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_info.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_lock.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_new.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_ok.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_plain_new.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_preferences.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\document_warning.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\error.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\export1.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\export2.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\find.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\find_next.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\find_previous.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\find_text.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_add.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_closed.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_delete.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_edit.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_information.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_lock.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_new.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_ok.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_preferences.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_refresh.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_up.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\folder_warning.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\help2.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\help_earth.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\history2.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\import1.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\import2.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\information.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\lifebelt.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\magic-wand.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\media_fast_forward.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\media_pause.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\media_play.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\media_play_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\media_rewind.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\media_stop.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\media_stop_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\music.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_left_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_left_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_left_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_right_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_right_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_down_right_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_left_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_left_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_left_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_right_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_right_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_right_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_left_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_left_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_left_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_right_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_right_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\nav_up_right_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\paste.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\preferences.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\redo.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\replace.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\replace2.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\save_as.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\undo.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\unknown.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\warning.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\zoom_in.png" />
+    <EmbeddedResource Include="Icons\App Basics\16\zoom_out.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\about.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\bookmark.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\check.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\check2.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\checks.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\copy.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\cut.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\disks.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\disk_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_add.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_delete.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_edit.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_error.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_info.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_lock.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_new.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_ok.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_plain_new.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_preferences.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\document_warning.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\error.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\export1.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\export2.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\find.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\find_next.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\find_previous.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\find_text.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_add.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_closed.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_delete.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_edit.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_information.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_lock.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_new.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_ok.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_preferences.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_refresh.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_up.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\folder_warning.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\help2.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\help_earth.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\history2.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\import1.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\import2.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\information.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\lifebelt.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\magic-wand.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\media_fast_forward.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\media_pause.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\media_play.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\media_play_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\media_rewind.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\media_stop.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\media_stop_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\music.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_left_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_left_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_left_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_right_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_right_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_down_right_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_left_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_left_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_left_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_right_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_right_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_right_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_left_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_left_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_left_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_right_blue.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_right_green.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\nav_up_right_red.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\paste.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\preferences.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\redo.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\replace.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\replace2.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\save_as.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\undo.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\unknown.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\warning.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\zoom_in.png" />
+    <EmbeddedResource Include="Icons\App Basics\32\zoom_out.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\cabinet.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_add.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_copy.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_delete.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_disk.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_edit.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_error.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_information.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_lock.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_new.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_ok.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_preferences.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_refresh.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_unknown.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\data_warning.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\index.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\index_up.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\note_delete.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\note_edit.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\note_new.png" />
+    <EmbeddedResource Include="Icons\Data Coll\16\note_pinned.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\cabinet.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_add.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_copy.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_delete.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_disk.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_edit.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_error.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_information.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_lock.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_new.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_ok.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_preferences.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_refresh.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_unknown.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\data_warning.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\index.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\index_up.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\note_delete.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\note_edit.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\note_new.png" />
+    <EmbeddedResource Include="Icons\Data Coll\32\note_pinned.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\bomb.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_card.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_cards.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_card_delete.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_card_error.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_card_information.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_card_new.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_card_ok.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_card_preferences.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\id_card_warning.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\key1.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\link.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\lock.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\lock_add.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\lock_delete.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\lock_error.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\lock_information.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\lock_open.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\lock_preferences.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\lock_warning.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\mail2.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\mailbox_empty.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\mailbox_full.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\mail_delete.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\mail_write.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\news.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\news_delete.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\security_agent.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\server_client_exchange.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\16\server_error.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\bomb.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_card.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_cards.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_card_delete.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_card_error.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_card_information.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_card_new.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_card_ok.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_card_preferences.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\id_card_warning.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\key1.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\link.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\lock.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\lock_add.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\lock_delete.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\lock_error.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\lock_information.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\lock_open.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\lock_preferences.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\lock_warning.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\mail2.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\mailbox_empty.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\mailbox_full.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\mail_delete.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\mail_write.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\news.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\news_delete.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\security_agent.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\server_client_exchange.png" />
+    <EmbeddedResource Include="Icons\Net and Sec\32\server_error.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\angel.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\colors.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\devil.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\keyboard_key.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\monitor_preferences.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\mouse.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\PCI-card_preferences.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\trafficlight_green.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\trafficlight_off.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\trafficlight_on.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\trafficlight_red.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\trafficlight_red_yellow.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\trafficlight_yellow.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\user1.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\user1_add.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\user1_delete.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\user1_earth.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\user1_information.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\user1_new.png" />
+    <EmbeddedResource Include="Icons\Objs and People\16\user1_preferences.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\angel.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\colors.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\devil.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\keyboard_key.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\monitor_preferences.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\mouse.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\PCI-card_preferences.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\trafficlight_green.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\trafficlight_off.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\trafficlight_on.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\trafficlight_red.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\trafficlight_red_yellow.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\trafficlight_yellow.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\user1.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\user1_add.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\user1_delete.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\user1_earth.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\user1_information.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\user1_new.png" />
+    <EmbeddedResource Include="Icons\Objs and People\32\user1_preferences.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\16\bug-mail.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\16\bug_green.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\16\bug_red.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\16\bug_yellow.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\16\console.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\32\bug-mail.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\32\bug_green.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\32\bug_red.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\32\bug_yellow.png" />
+    <EmbeddedResource Include="Icons\Soft Dev\32\console.png" />
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="LightMapDiaglog.resx">
+      <DependentUpon>LightMapDiaglog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelToolbox.resx">
+      <DependentUpon>ModelToolbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjectWizard.resx">
+      <DependentUpon>NewProjectWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaletteSelector.resx">
+      <DependentUpon>PaletteSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrefabExportDialog.resx">
+      <DependentUpon>PrefabExportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrefabPackager.resx">
+      <DependentUpon>PrefabPackager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressStatus.resx">
+      <DependentUpon>ProgressStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrometheusGUI.resx">
+      <DependentUpon>PrometheusGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing\MonoxideC.resx">
+      <DependentUpon>MonoxideC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewProjectWizard.resx">
+      <DependentUpon>NewProjectWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Prometheus.exe.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

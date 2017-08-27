@@ -1,0 +1,33 @@
+ugh!
+Struct 0x00 uhg!_main 0x58
+	Struct 0x00 ugh!_sub_1 0x38
+	End ugh!_sub_1
+	Struct 0x08 ugh!_sub_2 0x14
+	End ugh!_sub_2
+	Struct 0x10 ugh!_sub_3 0x04
+	End ugh!_sub_3
+	Struct 0x18 ugh!_sub_4 0x0A
+	End ugh!_sub_4
+	Struct 0x20 ugh!_sub_5 0x0C
+	End ugh!_sub_5
+	Struct 0x28 ugh!_sub_6 0x10
+	End ugh!_sub_6
+	Struct 0x30 ugh!_sub_7 0x34
+		Struct 0x14 ugh!_sub_7_1 0x48
+		End ugh!_sub_7_1
+	End ugh!_sub_7
+	Struct 0x38 ugh!_sub_8 0x01
+	End ugh!_sub_8
+	Struct 0x40 ugh!_sub_9 0x0C
+	End ugh!_sub_9
+	Struct 0x48 ugh!_sub_10 0x1C
+		Struct 0x00 ugh!_sub_10_1 0x10
+		End ugh!_sub_10_1
+		Struct 0x08 ugh!_sub_10_2 0x04
+		End ugh!_sub_10_2
+	End ugh!_sub_10
+	Struct 0x50 ugh!_sub_11 0x2C
+		Struct 0x18 ugh!_sub_11_1 0x10
+		End ugh!_sub_11_1
+	End ugh!_sub_11
+End ugh!_main

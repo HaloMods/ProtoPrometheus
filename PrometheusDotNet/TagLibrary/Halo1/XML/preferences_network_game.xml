@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xml>
+  <name type="ngpr" parenttype="????">PreferencesNetworkGame</name>
+  <platform>Halo1</platform>
+  <plugin>
+    <struct name="PreferencesNetworkGame">
+      <value type="FixedLengthString" name="name" />
+      <value type="RealRGBColor" name="primary color" />
+      <value type="RealRGBColor" name="secondary color" />
+      <value type="TagReference" name="pattern" />
+      <value type="ShortInteger" name="bitmap index" />
+      <value type="Pad" name="_unnamed">
+        <length>2</length>
+      </value>
+      <value type="TagReference" name="decal" />
+      <value type="ShortInteger" name="bitmap index2" />
+      <value type="Pad" name="_unnamed2">
+        <length>2</length>
+      </value>
+      <value type="Pad" name="_unnamed3">
+        <length>800</length>
+      </value>
+    </struct>
+  </plugin>
+</xml>

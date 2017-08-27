@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>flag</Group>
+	<GroupTag>flag</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>96</HeaderSize>
+	<FieldCount>16</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>0</FieldCount>
+			<Fields />
+		</Field>
+		<Field>
+			<Name>trailing edge shape</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>flat</Field0>
+				<Field1>concave triangular</Field1>
+				<Field2>convex triangular</Field2>
+				<Field3>trapezoid, short top</Field3>
+				<Field4>trapezoid, short bottom</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>trailing edge shape offset:vertices#zero places the shape exactly on the trailing edge, positive numbers push it off the edge</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>attached edge shape</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>flat</Field0>
+				<Field1>concave triangular</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>width:vertices#flag size from attached to trailing edge</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>height:vertices#flag size along the direction of attachment (should be odd)</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>cell width:world units#width of the cell between each pair of vertices</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>cell height:world units#height of the cell between each pair of vertices</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>red flag shader^</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>shdr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>physics</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>pphy</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>wind noise:world units per second^2</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>blue flag shader^</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>shdr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>attachment points#attachment points determine where the flag is attached</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>flag_attachment_point_block</Name>
+				<MaxElements>5</MaxElements>
+				<Size>52</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>height_to_next_attachment:vertices#flag vertices between this attachment point and the next</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>marker name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

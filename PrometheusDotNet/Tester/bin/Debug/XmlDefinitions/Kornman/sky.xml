@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>sky</Group>
+	<GroupTag>sky </GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>208</HeaderSize>
+	<FieldCount>23</FieldCount>
+	<Fields>
+		<Field>
+			<Name>model</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>mod2</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>animation_graph</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>antr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>indoor ambient radiosity color#the indoor ambient light color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>indoor ambient radiosity power#the indoor ambient light power from 0 to infinity</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>outdoor ambient radiosity color#the outdoor ambient light color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>outdoor ambient radiosity power#the outdoor ambient light power from 0 to infinity</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>outdoor fog color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>outdoor fog maximum density:[0,1]#density at opaque distance - 0 defaults to 1</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>outdoor fog start distance:world units#below this distance there is no fog</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>outdoor fog opaque distance:world units#beyond this distance surfaces are completely fogged</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>indoor fog color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>indoor fog maximum density:[0,1]#density at opaque distance - 0 defaults to 1</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>indoor fog start distance:world units#below this distance there is no fog</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>indoor fog opaque distance:world units#beyond this distance surfaces are completely fogged</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>indoor fog screen#used for FOG SCREEN only; not used for planar fog</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>fog </Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>shader functions</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>sky_shader_function_block</Name>
+				<MaxElements>8</MaxElements>
+				<Size>36</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>global function name^#the global function that controls this shader value</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>animations</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>sky_animation_block</Name>
+				<MaxElements>8</MaxElements>
+				<Size>36</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>animation index#the index of the animation in the animation graph</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>period:seconds</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>28</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>lights</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>sky_light_block</Name>
+				<MaxElements>8</MaxElements>
+				<Size>116</Size>
+				<FieldCount>13</FieldCount>
+				<Fields>
+					<Field>
+						<Name>LENS FLARE</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>lens flare</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>lens</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>lens flare marker name#the lens flare for this light will be attached to the specified marker in the model</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>28</Value>
+					</Field>
+					<Field>
+						<Name>RADIOSITY</Name>
+						<Type>Explanation</Type>
+						<Value>these parameters control how the light illuminates the world.</Value>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>affects exteriors</Field0>
+							<Field1>affects interiors</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>color#light color</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>power#light power from 0 to infinity</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>test distance#the length of the ray for shadow testing.</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>direction#direction toward the light source in the sky.</Name>
+						<Type>Real_Euler_Angles_2D</Type>
+					</Field>
+					<Field>
+						<Name>diameter#angular diameter of the light source in the sky.</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

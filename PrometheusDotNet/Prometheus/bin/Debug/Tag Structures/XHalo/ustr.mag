@@ -1,0 +1,9 @@
+unicode_string_list
+Struct 0 UStringMain 12
+	Struct 0 Strings 20
+		Struct 8 Characters 1 / 0
+		End Characters
+		IntSwapRange 0 to 20
+	End Strings
+	IntSwapRange 0 to 12
+End UStringMain

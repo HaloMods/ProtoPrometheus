@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>vehicle</Group>
+	<GroupTag>vehi</GroupTag>
+	<ParentGroupTag>unit</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>256</HeaderSize>
+	<FieldCount>44</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ VEHICLE $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>15</FieldCount>
+			<Fields>
+				<Field0>speed wakes physics</Field0>
+				<Field1>turn wakes physics</Field1>
+				<Field2>driver power wakes physics</Field2>
+				<Field3>gunner power wakes physics</Field3>
+				<Field4>control opposite speed sets brake</Field4>
+				<Field5>slide wakes physics</Field5>
+				<Field6>kills riders at terminal velocity</Field6>
+				<Field7>causes collision damage</Field7>
+				<Field8>ai weapon cannot rotate</Field8>
+				<Field9>ai does not require driver</Field9>
+				<Field10>ai unused</Field10>
+				<Field11>ai driver enable</Field11>
+				<Field12>ai driver flying</Field12>
+				<Field13>ai driver can-sidestep</Field13>
+				<Field14>ai driver hovering</Field14>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>type</Name>
+			<Type>Enum</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>human tank</Field0>
+				<Field1>human jeep</Field1>
+				<Field2>human boat</Field2>
+				<Field3>human plane</Field3>
+				<Field4>alien scout</Field4>
+				<Field5>alien fighter</Field5>
+				<Field6>turret</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>maximum forward speed</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum reverse speed</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>speed acceleration</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>speed deceleration</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum left turn</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum right turn (negative)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>wheel circumference</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>turn rate</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>blur speed</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>A in</Name>
+			<Type>Enum</Type>
+			<FieldCount>37</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>speed absolute</Field1>
+				<Field2>speed forward</Field2>
+				<Field3>speed backward</Field3>
+				<Field4>slide absolute</Field4>
+				<Field5>slide left</Field5>
+				<Field6>slide right</Field6>
+				<Field7>speed slide maximum</Field7>
+				<Field8>turn absolute</Field8>
+				<Field9>turn left</Field9>
+				<Field10>turn right</Field10>
+				<Field11>crouch</Field11>
+				<Field12>jump</Field12>
+				<Field13>walk</Field13>
+				<Field14>velocity air</Field14>
+				<Field15>velocity water</Field15>
+				<Field16>velocity ground</Field16>
+				<Field17>velocity forward</Field17>
+				<Field18>velocity left</Field18>
+				<Field19>velocity up</Field19>
+				<Field20>left tread position</Field20>
+				<Field21>right tread position</Field21>
+				<Field22>left tread velocity</Field22>
+				<Field23>right tread velocity</Field23>
+				<Field24>front left tire position</Field24>
+				<Field25>front right tire position</Field25>
+				<Field26>back left tire position</Field26>
+				<Field27>back right tire position</Field27>
+				<Field28>front left tire velocity</Field28>
+				<Field29>front right tire velocity</Field29>
+				<Field30>back left tire velocity</Field30>
+				<Field31>back right tire velocity</Field31>
+				<Field32>wingtip contrail</Field32>
+				<Field33>hover</Field33>
+				<Field34>thrust</Field34>
+				<Field35>engine hack</Field35>
+				<Field36>wingtip contrail new</Field36>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>B in</Name>
+			<Type>Enum</Type>
+			<FieldCount>37</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>speed absolute</Field1>
+				<Field2>speed forward</Field2>
+				<Field3>speed backward</Field3>
+				<Field4>slide absolute</Field4>
+				<Field5>slide left</Field5>
+				<Field6>slide right</Field6>
+				<Field7>speed slide maximum</Field7>
+				<Field8>turn absolute</Field8>
+				<Field9>turn left</Field9>
+				<Field10>turn right</Field10>
+				<Field11>crouch</Field11>
+				<Field12>jump</Field12>
+				<Field13>walk</Field13>
+				<Field14>velocity air</Field14>
+				<Field15>velocity water</Field15>
+				<Field16>velocity ground</Field16>
+				<Field17>velocity forward</Field17>
+				<Field18>velocity left</Field18>
+				<Field19>velocity up</Field19>
+				<Field20>left tread position</Field20>
+				<Field21>right tread position</Field21>
+				<Field22>left tread velocity</Field22>
+				<Field23>right tread velocity</Field23>
+				<Field24>front left tire position</Field24>
+				<Field25>front right tire position</Field25>
+				<Field26>back left tire position</Field26>
+				<Field27>back right tire position</Field27>
+				<Field28>front left tire velocity</Field28>
+				<Field29>front right tire velocity</Field29>
+				<Field30>back left tire velocity</Field30>
+				<Field31>back right tire velocity</Field31>
+				<Field32>wingtip contrail</Field32>
+				<Field33>hover</Field33>
+				<Field34>thrust</Field34>
+				<Field35>engine hack</Field35>
+				<Field36>wingtip contrail new</Field36>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>C in</Name>
+			<Type>Enum</Type>
+			<FieldCount>37</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>speed absolute</Field1>
+				<Field2>speed forward</Field2>
+				<Field3>speed backward</Field3>
+				<Field4>slide absolute</Field4>
+				<Field5>slide left</Field5>
+				<Field6>slide right</Field6>
+				<Field7>speed slide maximum</Field7>
+				<Field8>turn absolute</Field8>
+				<Field9>turn left</Field9>
+				<Field10>turn right</Field10>
+				<Field11>crouch</Field11>
+				<Field12>jump</Field12>
+				<Field13>walk</Field13>
+				<Field14>velocity air</Field14>
+				<Field15>velocity water</Field15>
+				<Field16>velocity ground</Field16>
+				<Field17>velocity forward</Field17>
+				<Field18>velocity left</Field18>
+				<Field19>velocity up</Field19>
+				<Field20>left tread position</Field20>
+				<Field21>right tread position</Field21>
+				<Field22>left tread velocity</Field22>
+				<Field23>right tread velocity</Field23>
+				<Field24>front left tire position</Field24>
+				<Field25>front right tire position</Field25>
+				<Field26>back left tire position</Field26>
+				<Field27>back right tire position</Field27>
+				<Field28>front left tire velocity</Field28>
+				<Field29>front right tire velocity</Field29>
+				<Field30>back left tire velocity</Field30>
+				<Field31>back right tire velocity</Field31>
+				<Field32>wingtip contrail</Field32>
+				<Field33>hover</Field33>
+				<Field34>thrust</Field34>
+				<Field35>engine hack</Field35>
+				<Field36>wingtip contrail new</Field36>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>D in</Name>
+			<Type>Enum</Type>
+			<FieldCount>37</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>speed absolute</Field1>
+				<Field2>speed forward</Field2>
+				<Field3>speed backward</Field3>
+				<Field4>slide absolute</Field4>
+				<Field5>slide left</Field5>
+				<Field6>slide right</Field6>
+				<Field7>speed slide maximum</Field7>
+				<Field8>turn absolute</Field8>
+				<Field9>turn left</Field9>
+				<Field10>turn right</Field10>
+				<Field11>crouch</Field11>
+				<Field12>jump</Field12>
+				<Field13>walk</Field13>
+				<Field14>velocity air</Field14>
+				<Field15>velocity water</Field15>
+				<Field16>velocity ground</Field16>
+				<Field17>velocity forward</Field17>
+				<Field18>velocity left</Field18>
+				<Field19>velocity up</Field19>
+				<Field20>left tread position</Field20>
+				<Field21>right tread position</Field21>
+				<Field22>left tread velocity</Field22>
+				<Field23>right tread velocity</Field23>
+				<Field24>front left tire position</Field24>
+				<Field25>front right tire position</Field25>
+				<Field26>back left tire position</Field26>
+				<Field27>back right tire position</Field27>
+				<Field28>front left tire velocity</Field28>
+				<Field29>front right tire velocity</Field29>
+				<Field30>back left tire velocity</Field30>
+				<Field31>back right tire velocity</Field31>
+				<Field32>wingtip contrail</Field32>
+				<Field33>hover</Field33>
+				<Field34>thrust</Field34>
+				<Field35>engine hack</Field35>
+				<Field36>wingtip contrail new</Field36>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>maximum left slide</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum right slide</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>slide acceleration</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>slide deceleration</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>minimum flipping angular velocity</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum flipping angular velocity</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>fixed gun yaw</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fixed gun pitch</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>ai sideslip distance</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ai destination radius</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ai avoidance distance</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ai pathfinding radius</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ai charge repeat timeout</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ai strafing abort range</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ai oversteering bounds</Name>
+			<Type>Angle_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>ai steering maximum</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>ai throttle maximum</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ai move-position time</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>suspension sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>crash sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>material effects</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>foot</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>effect</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>effe</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>meter</Group>
+	<GroupTag>metr</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>172</HeaderSize>
+	<FieldCount>18</FieldCount>
+	<Fields>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>0</FieldCount>
+			<Fields />
+		</Field>
+		<Field>
+			<Name>stencil bitmaps#two bitmaps specifying the mask and the meter levels</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>source bitmap#optional bitmap to draw into the unmasked regions of the meter (modulated by the colors below)</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>stencil sequence index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>source sequence index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>interpolate colors...</Name>
+			<Type>Enum</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>linearly</Field0>
+				<Field1>faster near empty</Field1>
+				<Field2>faster near full</Field2>
+				<Field3>through random noise</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>anchor colors...</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>at both ends</Field0>
+				<Field1>at empty</Field1>
+				<Field2>at full</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>empty color</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>full color</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>unmask distance:meter units#fade from fully masked to fully unmasked this distance beyond full (and below empty)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>mask distance:meter units#fade from fully unmasked to fully masked this distance below full (and beyond empty)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>encoded stencil</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>0</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

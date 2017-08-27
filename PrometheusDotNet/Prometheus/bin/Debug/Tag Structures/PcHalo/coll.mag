@@ -1,0 +1,72 @@
+Model_collision_geometry
+Struct 0 Collision 664
+	TagRef 112
+	TagRef 132
+	TagRef 152
+	TagRef 168
+	TagRef 188
+	TagRef 392
+	TagRef 408
+	TagRef 424
+	Struct 564 Materials 72
+		IntSwap 32
+		LongSwap 36
+		LongSwap 38
+		IntSwapRange 40 to 72
+	End Materials
+	Struct 576 Regions 84
+		TagRef 56
+		Struct 72 RegionsPermutations 32
+		End RegionsPermutations
+		IntSwapRange 32 to 84
+	End Regions
+	Struct 588 Modifiers 0
+		//NotUsed//
+	End Modifiers
+	Struct 640 PathfindingSpheres 32
+		LongSwapRange 0 to 16
+		IntSwapRange 16 to 32
+	End PathfindingSpheres
+	Struct 652 Nodes 64
+		Struct 52 NodesBsp 96
+			Struct 0 NodesBspBsp3dNodes 12
+				IntSwapRange 0 to 12
+			End NodesBspBsp3dNodes
+			Struct 12 NodesBspPlanes 16
+				IntSwapRange 0 to 16
+			End NodesBspPlanes
+			Struct 24 NodesBspLeaves 8
+				LongSwap 0
+				LongSwap 2
+				IntSwap 4
+			End NodesBspLeaves
+			Struct 36 NodesBspBsp2DRef 8
+				IntSwapRange 0 to 8
+			End NodesBspBsp2DRef
+			Struct 48 NodesBspBsp2DNodes 20
+				IntSwapRange 0 to 20
+			End NodesBspBsp2DNodes 
+			Struct 60 NodesBspSurfaces 12
+				IntSwapRange 0 to 8
+				LongSwap 8
+				LongSwap 10
+			End NodesBspSurfaces
+			Struct 72 NodesBspEdges 24
+				IntSwapRange 0 to 24
+			End NodesBspEdges
+			struct 84 NodesBspVertices 16
+				IntSwapRange 0 to 16
+			End NodesBspVertices
+			IntSwapRange 0 to 96
+		End NodesBsp
+		LongSwapRange 32 to 48
+		IntSwapRange 48 to 64
+	End Nodes
+	IntSwap 0
+	LongSwap 4
+	LongSwap 6
+	IntSwapRange 8 to 208
+	LongSwap 208
+	LongSwap 210
+	IntSwapRange 212 to 664
+End Collision

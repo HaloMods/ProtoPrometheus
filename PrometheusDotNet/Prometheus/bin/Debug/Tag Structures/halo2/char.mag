@@ -1,0 +1,53 @@
+char
+Struct 0x00 char_main 0xEC
+	TagRef 0x04
+	TagRef 0x1C
+	Struct 0x34 char_sub_1 0x0C
+	End char_sub_1
+	Struct 0x3C char_sub_2 0x70
+	End char_sub_2
+	Struct 0x44 char_sub_3 0x34
+	End char_sub_3
+	Struct 0x4C char_sub_4 0x34
+	End char_sub_4
+	Struct 0x54 char_sub_5 0x50
+	End char_sub_5
+	Struct 0x5C char_sub_6 0x24
+	End char_sub_6
+	Struct 0x6C char_sub_7 0x08
+	End char_sub_7
+	Struct 0x74 char_sub_8 0x10
+	End char_sub_8
+	Struct 0x7C char_sub_9 0x40
+	End char_sub_9
+	Struct 0x84 char_sub_10 0x14
+	End char_sub_10
+	Struct 0x8C char_sub_11 0x40
+	End char_sub_11
+	Struct 0x94 char_sub_12 0x4C
+	End char_sub_12
+	Struct 0x9C char_sub_13 0x14
+	End char_sub_13
+	Struct 0xA4 char_sub_14 0x24
+	End char_sub_14
+	Struct 0xAC char_sub_15 0x0C
+	End char_sub_15
+	Struct 0xB4 char_sub_16 0x08
+	End char_sub_16
+	Struct 0xBC char_sub_17 0x10
+	End char_sub_17
+	Struct 0xCC char_sub_18 0xCC
+		TagRef 0x04
+	End char_sub_18
+	Struct 0xD4 char_sub_19 0x10
+		TagRef 0x00
+		Struct 0x08 char_sub_19_1 0x40
+		End char_sub_19_1
+	End char_sub_19
+	Struct 0xDC char_sub_20 0x3C
+	End char_sub_20
+	Struct 0xE4 char_sub_21 0xB4
+		TagRef 0x00
+		TagRef 0x08
+	End char_sub_21
+End char_main

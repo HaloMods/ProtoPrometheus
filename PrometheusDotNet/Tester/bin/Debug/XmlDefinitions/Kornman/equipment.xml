@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>equipment</Group>
+	<GroupTag>eqip</GroupTag>
+	<ParentGroupTag>item</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>168</HeaderSize>
+	<FieldCount>6</FieldCount>
+	<Fields>
+		<Field>
+			<Name>powerup type</Name>
+			<Type>Enum</Type>
+			<FieldCount>7</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>double speed</Field1>
+				<Field2>over shield</Field2>
+				<Field3>active camouflage</Field3>
+				<Field4>full-spectrum vision</Field4>
+				<Field5>health</Field5>
+				<Field6>grenade</Field6>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>grenade type</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>human fragmentation</Field0>
+				<Field1>covenant plasma</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>powerup time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>pickup sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>144</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

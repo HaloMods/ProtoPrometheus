@@ -1,0 +1,22 @@
+prtm
+Struct 0x00 prtm_main 0xDC
+	TagRef 0x18
+	Struct 0x28 prtm_sub_1 0x01
+	End prtm_sub_1
+	Struct 0x38 prtm_sub_2 0x01
+	End prtm_sub_2
+	Struct 0x48 prtm_sub_3 0x01
+	End prtm_sub_3
+	Struct 0x58 prtm_sub_4 0x01
+	End prtm_sub_4
+	Struct 0x80 prtm_sub_5 0x08
+		ScriptRef 0x00
+	End prtm_sub_5
+	Struct 0x88 prtm_sub_6 0x38
+	End prtm_sub_6
+	Struct 0x90 prtm_sub_7 0x02
+	End prtm_sub_7
+	RSRC 0xA0
+	Struct 0xB0 prtm_sub_8 0x10
+	End prtm_sub_8
+End prtm_main

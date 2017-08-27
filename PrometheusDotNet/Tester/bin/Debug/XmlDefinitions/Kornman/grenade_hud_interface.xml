@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>grenade_hud_interface</Group>
+	<GroupTag>grhi</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>504</HeaderSize>
+	<FieldCount>85</FieldCount>
+	<Fields>
+		<Field>
+			<Name />
+			<Type>Custom</Type>
+			<Custom>ghis</Custom>
+		</Field>
+		<Field>
+			<Name>Grenade hud screen alignment</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>anchor</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>top left</Field0>
+				<Field1>top right</Field1>
+				<Field2>bottom left</Field2>
+				<Field3>bottom right</Field3>
+				<Field4>center</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>Grenade hud background</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>anchor offset</Name>
+			<Type>Point_2D</Type>
+		</Field>
+		<Field>
+			<Name>width scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>height scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>scaling flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>don't scale offset</Field0>
+				<Field1>don't scale size</Field1>
+				<Field2>use high res scale</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>interface bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>default color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flashing color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flash period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flash delay</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>number of flashes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flash flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>reverse default/flashing colors</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flash length</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>disabled color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>sequence index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>multitex overlay</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>global_hud_multitexture_overlay_definition</Name>
+				<MaxElements>30</MaxElements>
+				<Size>480</Size>
+				<FieldCount>33</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>framebuffer blend func</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>alpha blend</Field0>
+							<Field1>multiply</Field1>
+							<Field2>double multiply</Field2>
+							<Field3>add</Field3>
+							<Field4>subtract</Field4>
+							<Field5>component min</Field5>
+							<Field6>component max</Field6>
+							<Field7>alpha-multiply add</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>anchors</Name>
+						<Type>Explanation</Type>
+						<Value>where you want the origin of the texture.
+*"texture" uses the texture coordinates supplied
+*"screen" uses the origin of the screen as the origin of the texture</Value>
+					</Field>
+					<Field>
+						<Name>primary anchor</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>texture</Field0>
+							<Field1>screen</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>secondary anchor</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>texture</Field0>
+							<Field1>screen</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>tertiary anchor</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>texture</Field0>
+							<Field1>screen</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>blending function</Name>
+						<Type>Explanation</Type>
+						<Value>how to blend the textures together</Value>
+					</Field>
+					<Field>
+						<Name>0 to 1 blend func</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>add</Field0>
+							<Field1>subtract</Field1>
+							<Field2>multiply</Field2>
+							<Field3>multiply2x</Field3>
+							<Field4>dot</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>1 to 2 blend func</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>add</Field0>
+							<Field1>subtract</Field1>
+							<Field2>multiply</Field2>
+							<Field3>multiply2x</Field3>
+							<Field4>dot</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>map scales</Name>
+						<Type>Explanation</Type>
+						<Value>how much to scale the textures</Value>
+					</Field>
+					<Field>
+						<Name>primary scale</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>secondary scale</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>tertiary scale</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>map offsets</Name>
+						<Type>Explanation</Type>
+						<Value>how much to offset the origin of the texture</Value>
+					</Field>
+					<Field>
+						<Name>primary offset</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>secondary offset</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>tertiary offset</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>map</Name>
+						<Type>Explanation</Type>
+						<Value>which maps to use</Value>
+					</Field>
+					<Field>
+						<Name>primary</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>secondary</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>tertiary</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>primary wrap mode</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>clamp</Field0>
+							<Field1>wrap</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>secondary wrap mode</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>clamp</Field0>
+							<Field1>wrap</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>tertiary wrap mode</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>clamp</Field0>
+							<Field1>wrap</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>184</Value>
+					</Field>
+					<Field>
+						<Name>effectors</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>global_hud_multitexture_overlay_effector_definition</Name>
+							<MaxElements>30</MaxElements>
+							<Size>220</Size>
+							<FieldCount>20</FieldCount>
+							<Fields>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>64</Value>
+								</Field>
+								<Field>
+									<Name>source/destination</Name>
+									<Type>Explanation</Type>
+									<Value>These describe the relationship that causes the effect.
+* destination type is the type of variable you want to be effected
+* destination tells which texture map (or geometry offset) to apply it to
+* source says which value to look at when computing the effect</Value>
+								</Field>
+								<Field>
+									<Name>destination type</Name>
+									<Type>Enum</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>tint [0,1]</Field0>
+										<Field1>horizontal offset</Field1>
+										<Field2>vertical offset</Field2>
+										<Field3>fade [0,1]</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>destination</Name>
+									<Type>Enum</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>geometry offset</Field0>
+										<Field1>primary map</Field1>
+										<Field2>secondary map</Field2>
+										<Field3>tertiary map</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>source</Name>
+									<Type>Enum</Type>
+									<FieldCount>8</FieldCount>
+									<Fields>
+										<Field0>player pitch</Field0>
+										<Field1>player pitch tangent</Field1>
+										<Field2>player yaw</Field2>
+										<Field3>weapon ammo (total)</Field3>
+										<Field4>weapon ammo (loaded)</Field4>
+										<Field5>weapon heat</Field5>
+										<Field6>explicit (uses low bound)</Field6>
+										<Field7>weapon zoom level</Field7>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>in/out bounds</Name>
+									<Type>Explanation</Type>
+									<Value>When the source is at the lower inbound, the destination ends up the lower outbound and vice-versa applies for the upper values.</Value>
+								</Field>
+								<Field>
+									<Name>in bounds:source units</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>out bounds:pixels</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>64</Value>
+								</Field>
+								<Field>
+									<Name>tint color bounds</Name>
+									<Type>Explanation</Type>
+									<Value>If destination is tint, these values are used instead of the out bounds.</Value>
+								</Field>
+								<Field>
+									<Name>tint color lower bound</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>tint color upper bound</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>periodic functions</Name>
+									<Type>Explanation</Type>
+									<Value>If you use a periodic function as the source, this lets you tweak it.</Value>
+								</Field>
+								<Field>
+									<Name>periodic function</Name>
+									<Type>Enum</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>one</Field0>
+										<Field1>zero</Field1>
+										<Field2>cosine</Field2>
+										<Field3>cosine (variable period)</Field3>
+										<Field4>diagonal wave</Field4>
+										<Field5>diagonal wave (variable period)</Field5>
+										<Field6>slide</Field6>
+										<Field7>slide (variable period)</Field7>
+										<Field8>noise</Field8>
+										<Field9>jitter</Field9>
+										<Field10>wander</Field10>
+										<Field11>spark</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>function period:seconds</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>function phase:seconds</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>32</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>128</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>Total grenades background</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>anchor offset</Name>
+			<Type>Point_2D</Type>
+		</Field>
+		<Field>
+			<Name>width scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>height scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>scaling flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>don't scale offset</Field0>
+				<Field1>don't scale size</Field1>
+				<Field2>use high res scale</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>interface bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>default color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flashing color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flash period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flash delay</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>number of flashes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flash flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>reverse default/flashing colors</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flash length</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>disabled color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>sequence index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>multitex overlay</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>global_hud_multitexture_overlay_definition</Name>
+				<MaxElements>30</MaxElements>
+				<Size>480</Size>
+				<FieldCount>33</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>type</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>framebuffer blend func</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>alpha blend</Field0>
+							<Field1>multiply</Field1>
+							<Field2>double multiply</Field2>
+							<Field3>add</Field3>
+							<Field4>subtract</Field4>
+							<Field5>component min</Field5>
+							<Field6>component max</Field6>
+							<Field7>alpha-multiply add</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>anchors</Name>
+						<Type>Explanation</Type>
+						<Value>where you want the origin of the texture.
+*"texture" uses the texture coordinates supplied
+*"screen" uses the origin of the screen as the origin of the texture</Value>
+					</Field>
+					<Field>
+						<Name>primary anchor</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>texture</Field0>
+							<Field1>screen</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>secondary anchor</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>texture</Field0>
+							<Field1>screen</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>tertiary anchor</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>texture</Field0>
+							<Field1>screen</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>blending function</Name>
+						<Type>Explanation</Type>
+						<Value>how to blend the textures together</Value>
+					</Field>
+					<Field>
+						<Name>0 to 1 blend func</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>add</Field0>
+							<Field1>subtract</Field1>
+							<Field2>multiply</Field2>
+							<Field3>multiply2x</Field3>
+							<Field4>dot</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>1 to 2 blend func</Name>
+						<Type>Enum</Type>
+						<FieldCount>5</FieldCount>
+						<Fields>
+							<Field0>add</Field0>
+							<Field1>subtract</Field1>
+							<Field2>multiply</Field2>
+							<Field3>multiply2x</Field3>
+							<Field4>dot</Field4>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>map scales</Name>
+						<Type>Explanation</Type>
+						<Value>how much to scale the textures</Value>
+					</Field>
+					<Field>
+						<Name>primary scale</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>secondary scale</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>tertiary scale</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>map offsets</Name>
+						<Type>Explanation</Type>
+						<Value>how much to offset the origin of the texture</Value>
+					</Field>
+					<Field>
+						<Name>primary offset</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>secondary offset</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>tertiary offset</Name>
+						<Type>Real_Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>map</Name>
+						<Type>Explanation</Type>
+						<Value>which maps to use</Value>
+					</Field>
+					<Field>
+						<Name>primary</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>secondary</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>tertiary</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>primary wrap mode</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>clamp</Field0>
+							<Field1>wrap</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>secondary wrap mode</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>clamp</Field0>
+							<Field1>wrap</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>tertiary wrap mode</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>clamp</Field0>
+							<Field1>wrap</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>184</Value>
+					</Field>
+					<Field>
+						<Name>effectors</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>global_hud_multitexture_overlay_effector_definition</Name>
+							<MaxElements>30</MaxElements>
+							<Size>220</Size>
+							<FieldCount>20</FieldCount>
+							<Fields>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>64</Value>
+								</Field>
+								<Field>
+									<Name>source/destination</Name>
+									<Type>Explanation</Type>
+									<Value>These describe the relationship that causes the effect.
+* destination type is the type of variable you want to be effected
+* destination tells which texture map (or geometry offset) to apply it to
+* source says which value to look at when computing the effect</Value>
+								</Field>
+								<Field>
+									<Name>destination type</Name>
+									<Type>Enum</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>tint [0,1]</Field0>
+										<Field1>horizontal offset</Field1>
+										<Field2>vertical offset</Field2>
+										<Field3>fade [0,1]</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>destination</Name>
+									<Type>Enum</Type>
+									<FieldCount>4</FieldCount>
+									<Fields>
+										<Field0>geometry offset</Field0>
+										<Field1>primary map</Field1>
+										<Field2>secondary map</Field2>
+										<Field3>tertiary map</Field3>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>source</Name>
+									<Type>Enum</Type>
+									<FieldCount>8</FieldCount>
+									<Fields>
+										<Field0>player pitch</Field0>
+										<Field1>player pitch tangent</Field1>
+										<Field2>player yaw</Field2>
+										<Field3>weapon ammo (total)</Field3>
+										<Field4>weapon ammo (loaded)</Field4>
+										<Field5>weapon heat</Field5>
+										<Field6>explicit (uses low bound)</Field6>
+										<Field7>weapon zoom level</Field7>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>in/out bounds</Name>
+									<Type>Explanation</Type>
+									<Value>When the source is at the lower inbound, the destination ends up the lower outbound and vice-versa applies for the upper values.</Value>
+								</Field>
+								<Field>
+									<Name>in bounds:source units</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>out bounds:pixels</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>64</Value>
+								</Field>
+								<Field>
+									<Name>tint color bounds</Name>
+									<Type>Explanation</Type>
+									<Value>If destination is tint, these values are used instead of the out bounds.</Value>
+								</Field>
+								<Field>
+									<Name>tint color lower bound</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>tint color upper bound</Name>
+									<Type>Real_RGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>periodic functions</Name>
+									<Type>Explanation</Type>
+									<Value>If you use a periodic function as the source, this lets you tweak it.</Value>
+								</Field>
+								<Field>
+									<Name>periodic function</Name>
+									<Type>Enum</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>one</Field0>
+										<Field1>zero</Field1>
+										<Field2>cosine</Field2>
+										<Field3>cosine (variable period)</Field3>
+										<Field4>diagonal wave</Field4>
+										<Field5>diagonal wave (variable period)</Field5>
+										<Field6>slide</Field6>
+										<Field7>slide (variable period)</Field7>
+										<Field8>noise</Field8>
+										<Field9>jitter</Field9>
+										<Field10>wander</Field10>
+										<Field11>spark</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name>function period:seconds</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>function phase:seconds</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>32</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>128</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>Total grenades numbers</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>anchor offset</Name>
+			<Type>Point_2D</Type>
+		</Field>
+		<Field>
+			<Name>width scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>height scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>scaling flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>don't scale offset</Field0>
+				<Field1>don't scale size</Field1>
+				<Field2>use high res scale</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>default color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flashing color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flash period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flash delay</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>number of flashes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flash flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>reverse default/flashing colors</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flash length</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>disabled color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>maximum number of digits</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Byte_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>show leading zeros</Field0>
+				<Field1>only show when zoomed</Field1>
+				<Field2>draw a trailing m</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>number of fractional digits</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>1</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>flash cutoff</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>Total grenades overlays</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>Overlay bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>Overlays</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>grenade_hud_overlay_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>136</Size>
+				<FieldCount>22</FieldCount>
+				<Fields>
+					<Field>
+						<Name>anchor offset</Name>
+						<Type>Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>width scale</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>height scale</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>scaling flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>don't scale offset</Field0>
+							<Field1>don't scale size</Field1>
+							<Field2>use high res scale</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>20</Value>
+					</Field>
+					<Field>
+						<Name>default color</Name>
+						<Type>ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>flashing color</Name>
+						<Type>ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>flash period</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>flash delay</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>number of flashes</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>flash flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>reverse default/flashing colors</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>flash length</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>disabled color</Name>
+						<Type>ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>frame rate</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>sequence index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>type</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>4</FieldCount>
+						<Fields>
+							<Field0>show on flashing</Field0>
+							<Field1>show on empty</Field1>
+							<Field2>show on default</Field2>
+							<Field3>show always</Field3>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>flashes when active</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>40</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>Warning sounds</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>grenade_hud_sound_block</Name>
+				<MaxElements>12</MaxElements>
+				<Size>56</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>sound^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>latched to</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>low grenade count</Field0>
+							<Field1>no grenades left</Field1>
+							<Field2>throw on no grenades</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>scale</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>68</Value>
+		</Field>
+		<Field>
+			<Name>Messaging information</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>sequence index#sequence index into the global hud icon bitmap</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>width offset#extra spacing beyond bitmap width for text alignment</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>offset from reference corner</Name>
+			<Type>Point_2D</Type>
+		</Field>
+		<Field>
+			<Name>override icon color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>frame rate [0,30]</Name>
+			<Type>Char_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Byte_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>use text from string_list instead</Field0>
+				<Field1>override default color</Field1>
+				<Field2>width offset is absolute icon width</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>text index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>48</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,136 @@
+Globals
+Struct 0 GlobalsMain 428
+	Struct 248 Sounds 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End Sounds
+	Struct 260 Camera 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End Camera
+	Struct 272 PlayerControl 128
+		Struct 116 LookFunction 4
+			IntSwap 0
+		End LookFunction
+		IntSwapRange 0 to 128	
+	End PlayerControl
+	Struct 284 Difficulty 644
+		IntSwapRange 0 to 644
+	End Difficulty
+	Struct 296 Grenades 68
+		LongSwap 0
+		LongSwap 2
+		TagRef 4
+		TagRef 20
+		TagRef 36
+		TagRef 52
+		IntSwapRange 4 to 64
+	End Grenades
+	Struct 308 RasterizerData 428
+		TagRef 0
+		TagRef 16
+		TagRef 32
+		TagRef 48
+		TagRef 64
+		TagRef 80
+		TagRef 96
+		TagRef 172
+		TagRef 188
+		TagRef 204
+		TagRef 220
+		TagRef 236
+		TagRef 252
+		TagRef 268
+		TagRef 284
+		TagRef 300
+		TagRef 412
+		IntSwapRange 0 to 112
+		IntSwapRange 172 to 428
+	End RasterizerData
+	Struct 320 InterFaceBitmaps 304
+		TagRef 0
+		TagRef 16
+		TagRef 32
+		TagRef 48
+		TagRef 64
+		TagRef 80
+		TagRef 96
+		TagRef 112
+		TagRef 128
+		TagRef 144
+		TagRef 160
+		TagRef 176
+		TagRef 192
+		TagRef 208
+		TagRef 224
+		TagRef 240
+		IntSwapRange 0 to 304
+	End InterFaceBitmaps
+	Struct 332 WeaponsList 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End WeaponsList
+	Struct 344 CheatPowerUps 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End CheatPowerUps
+	Struct 356 MultiPlayerInformation 160
+		TagRef 0
+		TagRef 16
+		Struct 32 Vehicles 16
+			TagRef 0
+			IntSwapRange 0 to 16
+		End Vehicles
+		TagRef 44
+		TagRef 60
+		TagRef 76
+		Struct 92 Sounds 16
+			TagRef 0
+			IntSwapRange 0 to 16
+		End Sounds		
+		IntSwapRange 0 to 160
+	End MultiPlayerInformation
+	Struct 368 PlayerInformation 244
+		TagRef 0
+		TagRef 184
+		IntSwapRange 0 to 244
+	End PlayerInformation
+	Struct 380 FirstPersonInterface 192
+		TagRef 0
+		TagRef 16
+		TagRef 32
+		TagRef 52
+		TagRef 72
+		TagRef 88
+		IntSwapRange 0 to 48
+		LongSwap 48
+		LongSwap 50
+		IntSwapRange 52 to 68
+		LongSwap 68
+		LongSwap 70
+		IntSwapRange 72 to 192
+	End FirstPersonInterface
+	Struct 392 FallingDamage 152
+		TagRef 16
+		TagRef 44
+		TagRef 60
+		TagRef 76
+		TagRef 92
+		TagRef 108
+		IntSwapRange 0 to 152
+	End FallingDamage
+	Struct 404 Materials 884
+		TagRef 740
+		TagRef 756
+		Struct 796 ParticleEffects 128
+			TagRef 0
+			IntSwapRange 0 to 128	
+		End ParticleEffects
+		TagRef 868
+		IntSwapRange 0 to 884
+	End Materials
+	Struct 416 PlayListMembers 148
+		IntSwapRange 64 to 116
+	ENd PlayListMembers
+	IntSwapRange 0 to 428
+End GlobalsMain

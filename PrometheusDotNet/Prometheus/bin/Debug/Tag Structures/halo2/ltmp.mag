@@ -1,0 +1,29 @@
+ltmp
+Struct 0x00 ltmp_main 0x104
+	Struct 0x80 ltmp_sub_1 0xA4
+		Struct 0x08 ltmp_sub_1_1 0x400
+		End ltmp_sub_1_1
+		TagRef 0x18
+		Struct 0x20 ltmp_sub_1_2 0x54
+		End ltmp_sub_1_2
+		Struct 0x28 ltmp_sub_1_3 0x04
+		End ltmp_sub_1_3
+		Struct 0x30 ltmp_sub_1_4 0x54
+		End ltmp_sub_1_4
+		Struct 0x38 ltmp_sub_1_5 0xDC
+		End ltmp_sub_1_5
+		Struct 0x40 ltmp_sub_1_6 0x38
+			RSRC 0x0C
+			Struct 0x1C ltmp_sub_1_6_1 0x95
+			End ltmp_sub_1_6_1
+		End ltmp_sub_1_6
+		Struct 0x48 ltmp_sub_1_7 0x04
+		End ltmp_sub_1_7
+		Struct 0x50 ltmp_sub_1_8 0x10
+		End ltmp_sub_1_8
+		Struct 0x58 ltmp_sub_1_9 0x0C
+		End ltmp_sub_1_9
+		Struct 0x60 ltmp_sub_1_10 0x10
+		End ltmp_sub_1_10
+	End ltmp_sub_1
+End ltmp_main

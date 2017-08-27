@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>lightning</Group>
+	<GroupTag>elec</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>264</HeaderSize>
+	<FieldCount>17</FieldCount>
+	<Fields>
+		<Field>
+			<Name>lightning</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>count#number of overlapping lightning effects to render; 0 defaults to 1</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>near fade distance:world units#distance at which lightning is at full brightness</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>far fade distance:world units#distance at which lightning is at zero brightness</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>jitter scale source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>thickness scale source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>tint modulation source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A</Field1>
+				<Field2>B</Field2>
+				<Field3>C</Field3>
+				<Field4>D</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>brightness scale source</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>84</Value>
+		</Field>
+		<Field>
+			<Name>markers</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>lightning_marker_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>228</Size>
+				<FieldCount>12</FieldCount>
+				<Fields>
+					<Field>
+						<Name>attachment marker</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>not connected to next marker</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>octaves to next marker</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>76</Value>
+					</Field>
+					<Field>
+						<Name>random position bounds:world units</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name>random jitter:world units</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>thickness:world units</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>tint#alpha is brightness</Name>
+						<Type>Real_ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>76</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>shader</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>lightning_shader_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>180</Size>
+				<FieldCount>12</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>40</Value>
+					</Field>
+					<Field>
+						<Name>shader flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>sort bias</Field0>
+							<Field1>nonlinear tint</Field1>
+							<Field2>don't overdraw fp weapon</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>framebuffer blend function</Name>
+						<Type>Enum</Type>
+						<FieldCount>8</FieldCount>
+						<Fields>
+							<Field0>alpha blend</Field0>
+							<Field1>multiply</Field1>
+							<Field2>double multiply</Field2>
+							<Field3>add</Field3>
+							<Field4>subtract</Field4>
+							<Field5>component min</Field5>
+							<Field6>component max</Field6>
+							<Field7>alpha-multiply add</Field7>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>framebuffer fade mode</Name>
+						<Type>Enum</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>none</Field0>
+							<Field1>fade when perpendicular</Field1>
+							<Field2>fade when parallel</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>map flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>unfiltered</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>28</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>56</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>28</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>88</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

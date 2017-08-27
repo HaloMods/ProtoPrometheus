@@ -1,0 +1,13 @@
+clwd
+Struct 0x00 clwd_main 0x6C
+	ScriptRef 0x04
+	TagRef 0x08
+	Struct 0x4C clwd_sub_1 0x14
+	End clwd_sub_1
+	Struct 0x54 clwd_sub_2 0x02
+	End clwd_sub_2
+	Struct 0x5C clwd_sub_3 0x02
+	End clwd_sub_3
+	Struct 0x64 clwd_sub_4 0x10
+	End clwd_sub_4
+End clwd_main

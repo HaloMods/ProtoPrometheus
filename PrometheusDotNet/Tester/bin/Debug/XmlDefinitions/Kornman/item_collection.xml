@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>item_collection</Group>
+	<GroupTag>itmc</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>0</Version>
+	<HeaderSize>92</HeaderSize>
+	<FieldCount>5</FieldCount>
+	<Fields>
+		<Field>
+			<Name>item permutations</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>item_permutation</Name>
+				<MaxElements>32</MaxElements>
+				<Size>84</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>weight#relatively how likely this item will be chosen</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>item^#which item to </Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>item</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>spawn time (in seconds, 0 = default)</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>76</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

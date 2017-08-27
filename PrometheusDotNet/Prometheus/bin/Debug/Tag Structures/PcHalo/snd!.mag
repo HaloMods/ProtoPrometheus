@@ -1,0 +1,29 @@
+Sound
+Struct 0 Sound_Main 164
+	TagRef 112
+	Struct 152 Pitch_Ranges 72
+		Struct 60 Permutations 124
+			ExternalSndData 64 68
+			ExternalSndData 84 88
+			ExternalSndData 104 108
+			IntSwapRange 32 to 40
+			LongSwap 40
+			LongSwap 42
+			IntSwapRange 44 to 92
+			LongSwap 92
+			LongSwap 94
+			IntSwapRange 96 to 112
+			LongSwap 112
+			LongSwap 114
+			IntSwapRange 116 to 124
+		End Permutations
+		IntSwapRange 32 to 72
+	End Pitch_Ranges
+	IntSwap 0
+	LongSwap 4
+	LongSwap 6
+	IntSwapRange 8 to 108
+	LongSwap 108
+	LongSwap 110
+	IntSwapRange 112 to 164
+End Sound_Main

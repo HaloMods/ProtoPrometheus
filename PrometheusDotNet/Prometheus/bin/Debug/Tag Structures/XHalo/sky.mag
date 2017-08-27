@@ -1,0 +1,17 @@
+sky
+Struct 0 skymain 208
+	TagRef 0 
+	TagRef 16 
+	TagRef 152 
+	Struct 172 ShaderFunc 36
+		IntSwapRange 0 to 36
+	End ShaderFunc
+	Struct 184 Animations 36
+		IntSwapRange 0 to 36
+	End Animations
+	Struct 196 Lights 116
+		TagRef 0
+		IntSwapRange 0 to 116 
+	End Lights
+	IntSwapRange 0 to 208
+End skymain

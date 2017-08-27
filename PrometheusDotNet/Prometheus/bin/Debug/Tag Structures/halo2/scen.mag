@@ -1,0 +1,16 @@
+scen
+Struct 0 scen_main 0xc4
+	ScriptRef 0x30
+	TagRef 0x34
+	TagRef 0x3C
+	TagRef 0x44
+	TagRef 0x4C
+	TagRef 0x54
+	Struct 0x94 scen_sub_1 0x18
+		TagRef 0x00
+	End scen_sub_1
+	Struct 0xAC scen_sub_2 0x10
+	End scen_sub_2
+	Struct 0xB4 scen_sub_3 0x18
+	End scen_sub_3
+End scen_main

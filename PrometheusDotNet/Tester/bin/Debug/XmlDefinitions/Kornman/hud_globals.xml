@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>hud_globals</Group>
+	<GroupTag>hudg</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>1104</HeaderSize>
+	<FieldCount>105</FieldCount>
+	<Fields>
+		<Field>
+			<Name>Messaging parameters</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>anchor</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>top left</Field0>
+				<Field1>top right</Field1>
+				<Field2>bottom left</Field2>
+				<Field3>bottom right</Field3>
+				<Field4>center</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>anchor offset</Name>
+			<Type>Point_2D</Type>
+		</Field>
+		<Field>
+			<Name>width scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>height scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>scaling flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>don't scale offset</Field0>
+				<Field1>don't scale size</Field1>
+				<Field2>use high res scale</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>single player font</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>font</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>multi player font</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>font</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>up time</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fade time</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>icon color</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>text color</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>text spacing</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>item message text</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>ustr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>icon bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>alternate icon text</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>ustr</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>button icons</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>hud_button_icon_block</Name>
+				<MaxElements>18</MaxElements>
+				<Size>16</Size>
+				<FieldCount>8</FieldCount>
+				<Fields>
+					<Field>
+						<Name>sequence index#sequence index into the global hud icon bitmap</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>width offset#extra spacing beyond bitmap width for text alignment</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>offset from reference corner</Name>
+						<Type>Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>override icon color</Name>
+						<Type>ARGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>frame rate [0,30]</Name>
+						<Type>Char_Integer</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Byte_Flags</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>use text from string_list instead</Field0>
+							<Field1>override default color</Field1>
+							<Field2>width offset is absolute icon width</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>text index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>HUD HELP TEXT COLOR</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>default color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flashing color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flash period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flash delay</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>number of flashes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flash flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>reverse default/flashing colors</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flash length</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>disabled color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>Other hud messaging data</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>hud messages</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>hmt </Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>Objective colors</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>default color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flashing color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flash period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flash delay</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>number of flashes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flash flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>reverse default/flashing colors</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flash length</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>disabled color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>uptime ticks</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>fade ticks</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>Waypoint parameters</Name>
+			<Type>Explanation</Type>
+			<Value>The offset values are how much the waypoint rectangle border is offset from the safe camera bounds</Value>
+		</Field>
+		<Field>
+			<Name>top offset</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>bottom offset</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>left offset</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>right offset</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>arrow bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>waypoint arrows</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>hud_waypoint_arrow_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>104</Size>
+				<FieldCount>13</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>color</Name>
+						<Type>RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>opacity</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>translucency</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>on screen sequence index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>off screen sequence index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>occluded sequence index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>don't rotate when pointing offscreen</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>80</Value>
+		</Field>
+		<Field>
+			<Name>Multiplayer parameters</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>hud scale in multiplayer</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>256</Value>
+		</Field>
+		<Field>
+			<Name>Hud globals</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>default weapon hud</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>wphi</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>motion sensor range</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>motion sensor velocity sensitivity#how fast something moves to show up on the motion sensor</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>motion sensor scale [DON'T TOUCH EVER]*</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>default chapter title bounds</Name>
+			<Type>Rectangle_2D</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>44</Value>
+		</Field>
+		<Field>
+			<Name>Hud damage indicators</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>top offset</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>bottom offset</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>left offset</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>right offset</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>indicator bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>sequence index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>multiplayer sequence index</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>Hud timer definitions</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>Not much time left flash color</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>default color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flashing color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flash period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flash delay</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>number of flashes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flash flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>reverse default/flashing colors</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flash length</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>disabled color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>Time out flash color</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>default color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flashing color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>flash period</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>flash delay</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>number of flashes</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>flash flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>reverse default/flashing colors</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flash length</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>disabled color</Name>
+			<Type>ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>40</Value>
+		</Field>
+		<Field>
+			<Name>carnage report bitmap</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>Hud crap that wouldn't fit anywhere else</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>loading begin text</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>loading end text</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>checkpoint begin text</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>checkpoint end text</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>checkpoint sound</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>snd!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>96</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

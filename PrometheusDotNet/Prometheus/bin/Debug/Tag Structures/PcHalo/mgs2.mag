@@ -1,0 +1,13 @@
+light_volume
+Struct 0 LightVolumeMain 332
+	TagRef 92
+	Struct 288 Frames 176
+		IntSwapRange 0 to 176
+	End Frames
+	LongSwapRange 32 to 52
+	IntSwapRange 52 to 68
+	LongSwapRange 68 to 92
+	IntSwapRange 92 to 108
+	LongSwapRange 108 to 288
+	IntSwapRange 288 to 332
+End LightVolumeMain

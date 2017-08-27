@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xml>
+  <name type="foot" parenttype="????">MaterialEffects</name>
+  <platform>Halo1</platform>
+  <plugin>
+    <struct name="MaterialEffects">
+      <struct name="MaterialEffect">
+        <struct name="MaterialEffectMaterial">
+          <value type="TagReference" name="effect" />
+          <value type="TagReference" name="sound" />
+          <value type="Pad" name="_unnamed">
+            <length>16</length>
+          </value>
+        </struct>
+        <value type="Block" name="materials" struct="MaterialEffectMaterial">
+          <maxelements>33</maxelements>
+        </value>
+        <value type="Pad" name="_unnamed">
+          <length>16</length>
+        </value>
+      </struct>
+      <value type="Block" name="effects" struct="MaterialEffect">
+        <maxelements>13</maxelements>
+      </value>
+      <value type="Pad" name="_unnamed">
+        <length>128</length>
+      </value>
+    </struct>
+  </plugin>
+</xml>

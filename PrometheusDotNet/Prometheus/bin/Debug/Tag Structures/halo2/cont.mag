@@ -1,0 +1,10 @@
+Contrail
+Struct 0x00 cont_main 0xF0
+	TagRef 0x30
+	//TagRef 0x38
+	ScriptRef 0x38
+	ScriptRef 0xB4
+	Struct 0xE8 cont_sub_1 0x40
+		TagRef 0x10
+	End cont_sub_1
+End cont_main

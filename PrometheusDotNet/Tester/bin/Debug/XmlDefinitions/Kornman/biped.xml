@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>biped</Group>
+	<GroupTag>bipd</GroupTag>
+	<ParentGroupTag>unit</ParentGroupTag>
+	<Version>3</Version>
+	<HeaderSize>516</HeaderSize>
+	<FieldCount>57</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ BIPED $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>moving turning speed:degrees per second</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>13</FieldCount>
+			<Fields>
+				<Field0>turns without animating</Field0>
+				<Field1>uses player physics</Field1>
+				<Field2>flying</Field2>
+				<Field3>physics pill centered at origin</Field3>
+				<Field4>spherical</Field4>
+				<Field5>passes through other bipeds</Field5>
+				<Field6>can climb any surface</Field6>
+				<Field7>immune to falling damage</Field7>
+				<Field8>rotate while airborne</Field8>
+				<Field9>uses limp body physics</Field9>
+				<Field10>has no dying airborne</Field10>
+				<Field11>random speed increase</Field11>
+				<Field12>unit uses old (NTSC) player physics</Field12>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>stationary turning threshold</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>A in</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>flying velocity</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>B in</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>flying velocity</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>C in</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>flying velocity</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>D in</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>flying velocity</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>DON'T USE</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>jpt!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flying</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>bank angle:degrees#angle at which we bank left/right when sidestepping or turning while moving forwards</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>bank apply time:seconds#time it takes us to apply a bank</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>bank decay time:seconds#time it takes us to recover from a bank</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>pitch ratio#amount that we pitch up/down when moving up or down</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>max velocity:world units per second#max velocity when not crouching</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>max sidestep velocity:world units per second#max sideways or up/down velocity when not crouching</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>acceleration:world units per second squared</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>deceleration:world units per second squared</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>angular velocity maximum:degrees per second#turn rate</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>angular acceleration maximum:degrees per second squared#turn acceleration rate</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>crouch velocity modifier:[0,1]#how much slower we fly if crouching (zero = same speed)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>movement</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>maximum slope angle:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>downhill falloff angle:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>downhill cutoff angle:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>downhill velocity scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>uphill falloff angle:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>uphill cutoff angle:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>uphill velocity scale</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>footsteps</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>foot</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>jumping and landing</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>jump velocity:world units per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name>maximum soft landing time:seconds#the longest amount of time the biped can take to recover from a soft landing</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum hard landing time:seconds#the longest amount of time the biped can take to recover from a hard landing</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>minimum soft landing velocity:world units per second#below this velocity the biped does not react when landing</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>minimum hard landing velocity:world units per second#below this velocity the biped will not do a soft landing when returning to the ground</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>maximum hard landing velocity:world units per second#the velocity corresponding to the maximum landing time</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>death hard landing velocity:world units per second#the maximum velocity with which a character can strike the ground and live</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>20</Value>
+		</Field>
+		<Field>
+			<Name>camera, collision, and autoaim</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>standing camera height:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>crouching camera height:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>crouch transition time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>24</Value>
+		</Field>
+		<Field>
+			<Name>standing collision height:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>crouching collision height:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>collision radius:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>40</Value>
+		</Field>
+		<Field>
+			<Name>autoaim width:world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>140</Value>
+		</Field>
+		<Field>
+			<Name>contact points#these are the points where the biped touches the ground</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>contact_point_block</Name>
+				<MaxElements>2</MaxElements>
+				<Size>64</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>marker name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

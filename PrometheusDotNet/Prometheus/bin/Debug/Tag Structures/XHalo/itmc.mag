@@ -1,0 +1,8 @@
+item_collection
+Struct 0 ItemCollectionMain 92
+	Struct 0 Items 84
+		TagRef 36
+		IntSwapRange 0 to 84
+	End Items
+	IntSwapRange 0 to 92
+End ItemCollectionMain

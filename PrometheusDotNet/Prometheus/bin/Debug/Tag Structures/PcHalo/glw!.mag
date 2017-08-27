@@ -1,0 +1,27 @@
+glow
+Struct 0 Main 340
+	TagRef 324
+	IntSwap 84
+	IntSwap 88
+	IntSwap 92
+	IntSwap 100
+	IntSwap 104
+	IntSwap 108
+	IntSwap 116
+	IntSwap 120
+	IntSwap 124
+	IntSwap 132
+	IntSwap 136
+	IntSwap 140
+	IntSwap 144
+	IntSwap 160
+	IntSwap 164
+	IntSwap 168
+	IntSwap 172
+	LongSwap 32
+	LongSwap 34
+	LongSwap 36
+	LongSwap 38
+	LongSwap 40
+	IntSwapRange 176 to 340
+End Main

@@ -1,0 +1,15 @@
+hud_globals
+Struct 0 hud_globals 1104
+	TagRef 72
+	TagRef 88
+	TagRef 148
+	TagRef 164
+	TagRef 180
+	TagRef 240
+	TagRef 336
+	TagRef 704
+	TagRef 824
+	TagRef 968
+	TagRef 992
+	//Struct ButtonIcons 
+End hud_globals

@@ -1,0 +1,96 @@
+device_machine
+Struct 0 Main 804
+	TagRef 40
+	TagRef 56
+	TagRef 112
+	TagRef 128
+	TagRef 144
+	TagRef 160
+	Struct 320 Reflexive_0 72
+		TagRef 0
+		IntSwapRange 0 to 16
+		LongSwapRange 48 to 72
+	End Reflexive_0
+	Struct 332 Reflexive_1 32
+		TagRef 0
+		IntSwapRange 0 to 16
+	End Reflexive_1
+	Struct 344 Reflexive_2 360
+		IntSwap 0
+		IntSwap 4
+		IntSwap 8
+		LongSwap 12
+		LongSwap 14
+		IntSwapRange 16 to 52
+		LongSwap 52
+		LongSwap 54
+		IntSwapRange 56 to 328
+	End Reflexive_2
+	Struct 356 Reflexive_3 44
+		Struct 32 Reflexive_3_4 28
+			IntSwapRange 0 to 28
+		End Reflexive_3_4
+		IntSwapRange 0 to 44
+	End Reflexive_3
+	TagRef 416
+	TagRef 432
+	TagRef 448
+	TagRef 464
+	TagRef 480
+	TagRef 496
+	TagRef 524
+	IntClear 368
+	IntClear 372
+	IntClear 376
+	IntSwap 4
+	IntSwap 8
+	IntSwap 12
+	IntSwap 16
+	IntSwap 20
+	IntSwap 24
+	IntSwap 28
+	IntSwap 32
+	IntSwap 260
+	IntSwap 384
+	IntSwap 388
+	IntSwap 392
+	IntSwap 396
+	IntSwap 400
+	IntSwap 404
+	IntSwap 512
+	IntSwap 540
+	IntSwap 660
+	LongSwap 2
+	LongSwap 36
+	LongSwap 264
+	LongSwap 266
+	LongSwap 268
+	LongSwap 270
+	LongSwap 316
+	LongSwap 318
+	LongSwap 380
+	LongSwap 408
+	LongSwap 410
+	LongSwap 412
+	LongSwap 414
+	LongSwap 656
+	LongSwap 658
+	LongSwap 744
+	IntSwapRange 56 to 72
+	IntSwapRange 112 to 128
+	IntSwapRange 160 to 176
+	IntSwapRange 416 to 432
+	IntSwapRange 432 to 448
+	IntSwapRange 448 to 464
+	IntSwapRange 464 to 480
+	IntSwapRange 480 to 496
+	IntSwapRange 496 to 512
+	IntSwapRange 524 to 540
+	IntSwapRange 40 to 56
+	IntSwapRange 128 to 144
+	IntSwapRange 144 to 160
+	IntSwapRange 320 to 332
+	IntSwapRange 332 to 344
+	IntSwapRange 344 to 356
+	IntSwapRange 356 to 368
+End Main

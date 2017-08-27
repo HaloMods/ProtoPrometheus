@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>glow</Group>
+	<GroupTag>glw!</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>340</HeaderSize>
+	<FieldCount>52</FieldCount>
+	<Fields>
+		<Field>
+			<Name>attachment marker#the marker name that the glow should be attached to</Name>
+			<Type>String</Type>
+		</Field>
+		<Field>
+			<Name>number of particles#the number of particles that comprise the glow system</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name>boundary effect#particles behavior on reaching the end of an object</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>bounce</Field0>
+				<Field1>wrap</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>normal particle distribution#distribution of the normal particles about the object</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>distributed randomly</Field0>
+				<Field1>distributed uniformly</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>trailing particle distribution#distribution of the trailing particles about the object</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>emit vertically</Field0>
+				<Field1>emit normal (up)</Field1>
+				<Field2>emit randomly</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>glow flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>6</FieldCount>
+			<Fields>
+				<Field0>modify particle color in range</Field0>
+				<Field1>particles move backwards</Field1>
+				<Field2>partices move in both directions</Field2>
+				<Field3>trailing particles fade over time</Field3>
+				<Field4>trailing particles shrink over time</Field4>
+				<Field5>trailing particles slow over time</Field5>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>28</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>attachment</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>NONE</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>particle rotational velocity#radians per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>particle rot vel mul low#multiplied by overall velocity; only used if controlled by attachment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>particle rot vel mul high#multiplied by overall velocity; only used if controlled by attachment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>attachment</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>NONE</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>effect rotational velocity#in radians per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>effect rot vel mul low#multiplied by overall velocity; only used if controlled by attachment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>effect rot vel mul high#multiplied by overall velocity; only used if controlled by attachment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>attachment</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>NONE</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>effect translational velocity#in world units per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>effect trans vel mul low#multiplied by overall velocity; only used if controlled by attachment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>effect trans vel mul high#multiplied by overall velocity; only used if controlled by attachment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>attachment</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>NONE</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>min distance particle to object#in world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>max distance particle to object#in world units</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>distance to object mul low#multiplied by particle distance; only used if controlled by attachment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>distance to object mul high#multiplied by particle distance; only used if controlled by attachment</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>attachment</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>NONE</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>particle size bounds:world units#size of particles</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>size attachment multiplier#multiplied by particle size; only used if controlled by attachment</Name>
+			<Type>Real_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>attachment</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>NONE</Field0>
+				<Field1>A out</Field1>
+				<Field2>B out</Field2>
+				<Field3>C out</Field3>
+				<Field4>D out</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>color_bound_0#the color of all particles will vary between color bound 0 and color bound 1</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>color_bound_1#the color of all particles will vary between color bound 0 and color bound 1</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>scale color 0#used to scale the particle color; only used if controlled by attachment</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>scale color 1#used to scale the particle color; only used if controlled by attachment</Name>
+			<Type>Real_ARGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>color rate of change#for glow effects that dynamically control particle color; sets rate of change</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>fading percentage of glow#percentage of the glow that is fading at any given time</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>particle generation freq#frequency in Hz that trailing particles are generated:Hz</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>lifetime of trailing particles#seconds that a trailing particle remains in existence:s</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>velocity of trailing particles:wu/s</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>trailing particle minimum t</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>trailing particle maximum t</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>52</Value>
+		</Field>
+		<Field>
+			<Name>texture</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

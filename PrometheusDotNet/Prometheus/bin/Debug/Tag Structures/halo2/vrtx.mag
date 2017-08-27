@@ -1,0 +1,10 @@
+vrtx
+Struct 0 vrtx_main 0x0c
+	Struct 0x04 vrtx_sub_1 0x1C
+		Struct 0x04 vrtx_sub_1_1 0x02
+		End vrtx_sub_1_1
+		Struct 0x0C vrtx_sub_1_2 0x01
+		End vrtx_sub_1_2
+	End vrtx_sub_1
+End vrtx_main
+

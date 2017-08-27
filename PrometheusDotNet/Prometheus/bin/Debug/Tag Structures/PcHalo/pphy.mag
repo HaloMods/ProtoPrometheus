@@ -1,0 +1,5 @@
+Point_Physics
+Struct 0 Point_Physics 64
+	LongSwapRange 0 to 4
+	IntSwapRange 4 to 64
+End Point_Physics

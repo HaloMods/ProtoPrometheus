@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>unit</Group>
+	<GroupTag>unit</GroupTag>
+	<ParentGroupTag>obje</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>372</HeaderSize>
+	<FieldCount>57</FieldCount>
+	<Fields>
+		<Field>
+			<Name>$$$ UNIT $$$</Name>
+			<Type>Explanation</Type>
+			<Value />
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>25</FieldCount>
+			<Fields>
+				<Field0>circular aiming</Field0>
+				<Field1>destroyed after dying</Field1>
+				<Field2>half-speed interpolation</Field2>
+				<Field3>fires from camera</Field3>
+				<Field4>entrance inside bounding sphere</Field4>
+				<Field5>unused</Field5>
+				<Field6>causes passenger dialogue</Field6>
+				<Field7>resists pings</Field7>
+				<Field8>melee attack is fatal</Field8>
+				<Field9>don't reface during pings</Field9>
+				<Field10>has no aiming</Field10>
+				<Field11>simple creature</Field11>
+				<Field12>impact melee attaches to unit</Field12>
+				<Field13>impact melee dies on shields</Field13>
+				<Field14>cannot open doors automatically</Field14>
+				<Field15>melee attackers cannot attach</Field15>
+				<Field16>not instantly killed by melee</Field16>
+				<Field17>shield sapping</Field17>
+				<Field18>runs around flaming</Field18>
+				<Field19>inconsequential</Field19>
+				<Field20>special cinematic unit</Field20>
+				<Field21>ignored by autoaiming</Field21>
+				<Field22>shields fry infection forms</Field22>
+				<Field23>integrated light cntrls weapon</Field23>
+				<Field24>integrated light lasts forever</Field24>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>default team</Name>
+			<Type>Enum</Type>
+			<FieldCount>10</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>player</Field1>
+				<Field2>human</Field2>
+				<Field3>covenant</Field3>
+				<Field4>flood</Field4>
+				<Field5>sentinel</Field5>
+				<Field6>unused (6)</Field6>
+				<Field7>unused (7)</Field7>
+				<Field8>unused (8)</Field8>
+				<Field9>unused (9)</Field9>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>constant sound volume</Name>
+			<Type>Enum</Type>
+			<FieldCount>5</FieldCount>
+			<Fields>
+				<Field0>silent</Field0>
+				<Field1>medium</Field1>
+				<Field2>loud</Field2>
+				<Field3>shout</Field3>
+				<Field4>quiet</Field4>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>rider damage fraction:[0,+inf]#what percent damage applied to us gets applied to our children (i.e., riders)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>integrated light toggle</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>effe</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>A in</Name>
+			<Type>Enum</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>driver seat power</Field1>
+				<Field2>gunner seat power</Field2>
+				<Field3>aiming change</Field3>
+				<Field4>mouth aperture</Field4>
+				<Field5>integrated light power</Field5>
+				<Field6>can blink</Field6>
+				<Field7>shield sapping</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>B in</Name>
+			<Type>Enum</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>driver seat power</Field1>
+				<Field2>gunner seat power</Field2>
+				<Field3>aiming change</Field3>
+				<Field4>mouth aperture</Field4>
+				<Field5>integrated light power</Field5>
+				<Field6>can blink</Field6>
+				<Field7>shield sapping</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>C in</Name>
+			<Type>Enum</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>driver seat power</Field1>
+				<Field2>gunner seat power</Field2>
+				<Field3>aiming change</Field3>
+				<Field4>mouth aperture</Field4>
+				<Field5>integrated light power</Field5>
+				<Field6>can blink</Field6>
+				<Field7>shield sapping</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>D in</Name>
+			<Type>Enum</Type>
+			<FieldCount>8</FieldCount>
+			<Fields>
+				<Field0>none</Field0>
+				<Field1>driver seat power</Field1>
+				<Field2>gunner seat power</Field2>
+				<Field3>aiming change</Field3>
+				<Field4>mouth aperture</Field4>
+				<Field5>integrated light power</Field5>
+				<Field6>can blink</Field6>
+				<Field7>shield sapping</Field7>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>camera field of view:degrees</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>camera stiffness</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>camera marker name</Name>
+			<Type>String</Type>
+		</Field>
+		<Field>
+			<Name>camera submerged marker name</Name>
+			<Type>String</Type>
+		</Field>
+		<Field>
+			<Name>pitch auto-level</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>pitch range</Name>
+			<Type>Angle_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>camera tracks</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>unit_camera_track_block</Name>
+				<MaxElements>2</MaxElements>
+				<Size>28</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>track</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>trak</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>seat acceleration scale</Name>
+			<Type>Real_Vector_3D</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>soft ping threshold:[0,1]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>soft ping interrupt time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hard ping threshold:[0,1]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hard ping interrupt time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>hard death threshold:[0,1]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>feign death threshold:[0,1]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>feign death time:seconds</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>distance of evade anim:world units#this must be set to tell the AI how far it should expect our evade animation to move us</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>distance of dive anim:world units#this must be set to tell the AI how far it should expect our dive animation to move us</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>stunned movement threshold:[0,1]#if we take this much damage in a short space of time we will play our 'stunned movement' animations</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>feign death chance:[0,1]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>feign repeat chance:[0,1]</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>spawned actor#actor variant which we spawn when we are destroyed or self-destruct</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>actv</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>spawned actor count#number of actors which we spawn</Name>
+			<Type>Short_Bounds</Type>
+		</Field>
+		<Field>
+			<Name>spawned velocity#velocity at which we throw spawned actors</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>aiming velocity maximum:degrees per second</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>aiming acceleration maximum:degrees per second squared</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>casual aiming modifier:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>looking velocity maximum:degrees per second</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>looking acceleration maximum:degrees per second squared</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>8</Value>
+		</Field>
+		<Field>
+			<Name>AI vehicle radius#radius around this unit that the AI tries to avoid when entering it as a vehicle (zero = use bounding sphere radius)</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>AI danger radius#danger radius around this unit that the AI tries to avoid</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>melee damage</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>jpt!</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>motion sensor blip size</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>medium</Field0>
+				<Field1>small</Field1>
+				<Field2>large</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>12</Value>
+		</Field>
+		<Field>
+			<Name>NEW HUD INTERFACES</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>unit_hud_reference_block</Name>
+				<MaxElements>2</MaxElements>
+				<Size>48</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>unit hud interface</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>unhi</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>dialogue variants</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>dialogue_variant_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>24</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name>variant number#variant number to use this dialogue with (must match the suffix in the permutations on the unit's model)</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>dialogue</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>udlg</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>grenade velocity:world units per second</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>grenade type</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>human fragmentation</Field0>
+				<Field1>covenant plasma</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>grenade count</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name>powered seats</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>powered_seat_block</Name>
+				<MaxElements>2</MaxElements>
+				<Size>68</Size>
+				<FieldCount>5</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>driver powerup time:seconds</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>driver powerdown time:seconds</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>56</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>weapons</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>unit_weapon_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>36</Size>
+				<FieldCount>3</FieldCount>
+				<Fields>
+					<Field>
+						<Name>weapon^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>weap</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>20</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>seats</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>unit_seat_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>284</Size>
+				<FieldCount>22</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>11</FieldCount>
+						<Fields>
+							<Field0>invisible</Field0>
+							<Field1>locked</Field1>
+							<Field2>driver</Field2>
+							<Field3>gunner</Field3>
+							<Field4>third person camera</Field4>
+							<Field5>allows weapons</Field5>
+							<Field6>third person on enter</Field6>
+							<Field7>first person camera slaved to gun.</Field7>
+							<Field8>allow vehicle communication animations</Field8>
+							<Field9>not valid without driver</Field9>
+							<Field10>allow AI noncombatants</Field10>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>label</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>marker name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>acceleration scale</Name>
+						<Type>Real_Vector_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name>yaw rate:degrees per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>pitch rate:degrees per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>camera marker name</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>camera submerged marker name</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>pitch auto-level</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>pitch range</Name>
+						<Type>Angle_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>camera tracks</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>unit_camera_track_block</Name>
+							<MaxElements>2</MaxElements>
+							<Size>28</Size>
+							<FieldCount>3</FieldCount>
+							<Fields>
+								<Field>
+									<Name>track</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>trak</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>12</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>unit hud interface</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>unit_hud_reference_block</Name>
+							<MaxElements>2</MaxElements>
+							<Size>48</Size>
+							<FieldCount>3</FieldCount>
+							<Fields>
+								<Field>
+									<Name>unit hud interface</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>unhi</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>32</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>hud text message index</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>yaw minimum</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>yaw maximum</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>built-in gunner</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>actv</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>20</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

@@ -1,0 +1,13 @@
+Damage_Effect
+Struct 0x00 jpt!_main 0xC8
+	ScriptRef 0x50
+	Scriptref 0x54
+	Struct 0x6C jpt!_sub_1 0x4C
+		Struct 0x28 jpt!_sub_1_1 0x01
+		End jpt!_sub_1_1
+		Struct 0x34 jpt!_sub_1_2 0x01
+		End jpt!_sub_1_2
+		Struct 0x44 jpt!_sub_1_3 0x01
+		End jpt!_sub_1_3
+	End jpt!_sub_1
+End jpt!_main

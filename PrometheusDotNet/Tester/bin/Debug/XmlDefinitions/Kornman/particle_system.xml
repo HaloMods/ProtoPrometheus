@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>particle_system</Group>
+	<GroupTag>pctl</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>4</Version>
+	<HeaderSize>104</HeaderSize>
+	<FieldCount>10</FieldCount>
+	<Fields>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>4</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>52</Value>
+		</Field>
+		<Field>
+			<Name>system behavior</Name>
+			<Type>Explanation</Type>
+			<Value>These settings affect the behavior of the system's origin.</Value>
+		</Field>
+		<Field>
+			<Name>point physics</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>pphy</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>system update physics</Name>
+			<Type>Enum</Type>
+			<FieldCount>2</FieldCount>
+			<Fields>
+				<Field0>default</Field0>
+				<Field1>explosion</Field1>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>physics flags</Name>
+			<Type>Long_Flags</Type>
+			<FieldCount>0</FieldCount>
+			<Fields />
+		</Field>
+		<Field>
+			<Name>physics constants</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>particle_system_physics_constants_block</Name>
+				<MaxElements>16</MaxElements>
+				<Size>4</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>k#The meaning of this constant depends on the selected physics creation/update function.</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>particle types</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>particle_system_types_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>128</Size>
+				<FieldCount>15</FieldCount>
+				<Fields>
+					<Field>
+						<Name>name^</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>18</FieldCount>
+						<Fields>
+							<Field0>type states loop</Field0>
+							<Field1>... forward/backward</Field1>
+							<Field2>particle states loop</Field2>
+							<Field3>... forward/backward</Field3>
+							<Field4>particles die in water</Field4>
+							<Field5>particles die in air</Field5>
+							<Field6>particles die on ground</Field6>
+							<Field7>rotational sprites animate sideways#if the complex sprite mode is rotational and this flag is set, the sideways sequence is contains an animation rather than a set of permutations.</Field7>
+							<Field8>disabled</Field8>
+							<Field9>tint by effect color</Field9>
+							<Field10>initial count scales with effect</Field10>
+							<Field11>minimum count scales with effect</Field11>
+							<Field12>creation rate scales with effect</Field12>
+							<Field13>scale scales with effect</Field13>
+							<Field14>animation rate scales with effect</Field14>
+							<Field15>rotation rate scales with effect</Field15>
+							<Field16>don't draw in first person</Field16>
+							<Field17>don't draw in third person</Field17>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>initial particle count</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>complex sprite render modes</Name>
+						<Type>Enum</Type>
+						<FieldCount>2</FieldCount>
+						<Fields>
+							<Field0>simple</Field0>
+							<Field1>rotational</Field1>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>radius:world units</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>36</Value>
+					</Field>
+					<Field>
+						<Name>particle creation physics#This controls the initial placement of particles.</Name>
+						<Type>Enum</Type>
+						<FieldCount>3</FieldCount>
+						<Fields>
+							<Field0>default</Field0>
+							<Field1>explosion</Field1>
+							<Field2>jet</Field2>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>physics flags</Name>
+						<Type>Long_Flags</Type>
+						<FieldCount>0</FieldCount>
+						<Fields />
+					</Field>
+					<Field>
+						<Name>physics constants</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>particle_system_physics_constants_block</Name>
+							<MaxElements>16</MaxElements>
+							<Size>4</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>k#The meaning of this constant depends on the selected physics creation/update function.</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>states</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>particle_system_type_states_block</Name>
+							<MaxElements>8</MaxElements>
+							<Size>192</Size>
+							<FieldCount>16</FieldCount>
+							<Fields>
+								<Field>
+									<Name>name^</Name>
+									<Type>String</Type>
+								</Field>
+								<Field>
+									<Name>duration bounds:seconds#Time in this state.</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>transition time bounds:seconds#Time spent in transition to next state.</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name>scale multiplier#This value will be multiplied into the scale computed by the particles' state.</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>animation_rate_multiplier#This value will be multiplied into the animation rate computed by the particles' state.</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>rotation rate multiplier#This value will be multiplied into the rotation rate computed by the particles' state.</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>color multiplier#This value will be multiplied into the color computed by the particles' state.</Name>
+									<Type>Real_ARGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>radius multiplier#This value will be multiplied into the radius computed by the type.</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>minimum particle count</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>particle creation rate:particles per second</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>84</Value>
+								</Field>
+								<Field>
+									<Name>particle creation physics#This controls the placement of particles created during this state.</Name>
+									<Type>Enum</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>default</Field0>
+										<Field1>explosion</Field1>
+										<Field2>jet</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>particle update physics#This controls the motion of particles during this state.</Name>
+									<Type>Enum</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>default</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>physics constants</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>particle_system_physics_constants_block</Name>
+										<MaxElements>16</MaxElements>
+										<Size>4</Size>
+										<FieldCount>2</FieldCount>
+										<Fields>
+											<Field>
+												<Name>k#The meaning of this constant depends on the selected physics creation/update function.</Name>
+												<Type>Real</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>particle states</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>particle_system_type_particle_states_block</Name>
+							<MaxElements>8</MaxElements>
+							<Size>376</Size>
+							<FieldCount>46</FieldCount>
+							<Fields>
+								<Field>
+									<Name>name^</Name>
+									<Type>String</Type>
+								</Field>
+								<Field>
+									<Name>duration bounds:seconds#Time in this state.</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>transition time bounds:seconds#Time spent in transition to next state.</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>bitmaps</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>bitm</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>sequence index</Name>
+									<Type>Short_Integer</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>2</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name>scale:world units per pixel#Apparent size of the particles.</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>animation rate:frames per second#Rate of sprite animation.</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>rotation rate:degrees per second#Rate of texture rotation.</Name>
+									<Type>Angle_Bounds</Type>
+								</Field>
+								<Field>
+									<Name>color 1#Particle will have a random color in the range determined by these two colors.</Name>
+									<Type>Real_ARGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>color 2#Particle will have a random color in the range determined by these two colors.</Name>
+									<Type>Real_ARGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>radius multiplier#This value will be multiplied into the radius computed by the type.</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>point physics</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>pphy</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>36</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>40</Value>
+								</Field>
+								<Field>
+									<Name>shader flags</Name>
+									<Type>Word_Flags</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>sort bias</Field0>
+										<Field1>nonlinear tint</Field1>
+										<Field2>don't overdraw fp weapon</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>framebuffer blend function</Name>
+									<Type>Enum</Type>
+									<FieldCount>8</FieldCount>
+									<Fields>
+										<Field0>alpha blend</Field0>
+										<Field1>multiply</Field1>
+										<Field2>double multiply</Field2>
+										<Field3>add</Field3>
+										<Field4>subtract</Field4>
+										<Field5>component min</Field5>
+										<Field6>component max</Field6>
+										<Field7>alpha-multiply add</Field7>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>framebuffer fade mode</Name>
+									<Type>Enum</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>fade when perpendicular</Field1>
+										<Field2>fade when parallel</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>map flags</Name>
+									<Type>Word_Flags</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>unfiltered</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>28</Value>
+								</Field>
+								<Field>
+									<Name>Secondary Map</Name>
+									<Type>Explanation</Type>
+									<Value>Optional multitextured second map</Value>
+								</Field>
+								<Field>
+									<Name>bitmap</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>bitm</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>anchor</Name>
+									<Type>Enum</Type>
+									<FieldCount>3</FieldCount>
+									<Fields>
+										<Field0>with primary</Field0>
+										<Field1>with screen space</Field1>
+										<Field2>zsprite</Field2>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>flags</Name>
+									<Type>Word_Flags</Type>
+									<FieldCount>1</FieldCount>
+									<Fields>
+										<Field0>unfiltered</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>u-animation source</Name>
+									<Type>Enum</Type>
+									<FieldCount>5</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>A out</Field1>
+										<Field2>B out</Field2>
+										<Field3>C out</Field3>
+										<Field4>D out</Field4>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>u-animation function</Name>
+									<Type>Enum</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>one</Field0>
+										<Field1>zero</Field1>
+										<Field2>cosine</Field2>
+										<Field3>cosine (variable period)</Field3>
+										<Field4>diagonal wave</Field4>
+										<Field5>diagonal wave (variable period)</Field5>
+										<Field6>slide</Field6>
+										<Field7>slide (variable period)</Field7>
+										<Field8>noise</Field8>
+										<Field9>jitter</Field9>
+										<Field10>wander</Field10>
+										<Field11>spark</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>u-animation period:seconds#0 defaults to 1</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>u-animation phase</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>u-animation scale:repeats#0 defaults to 1</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>v-animation source</Name>
+									<Type>Enum</Type>
+									<FieldCount>5</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>A out</Field1>
+										<Field2>B out</Field2>
+										<Field3>C out</Field3>
+										<Field4>D out</Field4>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>v-animation function</Name>
+									<Type>Enum</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>one</Field0>
+										<Field1>zero</Field1>
+										<Field2>cosine</Field2>
+										<Field3>cosine (variable period)</Field3>
+										<Field4>diagonal wave</Field4>
+										<Field5>diagonal wave (variable period)</Field5>
+										<Field6>slide</Field6>
+										<Field7>slide (variable period)</Field7>
+										<Field8>noise</Field8>
+										<Field9>jitter</Field9>
+										<Field10>wander</Field10>
+										<Field11>spark</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>v-animation period:seconds#0 defaults to 1</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>v-animation phase</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>v-animation scale:repeats#0 defaults to 1</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>rotation-animation source</Name>
+									<Type>Enum</Type>
+									<FieldCount>5</FieldCount>
+									<Fields>
+										<Field0>none</Field0>
+										<Field1>A out</Field1>
+										<Field2>B out</Field2>
+										<Field3>C out</Field3>
+										<Field4>D out</Field4>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>rotation-animation function</Name>
+									<Type>Enum</Type>
+									<FieldCount>12</FieldCount>
+									<Fields>
+										<Field0>one</Field0>
+										<Field1>zero</Field1>
+										<Field2>cosine</Field2>
+										<Field3>cosine (variable period)</Field3>
+										<Field4>diagonal wave</Field4>
+										<Field5>diagonal wave (variable period)</Field5>
+										<Field6>slide</Field6>
+										<Field7>slide (variable period)</Field7>
+										<Field8>noise</Field8>
+										<Field9>jitter</Field9>
+										<Field10>wander</Field10>
+										<Field11>spark</Field11>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>rotation-animation period:seconds#0 defaults to 1</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>rotation-animation phase</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>rotation-animation scale:degrees#0 defaults to 360</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>rotation-animation center</Name>
+									<Type>Real_Point_2D</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name>zsprite radius scale</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>20</Value>
+								</Field>
+								<Field>
+									<Name>physics constants</Name>
+									<Type>Block</Type>
+									<Block>
+										<Name>particle_system_physics_constants_block</Name>
+										<MaxElements>16</MaxElements>
+										<Size>4</Size>
+										<FieldCount>2</FieldCount>
+										<Fields>
+											<Field>
+												<Name>k#The meaning of this constant depends on the selected physics creation/update function.</Name>
+												<Type>Real</Type>
+											</Field>
+											<Field>
+												<Name />
+												<Type>Terminator_X</Type>
+											</Field>
+										</Fields>
+									</Block>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

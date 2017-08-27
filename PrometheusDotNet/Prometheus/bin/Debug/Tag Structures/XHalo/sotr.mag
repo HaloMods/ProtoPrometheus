@@ -1,0 +1,30 @@
+shader_transparent_generic
+Struct 0 Main 108
+	TagRef 56
+	Struct 72 Extra_Layers 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End Extra_Layers
+	Struct 84 Maps 100
+		TagRef 28
+		LongSwapRange 0 to 4
+		IntSwapRange 4 to 44
+		LongSwapRange 44 to 48
+		IntSwapRange 48 to 60
+		LongSwapRange 60 to 64
+		IntSwapRange 64 to 76
+		LongSwapRange 76 to 80
+		IntSwapRange 80 to 100
+	End Maps
+	Struct 96 Stages 112
+		LongSwapRange 0 to 8
+		LongSwapRange 60 to 112
+		IntSwapRange 8 to 60
+	End Stages
+	LongSwapRange 0 to 4
+	IntSwapRange 4 to 32
+	LongSwapRange 32 to 36
+	IntSwapRange 36 to 40
+	LongSwapRange 40 to 52
+	IntSwapRange 52 to 108
+End Main

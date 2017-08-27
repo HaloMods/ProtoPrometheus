@@ -1,0 +1,99 @@
+Weapon_hud_interface
+Struct 0 weapon_hud_interface 380
+	TagRef 0
+	Struct 96 Static_Elements 180
+		TagRef 72
+		Struct 124 Multitex_Overlay 480
+			TagRef 100
+			TagRef 116
+			TagRef 132
+			Struct 340 Effectors 220
+				LongSwapRange 0 to 72
+				IntSwapRange 72 to 176
+				LongSwapRange 176 to 180
+				IntSwapRange 180 to 220
+			End Effectors
+			LongSwapRange 0 to 52
+			IntSwapRange 52 to 148
+			LongSwapRange 148 to 340
+			IntSwapRange 340 to 380
+		End Multitex_Overlay
+		LongSwapRange 0 to 40
+		IntSwapRange 40 to 48
+		LongSwapRange 48 to 72
+		IntSwapRange 72 to 104
+		LongSwapRange 104 to 108
+		IntSwapRange 108 to 116
+		LongSwapRange 116 to 124
+		IntSwapRange 124 to 180
+	end Static_Elements
+	Struct 108 Meter_Elements 180
+		TagRef 72
+		LongSwapRange 0 to 40
+		IntSwapRange 40 to 48
+		LongSwapRange 48 to 72
+		IntSwapRange 72 to 104
+		LongSwapRange 106 to 108
+		LongSwap 110
+		IntSwapRange 112 to 180
+	End Meter_Elements
+	struct 120 Number_Elements 160
+		LongSwaprange 0 to 40
+		IntSwapRange 40 to 48
+		LongSwapRange 48 to 72
+		IntSwapRange 72 to 88
+		LongSwapRange 88 to 92
+		IntSwapRange 92 to 104
+		LongSwapRange 108 to 160
+	End Number_Elements
+	Struct 132 Crosshairs 104
+		TagRef 36
+		Struct 52 Crosshairs_Overlays 108
+			LongSwapRange 0 to 4
+			IntSwapRange 4 to 12
+			LongSwapRange 12 to 36
+			IntSwapRange 36 to 52
+			LongSwapRange 52 to 56
+			IntSwapRange 56 to 64
+			LongSwapRange 64 to 72
+			IntSwapRange 72 to 76
+			LongSwapRange 76 to 108
+		End Crosshairs_Overlays
+		LongSwapRange 0 to 36
+		IntSwapRange 36 to 104
+	End Crosshairs
+	Struct 144 Overley_Elements 104
+		TagRef 36
+		Struct 52 Overley_Elements_Overlays 136
+			LongSwapRange 0 to 4
+			IntSwapRange 4 to 12
+			LongSwapRange 12 to 36
+			IntSwapRange 36 to 52
+			LongSwapRange 52 to 56
+			IntSwapRange 56 to 64
+			LongSwapRange 64 to 76
+			IntSwapRange 76 to 80
+			LongSwapRange 80 to 108
+		End Overley_Elements_Overlays
+		LongSwapRange 0 to 36
+		IntSwapRange 36 to 104
+	End Overley_Elements
+	Struct 172 Screen_effect 184
+		TagRef 24
+		TagRef 40
+		LongSwapRange 0 to 24
+		IntSwapRange 24 to 64
+		LongSwapRange 64 to 68
+		IntSwapRange 68 to 108
+		LongSwapRange 108 to 112
+		IntSwapRange 112 to 140
+		LongSwapRange 140 to 144
+		IntSwapRange 144 to 184
+	End Screen_effect
+	IntSwapRange 0 to 16
+	LongSwapRange 16 to 96
+	IntSwapRange 96 to 316
+	LongSwapRange 316 to 324
+	IntSwapRange 324 to 328
+	LongSwapRange 330 to 380
+End weapon_hud_interface

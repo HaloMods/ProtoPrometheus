@@ -1,0 +1,45 @@
+nhdt
+Struct 0x00 nhdt_main 0x28
+	TagRef 0x00
+	Struct 0x08 nhdt_sub_1 0x64
+		ScriptRef 0x00
+		TagRef 0x20
+		TagRef 0x28
+		Struct 0x58 ndht_sub_1_1 0x68
+			ScriptRef 0x04
+			ScriptRef 0x18
+			Struct 0x10 ndht_sub_1_1_1 0x01
+			End ndht_sub_1_1_1
+			Struct 0x24 ndht_sub_1_1_2 0x01
+			End ndht_sub_1_1_2
+			ScriptRef 0x2C
+			Struct 0x38 ndht_sub_1_1_3 0x01
+			End ndht_sub_1_1_3
+			Struct 0x4C ndht_sub_1_1_4 0x01
+			End ndht_sub_1_1_4
+			ScriptRef 0x54
+			Struct 0x60 ndht_sub_1_1_5 0x01
+			End ndht_sub_1_1_5
+		End ndht_sub_1_1
+	End nhdt_sub_1
+	Struct 0x10 nhdt_sub_2 0x54
+		ScriptRef 0x00
+		TagRef 0x20
+		ScriptRef 0x28
+		Struct 0x4C nhdt_sub_2_1 0x68
+			Struct 0x10 nhdt_sub_2_1_1 0x01
+			End nhdt_sub_2_1_1
+			Struct 0x24 nhdt_sub_2_1_2 0x01
+			End nhdt_sub_2_1_2
+			Struct 0x38 nhdt_sub_2_1_3 0x01
+			End nhdt_sub_2_1_3
+			Struct 0x4C nhdt_sub_2_1_4 0x01
+			End nhdt_sub_2_1_4
+			Struct 0x60 nhdt_sub_2_1_5 0x01
+			End nhdt_sub_2_1_5
+		End nhdt_sub_2_1
+	End nhdt_sub_2
+	Struct 0x20 nhdt_sub_3 0x50
+		TagRef 0x20
+	End nhdt_sub_3
+End nhdt_main

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>input_device_defaults</Group>
+	<GroupTag>devc</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>1</Version>
+	<HeaderSize>44</HeaderSize>
+	<FieldCount>6</FieldCount>
+	<Fields>
+		<Field>
+			<Name>device type*</Name>
+			<Type>Enum</Type>
+			<FieldCount>3</FieldCount>
+			<Fields>
+				<Field0>mouse and keyboard</Field0>
+				<Field1>joysticks/gamepads/etc...</Field1>
+				<Field2>full profile definition</Field2>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>flags*</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>1</FieldCount>
+			<Fields>
+				<Field0>unused</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>device id*</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>10197400</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name>profile*</Name>
+			<Type>Data</Type>
+			<Data>
+				<Name />
+				<MaxSize>1886547814</MaxSize>
+			</Data>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Custom</Type>
+			<Custom>prof</Custom>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

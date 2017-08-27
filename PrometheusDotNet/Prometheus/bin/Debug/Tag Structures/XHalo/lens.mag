@@ -1,0 +1,19 @@
+lens_flare
+Struct 0 LensFlareMain 240
+	TagRef 32
+	Struct 196 Reflections 128
+		LongSwapRange 0 to 28
+		IntSwapRange 28 to 48
+		LongSwapRange 48 to 52
+		IntSwapRange 52 to 60
+		LongSwapRange 60 to 64
+		IntSwapRange 64 to 112
+		LongSwapRange 112 to 116
+		IntSwapRange 116 to 128
+	End Reflections
+	IntSwapRange 0 to 20
+	LongSwapRange 20 to 24
+	IntSwapRange 24 to 48
+	LongSwapRange 48 to 132
+	IntSwapRange 132 to 240
+End LensFlareMain

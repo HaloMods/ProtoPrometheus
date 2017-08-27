@@ -1,0 +1,21 @@
+shader_transparent_meter
+Struct 0 Main 260
+	TagRef 76
+	//IntSwap 4
+	//IntSwap 8
+	//IntSwap 12
+	//IntSwap 16
+	//IntSwap 20
+	//IntSwap 24
+	//IntSwap 28
+	//IntSwapRange 124 to 216
+	//LongSwap 0
+	//LongSwap 2
+	//LongSwap 22
+	//LongSwap 24
+	//LongSwap 28
+	//LongSwap 34
+	//LongSwap 40
+	//LongSwapRange 216 to 260
+	//IntSwapRange 76 to 92
+End Main

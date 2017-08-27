@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>globals</Group>
+	<GroupTag>matg</GroupTag>
+	<ParentGroupTag>????</ParentGroupTag>
+	<Version>3</Version>
+	<HeaderSize>428</HeaderSize>
+	<FieldCount>17</FieldCount>
+	<Fields>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>248</Value>
+		</Field>
+		<Field>
+			<Name>sounds</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>sound_block</Name>
+				<MaxElements>2</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>sound</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>camera</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>camera_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>default unit camera track</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>trak</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>player control</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>player_control_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>128</Size>
+				<FieldCount>16</FieldCount>
+				<Fields>
+					<Field>
+						<Name>magnetism friction#how much the crosshair slows over enemies</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>magnetism adhesion#how much the crosshair sticks to enemies</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>inconsequential target scale#scales magnetism level for inconsequential targets like infection forms</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>52</Value>
+					</Field>
+					<Field>
+						<Name>look acceleration time:seconds#time for a pegged look to reach maximum effect</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>look acceleration scale#maximum effect of a pegged look (scales last value in the look function below)</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>look peg threshold [0,1]#magnitude of yaw for pegged acceleration to kick in</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name>look default pitch rate:degrees</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>look default yaw rate:degrees</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>look autolevelling scale#1 is fast, 0 is none, &gt;1 will probably be really fast</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>20</Value>
+					</Field>
+					<Field>
+						<Name>minimum weapon swap ticks#amount of time player needs to hold down ACTION to pick up a new weapon</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>minimum autolevelling ticks#amount of time player needs to move and not look up or down for autolevelling to kick in</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>minimum angle for vehicle flipping#0 means the vehicle's up vector is along the ground, 90 means the up vector is pointing straight up:degrees</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>look function</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>look_function_block</Name>
+							<MaxElements>16</MaxElements>
+							<Size>4</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>scale</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>difficulty</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>difficulty_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>644</Size>
+				<FieldCount>119</FieldCount>
+				<Fields>
+					<Field>
+						<Name>health</Name>
+						<Type>Explanation</Type>
+						<Value>scale values for enemy health and damage settings</Value>
+					</Field>
+					<Field>
+						<Name>easy enemy damage#enemy damage multiplier on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal enemy damage#enemy damage multiplier on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard enemy damage#enemy damage multiplier on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. enemy damage#enemy damage multiplier on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy enemy vitality#enemy maximum body vitality scale on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal enemy vitality#enemy maximum body vitality scale on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard enemy vitality#enemy maximum body vitality scale on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. enemy vitality#enemy maximum body vitality scale on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy enemy shield#enemy maximum shield vitality scale on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal enemy shield#enemy maximum shield vitality scale on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard enemy shield#enemy maximum shield vitality scale on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. enemy shield#enemy maximum shield vitality scale on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy enemy recharge#enemy shield recharge scale on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal enemy recharge#enemy shield recharge scale on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard enemy recharge#enemy shield recharge scale on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. enemy recharge#enemy shield recharge scale on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy friend damage#friend damage multiplier on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal friend damage#friend damage multiplier on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard friend damage#friend damage multiplier on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. friend damage#friend damage multiplier on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy friend vitality#friend maximum body vitality scale on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal friend vitality#friend maximum body vitality scale on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard friend vitality#friend maximum body vitality scale on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. friend vitality#friend maximum body vitality scale on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy friend shield#friend maximum shield vitality scale on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal friend shield#friend maximum shield vitality scale on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard friend shield#friend maximum shield vitality scale on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. friend shield#friend maximum shield vitality scale on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy friend recharge#friend shield recharge scale on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal friend recharge#friend shield recharge scale on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard friend recharge#friend shield recharge scale on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. friend recharge#friend shield recharge scale on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy infection forms#toughness of infection forms (may be negative) on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal infection forms#toughness of infection forms (may be negative) on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard infection forms#toughness of infection forms (may be negative) on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. infection forms#toughness of infection forms (may be negative) on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>ranged fire</Name>
+						<Type>Explanation</Type>
+						<Value>difficulty-affecting values for enemy ranged combat settings</Value>
+					</Field>
+					<Field>
+						<Name>easy rate of fire#enemy rate of fire scale on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal rate of fire#enemy rate of fire scale on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard rate of fire#enemy rate of fire scale on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. rate of fire#enemy rate of fire scale on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy projectile error#enemy projectile error scale, as a fraction of their base firing error. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal projectile error#enemy projectile error scale, as a fraction of their base firing error. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard projectile error#enemy projectile error scale, as a fraction of their base firing error. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. projectile error#enemy projectile error scale, as a fraction of their base firing error. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy burst error#enemy burst error scale; reduces intra-burst shot distance. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal burst error#enemy burst error scale; reduces intra-burst shot distance. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard burst error#enemy burst error scale; reduces intra-burst shot distance. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. burst error#enemy burst error scale; reduces intra-burst shot distance. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy new target delay#enemy new-target delay scale factor. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal new target delay#enemy new-target delay scale factor. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard new target delay#enemy new-target delay scale factor. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. new target delay#enemy new-target delay scale factor. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy burst separation#delay time between bursts scale factor for enemies. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal burst separation#delay time between bursts scale factor for enemies. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard burst separation#delay time between bursts scale factor for enemies. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. burst separation#delay time between bursts scale factor for enemies. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy target tracking#additional target tracking fraction for enemies. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal target tracking#additional target tracking fraction for enemies. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard target tracking#additional target tracking fraction for enemies. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. target tracking#additional target tracking fraction for enemies. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy target leading#additional target leading fraction for enemies. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal target leading#additional target leading fraction for enemies. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard target leading#additional target leading fraction for enemies. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. target leading#additional target leading fraction for enemies. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy overcharge chance#overcharge chance scale factor for enemies. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal overcharge chance#overcharge chance scale factor for enemies. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard overcharge chance#overcharge chance scale factor for enemies. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. overcharge chance#overcharge chance scale factor for enemies. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy special fire delay#delay between special-fire shots (overcharge, banshee bombs) scale factor for enemies. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal special fire delay#delay between special-fire shots (overcharge, banshee bombs) scale factor for enemies. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard special fire delay#delay between special-fire shots (overcharge, banshee bombs) scale factor for enemies. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. special fire delay#delay between special-fire shots (overcharge, banshee bombs) scale factor for enemies. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy guidance vs player#guidance velocity scale factor for all projectiles targeted on a player. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal guidance vs player#guidance velocity scale factor for all projectiles targeted on a player. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard guidance vs player#guidance velocity scale factor for all projectiles targeted on a player. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. guidance vs player#guidance velocity scale factor for all projectiles targeted on a player. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy melee delay base#delay period added to all melee attacks, even when berserk. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal melee delay base#delay period added to all melee attacks, even when berserk. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard melee delay base#delay period added to all melee attacks, even when berserk. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. melee delay base#delay period added to all melee attacks, even when berserk. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy melee delay scale#multiplier for all existing non-berserk melee delay times. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal melee delay scale#multiplier for all existing non-berserk melee delay times. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard melee delay scale#multiplier for all existing non-berserk melee delay times. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. melee delay scale#multiplier for all existing non-berserk melee delay times. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>grenades</Name>
+						<Type>Explanation</Type>
+						<Value>difficulty-affecting values for enemy grenade behavior</Value>
+					</Field>
+					<Field>
+						<Name>easy grenade chance scale#scale factor affecting the desicions to throw a grenade. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal grenade chance scale#scale factor affecting the desicions to throw a grenade. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard grenade chance scale#scale factor affecting the desicions to throw a grenade. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. grenade chance scale#scale factor affecting the desicions to throw a grenade. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy grenade timer scale#scale factor affecting the delay period between grenades thrown from the same encounter (lower is more often). on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal grenade timer scale#scale factor affecting the delay period between grenades thrown from the same encounter (lower is more often). on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard grenade timer scale#scale factor affecting the delay period between grenades thrown from the same encounter (lower is more often). on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. grenade timer scale#scale factor affecting the delay period between grenades thrown from the same encounter (lower is more often). on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>placement</Name>
+						<Type>Explanation</Type>
+						<Value>difficulty-affecting values for enemy placement</Value>
+					</Field>
+					<Field>
+						<Name>easy major upgrade (normal)#fraction of actors upgraded to their major variant. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal major upgrade (normal)#fraction of actors upgraded to their major variant. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard major upgrade (normal)#fraction of actors upgraded to their major variant. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. major upgrade (normal)#fraction of actors upgraded to their major variant. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy major upgrade (few)#fraction of actors upgraded to their major variant when mix = normal. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal major upgrade (few)#fraction of actors upgraded to their major variant when mix = normal. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard major upgrade (few)#fraction of actors upgraded to their major variant when mix = normal. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. major upgrade (few)#fraction of actors upgraded to their major variant when mix = normal. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>easy major upgrade (many)#fraction of actors upgraded to their major variant when mix = many. on easy difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>normal major upgrade (many)#fraction of actors upgraded to their major variant when mix = many. on normal difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hard major upgrade (many)#fraction of actors upgraded to their major variant when mix = many. on hard difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>imposs. major upgrade (many)#fraction of actors upgraded to their major variant when mix = many. on impossible difficulty</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>84</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>grenades</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>grenades_block</Name>
+				<MaxElements>2</MaxElements>
+				<Size>68</Size>
+				<FieldCount>7</FieldCount>
+				<Fields>
+					<Field>
+						<Name>maximum count</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>mp spawn default</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>throwing effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>effe</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>hud interface</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>grhi</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>equipment</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>eqip</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>projectile</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>proj</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>rasterizer data</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>rasterizer_data_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>428</Size>
+				<FieldCount>34</FieldCount>
+				<Fields>
+					<Field>
+						<Name>function textures</Name>
+						<Type>Explanation</Type>
+						<Value>Used internally by the rasterizer. (Do not change unless you know what you're doing!)</Value>
+					</Field>
+					<Field>
+						<Name>distance attenuation</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>vector normalization</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>atmospheric fog density</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>planar fog density</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>linear corner fade#used for shadows</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>active camouflage distortion</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>glow</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>60</Value>
+					</Field>
+					<Field>
+						<Name>default textures</Name>
+						<Type>Explanation</Type>
+						<Value>Used internally by the rasterizer - additive, multiplicative, detail, vector. (Do not change ever, period.)</Value>
+					</Field>
+					<Field>
+						<Name>default 2D</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>default 3D</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>default cube map</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>experimental textures</Name>
+						<Type>Explanation</Type>
+						<Value>Used internally by the rasterizer. (Used by Bernie's experimental shaders.)</Value>
+					</Field>
+					<Field>
+						<Name>test 0</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>test 1</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>test 2</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>test 3</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>video effect textures</Name>
+						<Type>Explanation</Type>
+						<Value>Used in cinematics.</Value>
+					</Field>
+					<Field>
+						<Name>video scanline map</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>video noise map</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>52</Value>
+					</Field>
+					<Field>
+						<Name>active camouflage</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>flags</Name>
+						<Type>Word_Flags</Type>
+						<FieldCount>1</FieldCount>
+						<Fields>
+							<Field0>tint edge density</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>refraction amount:pixels</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>distance falloff</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>tint color</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>hyper-stealth refraction:pixels</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hyper-stealth distance falloff</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>hyper-stealth tint color</Name>
+						<Type>Real_RGB_Color</Type>
+					</Field>
+					<Field>
+						<Name>PC textures</Name>
+						<Type>Explanation</Type>
+						<Value>The PC can't use 3D textures, so we use this instead.</Value>
+					</Field>
+					<Field>
+						<Name>distance attenuation 2D#the pc can't use 3d textures, so we use this instead</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>interface bitmaps</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>interface_tag_references</Name>
+				<MaxElements>1</MaxElements>
+				<Size>304</Size>
+				<FieldCount>18</FieldCount>
+				<Fields>
+					<Field>
+						<Name>font system</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>font</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>font terminal</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>font</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>screen color table</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>colo</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>hud color table</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>colo</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>editor color table</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>colo</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>dialog color table</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>colo</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>hud globals</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>hudg</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>motion sensor sweep bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>motion sensor sweep bitmap mask</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>multiplayer hud bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>localization</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>str#</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>hud digits definition</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>hud#</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>motion sensor blip bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>interface goo map1</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>interface goo map2</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>interface goo map3</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>48</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>weapon list (update _weapon_list enum in game_globals.h)</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>cheat_weapons_block</Name>
+				<MaxElements>20</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>weapon^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>item</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>cheat powerups</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>cheat_powerups_block</Name>
+				<MaxElements>20</MaxElements>
+				<Size>16</Size>
+				<FieldCount>2</FieldCount>
+				<Fields>
+					<Field>
+						<Name>powerup^</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>eqip</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>multiplayer information</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>multiplayer_information_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>160</Size>
+				<FieldCount>9</FieldCount>
+				<Fields>
+					<Field>
+						<Name>flag</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>item</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>unit</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>unit</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>vehicles</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>vehicles_block</Name>
+							<MaxElements>20</MaxElements>
+							<Size>16</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>vehicle^</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>vehi</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name>hill shader</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>shdr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>flag shader</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>shdr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>ball</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>item</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>sounds</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>sounds_block</Name>
+							<MaxElements>60</MaxElements>
+							<Size>16</Size>
+							<FieldCount>2</FieldCount>
+							<Fields>
+								<Field>
+									<Name>sound^</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>snd!</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>56</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>player information</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>player_information_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>244</Size>
+				<FieldCount>29</FieldCount>
+				<Fields>
+					<Field>
+						<Name>unit</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>unit</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>28</Value>
+					</Field>
+					<Field>
+						<Name>walking speed:world units per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>"double speed" multiplier:[1.0,+inf]</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>run forward:world units per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>run backward:world units per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>run sideways:world units per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>run acceleration:world units per second squared</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>sneak forward:world units per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>sneak backward:world units per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>sneak sideways:world units per second</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>sneak acceleration:world units per second squared</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>airborne acceleration:world units per second squared</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>speed multiplier: multiplayer only</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name>grenade origin</Name>
+						<Type>Real_Point_3D</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>12</Value>
+					</Field>
+					<Field>
+						<Name>stun movement penalty:[0,1]#1.0 prevents moving while stunned</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>stun turning penalty:[0,1]#1.0 prevents turning while stunned</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>stun jumping penalty:[0,1]#1.0 prevents jumping while stunned</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>minimum stun time:seconds#all stunning damage will last for at least this long</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>maximum stun time:seconds#no stunning damage will last for longer than this</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>first person idle time:seconds</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>first person skip fraction:[0,1]</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name>coop respawn effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>effe</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>44</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>first person interface</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>first_person_interface_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>192</Size>
+				<FieldCount>10</FieldCount>
+				<Fields>
+					<Field>
+						<Name>first person hands</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>mod2</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>base bitmap</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>bitm</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>shield meter</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>metr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>shield meter origin</Name>
+						<Type>Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>body meter</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>metr</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>body meter origin</Name>
+						<Type>Point_2D</Type>
+					</Field>
+					<Field>
+						<Name>night-vision OFF-&gt;ON effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>effe</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>night-vision ON-&gt;OFF effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>effe</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>88</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>falling damage</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>falling_damage_block</Name>
+				<MaxElements>1</MaxElements>
+				<Size>152</Size>
+				<FieldCount>12</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>harmful falling distance:world units</Name>
+						<Type>Real_Bounds</Type>
+					</Field>
+					<Field>
+						<Name>falling damage</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>jpt!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name>maximum falling distance:world units</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>distance damage</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>jpt!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>vehicle environemtn collision damage effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>jpt!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>vehicle killed unit damage effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>jpt!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>vehicle collision damage</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>jpt!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>flaming death damage</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>jpt!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>28</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>materials</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>materials_block</Name>
+				<MaxElements>33</MaxElements>
+				<Size>884</Size>
+				<FieldCount>21</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>100</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>48</Value>
+					</Field>
+					<Field>
+						<Name>vehicle terrain parameters</Name>
+						<Type>Explanation</Type>
+						<Value>the following fields modify the way a vehicle drives over terrain of this material type.</Value>
+					</Field>
+					<Field>
+						<Name>ground friction scale#fraction of original velocity parallel to the ground after one tick</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>ground friction normal k1 scale#cosine of angle at which friction falls off</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>ground friction normal k0 scale#cosine of angle at which friction is zero</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>ground depth scale#depth a point mass rests in the ground</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>ground damp fraction scale#fraction of original velocity perpendicular to the ground after one tick</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>76</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>480</Value>
+					</Field>
+					<Field>
+						<Name>breakable surface parameters</Name>
+						<Type>Explanation</Type>
+						<Value />
+					</Field>
+					<Field>
+						<Name>maximum vitality</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>8</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>4</Value>
+					</Field>
+					<Field>
+						<Name>effect</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>effe</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name>sound</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>24</Value>
+					</Field>
+					<Field>
+						<Name>particle effects</Name>
+						<Type>Block</Type>
+						<Block>
+							<Name>breakable_surface_particle_effect_block</Name>
+							<MaxElements>8</MaxElements>
+							<Size>128</Size>
+							<FieldCount>13</FieldCount>
+							<Fields>
+								<Field>
+									<Name>particle type^</Name>
+									<Type>Tag_Reference</Type>
+									<FieldCount>0</FieldCount>
+									<Fields>
+										<Field0>part</Field0>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>flags</Name>
+									<Type>Long_Flags</Type>
+									<FieldCount>2</FieldCount>
+									<Fields>
+										<Field0>interpolate color in hsv</Field0>
+										<Field1>...more colors</Field1>
+									</Fields>
+								</Field>
+								<Field>
+									<Name>density:world units</Name>
+									<Type>Real</Type>
+								</Field>
+								<Field>
+									<Name>velocity scale#scales initial velocity</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>4</Value>
+								</Field>
+								<Field>
+									<Name>angular velocity:degrees per second</Name>
+									<Type>Angle_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>8</Value>
+								</Field>
+								<Field>
+									<Name>radius:world units#particle radius</Name>
+									<Type>Real_Bounds</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>8</Value>
+								</Field>
+								<Field>
+									<Name>tint lower bound</Name>
+									<Type>Real_ARGB_Color</Type>
+								</Field>
+								<Field>
+									<Name>tint upper bound</Name>
+									<Type>Real_ARGB_Color</Type>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Pad</Type>
+									<Value>28</Value>
+								</Field>
+								<Field>
+									<Name />
+									<Type>Terminator_X</Type>
+								</Field>
+							</Fields>
+						</Block>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>60</Value>
+					</Field>
+					<Field>
+						<Name>melee hit sound</Name>
+						<Type>Tag_Reference</Type>
+						<FieldCount>0</FieldCount>
+						<Fields>
+							<Field0>snd!</Field0>
+						</Fields>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name>playlist members</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>playlist_autogenerate_choice_block</Name>
+				<MaxElements>20</MaxElements>
+				<Size>148</Size>
+				<FieldCount>9</FieldCount>
+				<Fields>
+					<Field>
+						<Name>map name</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>game variant</Name>
+						<Type>String</Type>
+					</Field>
+					<Field>
+						<Name>minimum experience</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name>maximum experience</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name>minimum player count</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name>maximum player count</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name>rating</Name>
+						<Type>Long_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>64</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>

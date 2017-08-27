@@ -1,0 +1,22 @@
+skin
+Struct 0x00 skin_main 0x3C
+	TagRef 0x04
+	Struct 0x14 skin_sub_1 0x10
+		Struct 0x08 skin_sub_1_1 0x14
+		End skin_sub_1_1
+	End skin_sub_1
+	Struct 0x1C skin_sub_2 0x2C
+		ScriptRef 0x24
+	End skin_sub_2
+	Struct 0x24 skin_sub_3 0x38
+		TagRef 0x18
+		ScriptRef 0x2C
+	End skin_sub_3
+	Struct 0x2C skin_sub_4 0x24
+		TagRef 0x0C
+		TagRef 0x14
+	End skin_sub_4
+	Struct 0x34 skin_sub_5 0x18
+		TagRef 0x04
+	End skin_sub_5
+End skin_main

@@ -1,0 +1,8 @@
+ui_widget_collection
+Struct 0 Main 12
+	Struct 0 Reflexive_0 16
+		TagRef 0
+		IntSwapRange 0 to 16
+	End Reflexive_0
+	IntSwapRange 0 to 12
+End Main

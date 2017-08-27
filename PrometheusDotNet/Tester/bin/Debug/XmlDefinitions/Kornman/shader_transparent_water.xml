@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<TagGroup>
+	<Group>shader_transparent_water</Group>
+	<GroupTag>swat</GroupTag>
+	<ParentGroupTag>shdr</ParentGroupTag>
+	<Version>2</Version>
+	<HeaderSize>280</HeaderSize>
+	<FieldCount>25</FieldCount>
+	<Fields>
+		<Field>
+			<Name>water shader</Name>
+			<Type>Explanation</Type>
+			<Value>Base map color modulates the background, while base map alpha modulates reflection brightness. Both of these effects can be independently enables and disabled. Note that if the &lt;base map alpha modulates reflection&gt; flag is not set, then the perpendicular/parallel brightness has no effect (but the perpendicular/parallel tint color DOES has an effect).</Value>
+		</Field>
+		<Field>
+			<Name>flags</Name>
+			<Type>Word_Flags</Type>
+			<FieldCount>4</FieldCount>
+			<Fields>
+				<Field0>base map alpha modulates reflection</Field0>
+				<Field1>base map color modulates background</Field1>
+				<Field2>atmospheric fog</Field2>
+				<Field3>draw before fog</Field3>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>32</Value>
+		</Field>
+		<Field>
+			<Name>base map#controls reflection brightness and background tint</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>view perpendicular brightness:[0,1]</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>view perpendicular tint color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name>view parallel brightness:[0,1]#0 defaults to 1</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>view parallel tint color</Name>
+			<Type>Real_RGB_Color</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>reflection map:[0,1]</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name>ripple animation angle:[0,360]</Name>
+			<Type>Angle</Type>
+		</Field>
+		<Field>
+			<Name>ripple animation velocity</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ripple scale#0 defaults to 1</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name>ripple maps</Name>
+			<Type>Tag_Reference</Type>
+			<FieldCount>0</FieldCount>
+			<Fields>
+				<Field0>bitm</Field0>
+			</Fields>
+		</Field>
+		<Field>
+			<Name>ripple mipmap levels#0 defaults to 1</Name>
+			<Type>Short_Integer</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>2</Value>
+		</Field>
+		<Field>
+			<Name>ripple mipmap fade factor:[0,1]#flatness of last mipmap</Name>
+			<Type>Real_Fraction</Type>
+		</Field>
+		<Field>
+			<Name>ripple mipmap detail bias</Name>
+			<Type>Real</Type>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>64</Value>
+		</Field>
+		<Field>
+			<Name>ripples</Name>
+			<Type>Block</Type>
+			<Block>
+				<Name>shader_transparent_water_ripple_block</Name>
+				<MaxElements>4</MaxElements>
+				<Size>76</Size>
+				<FieldCount>11</FieldCount>
+				<Fields>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>2</Value>
+					</Field>
+					<Field>
+						<Name>contribution factor:[0,1]#0 defaults to 1</Name>
+						<Type>Real_Fraction</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>32</Value>
+					</Field>
+					<Field>
+						<Name>animation angle:[0,360]</Name>
+						<Type>Angle</Type>
+					</Field>
+					<Field>
+						<Name>animation velocity</Name>
+						<Type>Real</Type>
+					</Field>
+					<Field>
+						<Name>map offset</Name>
+						<Type>Real_Vector_2D</Type>
+					</Field>
+					<Field>
+						<Name>map repeats#0 defaults to 1</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name>map index#index into ripple maps</Name>
+						<Type>Short_Integer</Type>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Pad</Type>
+						<Value>16</Value>
+					</Field>
+					<Field>
+						<Name />
+						<Type>Terminator_X</Type>
+					</Field>
+				</Fields>
+			</Block>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Pad</Type>
+			<Value>16</Value>
+		</Field>
+		<Field>
+			<Name />
+			<Type>Terminator_X</Type>
+		</Field>
+	</Fields>
+</TagGroup>
